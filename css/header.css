@@ -1,0 +1,185 @@
+/* Animations */
+@keyframes submenu_animation_on {
+	from { margin-top: -200px; opacity: 0;}
+	to { margin-top: 0px; opacity: 1;}
+}
+
+@keyframes submenu_animation_out {
+	from { margin-top: 0px; opacity: 1;}
+	to { margin-top: -200px; opacity: 0;}
+}
+
+
+@font-face {
+    font-family: avenir_bold;
+    src: url('../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../fonts/avenirnextw1gmedium.woff');
+}
+
+
+
+/* Menu ------------------------------------------------ */
+
+article.menu {
+	width: 100%;
+	height: 80px;
+	position: relative;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0px 1px 1px rgb(100,100,100) ;
+	z-index: 99999;
+}
+
+/*#main_menu{
+	width: 695px;
+	background-color: red;
+	height: 80px;
+	position: relative;
+	margin: 0 auto;
+}*/
+
+#main_menu{
+	/*width: 695px;*/
+	width: 704px;
+	height: 80px;
+	position: relative;
+	margin: 0 auto;
+}
+
+#menu_logo {
+	width: 200px;
+	height: 48px;
+	margin-top: 16px;
+	float: left;
+	margin-left: 10px;
+	background: url('../img/mbi_logo.png');
+	background-size: cover;
+	cursor: pointer;
+}
+
+#menu_ul_container {
+	float: left;
+	margin-top: 33px;
+}
+
+
+/*ul.main_menu {
+	width: 100px;
+	display: inline;
+	font-family: 'avenir_bold', sans-serif;
+	font-size: 14px;
+}*/
+
+ul.main_menu {
+	/*width: 100px;*/
+	display: inline;
+	font-family: 'avenir_bold', sans-serif;
+	font-size: 14px;
+}
+
+
+ul.main_menu li.menu_item{
+	display: inline;
+	color: rgb(40,40,40);
+	margin-left: 60px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 42px;
+	padding-bottom: 33px;
+	cursor: pointer;
+}
+
+ul.main_menu li.menu_item#red_item{
+	padding-left: 20px;
+	cursor: default;
+}
+
+
+ul.main_menu li.menu_item#red_item:hover{
+	color: rgb(226,35,26);
+}
+
+ul.main_menu li.menu_item#red_item span{
+	font-size: 12px;
+	/*margin-top: -10px;*/
+}
+
+ul.main_menu li.menu_item#green_item:hover{
+	color: rgb(119,188,31);
+}
+
+ul.main_menu li.menu_item#yellow_item:hover{
+	color: rgb(255,163,0);
+}
+
+
+/* Submenu -------------------------------------------------- */
+/* subMenu ---------------------------------------------------- */
+
+article#submenu {
+	z-index: 999;
+	/*background-color: rgb(255,255,255);*/
+	background-color: rgb(255,255,255);
+	width: 100%;
+	height: 200px;
+
+}
+
+article#submenu.off{
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	margin: 0 auto;
+	display: none;
+}
+
+article#submenu.on {
+	display: block;
+	animation-name: submenu_animation_on;
+	animation-duration: 0.3s;
+	position: absolute;
+	margin: 0 auto;
+}
+
+article#submenu.out {
+	display: block;
+	animation-name: submenu_animation_out;
+	animation-duration: 0.3s;
+	position: absolute;
+	margin: 0 auto;
+	margin-top:-200px;  
+}
+
+#submenu_products_container{
+	width: 680px;
+	height: 200px;
+	position: relative;
+	margin: 0 auto;
+	top:0px;
+}
+
+#submenu_product_one{
+	float: left;
+	width: 320px;
+	height: 180px;
+	background: url('../img/logo_sm_submenu.png');
+	background-size: cover;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+
+#submenu_product_two{
+	float: left;
+	width: 320px;
+	height: 180px;
+	background: url('../img/logo_z_submenu.png');
+	background-size: cover;
+	margin-left: 40px;
+	cursor: pointer;
+	margin-top: 10px;
+}

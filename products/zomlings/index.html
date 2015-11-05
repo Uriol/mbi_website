@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Magic Box Toys</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header.css' rel='stylesheet'>
+		<link href='../../css/footer.css' rel='stylesheet'>
+		<link href='css/style.css' rel='stylesheet'>
+		<link href='css/animations.css' rel='stylesheet'>
+
+	</head>
+
+	<body>
+		<section class='content'>
+			<header>
+
+				<article class='menu'>
+					<div id='main_menu'>
+						<a href="../../index.html">	
+							<div id='menu_logo'></div>
+						</a>
+						<div id='menu_ul_container'>
+							<ul class='main_menu'>
+								<li class='menu_item' id='red_item'>PRODUCTS<span> ▼</span></li>
+								<li class='menu_item' id='green_item'>ABOUT US</li>
+								<li class='menu_item' id='yellow_item'>CONTACT</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<article id='submenu' class='off'>
+					<div id='submenu_products_container'>
+							
+							<div id='submenu_product_one'></div>
+						
+							<div id='submenu_product_two'></div>
+						
+					</div>
+				</article>
+
+			</header>
+
+			<section class='main_display'>
+				
+				<div class='main_display_logo'>
+					<div class='start' id='main_display_logo_zomlings'></div>
+				</div>
+
+				<article class='series_main_display'>
+					<!--  Serie One -->
+					<div class='serie_main_display on' id='series_one'>
+						<!-- BG -->
+						<div class='main_display_bg' id='series_one_bg'></div>
+						<!-- Video -->
+						<div class='main_display_full' id='series_one_video'>
+							<div class='iframe_container' id='iframe_container_series_one'>
+								<iframe id='player_series_one' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<!--  Video thumbnail -->
+						<div class='main_display_full'>
+							<div class='video_thumbnail' id='series_one_video_thumbnail'>
+								<div id='series_one_player_icon_container' class='player_icon_container'>
+									<div class='player_icon'></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!--  Serie two -->
+					<div class='serie_main_display off' id='series_two'>
+						<!-- BG -->
+						<div class='main_display_bg' id='series_two_bg'></div>
+						<!-- Video -->
+						<div class='main_display_full' id='series_two_video'>
+							<div class='iframe_container' id='iframe_container_series_two'>
+								<iframe id='player_series_two' src="https://www.youtube.com/embed/79iR2JPfoUk?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<!--  Video thumbnail -->
+						<div class='main_display_full'>
+							<div class='video_thumbnail' id='series_two_video_thumbnail'>
+								<div id='series_two_player_icon_container' class='player_icon_container'>
+									<div class='player_icon'></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<!--  Serie three -->
+					<div class='serie_main_display off' id='series_three'>
+						<!-- BG -->
+						<div class='main_display_bg' id='series_three_bg'></div>
+						<!-- Video -->
+						<div class='main_display_full' id='series_three_video'>
+							<div class='iframe_container' id='iframe_container_series_three'>
+								<iframe id='player_series_three' src="https://www.youtube.com/embed/V0if4l8r7Uo?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<!--  Video thumbnail -->
+						<div class='main_display_full'>
+							<div class='video_thumbnail' id='series_three_video_thumbnail'>
+								<div id='series_three_player_icon_container' class='player_icon_container'>
+									<div class='player_icon'></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<!--  Serie Four -->
+					<div class='serie_main_display off' id='series_four'>
+						<!-- BG -->
+						<div class='main_display_bg' id='series_four_bg'></div>
+						<!-- Video -->
+						<div class='main_display_full' id='series_four_video'>
+							<div class='iframe_container' id='iframe_container_series_four'>
+								<iframe id='player_series_four' src="https://www.youtube.com/embed/V0if4l8r7Uo?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<!--  Video thumbnail -->
+						<div class='main_display_full'>
+							<div class='video_thumbnail' id='series_four_video_thumbnail'>
+								<div id='series_four_player_icon_container' class='player_icon_container'>
+									<div class='player_icon'></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</article>
+
+
+				<article class='main_display_series_menu'>
+					<div class='series_menu_container'>
+						<div class='series_menu_item on' id='series_one_menu_item' data-index='0'></div>
+						<div class='series_menu_item off' id='series_two_menu_item' data-index='1'></div>
+						<div class='series_menu_item off' id='series_three_menu_item' data-index='2'></div>
+						<div class='series_menu_item off' id='series_four_menu_item' data-index='3'></div>
+					</div>
+				</article>
+
+			</section>
+
+
+			<section class='series_info'>
+					<!--  Serie one -->
+					<div class='serie_info_container on' id='series_one_info'>
+						<div class='description_container'>
+							<h1>ZOMLINGS</h1>
+							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Ocotozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tus casas, apila las torres y crea tu propia Zomlings Town!</p>
+						</div>
+
+						<div class='gallery_container'>
+							<div class='gallery_pictures'></div>
+							<div class='gallery_index_container'></div>
+						</div>
+
+						<div class='products_container'>
+							<div class='products_box'>
+								<h1>PRODUCTS</h1>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!--  Serie two -->
+					<div class='serie_info_container off' id='series_two_info'>
+						<div class='description_container'>
+							<h1>ZOMLINGS</h1>
+							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Ocotozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tus casas, apila las torres y crea tu propia Zomlings Town!</p>
+						</div>
+
+						<div class='gallery_container'>
+							<div class='gallery_pictures'></div>
+							<div class='gallery_index_container'></div>
+						</div>
+
+						<div class='products_container'>
+							<div class='products_box'>
+								<h1>PRODUCTS</h1>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>TOWER PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--  Serie three -->
+					<div class='serie_info_container off' id='series_three_info'>
+						<div class='description_container'>
+							<h1>ZOMLINGS</h1>
+							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Ocotozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tus casas, apila las torres y crea tu propia Zomlings Town!</p>
+						</div>
+
+						<div class='gallery_container'>
+							<div class='gallery_pictures'></div>
+							<div class='gallery_index_container'></div>
+						</div>
+
+						<div class='products_container'>
+							<div class='products_box'>
+								<h1>PRODUCTS</h1>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>TOWER PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!--  Series four -->
+					<div class='serie_info_container off' id='series_four_info'>
+						<div class='description_container'>
+							<h1>ZOMLINGS</h1>
+							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Ocotozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tus casas, apila las torres y crea tu propia Zomlings Town!</p>
+						</div>
+
+						<div class='gallery_container'>
+							<div class='gallery_pictures'></div>
+							<div class='gallery_index_container'></div>
+						</div>
+
+						<div class='products_container'>
+							<div class='products_box'>
+								<h1>PRODUCTS</h1>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>TOWER PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>BUS PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+								<div class='product_container'>
+									<div class='product_image'></div>
+									<div class='product_description'>
+										<h3>ONE PACK</h3>
+										<p>1 Zomling</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+			</section>
+
+			<section class='pre_footer'>
+				<div class='pre_footer_img'></div>
+			</section>
+
+			<section class='footer'>
+			</section>
+
+		</section>
+
+		<script src='https://www.youtube.com/iframe_api'></script>
+		<script src='../../js/libraries/jquery_min.js'></script>
+		<script src='../../js/libraries/mobile_detect_min.js'></script>
+		<script src='../../js/header.js'></script>
+		<script src='js/script.js'></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,477 @@
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../../fonts/avenirnextw1gmedium.woff');
+}
+
+
+
+
+@media only screen 
+and (min-width: 850px)
+and (max-width: 1080px) {
+
+	html {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		/*overflow-y: hidden;*/
+	}
+
+	body {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		/*overflow-x: hidden;*/
+	}
+
+	section.main_display {
+		width: 100%;
+		height: 610px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+		/*background-color: rgb(200,200,200)*/
+	}
+
+
+	/* Logo Zomlings ----------------------------------------- */
+	.main_display_logo {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+		margin-top: 5px;
+	}
+
+	#main_display_logo_zomlings {
+		width: 380px;
+		height: 157px;
+		background: url('../img/logo_zomlings.png');
+		background-size: cover;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	/* Main displays controls */
+	article.main_display_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	}
+
+	.control_left_container {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		position: relative;
+		background-color: white;
+		margin: 0 auto;
+		/*left: -400px;*/
+		top: 255px;
+	}
+
+	/* Series ----------------------------------------------- */
+	article.series_main_display {
+		width: 100%;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.serie_main_display.on {
+		position: absolute;
+		width: 100%;
+		height: 0px;
+		margin: 0 auto;
+		background-color: green;
+	}
+
+	.serie_main_display.off {
+		display: none;
+	}
+
+	.main_display_bg {
+		width: 100%;
+		height: 610px;
+		position: absolute;
+	}
+
+	.main_display_full {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	}
+
+	.iframe_container {
+		top: 110px;
+		position: relative;
+		margin: 0 auto;
+		width: 640px;
+		height: 360px;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 640px;
+		height: 360px;
+		position: relative;
+		margin: 0 auto;
+		top: 110px;
+	}
+
+	.player_icon_container {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: 270px;
+		margin-top: 130px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.player_icon_container.off {
+		/*background-color: rgba(0,0,0,0.5);*/
+	}
+
+	.player_icon_container.on {
+		/*background-color: rgba(0,0,0,0.5);*/
+	}
+
+	.player_icon {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 25px solid rgb(255,255,255);
+		margin-left: 37.5px;
+		margin-top: 35px;
+	}
+
+
+
+	/* Serie One */
+	#series_one_bg {
+		background: url('../img/s1/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+	#series_one_video_thumbnail {
+		background: url('../img/s1/s1_thumbnail.png');
+		background-size: cover;
+	}
+	#player_series_one{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(108,28,31);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+
+	/* Serie Two */
+	#series_two_bg {
+		background: url('../img/s2/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+	#series_two_video_thumbnail {
+		background: url('../img/s2/s2_thumbnail.png');
+		background-size: cover;
+	}
+	#player_series_two{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(185,118,1);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+	/* Serie Three */
+	#series_three_bg {
+		background: url('../img/s3/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+	#series_three_video_thumbnail {
+		background: url('../img/s3/s3_thumbnail.png');
+		background-size: cover;
+	}
+	#player_series_three{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(0,62,28);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+	/* Serie Four */
+	#series_four_bg {
+		background: url('../img/s4/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+	#series_four_video_thumbnail {
+		background: url('../img/s4/s3_thumbnail.png');
+		background-size: cover;
+	}
+	#player_series_four{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(71,28,68);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+
+
+
+
+	/* Series menu ------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+	}
+
+	.series_menu_container {
+		width: 765px;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 510px;
+	}
+
+	.series_menu_item {
+		width: 160px;
+		height: 69px;
+		float: left;
+		margin-left: 25px;
+		cursor: pointer;
+		background-color: red;
+	}
+
+
+	#series_one_menu_item.series_menu_item.on {
+		background: url('../img/s1/menu_color.png');
+		background-size: cover;
+	}
+	#series_one_menu_item.series_menu_item.off {
+		background: url('../img/s1/menu_white.png');
+		background-size: cover;
+	}
+	#series_one_menu_item.series_menu_item.off:hover {
+		background: url('../img/s1/menu_color.png');
+		background-size: cover;
+	}
+
+
+
+	#series_two_menu_item.on {
+		background: url('../img/s2/menu_color.png');
+		background-size: cover;
+	}
+	#series_two_menu_item.off {
+		background: url('../img/s2/menu_white.png');
+		background-size: cover;
+	}
+
+	#series_two_menu_item.off:hover {
+		background: url('../img/s2/menu_color.png');
+		background-size: cover;
+	}
+
+	#series_three_menu_item.on {
+		background: url('../img/s3/menu_color.png');
+		background-size: cover;
+	}
+
+	#series_three_menu_item.off{
+		background: url('../img/s3/menu_white.png');
+		background-size: cover;
+	}
+	#series_three_menu_item.off:hover{
+		background: url('../img/s3/menu_color.png');
+		background-size: cover;
+	}
+
+
+	#series_four_menu_item.on {
+		background: url('../img/s4/menu_color.png');
+		background-size: cover;
+	}
+	#series_four_menu_item.off {
+		background: url('../img/s4/menu_white.png');
+		background-size: cover;
+	}
+	#series_four_menu_item.off:hover {
+		background: url('../img/s4/menu_color.png');
+		background-size: cover;
+	}
+
+
+	/* Series info -------------------------------------------- */
+	section.series_info{
+		width: 100%;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	.serie_info_container.on {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	.serie_info_container.off {
+		display: none;
+	}
+
+	.description_container {
+		width: 800px;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+
+	.description_container h1 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		color: rgb(60,60,60);
+	}
+
+	.description_container p {
+		margin-top: 30px;
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 16px;
+		line-height: 25px;
+		color: rgb(100,100,100);
+	}
+
+	.gallery_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.gallery_pictures {
+		width: 100%;
+		padding-bottom: 56.25%;
+		/*height: 608px;*/
+		margin: 0 auto;
+		background-color: rgb(200,200,200);
+	}
+
+	.gallery_index_container {
+		width: 100px;
+		height: 20px;
+		top: 20px;
+		position: relative;
+		margin: 0 auto;
+		background-color: rgb(220,220,220);
+	}
+
+	/* Products */
+
+	.products_container {
+		width: 100%;
+	/*	height: 200px;*/
+		overflow: hidden;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	.products_box {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+
+	.products_box h1 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		color: rgb(60,60,60);
+	}
+
+	.product_container {
+		overflow: hidden;
+		/*width: 487.5px;*/
+		width: 42.5%;
+		/*height: 450px;*/
+		border-radius: 10px;
+		float: left;
+		margin-left: 5%;
+		background-color: rgb(255,255,255);
+		margin-top: 35px;
+		margin-bottom: 5px;
+		-moz-box-shadow: 0px 0px 5px rgba(200,200,200, 0.5);
+		-webkit-box-shadow: 0px 0px 5px rgba(200,200,200,0.8);
+		box-shadow: 0px 0px 5px rgba(200,200,200, 0.5);
+	}
+
+	.product_image {
+		width: 100%;
+		/*height: 264px;*/
+		padding-bottom: 56.25%;
+		position: relative;
+		background-color: rgb(40,40,40);
+		/*border-radius: 10px;*/
+	}
+
+	.product_description {
+		width: 100%;
+		height: 60px;
+		/*background-color: red;*/
+		position: relative;
+	}
+
+	.product_description h3 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 18px;
+		margin-top: 20px;
+	}
+
+	.product_description p {
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 18px;
+		line-height: 32px;
+
+	}
+
+	/* Footer ----------------------------------------- */
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+		margin-top: 60px;
+	/*	background-color: red;*/
+	}
+
+	.pre_footer_img {
+		width: 100%;
+		height: 200px;
+		position: relative;
+		background-color: rgb(220,220,220);
+		margin: 0 auto;
+	}
+
+}
+
