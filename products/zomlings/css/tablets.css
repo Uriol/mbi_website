@@ -1,21 +1,8 @@
-@font-face {
-    font-family: avenir_bold;
-    src: url('../../../fonts/avenirnextw1gbold.woff');
-}
-
-@font-face {
-    font-family: avenir_medium;
-    src: url('../../../fonts/avenirnextw1gmedium.woff');
-}
-
-
-
-
 @media only screen 
-and (min-width: 850px)
-and (max-width: 1080px) {
+and (min-width: 750px)
+and (max-width: 849px) {
 
-	html {
+		html {
 		width: 100%;
 		height: 100%;
 		position: relative;
@@ -372,11 +359,12 @@ and (max-width: 1080px) {
 	}
 
 	.description_container {
-		width: 800px;
+		width: 90%;
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
 		margin-top: 50px;
+
 	}
 
 
@@ -509,4 +497,3 @@ and (max-width: 1080px) {
 	}
 
 }
-

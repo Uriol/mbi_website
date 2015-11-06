@@ -1,0 +1,136 @@
+
+
+/* Horizontal*/
+@media only screen 
+and (min-width: 320px)
+and (max-width: 480px) {
+
+	body {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		overflow-x: hidden;
+		
+	}
+
+	section.main_display {
+		width: 100%;
+		height: 610px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+		/*background-color: rgb(200,200,200)*/
+	}
+
+	section.main_display {
+		width: 100%;
+		/*height: 610px;*/
+		position: relative;
+		margin: 0 auto;
+		/*background-color: red;*/
+	}
+
+	/* Logo Zomlings ----------------------------------------- */
+	.main_display_logo {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+		margin-top: 5px;
+	}
+
+	#main_display_logo_zomlings {
+		width: 320px;
+		height: 132px;
+		background: url('../img/logo_zomlings.png');
+		background-size: cover;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	/* Series ----------------------------------------------- */
+	article.series_main_display {
+		width: 100%;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.serie_main_display.on {
+		position: absolute;
+		width: 100%;
+		height: 0px;
+		margin: 0 auto;
+		/*background-color: green;*/
+	}
+
+	.serie_main_display.off {
+		display: none;
+	}
+
+
+	.main_display_bg {
+		width: 100%;
+		/*height: 610px;*/
+		position: absolute;
+	}
+
+	.main_display_full {
+		width: 100%;
+		height: 40px;
+		position: relative;
+	}
+
+	.iframe_container {
+		top: 95px;
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+		padding-bottom: 56.25%;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	}
+
+	.video_thumbnail {
+		display: none;
+
+	}
+
+
+	/* Series menu ------------------------------------------ */
+	.main_display_series_controls {
+		width: 100%;
+		height: 0px;
+		position: relative;
+	
+	}
+
+	.control_left_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.2);
+		float: left;
+		/*margin-top: 100%;*/
+		margin-left: 20px;
+		cursor:pointer;
+	}
+
+
+
+	/* Series One -------------------- */
+	#player_series_one{
+		border-style: solid;
+	    border-top-width: 8px;
+	    border-bottom-width: 8px;
+	    border-color: rgb(108,28,31);
+	}
+
+
+
+}

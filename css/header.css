@@ -21,6 +21,8 @@
 }
 
 
+@media only screen
+and (min-width: 749px) {
 
 /* Menu ------------------------------------------------ */
 
@@ -130,10 +132,10 @@ article#submenu {
 }
 
 article#submenu.off{
-	width: 100%;
+	/*width: 100%;
 	height: 200px;
 	position: absolute;
-	margin: 0 auto;
+	margin: 0 auto;*/
 	display: none;
 }
 
@@ -166,20 +168,82 @@ article#submenu.out {
 	float: left;
 	width: 320px;
 	height: 180px;
-	background: url('../img/logo_sm_submenu.png');
-	background-size: cover;
+	
 	cursor: pointer;
 	margin-top: 10px;
+	
 }
+
 
 
 #submenu_product_two{
 	float: left;
 	width: 320px;
 	height: 180px;
-	background: url('../img/logo_z_submenu.png');
-	background-size: cover;
 	margin-left: 40px;
 	cursor: pointer;
 	margin-top: 10px;
+	
+}
+
+
+@keyframes product_submenu_in {
+	from { background-size: 100%;}
+	to {background-size: 110%;}
+}
+
+@keyframes product_submenu_out {
+	from { background-size: 110%;}
+	to {background-size: 100%;}
+}
+
+
+/* Animations */
+/* Product one */
+#submenu_product_one.submenu_product_start {
+	background: url('../img/logo_sm_submenu.png');
+	background-size: 100%;
+	background-position: center;
+}
+
+#submenu_product_one.submenu_product_in {
+	background: url('../img/logo_sm_submenu.png');
+	animation-name: product_submenu_in;
+	animation-duration: 0.3s;
+	background-size: 110%;
+	background-position: center;
+}
+
+#submenu_product_one.submenu_product_out {
+	background: url('../img/logo_sm_submenu.png');
+	animation-name: product_submenu_out;
+	animation-duration: 0.3s;
+	background-size: 100%;
+	background-position: center;
+}
+
+
+/* Product 2 */
+#submenu_product_two.submenu_product_start {
+	background: url('../img/logo_z_submenu.png');
+	background-size: 100%;
+	background-position: center;
+}
+
+#submenu_product_two.submenu_product_in {
+	background: url('../img/logo_z_submenu.png');
+	animation-name: product_submenu_in;
+	animation-duration: 0.3s;
+	background-size: 110%;
+	background-position: center;
+}
+
+#submenu_product_two.submenu_product_out {
+	background: url('../img/logo_z_submenu.png');
+	animation-name: product_submenu_out;
+	animation-duration: 0.3s;
+	background-size: 100%;
+	background-position: center;
+}
+
 }

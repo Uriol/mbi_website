@@ -13,11 +13,52 @@ var $players = [player_0, player_1, player_2, player_3];
 
 $(function(){
 
+	// Handle series switch on the arrows controls
+	// LEFT 
+	$('.control_left_container').on('click', function() {
+		// Turn off actual menu item
+		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
+		// Hide actual serie
+		hideSerie();
+		// If Series 1 --> start from last
+		if ( index == 0 ) {
+			index = $series.length-1;
+		} else {
+			index -= 1;
+		}
+		// Show actual serie main display
+		$('#' + $series[index] + '').show();
+		// Show actual serie info
+		$('#' + $series[index] + '_info').show();
+		// Turn on actual menu item
+		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+	})
+	// RIGHT
+	$('.control_right_container').on('click', function() {
+		// Turn off actual menu item
+		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
+		// Hide actual serie
+		hideSerie();
+		// If Series 4 (Last) start from first
+		if ( index == $series.length-1 ) {
+			index = 0;
+		} else {
+			index += 1;
+		}
+		// Show actual serie main display
+		$('#' + $series[index] + '').show();
+		// Show actual serie info
+		$('#' + $series[index] + '_info').show();
+		// Turn on actual menu item
+		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+	})
+	// Hover over control arrows
+	
+
 	// Handle series switch on the menu
 	$(document).on('click', '.series_menu_item.off', function(){
 		// Turn off actual menu item
 		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
-
 		// Hide actual serie
 		hideSerie();
 		index = $(this).data('index');

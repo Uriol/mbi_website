@@ -1,21 +1,7 @@
-@font-face {
-    font-family: avenir_bold;
-    src: url('../../../fonts/avenirnextw1gbold.woff');
-}
-
-@font-face {
-    font-family: avenir_medium;
-    src: url('../../../fonts/avenirnextw1gmedium.woff');
-}
-
-
-
 
 @media only screen 
-and (min-width: 850px)
-and (max-width: 1080px) {
-
-	html {
+and (min-width: 1081px) {
+		html {
 		width: 100%;
 		height: 100%;
 		position: relative;
@@ -227,9 +213,10 @@ and (max-width: 1080px) {
 		height: 70px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.2);
-		float: left;
-		margin-top: 255px;
-		margin-left: 20px;
+		position: relative;
+		margin: 0 auto;
+		top: 255px;
+		left: -485px;
 		cursor:pointer;
 	}
 
@@ -246,9 +233,10 @@ and (max-width: 1080px) {
 		height: 70px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.2);
-		float: right;
-		margin-top: 255px;
-		margin-right: 20px;
+		position: relative;
+		margin: 0 auto;
+		top: 255px;
+		left: 485px;
 		cursor:pointer;
 	}
 
@@ -404,8 +392,8 @@ and (max-width: 1080px) {
 	}
 
 	.gallery_pictures {
-		width: 100%;
-		padding-bottom: 56.25%;
+		width: 1080px;
+		height: 608px;
 		/*height: 608px;*/
 		margin: 0 auto;
 		background-color: rgb(200,200,200);
@@ -433,7 +421,7 @@ and (max-width: 1080px) {
 	}
 
 	.products_box {
-		width: 100%;
+		width: 1080px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
@@ -450,11 +438,11 @@ and (max-width: 1080px) {
 	.product_container {
 		overflow: hidden;
 		/*width: 487.5px;*/
-		width: 42.5%;
+		width: 459px;
 		/*height: 450px;*/
 		border-radius: 10px;
 		float: left;
-		margin-left: 5%;
+		margin-left: 54px;
 		background-color: rgb(255,255,255);
 		margin-top: 35px;
 		margin-bottom: 5px;
@@ -507,6 +495,4 @@ and (max-width: 1080px) {
 		background-color: rgb(220,220,220);
 		margin: 0 auto;
 	}
-
 }
-

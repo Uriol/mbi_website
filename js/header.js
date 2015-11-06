@@ -77,6 +77,22 @@ $(function(){
 			}
 		}
 
+		// 	SM mouse in (submenu)
+		$('#submenu_product_one').on('mouseenter', function(){
+			$(this).removeClass().addClass('submenu_product_in');
+		}).on('mouseleave', function() {
+			$(this).removeClass().addClass('submenu_product_out');
+		})
+		// Z mouse in (submenu)
+		$('#submenu_product_two').on('mouseenter', function(){
+			$(this).removeClass().addClass('submenu_product_in');
+		}).on('mouseleave', function() {
+			$(this).removeClass().addClass('submenu_product_out');
+		})
+
+
+		
+
 
 	}
 	
