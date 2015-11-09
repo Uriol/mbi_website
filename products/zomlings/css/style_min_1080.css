@@ -424,60 +424,105 @@ and (min-width: 1081px) {
 		width: 1080px;
 		margin: 0 auto;
 		position: relative;
-		overflow: hidden;
 		margin-bottom: 50px;
 	}
-
 	.products_box h1 {
 		font-family: 'avenir_bold', sans-serif;
 		font-size: 40px;
 		font-weight: 700;
 		color: rgb(60,60,60);
 	}
-
 	.product_container {
 		overflow: hidden;
-		/*width: 487.5px;*/
-		width: 459px;
-		/*height: 450px;*/
-		border-radius: 10px;
+		width: 26.6%;
 		float: left;
-		margin-left: 54px;
-		background-color: rgb(255,255,255);
+		margin-left: 5%;
 		margin-top: 35px;
-		margin-bottom: 5px;
-		-moz-box-shadow: 0px 0px 10px rgba(40,40,40, 0.5);
-		-webkit-box-shadow: 0px 0px 10px rgba(40,40,40,0.8);
-		box-shadow: 0px 0px 10px rgba(40,40,40, 0.5);
+		margin-bottom: 20px;
+	}
+	.product_content_container {
+		width: 100%;
+		padding-bottom: 75%;
+		position: relative;
+/*		background-color: red;*/
+	}
+	.product_image_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		cursor: pointer;
+	}
+	.product_info_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: red;
+		display: none;
+	}
+	/*.product_info_container_off {
+		display: none;
+	}*/
+	.product_title {
+		width: 100%;
+		height: 20px;
+		position: absolute;
+		bottom: 0px;
+		/*background-color: blue;*/
 	}
 
-	.product_image {
-		width: 100%;
-		/*height: 264px;*/
-		padding-bottom: 56.25%;
-		position: relative;
-		background-color: rgb(40,40,40);
-		/*border-radius: 10px;*/
-	}
 
 	.product_description {
 		width: 100%;
-		height: 60px;
+		height: 120px;
 		/*background-color: red;*/
 		position: relative;
 	}
 
-	.product_description h3 {
+	.product_image_container .product_title h3 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 18px;
+		/*margin-top: 5px;
+		margin-bottom: 10px;*/
+	}
+
+	.product_info_container h3 {
 		font-family: 'avenir_bold', sans-serif;
 		font-size: 18px;
 		margin-top: 20px;
+		color: white;
 	}
 
-	.product_description p {
+
+	.product_info_container p {
+		margin-top: 20px;
 		font-family: 'avenir_medium', sans-serif;
 		font-size: 18px;
-		line-height: 32px;
+		line-height: 24px;
+		color: white;
+	}
 
+
+	/* Products --------------------------------------- */
+	/* Serie One */
+	#one_pack_image_series_one {
+		background: url('../img/s1/products/one_pack_3.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_one {
+		background: url('../img/s1/products/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one {
+		background: url('../img/s1/products/house_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one_2 {
+		background: url('../img/s1/products/one_pack_3.png');
+		background-size: cover;
 	}
 
 	/* Footer ----------------------------------------- */

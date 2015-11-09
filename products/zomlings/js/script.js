@@ -218,4 +218,15 @@ $(function(){
 	}  
 
 
+
+	//  Handle hover on product image
+	$('.product_content_container').on('mouseenter', function() {
+		console.log('in')
+		$('.product_image_container', this).hide();
+		$('.product_info_container', this).show();
+	}).on('mouseleave', function() {
+		$('.product_info_container', this).hide();
+		$('.product_image_container', this).show();
+	})
+
 })

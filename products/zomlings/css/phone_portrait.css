@@ -3,7 +3,7 @@
 /* Horizontal*/
 @media only screen 
 and (min-width: 320px)
-and (max-width: 480px) {
+and (max-width: 540px) {
 
 	body {
 		width: 100%;
@@ -14,20 +14,22 @@ and (max-width: 480px) {
 	}
 
 	section.main_display {
-		width: 100%;
+		/*width: 100%;
 		height: 610px;
 		max-width: 2500px;
 		position: relative;
-		margin: 0 auto;
+		margin: 0 auto;*/
 		/*background-color: rgb(200,200,200)*/
 	}
 
 	section.main_display {
 		width: 100%;
-		/*height: 610px;*/
+
+		height: 400px;
 		position: relative;
 		margin: 0 auto;
-		/*background-color: red;*/
+		background-color: rgb(200,200,200);
+		overflow: hidden;
 	}
 
 	/* Logo Zomlings ----------------------------------------- */
@@ -52,7 +54,8 @@ and (max-width: 480px) {
 	/* Series ----------------------------------------------- */
 	article.series_main_display {
 		width: 100%;
-		height: 0px;
+		/*height: 0px;*/
+		/*overflow:hidden;*/
 		position: relative;
 		margin: 0 auto;
 	}
@@ -79,15 +82,17 @@ and (max-width: 480px) {
 	.main_display_full {
 		width: 100%;
 		height: 0px;
-		position: absolute;
+		/*position: absolute;*/
+		position: relative;
 	}
 
 	.iframe_container {
 		top: 95px;
 		position: relative;
 		margin: 0 auto;
-		width: 100%;
-		padding-bottom: 56.25%;
+		width: 320px;
+		height: 180px;
+		
 	}
 
 	iframe {
@@ -102,45 +107,376 @@ and (max-width: 480px) {
 	}*/
 	.video_thumbnail{
 		cursor: pointer;
-		width: 100%;
-		padding-bottom: 56.25%;
+		width: 320px;
+		height: 180px;
 		position: relative;
 		margin: 0 auto;
-		top: 103px;
+		top: 95px;
 		background-color: red;
 		pointer-events: none;
 	}
 
+	.player_icon_container {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: 125px;
+		margin-top: 55px;
+		background-color: rgba(0,0,0,0.5);
+	}
 
-	/* Series menu ------------------------------------------ */
+	.player_icon {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+		border-left: 22px solid rgb(255,255,255);
+		margin-left:  25px;
+		margin-top: 24px;
+	}
+
+	/* Series controls ------------------------------------------ */
 	.main_display_series_controls {
 		width: 100%;
 		height: 0px;
-		position: relative;
+		position: absolute;
 	
 	}
 
 	.control_left_container{
-		width: 70px;
-		height: 70px;
+		width: 50px;
+		height: 50px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.2);
-		float: left;
-		/*margin-top: 100%;*/
-		margin-left: 20px;
+		position: relative;
+		margin: 0 auto;
+		top: 310px;
+		left: -120px;
 		cursor:pointer;
 	}
+
+	.control_right_container{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.2);
+		position: relative;
+		margin: 0 auto;
+		top: 310px;
+		left: 120px;
+		cursor:pointer;
+	}
+
+
+
+	/* Series menu ------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+	}
+
+	.series_menu_container {
+		width: 120px;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 310px;
+		/*background-color: red;*/
+	}
+
+	.series_menu_item {
+		width: 120px;
+		height: 52px;
+		float: left;
+		cursor: pointer;
+		background-color: red;
+	}
+
+	.series_menu_item.off {
+		display: none;
+	}
+
+
+	#series_one_menu_item.series_menu_item.on {
+		background: url('../img/s1/mobile/menu_color.png');
+		background-size: cover;
+	}
+	#series_two_menu_item.series_menu_item.on {
+		background: url('../img/s2/mobile/menu_color.png');
+		background-size: cover;
+	}
+	#series_three_menu_item.series_menu_item.on {
+		background: url('../img/s3/mobile/menu_color.png');
+		background-size: cover;
+	}
+	#series_four_menu_item.series_menu_item.on {
+		background: url('../img/s4/mobile/menu_color.png');
+		background-size: cover;
+	}
+
 
 
 
 	/* Series One -------------------- */
 	#player_series_one{
 		border-style: solid;
-	    border-top-width: 8px;
-	    border-bottom-width: 8px;
+	    border-width: 8px;
 	    border-color: rgb(108,28,31);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+
+	#series_one_video_thumbnail {
+		background: url('../img/s1/mobile/s1_thumbnail.png');
+		background-size: cover;
 	}
 
 
+	/* Series Two -------------------- */
+	#player_series_two{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(185,118,1);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+	#series_two_video_thumbnail {
+		background: url('../img/s2/mobile/s2_thumbnail.png');
+		background-size: cover;
+	}
+
+	/* Series Three -------------------- */
+	#player_series_three{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(0,62,28);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+	#series_three_video_thumbnail {
+		background: url('../img/s3/mobile/s3_thumbnail.png');
+		background-size: cover;
+	}
+
+	/* Series Four -------------------- */
+	#player_series_four{
+		border-style: solid;
+	    border-width: 8px;
+	    border-color: rgb(71,28,68);
+	    margin-left: -8px;
+	    margin-top: -8px;
+	}
+	#series_four_video_thumbnail {
+		background: url('../img/s4/mobile/s3_thumbnail.png');
+		background-size: cover;
+	}
+
+
+
+	/* Series info ----------------------------- */
+	section.series_info{
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+		.serie_info_container.on {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	.serie_info_container.off {
+		display: none;
+	}
+
+	.description_container {
+		width: 90%;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	.description_container h1 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		color: rgb(40,40,40);
+	}
+
+	.description_container p {
+		margin-top: 22px;
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 14px;
+		line-height: 22px;
+		color: rgb(40,40,40);
+	}
+
+	.gallery_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.gallery_pictures {
+		width: 100%;
+		padding-bottom: 56.25%;
+		/*height: 608px;*/
+		margin: 0 auto;
+		background-color: rgb(200,200,200);
+	}
+
+	.gallery_index_container {
+		width: 100px;
+		height: 20px;
+		top: 20px;
+		position: relative;
+		margin: 0 auto;
+		background-color: rgb(220,220,220);
+	}
+
+	/* Products */
+
+	.products_container {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+		
+	}
+
+	.products_box {
+		width: 280px;
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 50px;
+	}
+
+		.products_box h1 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 30px;
+		font-weight: 700;
+		color: rgb(60,60,60);
+	}
+
+	.product_container {
+		overflow: hidden;
+		width: 280px;
+		position: relative;
+		/*margin-left: 5%;*/
+		margin-top: 35px;
+		margin-bottom: 0px;
+	}
+	.product_content_container {
+		width: 100%;
+		padding-bottom: 75%;
+		position: relative;
+/*		background-color: red;*/
+	}
+	.product_image_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		cursor: pointer;
+	}
+	.product_info_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: red;
+		display: none;
+	}
+	/*.product_info_container_off {
+		display: none;
+	}*/
+	.product_title {
+		width: 100%;
+		height: 20px;
+		position: absolute;
+		bottom: 0px;
+		/*background-color: blue;*/
+	}
+
+
+	.product_description {
+		width: 100%;
+		height: 120px;
+		/*background-color: red;*/
+		position: relative;
+	}
+
+	.product_image_container .product_title h3 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 20px;
+		/*margin-top: 5px;
+		margin-bottom: 10px;*/
+	}
+
+	.product_info_container h3 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 20px;
+		margin-top: 20px;
+		color: white;
+	}
+
+
+	.product_info_container p {
+		margin-top: 40px;
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		color: white;
+	}
+
+
+	/* Products --------------------------------------- */
+	/* Serie One */
+	#one_pack_image_series_one {
+		background: url('../img/s1/products/one_pack_3.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_one {
+		background: url('../img/s1/products/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one {
+		background: url('../img/s1/products/house_pack.png');
+		background-size: cover;
+	}
+
+	#one_pack_image_series_one_2 {
+		background: url('../img/s1/products/one_pack_3.png');
+		background-size: cover;
+	}
+
+
+	/* Footer ----------------------------------------- */
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+		margin-top: 50px;
+	/*	background-color: red;*/
+	}
+
+	.pre_footer_img {
+		width: 100%;
+		height: 120px;
+		position: relative;
+		background-color: rgb(220,220,220);
+		margin: 0 auto;
+	}
 
 }
