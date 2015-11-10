@@ -265,7 +265,7 @@ and (min-width: 1081px) {
 	}
 	/* Serie Four */
 	#series_four_bg {
-		background: url('../img/s4/bg.png');
+		background: url('../img/s4/bg_2.png');
 		background-size: cover;
 		background-position: center;
 	}
