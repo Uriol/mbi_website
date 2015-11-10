@@ -13,14 +13,6 @@ and (max-width: 540px) {
 		
 	}
 
-	section.main_display {
-		/*width: 100%;
-		height: 610px;
-		max-width: 2500px;
-		position: relative;
-		margin: 0 auto;*/
-		/*background-color: rgb(200,200,200)*/
-	}
 
 	section.main_display {
 		width: 100%;
@@ -101,10 +93,6 @@ and (max-width: 540px) {
 		position: absolute;
 	}
 
-/*	.video_thumbnail {
-		display: none;
-
-	}*/
 	.video_thumbnail{
 		cursor: pointer;
 		width: 320px;
@@ -218,8 +206,38 @@ and (max-width: 540px) {
 		background-size: cover;
 	}
 
+		/* Series Selector */
+	.main_display_series_selector {
+		width: 100%;
+		/*height: 20px;*/
+		position: absolute;
+		margin: 0 auto;
+		/*background-color: yellow;*/
+		margin-top: 385px;
+	}
 
-
+	#series_selector {
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 15px solid rgb(255,255,255);
+		position: relative;
+		margin: 0 auto;
+	}
+	/* Tab width: 160 , margin-left: 15 */
+	#series_selector.series_one_selector {
+		left: 0px;
+	}
+	#series_selector.series_two_selector {
+		left: 0px;
+	}
+	#series_selector.series_three_selector {
+		left: 0px;
+	}
+	#series_selector.series_four_selector {
+		left: 0px;
+	}
 
 	/* Series One -------------------- */
 	#player_series_one{
@@ -234,7 +252,6 @@ and (max-width: 540px) {
 		background: url('../img/s1/mobile/s1_thumbnail.png');
 		background-size: cover;
 	}
-
 
 	/* Series Two -------------------- */
 	#player_series_two{
@@ -351,11 +368,10 @@ and (max-width: 540px) {
 		margin: 0 auto;
 		text-align: center;
 		margin-top: 50px;
-		
 	}
 
 	.products_box {
-		width: 280px;
+		width: 320px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
@@ -369,96 +385,78 @@ and (max-width: 540px) {
 		color: rgb(60,60,60);
 	}
 
+
+
+
+
+
 	.product_container {
 		overflow: hidden;
-		width: 280px;
-		position: relative;
-		/*margin-left: 5%;*/
-		margin-top: 35px;
-		margin-bottom: 0px;
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 25px;
+		width: 320px;
 	}
-	.product_content_container {
-		width: 100%;
-		padding-bottom: 75%;
-		position: relative;
-/*		background-color: red;*/
-	}
+
 	.product_image_container {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		cursor: pointer;
-	}
-	.product_info_container {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		background-color: red;
-		display: none;
-	}
-	/*.product_info_container_off {
-		display: none;
-	}*/
-	.product_title {
-		width: 100%;
-		height: 20px;
-		position: absolute;
-		bottom: 0px;
-		/*background-color: blue;*/
-	}
-
-
-	.product_description {
-		width: 100%;
-		height: 120px;
-		/*background-color: red;*/
+		width: 320px;
+		height: 240px;
 		position: relative;
+		cursor: pointer;
+		
 	}
 
-	.product_image_container .product_title h3 {
-		font-family: 'avenir_bold', sans-serif;
-		font-size: 20px;
-		/*margin-top: 5px;
-		margin-bottom: 10px;*/
+	.product_info_container {
+		width: 90%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		
 	}
 
 	.product_info_container h3 {
 		font-family: 'avenir_bold', sans-serif;
-		font-size: 20px;
-		margin-top: 20px;
-		color: white;
+		font-size: 16px;
+		color: rgb(40,40,40);
 	}
 
 
 	.product_info_container p {
-		margin-top: 40px;
+		margin-top: 5px;
+		/*margin-top: 20px;*/
 		font-family: 'avenir_medium', sans-serif;
-		font-size: 20px;
-		line-height: 24px;
-		color: white;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgb(40,40,40);
 	}
 
 
 	/* Products --------------------------------------- */
 	/* Serie One */
 	#one_pack_image_series_one {
-		background: url('../img/s1/products/one_pack_3.png');
+		background: url('../img/s1/products/onepack.png');
 		background-size: cover;
 	}
 
 
 	#tower_pack_image_series_one {
-		background: url('../img/s1/products/tower_pack.png');
+		background: url('../img/s1/products/onepack.png');
 		background-size: cover;
 	}
 
 	#house_pack_image_series_one {
-		background: url('../img/s1/products/house_pack.png');
+		background: url('../img/s1/products/onepack.png');
 		background-size: cover;
 	}
 
-	#one_pack_image_series_one_2 {
-		background: url('../img/s1/products/one_pack_3.png');
+	#house_pack_image_series_one_2 {
+		background: url('../img/s1/products/onepack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one_3 {
+		background: url('../img/s1/products/onepack.png');
 		background-size: cover;
 	}
 

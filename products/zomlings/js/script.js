@@ -10,8 +10,22 @@ var $playing = [ playing_zero, playing_one, playing_two, playing_three ];
 var player_0, player_1, player_2, player_3;
 var $players = [player_0, player_1, player_2, player_3];
 
+function onLoad(){
+	// Remove loading div
+	$('.loading').fadeOut(800);
+	
+	// start scrolling when everything is loaded
+	$('body').css('overflow-y', 'scroll');
+}
 
 $(function(){
+
+	onLoad();
+
+	//  Handle series selector
+	function updateSelector(){
+		$('#series_selector').removeClass().addClass($series[index] + '_selector');
+	}
 
 	// Handle series switch on the arrows controls
 	// LEFT 
@@ -26,6 +40,8 @@ $(function(){
 		} else {
 			index -= 1;
 		}
+		// Update selector
+		$('#series_selector').removeClass().addClass($series[index] + '_selector');
 		// Show actual serie main display
 		$('#' + $series[index] + '').show();
 		// Show actual serie info
@@ -45,6 +61,8 @@ $(function(){
 		} else {
 			index += 1;
 		}
+		// Update selector
+		$('#series_selector').removeClass().addClass($series[index] + '_selector');
 		// Show actual serie main display
 		$('#' + $series[index] + '').show();
 		// Show actual serie info
@@ -62,6 +80,8 @@ $(function(){
 		// Hide actual serie
 		hideSerie();
 		index = $(this).data('index');
+		// Update selector
+		$('#series_selector').removeClass().addClass($series[index] + '_selector');
 		// Show actual serie main display
 		$('#' + $series[index] + '').show();
 		// Show actual serie info
@@ -220,13 +240,15 @@ $(function(){
 
 
 	//  Handle hover on product image
-	$('.product_content_container').on('mouseenter', function() {
-		console.log('in')
-		$('.product_image_container', this).hide();
-		$('.product_info_container', this).show();
-	}).on('mouseleave', function() {
-		$('.product_info_container', this).hide();
-		$('.product_image_container', this).show();
-	})
+	// $('.product_content_container').on('mouseenter', function() {
+	// 	console.log('in')
+	// 	$('.product_image_container', this).hide();
+	// 	$('.product_info_container', this).show();
+	// }).on('mouseleave', function() {
+	// 	$('.product_info_container', this).hide();
+	// 	$('.product_image_container', this).show();
+	// })
+
+	
 
 })

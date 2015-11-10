@@ -1,43 +1,26 @@
-@font-face {
-    font-family: avenir_bold;
-    src: url('../../../fonts/avenirnextw1gbold.woff');
-}
 
-@font-face {
-    font-family: avenir_medium;
-    src: url('../../../fonts/avenirnextw1gmedium.woff');
-}
-
-
-
-
+/* Horizontal*/
 @media only screen 
-and (min-width: 850px)
-and (max-width: 1080px) {
-
-	html {
-		width: 100%;
-		height: 100%;
-		position: relative;
-		/*overflow-y: hidden;*/
-	}
+and (max-width: 319px) {
 
 	body {
 		width: 100%;
 		height: 100%;
 		position: relative;
-		/*overflow-x: hidden;*/
+		overflow-x: hidden;
+		
 	}
+
 
 	section.main_display {
 		width: 100%;
-		height: 610px;
-		max-width: 2500px;
+
+		height: 400px;
 		position: relative;
 		margin: 0 auto;
-		/*background-color: rgb(200,200,200)*/
+		background-color: rgb(200,200,200);
+		overflow: hidden;
 	}
-
 
 	/* Logo Zomlings ----------------------------------------- */
 	.main_display_logo {
@@ -49,8 +32,8 @@ and (max-width: 1080px) {
 	}
 
 	#main_display_logo_zomlings {
-		width: 380px;
-		height: 157px;
+		width: 320px;
+		height: 132px;
 		background: url('../img/logo_zomlings.png');
 		background-size: cover;
 		position: relative;
@@ -58,11 +41,11 @@ and (max-width: 1080px) {
 	}
 
 
-
 	/* Series ----------------------------------------------- */
 	article.series_main_display {
 		width: 100%;
-		height: 0px;
+		/*height: 0px;*/
+		/*overflow:hidden;*/
 		position: relative;
 		margin: 0 auto;
 	}
@@ -72,84 +55,167 @@ and (max-width: 1080px) {
 		width: 100%;
 		height: 0px;
 		margin: 0 auto;
-		background-color: green;
+		/*background-color: green;*/
 	}
 
 	.serie_main_display.off {
 		display: none;
 	}
 
+
 	.main_display_bg {
 		width: 100%;
-		height: 610px;
+		/*height: 610px;*/
 		position: absolute;
 	}
 
 	.main_display_full {
 		width: 100%;
 		height: 0px;
-		position: absolute;
+		/*position: absolute;*/
+		position: relative;
 	}
 
 	.iframe_container {
-		top: 110px;
+		top: 95px;
 		position: relative;
 		margin: 0 auto;
-		width: 640px;
-		height: 360px;
+		width: 320px;
+		height: 180px;
+		
 	}
 
 	iframe {
 		width: 100%;
 		height: 100%;
+		position: absolute;
 	}
 
+/*	.video_thumbnail {
+		display: none;
+
+	}*/
 	.video_thumbnail{
 		cursor: pointer;
-		width: 640px;
-		height: 360px;
+		width: 320px;
+		height: 180px;
 		position: relative;
 		margin: 0 auto;
-		top: 110px;
+		top: 95px;
+		background-color: red;
+		pointer-events: none;
 	}
 
 	.player_icon_container {
-		width: 100px;
-		height: 100px;
+		width: 70px;
+		height: 70px;
 		border-radius: 50%;
 		position: absolute;
-		margin-left: 270px;
-		margin-top: 130px;
+		margin-left: 125px;
+		margin-top: 55px;
 		background-color: rgba(0,0,0,0.5);
-	}
-
-	.player_icon_container.off {
-		/*background-color: rgba(0,0,0,0.5);*/
-	}
-
-	.player_icon_container.on {
-		/*background-color: rgba(0,0,0,0.5);*/
 	}
 
 	.player_icon {
 		width: 0px;
 		height: 0px;
 		position: absolute;
-		border-top: 15px solid transparent;
-		border-bottom: 15px solid transparent;
-		border-left: 25px solid rgb(255,255,255);
-		margin-left: 37.5px;
-		margin-top: 35px;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+		border-left: 22px solid rgb(255,255,255);
+		margin-left:  25px;
+		margin-top: 24px;
 	}
 
-	/* Series Selector */
+	/* Series controls ------------------------------------------ */
+	.main_display_series_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	
+	}
+
+	.control_left_container{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.2);
+		position: relative;
+		margin: 0 auto;
+		top: 310px;
+		left: -120px;
+		cursor:pointer;
+	}
+
+	.control_right_container{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.2);
+		position: relative;
+		margin: 0 auto;
+		top: 310px;
+		left: 120px;
+		cursor:pointer;
+	}
+
+
+
+	/* Series menu ------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+	}
+
+	.series_menu_container {
+		width: 120px;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 310px;
+		/*background-color: red;*/
+	}
+
+	.series_menu_item {
+		width: 120px;
+		height: 52px;
+		float: left;
+		cursor: pointer;
+		background-color: red;
+	}
+
+	.series_menu_item.off {
+		display: none;
+	}
+
+
+	#series_one_menu_item.series_menu_item.on {
+		background: url('../img/s1/mobile/menu_color.png');
+		background-size: cover;
+	}
+	#series_two_menu_item.series_menu_item.on {
+		background: url('../img/s2/mobile/menu_color.png');
+		background-size: cover;
+	}
+	#series_three_menu_item.series_menu_item.on {
+		background: url('../img/s3/mobile/menu_color.png');
+		background-size: cover;
+	}
+	#series_four_menu_item.series_menu_item.on {
+		background: url('../img/s4/mobile/menu_color.png');
+		background-size: cover;
+	}
+
+		/* Series Selector */
 	.main_display_series_selector {
 		width: 100%;
 		/*height: 20px;*/
 		position: absolute;
 		margin: 0 auto;
 		/*background-color: yellow;*/
-		margin-top: 595px;
+		margin-top: 385px;
 	}
 
 	#series_selector {
@@ -163,28 +229,19 @@ and (max-width: 1080px) {
 	}
 	/* Tab width: 160 , margin-left: 15 */
 	#series_selector.series_one_selector {
-		left: -262.5px;
+		left: 0px;
 	}
 	#series_selector.series_two_selector {
-		left: -87px;
+		left: 0px;
 	}
 	#series_selector.series_three_selector {
-		left: 87px;
+		left: 0px;
 	}
 	#series_selector.series_four_selector {
-		left: 262.5px;
+		left: 0px;
 	}
 
-	/* Serie One */
-	#series_one_bg {
-		background: url('../img/s1/bg.png');
-		background-size: cover;
-		background-position: center;
-	}
-	#series_one_video_thumbnail {
-		background: url('../img/s1/s1_thumbnail.png');
-		background-size: cover;
-	}
+	/* Series One -------------------- */
 	#player_series_one{
 		border-style: solid;
 	    border-width: 8px;
@@ -193,16 +250,12 @@ and (max-width: 1080px) {
 	    margin-top: -8px;
 	}
 
-	/* Serie Two */
-	#series_two_bg {
-		background: url('../img/s2/bg.png');
-		background-size: cover;
-		background-position: center;
-	}
-	#series_two_video_thumbnail {
-		background: url('../img/s2/s2_thumbnail.png');
+	#series_one_video_thumbnail {
+		background: url('../img/s1/mobile/s1_thumbnail.png');
 		background-size: cover;
 	}
+
+	/* Series Two -------------------- */
 	#player_series_two{
 		border-style: solid;
 	    border-width: 8px;
@@ -210,16 +263,12 @@ and (max-width: 1080px) {
 	    margin-left: -8px;
 	    margin-top: -8px;
 	}
-	/* Serie Three */
-	#series_three_bg {
-		background: url('../img/s3/bg.png');
-		background-size: cover;
-		background-position: center;
-	}
-	#series_three_video_thumbnail {
-		background: url('../img/s3/s3_thumbnail.png');
+	#series_two_video_thumbnail {
+		background: url('../img/s2/mobile/s2_thumbnail.png');
 		background-size: cover;
 	}
+
+	/* Series Three -------------------- */
 	#player_series_three{
 		border-style: solid;
 	    border-width: 8px;
@@ -227,16 +276,12 @@ and (max-width: 1080px) {
 	    margin-left: -8px;
 	    margin-top: -8px;
 	}
-	/* Serie Four */
-	#series_four_bg {
-		background: url('../img/s4/bg.png');
-		background-size: cover;
-		background-position: center;
-	}
-	#series_four_video_thumbnail {
-		background: url('../img/s4/s3_thumbnail.png');
+	#series_three_video_thumbnail {
+		background: url('../img/s3/mobile/s3_thumbnail.png');
 		background-size: cover;
 	}
+
+	/* Series Four -------------------- */
 	#player_series_four{
 		border-style: solid;
 	    border-width: 8px;
@@ -244,155 +289,21 @@ and (max-width: 1080px) {
 	    margin-left: -8px;
 	    margin-top: -8px;
 	}
-
-	/* Series controls --------------------------------------- */
-	.main_display_series_controls {
-		width: 100%;
-		height: 0px;
-		position: absolute;
-	
-	}
-
-	.control_left_container{
-		width: 70px;
-		height: 70px;
-		border-radius: 50%;
-		background-color: rgba(0,0,0,0.2);
-		float: left;
-		margin-top: 255px;
-		margin-left: 20px;
-		cursor:pointer;
-	}
-
-	.control_left_container:hover {
-		background-color: rgba(0,0,0,0.8);
-	}
-
-	.control_right_container:hover {
-		background-color: rgba(0,0,0,0.8);
-	}
-
-	.control_right_container{
-		width: 70px;
-		height: 70px;
-		border-radius: 50%;
-		background-color: rgba(0,0,0,0.2);
-		float: right;
-		margin-top: 255px;
-		margin-right: 20px;
-		cursor:pointer;
-	}
-
-	.control_arrow {
-		width: 35px;
-		height: 35px;
-		position: absolute;
-		margin-left: 17.5px;
-		margin-top: 17.5px;
-	}
-	#left_arrow {
-		background: url('../img/left_arrow.png');
-		background-size: cover;
-	}
-	#right_arrow {
-		background: url('../img/right_arrow.png');
-		background-size: cover;
-	}
-
-	/* Series menu ------------------------------------------- */
-	.main_display_series_menu {
-		width: 100%;
-		height: 0px;
-		position: absolute;
-		z-index: 99;
-	}
-
-	.series_menu_container {
-		width: 715px;
-		height: 0px;
-		position: relative;
-		margin: 0 auto;
-		margin-top: 510px;
-	}
-
-	.series_menu_item {
-		width: 160px;
-		height: 69px;
-		float: left;
-		margin-left: 15px;
-		cursor: pointer;
-		
-	}
-
-
-	#series_one_menu_item.series_menu_item.on {
-		background: url('../img/s1/menu_color.png');
-		background-size: cover;
-	}
-	#series_one_menu_item.series_menu_item.off {
-		background: url('../img/s1/menu_white.png');
-		background-size: cover;
-	}
-	#series_one_menu_item.series_menu_item.off:hover {
-		background: url('../img/s1/menu_color.png');
+	#series_four_video_thumbnail {
+		background: url('../img/s4/mobile/s3_thumbnail.png');
 		background-size: cover;
 	}
 
 
 
-	#series_two_menu_item.on {
-		background: url('../img/s2/menu_color.png');
-		background-size: cover;
-	}
-	#series_two_menu_item.off {
-		background: url('../img/s2/menu_white.png');
-		background-size: cover;
-	}
-
-	#series_two_menu_item.off:hover {
-		background: url('../img/s2/menu_color.png');
-		background-size: cover;
-	}
-
-	#series_three_menu_item.on {
-		background: url('../img/s3/menu_color.png');
-		background-size: cover;
-	}
-
-	#series_three_menu_item.off{
-		background: url('../img/s3/menu_white.png');
-		background-size: cover;
-	}
-	#series_three_menu_item.off:hover{
-		background: url('../img/s3/menu_color.png');
-		background-size: cover;
-	}
-
-
-	#series_four_menu_item.on {
-		background: url('../img/s4/menu_color.png');
-		background-size: cover;
-	}
-	#series_four_menu_item.off {
-		background: url('../img/s4/menu_white.png');
-		background-size: cover;
-	}
-	#series_four_menu_item.off:hover {
-		background: url('../img/s4/menu_color.png');
-		background-size: cover;
-	}
-
-
-	/* Series info -------------------------------------------- */
+	/* Series info ----------------------------- */
 	section.series_info{
 		width: 100%;
-		max-width: 2500px;
 		position: relative;
 		margin: 0 auto;
 	}
 
-
-	.serie_info_container.on {
+		.serie_info_container.on {
 		position: relative;
 		width: 100%;
 		margin: 0 auto;
@@ -403,31 +314,32 @@ and (max-width: 1080px) {
 	}
 
 	.description_container {
-		width: 800px;
+		width: 320px;
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
-		margin-top: 50px;
+		margin-top: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
-
 
 	.description_container h1 {
 		font-family: 'avenir_bold', sans-serif;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 700;
 		color: rgb(40,40,40);
 	}
 
 	.description_container p {
-		margin-top: 30px;
+		margin-top: 22px;
 		font-family: 'avenir_medium', sans-serif;
-		font-size: 16px;
-		line-height: 25px;
+		font-size: 14px;
+		line-height: 22px;
 		color: rgb(40,40,40);
 	}
 
 	.gallery_container {
-		width: 100%;
+		width: 320px;
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
@@ -451,8 +363,6 @@ and (max-width: 1080px) {
 		background-color: rgb(220,220,220);
 	}
 
-
-
 	/* Products */
 
 	.products_container {
@@ -465,7 +375,7 @@ and (max-width: 1080px) {
 	}
 
 	.products_box {
-		width: 680px;
+		width: 320px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
@@ -478,6 +388,10 @@ and (max-width: 1080px) {
 		font-weight: 700;
 		color: rgb(60,60,60);
 	}
+
+
+
+
 
 
 	.product_container {
@@ -550,21 +464,21 @@ and (max-width: 1080px) {
 		background-size: cover;
 	}
 
+
 	/* Footer ----------------------------------------- */
 	section.pre_footer {
 		width: 100%;
 		position: relative;
-		margin-top: 60px;
+		margin-top: 50px;
 	/*	background-color: red;*/
 	}
 
 	.pre_footer_img {
 		width: 100%;
-		height: 200px;
+		height: 120px;
 		position: relative;
 		background-color: rgb(220,220,220);
 		margin: 0 auto;
 	}
 
 }
-

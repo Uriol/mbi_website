@@ -1,21 +1,7 @@
-@font-face {
-    font-family: avenir_bold;
-    src: url('../../../fonts/avenirnextw1gbold.woff');
-}
-
-@font-face {
-    font-family: avenir_medium;
-    src: url('../../../fonts/avenirnextw1gmedium.woff');
-}
-
-
-
 
 @media only screen 
-and (min-width: 850px)
-and (max-width: 1080px) {
-
-	html {
+and (min-width: 1081px) {
+		html {
 		width: 100%;
 		height: 100%;
 		position: relative;
@@ -142,38 +128,7 @@ and (max-width: 1080px) {
 		margin-top: 35px;
 	}
 
-	/* Series Selector */
-	.main_display_series_selector {
-		width: 100%;
-		/*height: 20px;*/
-		position: absolute;
-		margin: 0 auto;
-		/*background-color: yellow;*/
-		margin-top: 595px;
-	}
 
-	#series_selector {
-		width: 0; 
-		height: 0; 
-		border-left: 20px solid transparent;
-		border-right: 20px solid transparent;
-		border-bottom: 15px solid rgb(255,255,255);
-		position: relative;
-		margin: 0 auto;
-	}
-	/* Tab width: 160 , margin-left: 15 */
-	#series_selector.series_one_selector {
-		left: -262.5px;
-	}
-	#series_selector.series_two_selector {
-		left: -87px;
-	}
-	#series_selector.series_three_selector {
-		left: 87px;
-	}
-	#series_selector.series_four_selector {
-		left: 262.5px;
-	}
 
 	/* Serie One */
 	#series_one_bg {
@@ -258,9 +213,10 @@ and (max-width: 1080px) {
 		height: 70px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.2);
-		float: left;
-		margin-top: 255px;
-		margin-left: 20px;
+		position: relative;
+		margin: 0 auto;
+		top: 255px;
+		left: -485px;
 		cursor:pointer;
 	}
 
@@ -277,9 +233,10 @@ and (max-width: 1080px) {
 		height: 70px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.2);
-		float: right;
-		margin-top: 255px;
-		margin-right: 20px;
+		position: relative;
+		margin: 0 auto;
+		top: 255px;
+		left: 485px;
 		cursor:pointer;
 	}
 
@@ -321,7 +278,7 @@ and (max-width: 1080px) {
 		float: left;
 		margin-left: 15px;
 		cursor: pointer;
-		
+		background-color: red;
 	}
 
 
@@ -435,8 +392,8 @@ and (max-width: 1080px) {
 	}
 
 	.gallery_pictures {
-		width: 100%;
-		padding-bottom: 56.25%;
+		width: 1080px;
+		height: 608px;
 		/*height: 608px;*/
 		margin: 0 auto;
 		background-color: rgb(200,200,200);
@@ -451,102 +408,120 @@ and (max-width: 1080px) {
 		background-color: rgb(220,220,220);
 	}
 
-
-
 	/* Products */
 
 	.products_container {
 		width: 100%;
+	/*	height: 200px;*/
 		overflow: hidden;
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
-		margin-top: 50px;
+		margin-top: 100px;
 	}
 
 	.products_box {
-		width: 680px;
+		width: 1080px;
 		margin: 0 auto;
 		position: relative;
-		overflow: hidden;
 		margin-bottom: 50px;
 	}
-
-		.products_box h1 {
+	.products_box h1 {
 		font-family: 'avenir_bold', sans-serif;
-		font-size: 30px;
+		font-size: 40px;
 		font-weight: 700;
 		color: rgb(60,60,60);
 	}
-
-
 	.product_container {
 		overflow: hidden;
+		width: 26.6%;
 		float: left;
-		margin-left: 5px;
-		margin-right: 5px;
-		margin-top: 25px;
-		width: 320px;
+		margin-left: 5%;
+		margin-top: 35px;
+		margin-bottom: 20px;
 	}
-
+	.product_content_container {
+		width: 100%;
+		padding-bottom: 75%;
+		position: relative;
+/*		background-color: red;*/
+	}
 	.product_image_container {
-		width: 320px;
-		height: 240px;
-		position: relative;
+		width: 100%;
+		height: 100%;
+		position: absolute;
 		cursor: pointer;
-		
+	}
+	.product_info_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-color: red;
+		display: none;
+	}
+	/*.product_info_container_off {
+		display: none;
+	}*/
+	.product_title {
+		width: 100%;
+		height: 20px;
+		position: absolute;
+		bottom: 0px;
+		/*background-color: blue;*/
 	}
 
-	.product_info_container {
-		width: 90%;
-		height: 60px;
+
+	.product_description {
+		width: 100%;
+		height: 120px;
+		/*background-color: red;*/
 		position: relative;
-		margin: 0 auto;
-		
+	}
+
+	.product_image_container .product_title h3 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 18px;
+		/*margin-top: 5px;
+		margin-bottom: 10px;*/
 	}
 
 	.product_info_container h3 {
 		font-family: 'avenir_bold', sans-serif;
-		font-size: 16px;
-		color: rgb(40,40,40);
+		font-size: 18px;
+		margin-top: 20px;
+		color: white;
 	}
 
 
 	.product_info_container p {
-		margin-top: 5px;
-		/*margin-top: 20px;*/
+		margin-top: 20px;
 		font-family: 'avenir_medium', sans-serif;
-		font-size: 16px;
-		line-height: 20px;
-		color: rgb(40,40,40);
+		font-size: 18px;
+		line-height: 24px;
+		color: white;
 	}
 
 
 	/* Products --------------------------------------- */
 	/* Serie One */
 	#one_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
+		background: url('../img/s1/products/one_pack_3.png');
 		background-size: cover;
 	}
 
 
 	#tower_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
+		background: url('../img/s1/products/tower_pack.png');
 		background-size: cover;
 	}
 
 	#house_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
+		background: url('../img/s1/products/house_pack.png');
 		background-size: cover;
 	}
 
 	#house_pack_image_series_one_2 {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one_3 {
-		background: url('../img/s1/products/onepack.png');
+		background: url('../img/s1/products/one_pack_3.png');
 		background-size: cover;
 	}
 
@@ -565,6 +540,4 @@ and (max-width: 1080px) {
 		background-color: rgb(220,220,220);
 		margin: 0 auto;
 	}
-
 }
-

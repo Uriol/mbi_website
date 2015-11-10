@@ -255,6 +255,73 @@ and (max-width: 849px) {
 		background-size: cover;
 	}
 
+	/* Series Selector */
+	.main_display_series_selector {
+		width: 100%;
+		/*height: 20px;*/
+		position: absolute;
+		margin: 0 auto;
+		/*background-color: yellow;*/
+		margin-top: 595px;
+	}
+
+	#series_selector {
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 15px solid rgb(255,255,255);
+		position: relative;
+		margin: 0 auto;
+	}
+	/* Tab width: 160 , margin-left: 15 */
+	#series_selector.series_one_selector {
+		left: -262.5px;
+	}
+	#series_selector.series_two_selector {
+		left: -87px;
+	}
+	#series_selector.series_three_selector {
+		left: 87px;
+	}
+	#series_selector.series_four_selector {
+		left: 262.5px;
+	}
+
+
+	/* Series Selector */
+	.main_display_series_selector {
+		width: 100%;
+		/*height: 20px;*/
+		position: absolute;
+		margin: 0 auto;
+		/*background-color: yellow;*/
+		margin-top: 595px;
+	}
+
+	#series_selector {
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-bottom: 15px solid rgb(255,255,255);
+		position: relative;
+		margin: 0 auto;
+	}
+	/* Tab width: 160 , margin-left: 15 */
+	#series_selector.series_one_selector {
+		left: -262.5px;
+	}
+	#series_selector.series_two_selector {
+		left: -87px;
+	}
+	#series_selector.series_three_selector {
+		left: 87px;
+	}
+	#series_selector.series_four_selector {
+		left: 262.5px;
+	}
+	
 	/* Series menu ------------------------------------------- */
 	.main_display_series_menu {
 		width: 100%;
@@ -412,73 +479,99 @@ and (max-width: 849px) {
 
 	.products_container {
 		width: 100%;
-	/*	height: 200px;*/
 		overflow: hidden;
 		position: relative;
 		margin: 0 auto;
 		text-align: center;
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
 	.products_box {
-		width: 100%;
+		width: 680px;
 		margin: 0 auto;
 		position: relative;
 		overflow: hidden;
 		margin-bottom: 50px;
 	}
 
-	.products_box h1 {
+		.products_box h1 {
 		font-family: 'avenir_bold', sans-serif;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 700;
 		color: rgb(60,60,60);
 	}
 
+
 	.product_container {
 		overflow: hidden;
-		/*width: 487.5px;*/
-		width: 42.5%;
-		/*height: 450px;*/
-		border-radius: 10px;
 		float: left;
-		margin-left: 5%;
-		background-color: rgb(255,255,255);
-		margin-top: 35px;
-		margin-bottom: 5px;
-		-moz-box-shadow: 0px 0px 10px rgba(40,40,40, 0.5);
-		-webkit-box-shadow: 0px 0px 10px rgba(40,40,40,0.8);
-		box-shadow: 0px 0px 10px rgba(40,40,40, 0.5);
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 25px;
+		width: 320px;
 	}
 
-	.product_image {
-		width: 100%;
-		/*height: 264px;*/
-		padding-bottom: 56.25%;
+	.product_image_container {
+		width: 320px;
+		height: 240px;
 		position: relative;
-		background-color: rgb(40,40,40);
-		/*border-radius: 10px;*/
+		cursor: pointer;
+		
 	}
 
-	.product_description {
-		width: 100%;
+	.product_info_container {
+		width: 90%;
 		height: 60px;
-		/*background-color: red;*/
 		position: relative;
+		margin: 0 auto;
+		
 	}
 
-	.product_description h3 {
+	.product_info_container h3 {
 		font-family: 'avenir_bold', sans-serif;
-		font-size: 18px;
-		margin-top: 20px;
+		font-size: 16px;
+		color: rgb(40,40,40);
 	}
 
-	.product_description p {
+
+	.product_info_container p {
+		margin-top: 5px;
+		/*margin-top: 20px;*/
 		font-family: 'avenir_medium', sans-serif;
-		font-size: 18px;
-		line-height: 32px;
-
+		font-size: 16px;
+		line-height: 20px;
+		color: rgb(40,40,40);
 	}
+
+
+	/* Products --------------------------------------- */
+	/* Serie One */
+	#one_pack_image_series_one {
+		background: url('../img/s1/products/onepack.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_one {
+		background: url('../img/s1/products/onepack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one {
+		background: url('../img/s1/products/onepack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one_2 {
+		background: url('../img/s1/products/onepack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one_3 {
+		background: url('../img/s1/products/onepack.png');
+		background-size: cover;
+	}
+
 
 	/* Footer ----------------------------------------- */
 	section.pre_footer {
