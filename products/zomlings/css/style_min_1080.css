@@ -32,7 +32,7 @@ and (min-width: 1081px) {
 		height: 0px;
 		position: absolute;
 		z-index: 99;
-		margin-top: 5px;
+		margin-top: 0px;
 	}
 
 	#main_display_logo_zomlings {
@@ -72,6 +72,8 @@ and (min-width: 1081px) {
 		position: absolute;
 	}
 
+
+
 	.main_display_full {
 		width: 100%;
 		height: 0px;
@@ -79,7 +81,7 @@ and (min-width: 1081px) {
 	}
 
 	.iframe_container {
-		top: 110px;
+		top: 100px;
 		position: relative;
 		margin: 0 auto;
 		width: 640px;
@@ -97,7 +99,7 @@ and (min-width: 1081px) {
 		height: 360px;
 		position: relative;
 		margin: 0 auto;
-		top: 110px;
+		top: 100px;
 	}
 
 	.player_icon_container {
@@ -136,7 +138,7 @@ and (min-width: 1081px) {
 		position: absolute;
 		margin: 0 auto;
 		/*background-color: yellow;*/
-		margin-top: 595px;
+		margin-top: 600px;
 	}
 
 	#series_selector {
@@ -144,38 +146,54 @@ and (min-width: 1081px) {
 		height: 0; 
 		border-left: 20px solid transparent;
 		border-right: 20px solid transparent;
-		border-bottom: 15px solid rgb(255,255,255);
+		border-bottom: 10px solid rgb(255,255,255);
 		position: relative;
 		margin: 0 auto;
 	}
+
+
 	/* Tab width: 160 , margin-left: 15 */
 	#series_selector.series_one_selector {
-		left: -262.5px;
+		left: -45px;
 	}
 	#series_selector.series_two_selector {
-		left: -87px;
+		left: -15px;
 	}
 	#series_selector.series_three_selector {
-		left: 87px;
+		left: 15px;
 	}
 	#series_selector.series_four_selector {
-		left: 262.5px;
+		left: 45px;
 	}
 
 
 	/* Woods ----------------------------------- */
 	.left_wood {
 		float: left;
-		width: 125px;
+		width: 75px;
 		height: 610px;
 		
 	}
 	.right_wood {
 		float: right;
-		width: 125px;
+		width: 75px;
 		height: 610px;
 		
 	}
+
+	.top_wood {
+		height: 60px;
+		margin: 0 auto;
+		width: 540px;
+		background: url('../img/top_wood.png');
+		background-size: cover;
+	}
+
+	#bottom_wood_series_one {
+		background: url('../img/s1/bottom_wood.png');
+		background-size: cover;
+	}
+
 
 	#left_wood_series_one {
 		background: url('../img/s1/left_wood.png');
@@ -223,10 +241,10 @@ and (min-width: 1081px) {
 	}
 	#player_series_one{
 		border-style: solid;
-	    border-width: 8px;
+	    border-width: 5px;
 	    border-color: rgb(108,28,31);
-	    margin-left: -8px;
-	    margin-top: -8px;
+	    margin-left: -5px;
+	    margin-top: -5px;
 	}
 
 	/* Serie Two */
@@ -241,10 +259,10 @@ and (min-width: 1081px) {
 	}
 	#player_series_two{
 		border-style: solid;
-	    border-width: 8px;
+	    border-width: 5px;
 	    border-color: rgb(185,118,1);
-	    margin-left: -8px;
-	    margin-top: -8px;
+	    margin-left: -5px;
+	    margin-top: -5px;
 	}
 	/* Serie Three */
 	#series_three_bg {
@@ -258,10 +276,10 @@ and (min-width: 1081px) {
 	}
 	#player_series_three{
 		border-style: solid;
-	    border-width: 8px;
+	    border-width: 5px;
 	    border-color: rgb(0,62,28);
-	    margin-left: -8px;
-	    margin-top: -8px;
+	    margin-left: -5px;
+	    margin-top: -5px;
 	}
 	/* Serie Four */
 	#series_four_bg {
@@ -275,10 +293,10 @@ and (min-width: 1081px) {
 	}
 	#player_series_four{
 		border-style: solid;
-	    border-width: 8px;
+	    border-width: 5px;
 	    border-color: rgb(71,28,68);
-	    margin-left: -8px;
-	    margin-top: -8px;
+	    margin-left: -5px;
+	    margin-top: -5px;
 	}
 
 	/* Series controls --------------------------------------- */
@@ -343,6 +361,46 @@ and (min-width: 1081px) {
 		height: 0px;
 		position: absolute;
 		z-index: 99;
+	}
+
+	#series_one_item.series_item {
+		width: 236px;
+		height: 70px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 490px;
+		background: url('../img/s1/serie_one_wood.png');
+		background-size: cover;
+	}
+
+	#series_two_item.series_item {
+		width: 236px;
+		height: 70px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 490px;
+		background: url('../img/s2/serie_two_wood.png');
+		background-size: cover;
+	}
+
+	#series_three_item.series_item {
+		width: 236px;
+		height: 70px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 490px;
+		background: url('../img/s3/serie_three_wood.png');
+		background-size: cover;
+	}
+
+	#series_four_item.series_item {
+		width: 236px;
+		height: 70px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 490px;
+		background: url('../img/s4/serie_four_wood.png');
+		background-size: cover;
 	}
 
 	.series_menu_container {
@@ -420,6 +478,37 @@ and (min-width: 1081px) {
 		background-size: cover;
 	}
 
+
+	/* Series index ----------------------------------------------- */
+	.main_display_series_index {
+		width: 135px;
+		height: 0px;
+		position: relative;
+		
+		margin: 0 auto;
+		top: 570px;
+	}
+
+	.series_index_item {
+		float: left;
+		margin-left: 15px;
+		height: 15px;
+		width: 15px;
+		border-radius: 50%;
+	}
+	.series_index_item.on {
+		background-color: white;
+	}
+	/*#series_one_index_item.series_index_item.on {
+		background-color: rgb(230,51,42);
+	}*/
+	.series_index_item.off {
+		background-color: rgba(0,0,0,0.5);
+		cursor: pointer;
+	}
+	.series_index_item.off:hover {
+		background-color: white;
+	}
 
 	/* Series info -------------------------------------------- */
 	section.series_info{

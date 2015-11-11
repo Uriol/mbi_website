@@ -31,7 +31,10 @@ $(function(){
 	// LEFT 
 	$('.control_left_container').on('click', function() {
 		// Turn off actual menu item
-		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
+		// $('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
+
+		// Turn off actual index item
+		$('#' + $series[index] + '_index_item').removeClass('on').addClass('off');
 		// Hide actual serie
 		hideSerie();
 		// If Series 1 --> start from last
@@ -47,12 +50,17 @@ $(function(){
 		// Show actual serie info
 		$('#' + $series[index] + '_info').show();
 		// Turn on actual menu item
-		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+		// $('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+		// Turn on actual index item
+		$('#' + $series[index] + '_index_item').removeClass('off').addClass('on');
 	})
 	// RIGHT
 	$('.control_right_container').on('click', function() {
 		// Turn off actual menu item
-		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
+		// $('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
+
+		// Turn off actual index item
+		$('#' + $series[index] + '_index_item').removeClass('on').addClass('off');
 		// Hide actual serie
 		hideSerie();
 		// If Series 4 (Last) start from first
@@ -68,7 +76,9 @@ $(function(){
 		// Show actual serie info
 		$('#' + $series[index] + '_info').show();
 		// Turn on actual menu item
-		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+		// $('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+		// Turn on actual index item
+		$('#' + $series[index] + '_index_item').removeClass('off').addClass('on');
 	})
 	// Hover over control arrows
 	
@@ -89,7 +99,23 @@ $(function(){
 		// Turn on actual menu item
 		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
 		//$('.control_left_container').css('background-color', $series_colors[index]);
-
+	});
+	// // Handle series switch on the index
+	$(document).on('click', '.series_index_item.off', function(){
+		// Turn off actual index item
+		$('#' + $series[index] + '_index_item').removeClass('on').addClass('off');
+		// Hide actual serie
+		hideSerie();
+		index = $(this).data('index');
+		// Update selector
+		$('#series_selector').removeClass().addClass($series[index] + '_selector');
+		// Show actual serie main display
+		$('#' + $series[index] + '').show();
+		// Show actual serie info
+		$('#' + $series[index] + '_info').show();
+		// Turn on actual index item
+		$('#' + $series[index] + '_index_item').removeClass('off').addClass('on');
+		//$('.control_left_container').css('background-color', $series_colors[index]);
 	});
 
 	function hideSerie(){
