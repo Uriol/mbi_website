@@ -1,14 +1,21 @@
 
 
 var index = 0;
-var $series = ['series_one', 'series_two', 'series_three', 'series_four'];
-var $series_colors = ['rgb(226,35,26)', 'rgb(255,163,0)' , 'rgb(119,188,31)', 'rgb(150,51,158)'];
+var $series = ['series_one', 'series_two', 'series_three', 'series_four', 'special'];
+var $series_colors = ['rgb(226,35,26)', 'rgb(255,163,0)' , 'rgb(119,188,31)', 'rgb(150,51,158)', 'rgb(150,51,158)'];
 
 var playing_zero = false, playing_one = false, playing_two = false, playing_three = false;
 var $playing = [ playing_zero, playing_one, playing_two, playing_three ];
 
 var player_0, player_1, player_2, player_3;
 var $players = [player_0, player_1, player_2, player_3];
+
+
+// Galleries 
+var $series_galleries = [$series_one_gallery];
+var $series_one_gallery = ['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")']
+var gallery_index = 0;
+
 
 function onLoad(){
 	// Remove loading div
@@ -274,6 +281,33 @@ $(function(){
 	// 	$('.product_info_container', this).hide();
 	// 	$('.product_image_container', this).show();
 	// })
+	
+
+	$(document).on('click', '.gallery_index_item_off', function(){
+		
+		// Remove 'on' class from gallery index item
+		$('#' + $series[index] + '_gallery_index_container .gallery_index_item_on').removeClass().addClass('gallery_index_item_off')
+		// Add class for clicked gallery index item
+		$(this).removeClass().addClass('gallery_index_item_on');
+		// Hide actual image
+		gallery_index = $(this).data('index');
+		// Get serie. Show new pic
+		$('#' + $series[index] + '_pic').css('background-image', $series_one_gallery[gallery_index]);
+		console.log('pic' + $series_one_gallery[gallery_index])
+
+
+
+	}) 
+
+	// Handle gallery image
+	function changeImage() {
+		// Hide actual image
+		gallery_index = $(this).data('index');
+		console.log('gallery index: ' + gallery_index)
+		// Get serie. Show new pic
+		$('#' + $series[index] + '_pic').css('background-image', $series_galleries[index][gallery_index]);
+		console.log('pic' + $series_one_gallery[gallery_index])
+	}
 
 	
 
