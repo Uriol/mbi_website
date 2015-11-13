@@ -2,7 +2,7 @@
 
 var index = 0;
 var $series = ['series_one', 'series_two', 'series_three', 'series_four', 'special'];
-var $series_colors = ['rgb(226,35,26)', 'rgb(255,163,0)' , 'rgb(119,188,31)', 'rgb(150,51,158)', 'rgb(150,51,158)'];
+var $series_colors = ['rgb(190,22,33)', 'rgb(255,163,0)' , 'rgb(119,188,31)', 'rgb(150,51,158)', 'rgb(0,114,175)'];
 
 var playing_zero = false, playing_one = false, playing_two = false, playing_three = false;
 var $playing = [ playing_zero, playing_one, playing_two, playing_three ];
@@ -12,10 +12,17 @@ var $players = [player_0, player_1, player_2, player_3];
 
 
 // Galleries 
-var $series_galleries = [$series_one_gallery];
-var $series_one_gallery = ['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")']
-var gallery_index = 0;
+// var $series_galleries = [$series_one_gallery, $series_two_gallery, $series_one_gallery];
+// var $series_one_gallery = ['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")']
+// var $series_two_gallery = ['url("img/s2/gallery/img_one.png")', 'url("img/s2/gallery/img_two.png")', 'url("img/s2/gallery/img_three.png")']
+// var $series_three_gallery = ['url("img/s3/gallery/img_one.png")', 'url("img/s3/gallery/img_two.png")', 'url("img/s3/gallery/img_three.png")']
 
+var $series_galleries = [['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")'], 
+						['url("img/s2/gallery/img_one.png")', 'url("img/s2/gallery/img_two.png")', 'url("img/s2/gallery/img_three.png")'], 
+						['url("img/s3/gallery/img_one.png")', 'url("img/s3/gallery/img_two.png")', 'url("img/s3/gallery/img_three.png")']];
+// var gallery_index = 0;
+var $series_gallery_index = [0,0,0,0,0];
+var gallery_index;
 
 function onLoad(){
 	// Remove loading div
@@ -38,10 +45,7 @@ $(function(){
 	// LEFT 
 	$('.control_left_container').on('click', function() {
 		// Turn off actual menu item
-		// $('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
-
-		// Turn off actual index item
-		$('#' + $series[index] + '_index_item').removeClass('on').addClass('off');
+		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
 		// Hide actual serie
 		hideSerie();
 		// If Series 1 --> start from last
@@ -57,15 +61,14 @@ $(function(){
 		// Show actual serie info
 		$('#' + $series[index] + '_info').show();
 		// Turn on actual menu item
-		// $('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
 		// Turn on actual index item
 		$('#' + $series[index] + '_index_item').removeClass('off').addClass('on');
 	})
 	// RIGHT
 	$('.control_right_container').on('click', function() {
 		// Turn off actual menu item
-		// $('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
-
+		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
 		// Turn off actual index item
 		$('#' + $series[index] + '_index_item').removeClass('on').addClass('off');
 		// Hide actual serie
@@ -83,7 +86,7 @@ $(function(){
 		// Show actual serie info
 		$('#' + $series[index] + '_info').show();
 		// Turn on actual menu item
-		// $('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
+		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
 		// Turn on actual index item
 		$('#' + $series[index] + '_index_item').removeClass('off').addClass('on');
 	})
@@ -91,14 +94,14 @@ $(function(){
 	
 
 	// Handle series switch on the menu
-	$(document).on('click', '.series_menu_item.off', function(){
+	$(document).on('click', '.main_display_series_menu ul li.off', function(){
 		// Turn off actual menu item
 		$('#' + $series[index] + '_menu_item').removeClass('on').addClass('off');
 		// Hide actual serie
 		hideSerie();
 		index = $(this).data('index');
 		// Update selector
-		$('#series_selector').removeClass().addClass($series[index] + '_selector');
+		//$('#series_selector').removeClass().addClass($series[index] + '_selector');
 		// Show actual serie main display
 		$('#' + $series[index] + '').show();
 		// Show actual serie info
@@ -282,32 +285,55 @@ $(function(){
 	// 	$('.product_image_container', this).show();
 	// })
 	
-
+	
+	// Handle image switch from gallery index
 	$(document).on('click', '.gallery_index_item_off', function(){
-		
 		// Remove 'on' class from gallery index item
 		$('#' + $series[index] + '_gallery_index_container .gallery_index_item_on').removeClass().addClass('gallery_index_item_off')
 		// Add class for clicked gallery index item
 		$(this).removeClass().addClass('gallery_index_item_on');
 		// Hide actual image
-		gallery_index = $(this).data('index');
+		$series_gallery_index[index] = $(this).data('index');
 		// Get serie. Show new pic
-		$('#' + $series[index] + '_pic').css('background-image', $series_one_gallery[gallery_index]);
-		console.log('pic' + $series_one_gallery[gallery_index])
-
-
+		gallery_index = $series_gallery_index[index];
+		$('#' + $series[index] + '_pic').css('background-image', $series_galleries[index][gallery_index]);
 
 	}) 
 
-	// Handle gallery image
-	function changeImage() {
-		// Hide actual image
-		gallery_index = $(this).data('index');
-		console.log('gallery index: ' + gallery_index)
-		// Get serie. Show new pic
+	// Handle image switch from gallery arrows
+	// Left
+	$('.gallery_left_control_container').on('click', function() {
+		if ( $series_gallery_index[index] == 0 ) {
+			$series_gallery_index[index] = 2;
+		} else {
+			$series_gallery_index[index] -= 1;
+		}
+		// Remove 'on' class from gallery index item
+		$('#' + $series[index] + '_gallery_index_container .gallery_index_item_on').removeClass().addClass('gallery_index_item_off')
+		// Add class for the right gallery index item
+		$('#' + $series[index] + '_gallery_index_container').find("[data-index='" + $series_gallery_index[index] + "']").removeClass().addClass('gallery_index_item_on');
+		// Show new image
+		gallery_index = $series_gallery_index[index];
 		$('#' + $series[index] + '_pic').css('background-image', $series_galleries[index][gallery_index]);
-		console.log('pic' + $series_one_gallery[gallery_index])
-	}
+
+	});
+	// Right
+	$('.gallery_right_control_container').on('click', function() {
+		if ( $series_gallery_index[index] == 2 ) {
+			$series_gallery_index[index] = 0;
+		} else {
+			$series_gallery_index[index] += 1;
+		}
+		// Remove 'on' class from gallery index item
+		$('#' + $series[index] + '_gallery_index_container .gallery_index_item_on').removeClass().addClass('gallery_index_item_off')
+		// Add class for the right gallery index item
+		$('#' + $series[index] + '_gallery_index_container').find("[data-index='" + $series_gallery_index[index] + "']").removeClass().addClass('gallery_index_item_on');
+		// Show new image
+		gallery_index = $series_gallery_index[index];
+		$('#' + $series[index] + '_pic').css('background-image', $series_galleries[index][gallery_index]);
+	});
+
+	
 
 	
 
