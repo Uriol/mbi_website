@@ -90,11 +90,26 @@ $(function(){
 			$(this).removeClass().addClass('submenu_product_out');
 		})
 
-
-		
-
-
 	}
+
+
+	// Handle submenu for small display (mobile)
+	$(document).on('click', '.menu_mobile_submenu_icon.off', function() {
+		// This add class as on
+		$(this).removeClass('off').addClass('on');
+		// Onshow bg info
+		$('section.content').hide();
+		// Show submenu
+		$('.submenu').removeClass('off').addClass('on');
+	});
+	$(document).on('click', '.menu_mobile_submenu_icon.on', function() {
+		// This add class as on
+		$(this).removeClass('on').addClass('off');
+		// Show bg info
+		$('section.content').show();
+		// Show submenu
+		$('.submenu').removeClass('on').addClass('off');
+	})
 	
 
 	

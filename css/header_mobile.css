@@ -1,130 +1,131 @@
 @media only screen 
-/*and (min-width: 320px)*/
 and (max-width: 540px) {
 
-	/* Menu ----------------------------------------- */
-	article.menu {
+	.menu {
+		display: none;
+	}
+
+
+	.menu_top_bar_mobile {
 		width: 100%;
-		height: 120px;
+		height: 60px;
 		position: relative;
 		margin: 0 auto;
-		background-color: white;
+		/*background-color: rgb(200,200,200);*/
 		box-shadow: 0px 1px 1px rgb(100,100,100) ;
 		z-index: 99999;
 	}
 
-	#main_menu {
-		width: 320px;
-		height: 120px;
-		position: relative;
-		margin: 0 auto;
-	}
-
-	#menu_logo {
+	.menu_mobile_logo {
 		width: 125px;
 		height: 30px;
-		position: relative;
-		margin: 0 auto;
+		margin-top: 17px;
+		float: left;
+		margin-left: 20px;
 		background: url('../img/mbi_logo.png');
 		background-size: cover;
-		margin: 0 auto;
-		/*left: 20px;*/
-		top: 25px;
+		cursor: pointer;
 	}
 
+	.menu_mobile_submenu_icon{
+		width: 25px;
+		height: 25px;
+		
+		margin-top: 17.5px;
+		cursor: pointer;
+		position: absolute;
+		right: 20px;
+	}
+	.menu_mobile_submenu_icon.off {
+		background: url('../img/menu_icon.png');
+		background-size: cover;
+	}
+	.menu_mobile_submenu_icon.on {
+		background: url('../img/menu_icon_close.png');
+		background-size: cover;
+	}
 
-	#menu_ul_container {
-		position: relative;
+	.submenu {
 		width: 100%;
-		top:50px;
-	}
-
-	ul.main_menu {
-		font-family: 'avenir_bold', sans-serif;
+		min-height: 500px;
+		/*height: 100%;*/
+		position: absolute;
 		margin: 0 auto;
-		font-size: 14px;
+		background-color: rgb(255,255,255);
 		text-align: center;
+		z-index: 999;
+		overflow-x: hidden;
 	}
 
-		ul.main_menu li.menu_item {
-		display: inline;
-		letter-spacing: 0.02em;
-		color: rgb(40,40,40);
-		padding-top: 10px;
-		padding-bottom: 10px;
+	.submenu.on {
+		display: block;
 	}
 
-	ul.main_menu li.menu_item#red_item span{
+	.submenu.off {
+		display: none;
+	}
+
+
+	ul.main_submenu {
+		position: relative;
+		top: 20px;
+	}
+
+	ul.main_submenu li {
+		position: relative;
+		padding-bottom: 30px;
+		padding-top: 20px;
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 14px;
+		/*cursor: pointer;*/
+		/*top: 20px;*/
+	}
+
+
+	ul.main_submenu #green_item_mobile {
+		cursor: pointer;
+	}
+	ul.main_submenu #green_item_mobile:hover {
+		color: rgb(119,188,31);
+	}
+	ul.main_submenu #yellow_item_mobile {
+		cursor: pointer;
+	}
+	ul.main_submenu #yellow_item_mobile:hover {
+		color: rgb(255,163,0);
+	}
+
+	ul.main_submenu li.products_li {
+		padding-bottom: 0px;
+	}
+
+	ul.main_submenu li span {
 		font-size: 10px;
 	}
 
-	ul.main_menu li.menu_item#red_item.red{
-		color: rgb(226,35,26);
-	}
-
-	ul.main_menu li.menu_item#green_item{
-		margin-left: 20px;
-		margin-right: 20px;
-	}
-
-
-/* Submenu ----------------------------------------- */
-	article#submenu {
-		z-index: 999;
-		background-color: rgb(255,255,255);
-		width: 100%;
-		height: 240px;
-		position: absolute;
-		margin: 0 auto;
-		/*background-color: red;*/
-	}
-
-	article#submenu.off {
-		display: none;
-
-	}
-
-	article#submenu.on {
-		display: block;
-		animation-name: submenu_animation_mobile_on;
-		animation-duration: 0.4s;
-
-	}
-
-	article#submenu.out {
-		display: block;
-		animation-name: submenu_animation_mobile_out;
-		animation-duration: 0.4s;
-		margin-top: -240px;
-	}
-
-	#submenu_products_container {
-		width: 213px;
-		/*height: 24px;*/
+	.product_submenu {
+		width: 250px;
+		height: 109px;
 		position: relative;
 		margin: 0 auto;
-		/*background-color: red;*/
+		cursor: pointer;
+		margin-top: 10px;
 	}
 
-	#submenu_product_one {
-		float: left;
-		width: 213px;
-		height: 89px;
-		background: url('../img/mobile/logo_sm_submenu.png');
+	#SM_submenu_mobile_logo {
+		background: url('../img/logo_sm_submenu_small.png');
 		background-size: cover;
-		margin-top: 20px;
-		cursor: pointer;
 	}
 
-	#submenu_product_two {
-		float: left;
-		width: 213px;
-		height: 89px;
-		background: url('../img/mobile/logo_z_submenu.png') ;
+	#Z_submenu_mobile_logo {
+		background: url('../img/logo_z_submenu_small.png');
 		background-size: cover;
-		margin-top: 20px;
-		cursor: pointer;
+		margin-bottom: 30px;
 	}
+
+
 
 
 }
+
+

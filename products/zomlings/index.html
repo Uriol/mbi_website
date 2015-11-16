@@ -12,7 +12,7 @@
 		<link href='../../css/footer.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
-		<link href='css/style_max_319.css' rel='stylesheet'>
+		<!-- <link href='css/style_max_319.css' rel='stylesheet'> -->
 		<link href='css/phone_portrait.css' rel='stylesheet'>
 		<link href='css/phone_landscape.css' rel='stylesheet'>
 		<link href='css/tablets.css' rel='stylesheet'>
@@ -25,35 +25,56 @@
 	<body>
 		<div class='loading'>
 		</div>
-		<section class='content'>
-			<header>
 
-				<article class='menu'>
-					<div id='main_menu'>
-						<a href="../../index.html">	
-							<div id='menu_logo'></div>
+		<header>
+
+			<article class='menu'>
+				<div id='main_menu'>
+					
+					<div id='menu_logo'></div>
+				
+					<div id='menu_ul_container'>
+						<ul class='main_menu'>
+							<li class='menu_item' id='red_item'>PRODUCTS<span> ▼</span></li>
+							<li class='menu_item' id='green_item'>ABOUT US</li>
+							<li class='menu_item' id='yellow_item'>CONTACT</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<article id='submenu' class='off'>
+				<div id='submenu_products_container'>
+						
+						<div id='submenu_product_one' class='submenu_product_start'></div>
+					<a href="products/zomlings/index.html">	
+						<div id='submenu_product_two' class='submenu_product_start'></div>
+					</a> 
+				</div>
+			</article>
+
+			<div class='menu_mobile'>
+				<div class='menu_top_bar_mobile'>
+					<div class='menu_mobile_logo'></div>
+					<div class='menu_mobile_submenu_icon off'></div>
+				</div>
+				<div class='submenu off'>
+					<ul class='main_submenu'>
+						<li class='products_li'>PRODUCTS<span> ▼</span></li>
+						<div id='SM_submenu_mobile_logo' class='product_submenu'></div>
+						<a href="products/zomlings/index.html">	
+							<div id='Z_submenu_mobile_logo' class='product_submenu'></div>
 						</a>
-						<div id='menu_ul_container'>
-							<ul class='main_menu'>
-								<li class='menu_item' id='red_item'>PRODUCTS<span> ▼</span></li>
-								<li class='menu_item' id='green_item'>ABOUT US</li>
-								<li class='menu_item' id='yellow_item'>CONTACT</li>
-							</ul>
-						</div>
-					</div>
-				</article>
+						<li id='green_item_mobile'>ABOUT US</li>
+						<li id='yellow_item_mobile'>CONTACT</li>
+					</ul>
+				</div>
+			</div>
 
-				<article id='submenu' class='off'>
-					<div id='submenu_products_container'>
-							
-							<div id='submenu_product_one' class='submenu_product_start'></div>
-						
-							<div id='submenu_product_two' class='submenu_product_start'></div>
-						
-					</div>
-				</article>
+		</header>
+			
+		<section class='content'>
 
-			</header>
 
 			<section class='main_display'>
 				
@@ -188,7 +209,7 @@
 						<!-- Video -->
 						<div class='main_display_full' id='series_four_video'>
 							<div class='iframe_container' id='iframe_container_series_four'>
-								<iframe id='player_series_four' src="https://www.youtube.com/embed/V0if4l8r7Uo?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+								<iframe id='player_series_four' src="https://www.youtube.com/embed/1GoxKV2Ess8?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 						<!--  Video thumbnail -->
@@ -296,8 +317,6 @@
 								</div>
 							</div>
 
-
-
 							<div class='gallery_pictures'>
 								<div class='gallery_image' id='series_one_pic'></div>
 							</div>
@@ -364,6 +383,11 @@
 
 							</div>
 						</div>
+
+						<div class='pre_footer'>
+							<div class='pre_footer_img' id='series_four_pre_footer'></div>
+						</div>
+						
 					</div>
 
 
@@ -527,15 +551,20 @@
 								</div>
 							</div>
 						</div>
+
+						<div class='pre_footer'>
+							<div class='pre_footer_img' id='series_four_pre_footer'></div>
+						</div>
+
 					</div>
 
 
 
 			</section>
 
-			<section class='pre_footer'>
+			<!-- <section class='pre_footer'>
 				<div class='pre_footer_img'></div>
-			</section>
+			</section> -->
 
 			<section class='footer'>
 			</section>
