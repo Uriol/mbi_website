@@ -8,3 +8,144 @@
 	z-index: 9999;
 	overflow-y: hidden;
 }
+
+
+/* Series menu ------------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 540px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: middle;
+		
+	}
+
+	#series_one_menu_item.on {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_one_menu_item.off #series_one_selector {
+		display: none;
+	}
+	#series_one_menu_item.on #series_one_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(190,22,33);
+	}
+
+
+	#series_two_menu_item.on {
+		background-color: rgb(255,163,0);
+	}
+	#series_two_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_two_menu_item.off #series_two_selector {
+		display: none;
+	}
+	#series_two_menu_item.on #series_two_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(255,163,0);
+	}
+
+	#series_three_menu_item.on {
+		background-color: rgb(119,188,31);
+	}
+	#series_three_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_three_menu_item.off #series_three_selector {
+		display: none;
+	}
+	#series_three_menu_item.on #series_three_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(119,188,31);
+	}
+
+	#series_four_menu_item.on {
+		background-color: rgb(150,51,158);
+	}
+	#series_four_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_four_menu_item.off #series_four_selector {
+		display: none;
+	}
+	#series_four_menu_item.on #series_four_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(150,51,158);
+	}
+
+	#special_menu_item.on {
+		background-color: rgb(0,114,175);
+	}
+	#special_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#special_menu_item.off #special_selector {
+		display: none;
+	}
+	#special_menu_item.on #special_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(0,114,175);
+	}
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
+	}
+
+	/* ----------------------------------------------------------- */

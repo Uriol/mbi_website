@@ -1,0 +1,181 @@
+
+
+
+@media only screen 
+and (min-width: 1201px) {
+
+
+	/* Company pics ----------------------------------------------------- */
+	.company_pics {
+		width: 100%;
+		height: 600px;
+		position: relative;
+		background-color: rgb(220,220,220);
+	}
+
+
+	/* Company description --------------------------------------------- */
+	.company_description {
+		width: 100%;
+		height: 300px;
+		position: relative;
+		background-color: rgb(240,240,240);
+	}
+
+	.company_history_container {
+		width: 1200px;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+
+	/* Company history ------------------------------------------------ */
+
+.company_history {
+	width: 100%;
+	height: 0px;
+	position: relative;
+}
+
+.timeline_item_container {
+	width: 47.5%;
+	position: relative;
+	/*margin-top: 40px;*/
+	margin-bottom: 40px;
+	top: 0px;
+}
+
+
+.left_container {
+	float: left;
+	clear: left;
+	margin-left: 2.5%;
+}
+
+.right_container {
+	float: right;
+	clear: right;
+	margin-right: 2.5%;
+}
+
+.h_line_left {
+	width: 20%;
+	height: 2px;
+	
+	position: relative;
+	margin-left: 80%;
+	top: 20px;
+}
+
+.h_line_right {
+	width: 20%;
+	height: 2px;
+	
+	position: relative;
+	margin-right: 80%;
+	top: 20px;
+}
+
+.timeline_item {
+	/*background-color: rgb(230,230,230);*/
+	width: 80%;
+	/*position: relative;*/
+}
+
+.timeline_item.left_item {
+	float: left;
+}
+
+.timeline_item.right_item {
+	float: right;
+}
+
+.timeline_item_image {
+	width: 100%;
+	position: relative;
+	padding-bottom: 52.6%;
+	background-color: rgb(230,230,230);
+}
+
+.timeline_item_text{
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+
+/* Text */
+.year_container h2 {
+	font-size: 20px;
+	font-family: 'avenir_bold', sans-serif;
+}
+
+
+
+.timeline_item_text h1{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: 'avenir_bold', sans-serif;
+	text-transform: uppercase;
+}
+
+.timeline_item_text p {
+	font-family: 'avenir_medium', sans-serif;
+	font-size: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+	/* Year */
+	.timeline_item_container.left_container .year_container {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		/*float: right;
+		clear: right;
+		margin-right: -50px;*/
+		position: absolute;
+		margin-left: 100%;
+		left: -40px;
+		margin-top: -20px;
+		text-align: center;
+		vertical-align: text-bottom;
+
+	}
+
+	.timeline_item_container.right_container .year_container {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+
+		position: absolute;
+		left: -40px;
+		margin-top: -20px;
+		text-align: center;
+		vertical-align: text-bottom;
+
+	}
+
+	.timeline_item_container .year_container h2{
+		margin-top: 30px;
+		color: white;
+	}
+
+
+	/* Individual items */
+	#container_two {
+		margin-top: 200px;
+	}
+
+
+}

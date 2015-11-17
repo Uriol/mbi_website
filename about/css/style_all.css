@@ -1,0 +1,94 @@
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../fonts/avenirnextw1gmedium.woff');
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+section.content {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Timeline items ---------------- */
+/* Color Red */
+.timeline_item_container.red .h_line_left {
+	background-color: rgb(226,35,26);
+}
+.timeline_item_container.red .h_line_right {
+	background-color: rgb(226,35,26);
+}
+.timeline_item_container.red .timeline_item {
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(226,35,26);
+	background-color: rgb(226,35,26);
+}
+.timeline_item_container.red .timeline_item .timeline_item_text {
+	color: white;
+}
+/* Color Red */
+.timeline_item_container.red .year_container {
+	background-color: rgb(226,35,26);
+}
+
+
+
+/* Color green*/
+.timeline_item_container.green .h_line_left {
+	background-color: rgb(119,188,31);
+}
+.timeline_item_container.green .h_line_right {
+	background-color: rgb(119,188,31);
+}
+.timeline_item_container.green .timeline_item {
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(119,188,31);
+	background-color: rgb(119,188,31);
+}
+.timeline_item_container.green .timeline_item .timeline_item_text {
+	color: white;
+}
+.timeline_item_container.green .year_container {
+	background-color: rgb(119,188,31);
+}
+
+
+/* Color yellow */
+.timeline_item_container.yellow .h_line_left {
+	background-color: rgb(255,163,0);
+}
+.timeline_item_container.yellow .h_line_right {
+	background-color: rgb(255,163,0);
+}
+.timeline_item_container.yellow .timeline_item {
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(255,163,0);
+	background-color: rgb(255,163,0);
+}
+.timeline_item_container.yellow .timeline_item .timeline_item_text {
+	color: white;
+}
+.timeline_item_container.yellow .year_container {
+	background-color: rgb(255,163,0);
+}
+
+
+
+

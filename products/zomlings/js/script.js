@@ -11,16 +11,10 @@ var player_0, player_1, player_2, player_3;
 var $players = [player_0, player_1, player_2, player_3];
 
 
-// Galleries 
-// var $series_galleries = [$series_one_gallery, $series_two_gallery, $series_one_gallery];
-// var $series_one_gallery = ['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")']
-// var $series_two_gallery = ['url("img/s2/gallery/img_one.png")', 'url("img/s2/gallery/img_two.png")', 'url("img/s2/gallery/img_three.png")']
-// var $series_three_gallery = ['url("img/s3/gallery/img_one.png")', 'url("img/s3/gallery/img_two.png")', 'url("img/s3/gallery/img_three.png")']
-
 var $series_galleries = [['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")'], 
 						['url("img/s2/gallery/img_one.png")', 'url("img/s2/gallery/img_two.png")', 'url("img/s2/gallery/img_three.png")'], 
 						['url("img/s3/gallery/img_one.png")', 'url("img/s3/gallery/img_two.png")', 'url("img/s3/gallery/img_three.png")']];
-// var gallery_index = 0;
+
 var $series_gallery_index = [0,0,0,0,0];
 var gallery_index;
 
@@ -153,7 +147,7 @@ $(function(){
 	// Play video on click
 	$('.video_thumbnail').on('click', function(){
 		// Hide thumbnail
-		$('#' + $series[index] + '_video_thumbnail').hide();
+		//$('#' + $series[index] + '_video_thumbnail').hide();
 		$players[index].playVideo();
 	})
 
@@ -194,7 +188,7 @@ $(function(){
 	// Player 0
 	function onPlayerStateChange_zero(e) {
 		if(e.data == YT.PlayerState.PLAYING) {
-			// animate product out
+			$('#' + $series[index] + '_video_thumbnail').hide();
 			animate_elements_out();
 			$playing[index] = true;
 		} else if (e.data == YT.PlayerState.PAUSED) {
@@ -212,7 +206,7 @@ $(function(){
 	// Player 1
 	function onPlayerStateChange_one(e) {
 		if(e.data == YT.PlayerState.PLAYING) {
-			// animate product out
+			$('#' + $series[index] + '_video_thumbnail').hide();
 			animate_elements_out();
 			$playing[index] = true;
 		} else if (e.data == YT.PlayerState.PAUSED) {
@@ -229,7 +223,7 @@ $(function(){
 	// Player 2
 	function onPlayerStateChange_two(e) {
 		if(e.data == YT.PlayerState.PLAYING) {
-			// animate product out
+			$('#' + $series[index] + '_video_thumbnail').hide();
 			animate_elements_out();
 			$playing[index] = true;
 		} else if (e.data == YT.PlayerState.PAUSED) {
@@ -246,7 +240,7 @@ $(function(){
 	// Player 3
 	function onPlayerStateChange_three(e) {
 		if(e.data == YT.PlayerState.PLAYING) {
-			// animate product out
+			$('#' + $series[index] + '_video_thumbnail').hide();
 			animate_elements_out();
 			$playing[index] = true;
 		} else if (e.data == YT.PlayerState.PAUSED) {
@@ -272,19 +266,6 @@ $(function(){
 	function animate_elements_in() {
 		$('#main_display_logo_zomlings').removeClass().addClass('in');
 	}  
-
-
-
-	//  Handle hover on product image
-	// $('.product_content_container').on('mouseenter', function() {
-	// 	console.log('in')
-	// 	$('.product_image_container', this).hide();
-	// 	$('.product_info_container', this).show();
-	// }).on('mouseleave', function() {
-	// 	$('.product_info_container', this).hide();
-	// 	$('.product_image_container', this).show();
-	// })
-	
 	
 	// Handle image switch from gallery index
 	$(document).on('click', '.gallery_index_item_off', function(){
@@ -332,6 +313,19 @@ $(function(){
 		gallery_index = $series_gallery_index[index];
 		$('#' + $series[index] + '_pic').css('background-image', $series_galleries[index][gallery_index]);
 	});
+
+
+	// Mobile detect
+	var md = new MobileDetect(window.navigator.userAgent);
+
+	// Device
+	if(md.mobile() || md.tablet()){
+
+		$('.video_thumbnail').css('pointer-events', 'none');
+
+	} else {
+
+	} 
 
 	
 
