@@ -108,7 +108,7 @@ and (min-width: 1201px) {
 
 /* Text */
 .year_container h2 {
-	font-size: 20px;
+	font-size: 15px;
 	font-family: 'avenir_bold', sans-serif;
 }
 
@@ -138,36 +138,36 @@ and (min-width: 1201px) {
 
 	/* Year */
 	.timeline_item_container.left_container .year_container {
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 		border-radius: 50%;
 		/*float: right;
 		clear: right;
 		margin-right: -50px;*/
 		position: absolute;
 		margin-left: 100%;
-		left: -40px;
-		margin-top: -20px;
+		left: -30px;
+		margin-top: -15px;
 		text-align: center;
 		vertical-align: text-bottom;
 
 	}
 
 	.timeline_item_container.right_container .year_container {
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 		border-radius: 50%;
 
 		position: absolute;
-		left: -40px;
-		margin-top: -20px;
+		left: -30px;
+		margin-top: -15px;
 		text-align: center;
 		vertical-align: text-bottom;
 
 	}
 
 	.timeline_item_container .year_container h2{
-		margin-top: 30px;
+		margin-top: 25px;
 		color: white;
 	}
 

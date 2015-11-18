@@ -13,7 +13,8 @@ var $players = [player_0, player_1, player_2, player_3];
 
 var $series_galleries = [['url("img/s1/gallery/img_one.png")', 'url("img/s1/gallery/img_two.png")', 'url("img/s1/gallery/img_three.png")'], 
 						['url("img/s2/gallery/img_one.png")', 'url("img/s2/gallery/img_two.png")', 'url("img/s2/gallery/img_three.png")'], 
-						['url("img/s3/gallery/img_one.png")', 'url("img/s3/gallery/img_two.png")', 'url("img/s3/gallery/img_three.png")']];
+						['url("img/s3/gallery/img_one.png")', 'url("img/s3/gallery/img_two.png")', 'url("img/s3/gallery/img_three.png")'],
+						['url("img/s4/gallery/img_one.png")', 'url("img/s4/gallery/img_two.png")', 'url("img/s4/gallery/img_three.png")']];
 
 var $series_gallery_index = [0,0,0,0,0];
 var gallery_index;

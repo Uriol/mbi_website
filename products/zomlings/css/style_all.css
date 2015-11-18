@@ -149,3 +149,43 @@
 	}
 
 	/* ----------------------------------------------------------- */
+
+	/* Galleries ------------------------------------------------- */
+		/* Gallery series one */
+	#series_one_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(226,35,26);
+	}
+	#series_one_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(226,35,26);
+	}
+	#series_one_pic {
+		background: url('../img/s1/gallery/img_one.png');
+		background-size: cover;
+	}
+
+
+
+	/* Gallery series three */
+	#series_three_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(119,188,31);
+	}
+	#series_three_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(119,188,31);
+	}
+	#series_three_pic {
+		background: url('../img/s3/gallery/img_one.png');
+		background-size: cover;
+	}
+
+	/* Gallery series four */
+	#series_four_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(150,51,158);
+	}
+	#series_four_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(150,51,158)
+	}
+	#series_four_pic {
+		background: url('../img/s4/gallery/img_one.png');
+		background-size: cover;
+	}
+	

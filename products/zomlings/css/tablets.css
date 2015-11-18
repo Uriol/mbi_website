@@ -132,7 +132,7 @@ and (max-width: 849px) {
 	/* Series ------------------------------------------------- */
 		/* Serie One */
 	#series_one_bg {
-		background: url('../img/s1/bg_5.png');
+		background: url('../img/s1/bg.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -150,7 +150,7 @@ and (max-width: 849px) {
 
 	/* Serie Two */
 	#series_two_bg {
-		background: url('../img/s2/bg_5.png');
+		background: url('../img/s2/bg.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -167,7 +167,7 @@ and (max-width: 849px) {
 	}
 	/* Serie Three */
 	#series_three_bg {
-		background: url('../img/s3/bg_3.png');
+		background: url('../img/s3/bg.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -184,7 +184,7 @@ and (max-width: 849px) {
 	}
 	/* Serie Four */
 	#series_four_bg {
-		background: url('../img/s4/bg_3.png');
+		background: url('../img/s4/bg.png');
 		background-size: cover;
 		background-position: center;
 	}
@@ -559,31 +559,7 @@ and (max-width: 849px) {
 		margin-left: 15px;
 		border-radius: 50%;
 	}
-	/* Gallery series one */
-	#series_one_gallery_index_container .gallery_index_item_on {
-		background-color: rgb(226,35,26);
-	}
-	#series_one_gallery_index_container .gallery_index_item_off:hover {
-		background-color: rgb(226,35,26);
-	}
-	#series_one_pic {
-		background: url('../img/s1/gallery/img_one.png');
-		background-size: cover;
-	}
 
-
-
-	/* Gallery series three */
-	#series_three_gallery_index_container .gallery_index_item_on {
-		background-color: rgb(119,188,31);
-	}
-	#series_three_gallery_index_container .gallery_index_item_off:hover {
-		background-color: rgb(119,188,31);
-	}
-	#series_three_pic {
-		background: url('../img/s3/gallery/img_one.png');
-		background-size: cover;
-	}
 
 	/* Products */
 
@@ -692,11 +668,33 @@ and (max-width: 849px) {
 	}
 
 	.pre_footer_img {
-		width: 100%;
-		height: 200px;
+		width: 760px;
+		height: 180px;
 		position: relative;
-		background-color: rgb(220,220,220);
 		margin: 0 auto;
+	}
+
+		#series_one_pre_footer {
+		background-image: url('../img/s1/footer/footer_3.png');
+		background-size: cover;
+	}
+	#series_two_pre_footer {
+		background-image: url('../img/s2/footer/footer_3.png');
+		background-size: cover;
+	}
+
+	#series_three_pre_footer {
+		background-image: url('../img/s3/footer/footer_3.png');
+		background-size: cover;
+	}
+
+	#series_four_pre_footer {
+		background-image: url('../img/s4/footer/footer_3.png');
+		background-size: cover;
+	}
+	#special_pre_footer {
+		background-image: url('../img/special/footer/footer_3.png');
+		background-size: cover;
 	}
 
 }
