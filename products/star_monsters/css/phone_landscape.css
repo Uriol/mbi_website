@@ -1,0 +1,173 @@
+
+/* Horizontal*/
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+
+	section.main_display {
+		width: 100%;
+		height: 514px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+		/*background-color: rgb(200,200,200)*/
+	}
+
+
+	/* Logo Zomlings ----------------------------------------- */
+	.main_display_logo {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+		margin-top: 15px;
+	}
+
+	#main_display_logo_star_monsters {
+		width: 340px;
+		height: 179px;
+		background: url('../img/logo_sm.png');
+		background-size: cover;
+		position: relative;
+		margin: 0 auto;
+	}
+
+		/* Series ----------------------------------------------- */
+	article.series_main_display {
+		width: 100%;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.serie_main_display.on {
+		position: absolute;
+		width: 100%;
+		height: 0px;
+		margin: 0 auto;
+	}
+
+	.serie_main_display.off {
+		display: none;
+	}
+
+	.main_display_bg {
+		width: 100%;
+		height: 514px;
+		position: absolute;
+	}
+
+	.main_display_full {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	}
+
+	.iframe_container {
+		top: 105px;
+		position: relative;
+		margin: 0 auto;
+		width: 540px;
+		height: 304px;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 540px;
+		height: 304px;
+		position: relative;
+		margin: 0 auto;
+		top: 105px;
+	}
+
+	.player_icon_container {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: 220px;
+		margin-top: 102px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.player_icon {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 25px solid rgb(255,255,255);
+		margin-left: 37.5px;
+		margin-top: 35px;
+	}
+
+
+			/* Series menu ----------------------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		/*background-color: rgba(0,0,0,0.2);*/
+		margin-top: 454px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+		/*display: inline;*/
+		/*padding-top: 10px;*/
+		/*vertical-align: middle;*/
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		/*margin-top: 10px;*/
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: middle;
+		
+	}
+
+	#series_one_menu_item.on {
+		background-color: rgb(161,27,34);
+	}
+	#series_one_menu_item.off:hover {
+		/*background-color: rgb(190,22,33);*/
+		background-color: rgb(161,27,34);
+	}
+	#series_one_menu_item.off #series_one_selector {
+		display: none;
+	}
+	#series_one_menu_item.on #series_one_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(161,27,34);
+	}
+
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
+	}
+
+}
+
