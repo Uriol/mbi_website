@@ -13,13 +13,18 @@
 		width: 100%;
 		height: 100%;
 		position: relative;
-		overflow-x: hidden;
+		/*overflow-x: hidden;*/
+		/*overflow-x: hidden;  
+		overflow-y: auto;*/
+		
 	}
 
 	body {
 		width: 100%;
 		height: 100%;
 		position: relative;
+		/*overflow-x: hidden;  
+		overflow-y: auto;*/
 	}
 
 
@@ -56,11 +61,12 @@
 		
 	}
 
+	/* Series one menu */
 	#series_one_menu_item.on {
 		background-color: rgb(161,27,34);
 	}
 	#series_one_menu_item.off:hover {
-		background-color: rgb(161,27,34);
+		background-color: rgba(0,0,0,0.6);
 	}
 	#series_one_menu_item.off #series_one_selector {
 		display: none;
@@ -74,6 +80,35 @@
 		border-left: 20px solid transparent;
 		border-right: 20px solid transparent;
 		border-top: 15px solid rgb(161,27,34);
+	}
+
+
+	#special_menu_item.on {
+		background-color: rgb(0,114,175);
+	}
+	#special_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#special_menu_item.off #special_selector {
+		display: none;
+	}
+	#special_menu_item.on #special_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(0,114,175);
+	}
+
+
+
+
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
 	}
 
 

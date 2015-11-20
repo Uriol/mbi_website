@@ -1,0 +1,24 @@
+
+
+@media only screen 
+and (min-width: 1201px) {
+
+	article.home_main_display {
+		width: 100%;
+		height: 600px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	canvas#canvas_sky {
+		position: absolute;
+/*		width: 100%;
+		height: 100%;*/
+		background-color: black;
+	}
+
+
+
+}

@@ -6,11 +6,14 @@ and (max-width: 1200px) {
 
 	section.main_display {
 		width: 100%;
-		height: 600px;
+		height: 615px;
 		max-width: 2500px;
 		position: relative;
 		margin: 0 auto;
-		/*background-color: rgb(200,200,200)*/
+		overflow-x: hidden;  
+		overflow-y: auto;
+		/*overflow-x: hidden;*/  
+		/*overflow-y: auto;*/
 	}
 
 
@@ -20,7 +23,7 @@ and (max-width: 1200px) {
 		height: 0px;
 		position: absolute;
 		z-index: 99;
-		margin-top: 15px;
+		margin-top: 10px;
 	}
 
 	#main_display_logo_star_monsters {
@@ -39,6 +42,7 @@ and (max-width: 1200px) {
 		height: 0px;
 		position: relative;
 		margin: 0 auto;
+
 	}
 
 	.serie_main_display.on {
@@ -64,6 +68,9 @@ and (max-width: 1200px) {
 		height: 0px;
 		position: absolute;
 	}
+
+
+
 
 	.iframe_container {
 		top: 120px;
@@ -117,7 +124,7 @@ and (max-width: 1200px) {
 		background: url('../img/s1/left.png');
 		background-size: cover;
 		top: 247px;
-		left: -500px;
+		
 	}
 	#right_img_main_display_s_one {
 		position: relative;
@@ -127,9 +134,62 @@ and (max-width: 1200px) {
 		background: url('../img/s1/right.png');
 		background-size: cover;
 		top: 247px;
-		left: 500px;
+		
 	}
 
+		/* Series controls --------------------------------------- */
+	.main_display_series_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	
+	}
+
+	.control_left_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: left;
+		margin-top: 255px;
+		margin-left: 20px;
+		cursor:pointer;
+	}
+
+	.control_left_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: right;
+		margin-top: 255px;
+		margin-right: 20px;
+		cursor:pointer;
+	}
+
+	.control_arrow {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		margin-left: 17.5px;
+		margin-top: 17.5px;
+	}
+	#left_arrow {
+		background: url('../img/left_arrow.png');
+		background-size: cover;
+	}
+	#right_arrow {
+		background: url('../img/right_arrow.png');
+		background-size: cover;
+	}
 
 
 	/* Series info -------------------------------------------- */

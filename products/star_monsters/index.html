@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ZOMLINGS</title>
+		<title>STAR MONSTERS</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
 		<link href='../../css/reset.css' rel='stylesheet'>
@@ -12,7 +12,9 @@
 		<link href='../../css/footer.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
+		<link href='css/animations.css' rel='stylesheet'>
 
+		<link href='css/phone_portrait.css' rel='stylesheet'>
 		<link href='css/phone_landscape.css' rel='stylesheet'>
 		<link href='css/tablets.css' rel='stylesheet'>
 		<link href='css/style.css' rel='stylesheet'>
@@ -104,11 +106,19 @@
 						</div>
 
 						<div class='main_display_full'>
-							<div id='left_img_main_display_s_one'></div>
+							<div id='left_img_main_display_s_one' class='start'></div>
 						</div>
 						<div class='main_display_full'>
-							<div id='right_img_main_display_s_one'></div>
+							<div id='right_img_main_display_s_one' class='start'></div>
 						</div>
+
+					</div>
+
+
+					<!-- Special -->
+					<div class='serie_main_display off' id='special'>
+						<!-- BG -->
+						<div class='main_display_bg' id='special_bg'></div>
 
 					</div>
 
@@ -117,12 +127,26 @@
 						<div class='main_display_series_menu'>
 							<ul>
 								<li id='series_one_menu_item' class='on' data-index='0'>SERIES 1<div id='series_one_selector'></div></li>
+								<li id='special_menu_item' class='off' data-index='1'>SPECIAL<div id='special_selector'></div></li>
 							</ul>
 						</div>
 					</div>
 
 
 				</article>
+
+
+				<!--  Series left/right controls -->
+				<div class='main_display_series_controls'>
+					<div class='control_left_container' >
+						<div class='control_arrow' id='left_arrow'></div>
+					</div>
+				</div> 
+				<div class='main_display_series_controls'>
+					<div class='control_right_container'>
+						<div class='control_arrow' id='right_arrow'></div>
+					</div>
+				</div>
 
 
 			</section>

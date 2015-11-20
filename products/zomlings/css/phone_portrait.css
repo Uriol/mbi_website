@@ -517,19 +517,6 @@ and (max-width: 540px) {
 		background-size: cover;
 	}
 
-
-	.gallery_pictures {
-		/*width: 520px;
-		height: 301px;
-		margin: 0 auto;
-		-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-		-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-		box-shadow: 0 5px 10px rgba(0,0,0,0.2);*/
-		/*width: 100%;
-		padding-bottom: 56.25%;*/
-
-	}
-
 	.gallery_image {
 		/*width: 500px;*/
 		width: 100%;

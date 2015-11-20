@@ -163,6 +163,19 @@
 		background-size: cover;
 	}
 
+	/* Galleries series two*/
+	#series_two_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(255,163,0);
+	}
+	#series_two_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(255,163,0);
+	}
+	#series_two_pic {
+		background: url('../img/s2/gallery/img_one.png');
+		background-size: cover;
+	}
+
+
 
 
 	/* Gallery series three */
