@@ -4,7 +4,7 @@
 
 
 var canvas, ctx;
-var $particles = [], totalParticles = 10, total_sub_particles = 1;
+var $particles = [], totalParticles = 3, total_sub_particles = 1;
 var particlesCount = 200, 
 	particlesFull = false,
 	hueRange = 50,
@@ -64,13 +64,14 @@ $(function(){
 				this.final_trajectory_overflow_left = this.startX - this.final_trajectory_difference;
 				this.final_trajectory_overflow_right = this.startX + this.final_trajectory_difference;
 				this.finalX = Math.floor(Math.random() * (this.final_trajectory_overflow_right + this.final_trajectory_overflow_left)) + this.final_trajectory_overflow_left;
-				this.startY = rand(-600, -20);
+				this.startY = rand(-800, -20);
 				this.finalY = 610;
 				this.trajectory_angle = Math.atan2(this.finalY - this.startY, this.finalX - this.startX);
-				this.speed = (Math.floor(Math.random() * (25)) + (60)) / 100;
+				//this.speed = (Math.floor(Math.random() * (25)) + (60)) / 100;
+				this.speed = rand(3,4);
 				
 				
-				this.acceleration = 0.005;
+				this.acceleration = 0.01;
 				this.vx = 0;
 				this.vy = 0;
 				this.x = this.startX;

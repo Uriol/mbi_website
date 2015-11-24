@@ -9,13 +9,17 @@
 		<link href='css/header_tablet.css' rel='stylesheet'>
 		<link href='css/header_mobile.css' rel='stylesheet'>
 
+		<link href='css/style_all.css' rel='stylesheet'>
 		<link href='css/style_min_2000.css' rel='stylesheet'>
 
 	</head>
 
 	<body>
 
-		 <header>
+		<div class='loading'>
+		</div>
+
+		<header>
 
 			<article class='menu'>
 				<div id='main_menu'>
@@ -72,10 +76,34 @@
 
 			<article class='home_main_display'>
 
+				<div class='main_display_logo'>
+					<div class='start' id='main_display_logo_star_monsters'></div>
+				</div>
 
 				<canvas id='canvas_sky'></canvas>
 
+				<div id='viewport'>
+					<div id='world'></div>
+				</div>
 
+				<div class='main_display_full' id='series_one_video'>
+					<div class='iframe_container' id='iframe_container_sm_cd'>
+						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<!-- Video Thumbnail -->
+				<div class='main_display_full'>
+					<div class='video_thumbnail' id='star_mounster_cd_thumbnail'>
+					<div id='sm_cd_player_icon_container' class='player_icon_container'>
+						<div class='player_icon'></div>
+					</div>
+					</div>
+				</div>
+
+
+			</article>
+			<article class='banner' id='zomlings_banner'>
 			</article>
 
 		</section>
@@ -83,7 +111,10 @@
 		<script src='js/libraries/jquery_min.js'></script>
 		<script src='js/libraries/mobile_detect_min.js'></script>
 		<script src='js/header.js'></script>
-		<script src='js/script_2.js'></script>
+		
+		<script src='js/script_3.js'></script> 
+		<script src='js/script_4.js'></script> 
+		<script src='js/interaction.js'></script> 
 
 	</body>
 

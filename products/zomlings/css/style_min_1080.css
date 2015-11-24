@@ -500,7 +500,7 @@ and (min-width: 1201px) {
 	/* Products --------------------------------------- */
 	/* Serie One */
 	#one_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
+		background: url('../img/s1/products/final/one_pack.png');
 		background-size: cover;
 	}
 
