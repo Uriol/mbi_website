@@ -10,6 +10,11 @@
 		<link href='css/header_mobile.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
+
+		<link href='css/phone_portrait.css' rel='stylesheet'>
+		<link href='css/phone_landscape.css' rel='stylesheet'>
+		<link href='css/tablets.css' rel='stylesheet'>
+		<link href='css/style.css' rel='stylesheet'>
 		<link href='css/style_min_2000.css' rel='stylesheet'>
 
 	</head>
@@ -80,10 +85,20 @@
 					<div class='start' id='main_display_logo_star_monsters'></div>
 				</div>
 
-				<canvas id='canvas_sky'></canvas>
-
 				<div id='viewport'>
 					<div id='world'></div>
+				</div>
+
+				<!-- Countdown -->
+				<div class='main_display_full'>
+					<div class='main_display_countdown'>
+						<ul>
+							<li id='days'></li>
+							<li id='hours'></li>
+							<li id='min'></li>
+							<li id='seconds'></li>
+						</ul>
+					</div>
 				</div>
 
 				<div class='main_display_full' id='series_one_video'>
@@ -101,6 +116,8 @@
 					</div>
 				</div>
 
+				
+
 
 			</article>
 			<article class='banner' id='zomlings_banner'>
@@ -110,6 +127,7 @@
 
 		<script src='js/libraries/jquery_min.js'></script>
 		<script src='js/libraries/mobile_detect_min.js'></script>
+		<script src='js/libraries/jquery.countdown.js'></script>
 		<script src='js/header.js'></script>
 		
 		<script src='js/script_3.js'></script> 

@@ -603,6 +603,7 @@ and (max-width: 768px) {
 		height: 240px;
 		position: relative;
 		cursor: pointer;
+		margin-bottom: 20px;
 		
 	}
 
@@ -611,6 +612,7 @@ and (max-width: 768px) {
 		height: 60px;
 		position: relative;
 		margin: 0 auto;
+		margin-top: 16px;
 		
 	}
 
@@ -618,6 +620,7 @@ and (max-width: 768px) {
 		font-family: 'avenir_bold', sans-serif;
 		font-size: 16px;
 		color: rgb(40,40,40);
+
 	}
 
 
@@ -630,34 +633,7 @@ and (max-width: 768px) {
 	}
 
 
-	/* Products --------------------------------------- */
-	/* Serie One */
-	#one_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-
-	#tower_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one_2 {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one_3 {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
+	
 
 		/* Footer ----------------------------------------- */
 	section.pre_footer {

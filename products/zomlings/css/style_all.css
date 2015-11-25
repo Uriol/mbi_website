@@ -201,4 +201,33 @@
 		background: url('../img/s4/gallery/img_one.png');
 		background-size: cover;
 	}
+
+
+	/* Products --------------------------------------- */
+	/* Serie One */
+	#one_pack_image_series_one {
+		background: url('../img/s1/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_one {
+		background: url('../img/s1/products/final/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one {
+		background: url('../img/s1/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_house_image_series_one_2 {
+		background: url('../img/s1/products/final/blister_house.png');
+		background-size: cover;
+	}
+
+	#blister_mansion_image_series_one_3 {
+		background: url('../img/s1/products/final/blister_mansion.png');
+		background-size: cover;
+	}
 	

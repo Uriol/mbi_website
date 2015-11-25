@@ -462,6 +462,7 @@ and (min-width: 1201px) {
 		margin-right: 5px;
 		margin-top: 25px;
 		width: 350px;
+		margin-bottom: 20px;
 	}
 
 	.product_image_container {
@@ -477,6 +478,7 @@ and (min-width: 1201px) {
 		height: 60px;
 		position: relative;
 		margin: 0 auto;
+		top: 16px;
 		
 	}
 
@@ -497,33 +499,7 @@ and (min-width: 1201px) {
 	}
 
 
-	/* Products --------------------------------------- */
-	/* Serie One */
-	#one_pack_image_series_one {
-		background: url('../img/s1/products/final/one_pack.png');
-		background-size: cover;
-	}
 
-
-	#tower_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one_2 {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
-
-	#house_pack_image_series_one_3 {
-		background: url('../img/s1/products/onepack.png');
-		background-size: cover;
-	}
 
 	/* Footer ----------------------------------------- */
 	div.pre_footer {

@@ -73,7 +73,9 @@ $(function(){
 				z: z,
 				a: a,
 				s: s,
-				speed: .1 * Math.random()
+				speed: .1 * Math.random(),
+				rotation_speed: 0.05* Math.random()
+				//rotation_speed: 0.05* Math.random()
 			};
 			var t = 'translateX( ' + x + 'px ) translateY( ' + y + 'px ) translateZ( ' + z + 'px ) rotateZ( ' + a + 'deg ) scale( ' + s + ' )';
 			cloud.style.webkitTransform = t;
@@ -82,6 +84,7 @@ $(function(){
 		
 			div.appendChild( cloud );
 			layers.push( cloud );
+
 		}
 		
 		return div;
@@ -116,10 +119,10 @@ $(function(){
 		page_y = e.pageY;
 		if (page_y >= 80 && page_y <= 680) {
 			worldYAngle = -( .5 - ( e.clientX / window.innerWidth ) ) * 180;
-			worldYAngle = worldYAngle/5;
+			worldYAngle = worldYAngle/20;
 
 			worldXAngle = ( .5 - ( e.clientY / window.innerHeight ) ) * 180;
-			worldXAngle = worldXAngle/5;
+			worldXAngle = worldXAngle/10;
 
 			updateView();
 		}
@@ -146,7 +149,7 @@ $(function(){
 		
 		for( var j = 0; j < layers.length; j++ ) {
 			var layer = layers[ j ];
-			layer.data.a += layer.data.speed;
+			layer.data.a += layer.data.rotation_speed;
 			var t = 'translateX( ' + layer.data.x + 'px ) translateY( ' + layer.data.y + 'px ) translateZ( ' + layer.data.z + 'px ) rotateY( ' + ( - worldYAngle ) + 'deg ) rotateX( ' + ( - worldXAngle ) + 'deg ) rotateZ( ' + layer.data.a + 'deg ) scale( ' + layer.data.s + ')';
 			layer.style.webkitTransform = t;
 			layer.style.MozTransform = t;
