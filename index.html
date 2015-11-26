@@ -9,7 +9,10 @@
 		<link href='css/header_tablet.css' rel='stylesheet'>
 		<link href='css/header_mobile.css' rel='stylesheet'>
 
+		<link href='css/footer.css' rel='stylesheet'>
+
 		<link href='css/style_all.css' rel='stylesheet'>
+		<link href='css/animations.css' rel='stylesheet'>
 
 		<link href='css/phone_portrait.css' rel='stylesheet'>
 		<link href='css/phone_landscape.css' rel='stylesheet'>
@@ -89,19 +92,9 @@
 					<div id='world'></div>
 				</div>
 
-				<!-- Countdown -->
-				<div class='main_display_full'>
-					<div class='main_display_countdown'>
-						<ul>
-							<li id='days'></li>
-							<li id='hours'></li>
-							<li id='min'></li>
-							<li id='seconds'></li>
-						</ul>
-					</div>
-				</div>
+				
 
-				<div class='main_display_full' id='series_one_video'>
+				<div class='main_display_full'>
 					<div class='iframe_container' id='iframe_container_sm_cd'>
 						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 					</div>
@@ -116,15 +109,52 @@
 					</div>
 				</div>
 
+				<!-- Countdown -->
+				<div class='main_display_full'>
+					<div id='main_display_countdown' class='start'>
+						<ul>
+							<li id='days'></li>
+							<li id='hours'></li>
+							<li id='min'></li>
+							<li id='seconds'></li>
+						</ul>
+					</div>
+				</div>
 				
 
 
 			</article>
-			<article class='banner' id='zomlings_banner'>
+			<!-- <article class='banner' id='zomlings_banner'>
+			</article> -->
+			<article class='banner'>
+				<div class='company_motto_container'>
+					<h2>Magic Box Toys is a toys and collectables company. Our row material is creativity. Our result is being tastemakers.</h2>
+				</div>
 			</article>
+
+			<div class='pre_footer'>
+				<div class='pre_footer_img' id='home_pre_footer'></div>
+			</div>
+
+			<!-- Footer -->
+			<section class='footer'>
+				<div class='social_media'>
+					<div class='social_media_container'>
+						<a href="../../about/index.html">
+							<div class='facebook_icon'></div>
+						</a>
+
+						<a href="../../about/index.html">
+							<div class='twitter_icon'></div>
+						</a>
+					</div>
+				</div>
+				<p>© MAGIC BOX TOYS</p>
+			</section>
 
 		</section>
 
+		<script src='https://www.youtube.com/iframe_api'></script>
 		<script src='js/libraries/jquery_min.js'></script>
 		<script src='js/libraries/mobile_detect_min.js'></script>
 		<script src='js/libraries/jquery.countdown.js'></script>

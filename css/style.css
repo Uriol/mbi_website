@@ -2,7 +2,23 @@
 and (min-width: 850px)
 and (max-width: 1200px) {
 
-	
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+	/*	background-color: red;*/
+	}
+
+	.pre_footer_img {
+		width: 760px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#home_pre_footer {
+		background-image: url('../products/zomlings/img/s1/footer/footer_3.png');
+		background-size: cover;
+	}
 
 
 

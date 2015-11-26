@@ -221,13 +221,56 @@
 		background-size: cover;
 	}
 
-	#blister_house_image_series_one_2 {
+	#blister_house_image_series_one {
 		background: url('../img/s1/products/final/blister_house.png');
 		background-size: cover;
 	}
 
-	#blister_mansion_image_series_one_3 {
+	#blister_mansion_image_series_one {
 		background: url('../img/s1/products/final/blister_mansion.png');
 		background-size: cover;
 	}
+
+	/* series two */
+	#one_pack_image_series_two {
+		background: url('../img/s2/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_two {
+		background: url('../img/s2/products/final/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_two {
+		background: url('../img/s2/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_house_image_series_two {
+		background: url('../img/s2/products/final/blister_house.png');
+		background-size: cover;
+	}
 	
+	/* series three */
+	#one_pack_image_series_three {
+		background: url('../img/s3/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#train_pack_image_series_three {
+		background: url('../img/s3/products/final/train_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_three {
+		background: url('../img/s3/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_image_series_three {
+		background: url('../img/s3/products/final/blister.png');
+		background-size: cover;
+	}
