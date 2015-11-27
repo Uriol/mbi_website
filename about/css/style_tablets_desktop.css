@@ -35,12 +35,38 @@ and (max-width: 1200px) {
 
 .company_history {
 	width: 100%;
-	height: 0px;
+	/*height: 0px;*/
 	position: relative;
 }
 
+.company_history_container {
+	width: 100%;
+	/*height: 0px;*/
+	position: relative;
+	margin: 0 auto;
+	/*display: block;*/
+}
+
+.timeline_container_single_column {
+	display: none;
+}
+
+
+.history_column_container {
+	width: 50%;
+}
+
+#history_left_column_container {
+	float: left;
+}
+
+#history_right_column_container {
+	float: right;
+}
+
+
 .timeline_item_container {
-	width: 47.5%;
+	width: 97.5%;
 	position: relative;
 	/*margin-top: 40px;*/
 	margin-bottom: 40px;
@@ -95,8 +121,24 @@ and (max-width: 1200px) {
 .timeline_item_image {
 	width: 100%;
 	position: relative;
-	padding-bottom: 52.6%;
-	background-color: rgb(230,230,230);
+	padding-bottom: 56.25%;
+	background-color: rgb(255,255,255);
+}
+
+.timeline_item_image_110 {
+	width: 100%;
+	position: relative;
+	/*padding-bottom: 56.25%;*/
+	padding-bottom: 110%;
+	background-color: rgb(255,255,255);
+}
+
+.timeline_item_image_logo {
+	width: 100%;
+	position: relative;
+	/*padding-bottom: 56.25%;*/
+	padding-bottom: 40%;
+	background-color: rgb(255,255,255);
 }
 
 .timeline_item_text{
@@ -114,23 +156,31 @@ and (max-width: 1200px) {
 
 
 
-.timeline_item_text h1{
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 20px;
-	font-size: 20px;
-	font-family: 'avenir_bold', sans-serif;
-	text-transform: uppercase;
-}
+	.timeline_item_text h1{
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		font-size: 15px;
+		font-family: 'avenir_bold', sans-serif;
+		text-transform: uppercase;
+		line-height: 20px;
+		letter-spacing: 1px;
+	}
 
-.timeline_item_text p {
-	font-family: 'avenir_medium', sans-serif;
-	font-size: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
+	.timeline_item_text h1.subtitle {
+		padding-bottom: 0px;
+	}
+
+	.timeline_item_text p {
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 15px;
+		line-height: 20px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 16px;
+	}
 
 
 
@@ -138,45 +188,49 @@ and (max-width: 1200px) {
 
 	/* Year */
 	.timeline_item_container.left_container .year_container {
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 		border-radius: 50%;
-		/*float: right;
-		clear: right;
-		margin-right: -50px;*/
+		
 		position: absolute;
 		margin-left: 100%;
-		left: -40px;
-		margin-top: -20px;
+		left: -30px;
+		margin-top: -15px;
 		text-align: center;
 		vertical-align: text-bottom;
 
 	}
 
 	.timeline_item_container.right_container .year_container {
-		width: 80px;
-		height: 80px;
+		width: 60px;
+		height: 60px;
 		border-radius: 50%;
 
 		position: absolute;
-		left: -40px;
-		margin-top: -20px;
+		left: -30px;
+		margin-top: -15px;
 		text-align: center;
 		vertical-align: text-bottom;
 
 	}
 
+	/* Text */
+	.year_container h2 {
+		font-size: 15px;
+		font-family: 'avenir_bold', sans-serif;
+	}
+
+
 	.timeline_item_container .year_container h2{
-		margin-top: 30px;
+		margin-top: 25px;
 		color: white;
 	}
 
 	/* Individual items */
 	#container_two {
-		margin-top: 200px;
+		margin-top: 60px;
 	}
 
-	
 
 
 }

@@ -91,4 +91,13 @@ section.content {
 
 
 
+/* IMAGES */
+#sm {
+	background: url('../img/history/sm.png');
+	background-size: cover;
+}
 
+#new_logo {
+	background: url('../img/history/new_logo.png');
+	background-size: cover;
+}
