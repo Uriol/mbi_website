@@ -74,14 +74,23 @@ and (max-width: 768px) {
 		padding-bottom: 20px;
 	}
 
-
-	.h_line_left {
-		display: none;
+	.v_line {
+		width: 3px;
+		position: absolute;
+		margin-left: 50%;
+		left: -1.5px;
+		
 	}
 
-	.h_line_right {
-		display:none;
+	.v_line.year {
+		margin-top: -20px;
+		height: 100px;
 	}
+
+	.v_line.end {
+		height: 40px;
+	}
+	
 
 	.timeline_item {
 		background-color: rgb(230,230,230);

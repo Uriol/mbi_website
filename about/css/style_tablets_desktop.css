@@ -8,17 +8,11 @@ and (max-width: 1200px) {
 		width: 100%;
 		height: 600px;
 		position: relative;
-		background-color: rgb(150,150,150);
+		background-color: rgb(20,20,20);
 	}
 
 
 	/* Company description --------------------------------------------- */
-	.company_description {
-		width: 100%;
-		height: 300px;
-		position: relative;
-		background-color: rgb(240,240,240);
-	}
 
 
 	/* Company history ------------------------------------------------ */
@@ -69,7 +63,8 @@ and (max-width: 1200px) {
 	width: 97.5%;
 	position: relative;
 	/*margin-top: 40px;*/
-	margin-bottom: 40px;
+	
+	margin-top: 40px;
 	top: 0px;
 }
 

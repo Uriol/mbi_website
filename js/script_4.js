@@ -95,11 +95,6 @@ $(function(){
 	function generateStars() {
 
 		star_objects = [];
-		// if ( world.hasChildNodes() ) {
-		// 	while ( world.childNodes.length >= 1 ) {
-		// 		world.removeChild( world.firstChild );       
-		// 	} 
-		// }
 		for( var j = 0; j < 5; j++ ) {
 			star_objects.push( createStar() );
 		}

@@ -23,6 +23,41 @@ section.content {
 	/*height: inherit;*/
 }
 
+/* Company description --------------------------------------------- */
+.company_description {
+	width: 100%;
+	height: inherit;
+	position: relative;
+	
+}
+
+
+.company_description_container {
+	width: 100%;
+	max-width: 750px;
+	/*background-color: white;*/
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	/*top: 60px;*/
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+.company_description_container h1{
+	font-family: avenir_bold;
+	font-size: 40px;
+	color: rgb(40,40,40);
+	line-height: 40px;
+}
+
+.company_description_container p {
+	font-family: avenir_medium;
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 30px;
+}
+
 
 /* Timeline items ---------------- */
 /* Color Red */
@@ -45,7 +80,15 @@ section.content {
 .timeline_item_container.red .year_container {
 	background-color: rgb(226,35,26);
 }
-
+.v_line_left.red {
+	background-color: rgb(226,35,26);
+}
+.v_line_right.red {
+	background-color: rgb(226,35,26);
+}
+.v_line.red {
+	background-color: rgb(226,35,26);
+}
 
 
 /* Color green*/
@@ -65,6 +108,15 @@ section.content {
 	color: white;
 }
 .timeline_item_container.green .year_container {
+	background-color: rgb(119,188,31);
+}
+.v_line_left.green {
+	background-color: rgb(119,188,31);
+}
+.v_line_right.green {
+	background-color: rgb(119,188,31);
+}
+.v_line.green {
 	background-color: rgb(119,188,31);
 }
 
@@ -88,16 +140,41 @@ section.content {
 .timeline_item_container.yellow .year_container {
 	background-color: rgb(255,163,0);
 }
-
+.v_line_left.yellow {
+	background-color: rgb(255,163,0);
+}
+.v_line_right.yellow {
+	background-color: rgb(255,163,0);
+}
+.v_line.yellow {
+	background-color: rgb(255,163,0);
+}
 
 
 /* IMAGES */
-#sm {
+.timeline_item_image.sm {
 	background: url('../img/history/sm.png');
 	background-size: cover;
 }
 
-#new_logo {
+.timeline_item_image.new_logo {
 	background: url('../img/history/new_logo.png');
+	background-size: cover;
+}
+
+
+
+.timeline_item_image.zomlings {
+	background: url('../img/history/zomlings.png');
+	background-size: cover;
+}
+
+.timeline_item_image.bungees {
+	background: url('../img/history/bungees_2.png');
+	background-size: cover;
+}
+
+.timeline_item_image.gogos3 {
+	background: url('../img/history/gogos3.png');
 	background-size: cover;
 }

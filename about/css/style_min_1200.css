@@ -14,40 +14,7 @@ and (min-width: 1201px) {
 	}
 
 
-/* Company description --------------------------------------------- */
-.company_description {
-	width: 100%;
-	height: inherit;
-	position: relative;
-	
-}
 
-
-.company_description_container {
-	width: 100%;
-	max-width: 770px;
-	/*background-color: white;*/
-	position: relative;
-	text-align: center;
-	margin: 0 auto;
-	/*top: 60px;*/
-	padding-top: 50px;
-	padding-bottom: 60px;
-}
-
-.company_description_container h1{
-	font-family: avenir_bold;
-	font-size: 40px;
-	color: rgb(40,40,40);
-	line-height: 40px;
-}
-
-.company_description_container p {
-	font-family: avenir_medium;
-	font-size: 16px;
-	line-height: 25px;
-	margin-top: 30px;
-}
 
 
 
@@ -69,6 +36,7 @@ and (min-width: 1201px) {
 	position: relative;
 	margin: 0 auto;
 	/*display: block;*/
+	background-color: rgb(200,200,200)
 }
 
 .timeline_container_single_column {
@@ -89,7 +57,7 @@ and (min-width: 1201px) {
 
 
 .timeline_item_container {
-	width: 97.5%;
+	width: 95%;
 	position: relative;
 	margin-top: 40px;
 	top: 0px;
@@ -99,18 +67,18 @@ and (min-width: 1201px) {
 .left_container {
 	float: left;
 	clear: left;
-	margin-left: 2.5%;
+	margin-left: 5%;
 }
 
 .right_container {
 	float: right;
 	clear: right;
-	margin-right: 2.5%;
+	margin-right: 5%;
 }
 
 .h_line_left {
 	width: 20%;
-	height: 2px;
+	height: 3px;
 	
 	position: relative;
 	margin-left: 80%;
@@ -119,11 +87,24 @@ and (min-width: 1201px) {
 
 .h_line_right {
 	width: 20%;
-	height: 2px;
+	height: 3px;
 	
 	position: relative;
 	margin-right: 80%;
 	top: 20px;
+}
+
+.v_line_left {
+	width: 3px;
+	position: absolute;
+	margin-left: 100%;
+	left: -1.5px;
+}
+
+.v_line_right {
+	width: 3px;
+	position: absolute;
+	left: -1.5px;
 }
 
 .timeline_item {
@@ -248,6 +229,7 @@ and (min-width: 1201px) {
 		margin-top: -15px;
 		text-align: center;
 		vertical-align: text-bottom;
+		z-index: 9999;
 
 	}
 
@@ -261,6 +243,7 @@ and (min-width: 1201px) {
 		margin-top: -15px;
 		text-align: center;
 		vertical-align: text-bottom;
+		z-index: 9999;
 
 	}
 
@@ -275,8 +258,50 @@ and (min-width: 1201px) {
 		margin-top: 100px;
 	}
 
-	/*#container_fourteen {
-		margin-top: 80px;
-	}*/
-
+	/* Vertical lines --------------------------- */
+	.v_line_left.sm {
+		height: 180px;
+	}
+	.v_line_right.new_office {
+		height: 370px;
+	}
+	.v_line_right.zomlings {
+		height: 220px;
+	}
+	.v_line_left.bungees {
+		height: 255px;
+	}
+	.v_line_right.stoppers {
+		height: 100px;
+	}
+	.v_line_left.gogos3 {
+		height: 290px;
+	}
+	.v_line_right.rollers {
+		height: 100px;
+	}
+	.v_line_left.shoot {
+		height: 290px;
+	}
+	.v_line_right.rappers {
+		height: 150px;
+	}
+	.v_line_left.gogos2 {
+		height: 240px;
+	}
+	.v_line_right.pickers {
+		height: 150px;
+	}
+	.v_line_left.spice {
+		height: 240px;
+	}
+	.v_line_right.gogos1 {
+		height: 250px;
+	}
+	.v_line_left.caps {
+		height: 150px;
+	}
+	.v_line_right.futbol {
+		height: 268px;
+	}
 }

@@ -94,11 +94,6 @@ $(function(){
 	// Generate clouds
 	function generate() {
 		objects = [];
-		// if ( world.hasChildNodes() ) {
-		// 	while ( world.childNodes.length >= 1 ) {
-		// 		world.removeChild( world.firstChild );       
-		// 	} 
-		// }
 		for( var j = 0; j < 5; j++ ) {
 			objects.push( createCloud() );
 		}
@@ -107,14 +102,6 @@ $(function(){
 	var page_y;
 	//  Get mouse position
 	window.addEventListener( 'mousemove', function( e ) {
-		// worldYAngle = -( .5 - ( e.clientX / window.innerWidth ) ) * 180;
-		// worldYAngle = worldYAngle/5;
-
-		// worldXAngle = ( .5 - ( e.clientY / window.innerHeight ) ) * 180;
-		// worldXAngle = worldXAngle/5;
-
-		// updateView();
-
 		
 		page_y = e.pageY;
 		if (page_y >= 80 && page_y <= 680) {
@@ -127,10 +114,6 @@ $(function(){
 			updateView();
 		}
 
-
-		// $('#viewport').mouseover(function() {
-		// 	console.log('in');
-		// })
 
 	} );
 

@@ -196,7 +196,7 @@ and (min-width: 1201px) {
 		background-position: center;
 	}
 	#series_four_video_thumbnail {
-		background: url('../img/s4/s3_thumbnail.png');
+		background: url('../img/s4/s4_thumbnail.png');
 		background-size: cover;
 	}
 	#player_series_four{
