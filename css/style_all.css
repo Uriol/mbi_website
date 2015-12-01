@@ -4,10 +4,15 @@
 	background-color: white;
 	position: absolute;
 	position:fixed;
-	z-index: 9999;
+	z-index: 999999;
 	overflow-y: hidden;
 }
 
+
+/* MENU */
+ul.main_menu li.menu_item#green_item{
+	color: rgb(119,188,31);
+}
 
 #player_sm_cd{
 	border-style: solid;
@@ -83,7 +88,6 @@ iframe {
 	position: relative;
 	margin: 0 auto;
 	top: 120px;
-	/*background-color: rgb(30,71,120);*/
 	background-color: rgba(0,0,0,1); 
 
 }
@@ -116,8 +120,6 @@ iframe {
 	width: 100%;
 	height: 120px;
 	position: relative;
-	
-	/*background-color: rgb(255,255,255);*/
 }
 
 #main_display_countdown ul {
@@ -129,33 +131,25 @@ iframe {
 	background-color: rgb(255,255,255);
 	border-radius: 10px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	/*background: url('../img/countdown_bg.png');
-	background-size: cover;*/
 	z-index: 9999;
 }
 
 #main_display_countdown ul li{
 	width: 95px;
 	padding: 37px 0px 0px 0px;
-	/*margin-left: 5px;
-	margin-right: 5px;*/
 	display: inline-block;
 	font-family: burbank;
 	font-size: 60px;
 	line-height:20px;
-	/*color: rgb(161,27,34);*/
 	color: rgb(227,5,19);
 	letter-spacing: 2px;
-	/*background-color: rgba(255,255,255,0.5);*/
 }
 
 #main_display_countdown ul li span {
 	font-size: 14px;
 	font-family: avenir_bold;
-	/*color: rgb(0,113,171);*/
 	color: rgb(0,113,171);
 	letter-spacing: 0.5px;
-	/*text-shadow: 1px 1px rgba(100,100,100,0.5);*/
 }
 
 
@@ -183,7 +177,6 @@ iframe {
 	margin-top: -256px;
 	height: 512px;
 	width: 512px;
-	/*background-color: rgba( 255, 0, 0, .2 );*/
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-o-transform-style: preserve-3d;
@@ -196,7 +189,6 @@ iframe {
 }
 
 .cloudBase {
-	/*background-color: rgba( 255, 0, 255, .5 );*/
 	position: absolute;
 	left: 256px;
 	top: 256px;
@@ -207,7 +199,6 @@ iframe {
 }
 
 .starBase {
-	/*background-color: rgba( 0, 0, 0, .5 );*/
 	position: absolute;
 	left: 256px;
 	top: 256px;
@@ -225,7 +216,6 @@ iframe {
 	height: 256px;
 	margin-left: -128px;
 	margin-top: -128px;
-	/*background-color: rgba( 0, 255, 255, .1 );*/
 	-webkit-transition: opacity .5s ease-out;
 	-moz-transition: opacity .5s ease-out;
 	-o-transition: opacity .5s ease-out;
@@ -239,7 +229,6 @@ iframe {
 	height: 150px;
 	margin-left: -75px;
 	margin-top: -75px;
-	/*background-color: rgba( 0, 255, 255, .1 );*/
 	-webkit-transition: opacity .5s ease-out;
 	-moz-transition: opacity .5s ease-out;
 	-o-transition: opacity .5s ease-out;
@@ -260,12 +249,11 @@ article.banner {
 /* Company motto */
 .company_motto_container {
 	width: 100%;
-	max-width: 770px;
+	max-width: 900px;
 	background-color: white;
 	position: relative;
 	text-align: center;
 	margin: 0 auto;
-	/*top: 60px;*/
 	padding-top: 120px;
 	padding-bottom: 120px;
 }
@@ -274,8 +262,8 @@ article.banner {
 	font-family: avenir_medium;
 	font-size: 28px;
 	line-height: 40px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 
@@ -283,7 +271,6 @@ article.banner {
 	section.pre_footer {
 		width: 100%;
 		position: relative;
-	/*	background-color: red;*/
 	}
 
 	.pre_footer_img {

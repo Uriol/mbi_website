@@ -1,10 +1,8 @@
-
-
-
 @media only screen 
-and (min-width: 1201px) {
+and (min-width: 1000px)
+and (max-width: 1200px) {
 
-	/* Company pics ----------------------------------------------------- */
+		/* Company pics ----------------------------------------------------- */
 	.company_pics {
 		width: 100%;
 		height: 600px;
@@ -13,14 +11,14 @@ and (min-width: 1201px) {
 	}
 
 	/* Company history ------------------------------------------------ */
-	/*.company_history {
+/*	.company_history {
 		width: 100%;
 		height: inherit;
 		position: relative;
 	}*/
 
 	.company_history_container {
-		width: 1200px;
+		width: 1000px;
 		height: inherit;
 		position: relative;
 		margin: 0 auto;
@@ -70,7 +68,7 @@ and (min-width: 1201px) {
 	}*/
 
 
-	/*.timeline_item_container {
+/*	.timeline_item_container {
 		width: 95%;
 		height: inherit;
 		position: relative;
@@ -104,8 +102,8 @@ and (min-width: 1201px) {
 	.timeline_item_container.center_container .timeline_item {
 		width: 100%;
 		display: inline-block;
-	}
-*/
+	}*/
+
 
 /*	.h_line_left {
 		width: 20%;
@@ -182,8 +180,8 @@ and (min-width: 1201px) {
 		width: 100%;
 		position: relative;
 		text-align: center;
-	}*/
-
+	}
+*/
 
 	/* Text */
 /*	.year_container h2 {
@@ -216,9 +214,9 @@ and (min-width: 1201px) {
 		padding-right: 15px;
 		padding-top: 10px;
 		padding-bottom: 16px;
-	}
+	}*/
 
-*/
+
 
 	/* Year */
 /*	.timeline_item_container.left_container .year_container {
@@ -267,69 +265,71 @@ and (min-width: 1201px) {
 		color: white;
 	}
 
-
-
 	.timeline_item_container .year_container h2{
 		margin-top: 25px;
 		color: white;
 	}*/
 
+
+
 	#container_2 {
 		margin-top: 100px;
 	}
 
-	#container_6 {
-		/*margin-top: 60px;*/
+	#container_9 {
+		margin-top: 100px;
 	}
 
-	#container_8 {
-		/*margin-top: 100px;*/
+	#container_19 {
+		margin-top: 100px;
 	}
+
 
 	/* Vertical lines --------------------------- */
 	#container_1 .v_line_left{
 		height: 180px;
 	}
 	#container_3 .v_line_right{
-		height: 370px;
+		height: 320px;
 	}
 	#container_5 .v_line_right{
-		height: 180px;
+		height: 160px;
 	}
 	#container_6 .v_line_left{
-		height: 250px;
+		height: 290px;
 	}
 	#container_8 .v_line_right{
 		height: 100px;
 	}
 	#container_9 .v_line_left{
-		height: 300px;
+		height: 250px;
 	}
 	#container_10 .v_line_right{
-		height: 100px;
+		height: 120px;
 	}
 	#container_11 .v_line_left{
-		height: 300px;
+		height: 230px;
 	}
 	#container_12 .v_line_right{
-		height: 120px;
+		height: 170px;
 	}
 	#container_13 .v_line_left{
-		height: 250px;
+		height: 180px;
 	}
 	#container_14 .v_line_right{
-		height: 120px;
+		height: 190px;
 	}
 	#container_15 .v_line_left{
-		height: 250px;
+		height: 160px;
 	}
 	#container_16 .v_line_right{
-		height: 250px;
+		height: 320px;
 	}
 	#container_18 .v_line_left{
-		height: 150px;
+		height: 120px;
 	}
 	#container_19 .v_line_right{
-		height: 238px;
+		height: 234px;
 	}
+
 }
