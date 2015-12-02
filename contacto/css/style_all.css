@@ -1,0 +1,52 @@
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../fonts/avenirnextw1gmedium.woff');
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+
+.contact_form_container {
+	position: relative;
+	width: 100%;
+	height: inherit;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 120px;
+}
+
+
+
+
+/* Pre footer */
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+	/*	background-color: red;*/
+	}
+
+	.pre_footer_img {
+		width: 760px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#home_pre_footer {
+		background-image: url('../../productos/zomlings/img/s1/footer/footer_3.png');
+		background-size: cover;
+	}

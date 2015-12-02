@@ -5,6 +5,8 @@ var mouse_in_products_submenu = false;
 
 var submenu_on_mobile = false;
 
+var small_menu_on = false;
+
 $(function(){
 
 
@@ -101,6 +103,7 @@ $(function(){
 		$('section.content').hide();
 		// Show submenu
 		$('.submenu').removeClass('off').addClass('on');
+		small_menu_on = true;
 	});
 	$(document).on('click', '.menu_mobile_submenu_icon.on', function() {
 		// This add class as on
@@ -109,8 +112,25 @@ $(function(){
 		$('section.content').show();
 		// Show submenu
 		$('.submenu').removeClass('on').addClass('off');
+		small_menu_on = false;
 	})
 	
+
+	var w;
+	//  Detect when small menu its on and the screen goes big
+	window.addEventListener( 'resize', function( e ) {
+
+		w = window.innerWidth;
+		if (small_menu_on == true && w >= 541) {
+			$('.menu_mobile_submenu_icon').removeClass('on').addClass('off');
+			// Show bg info
+			$('section.content').show();
+			// Show submenu
+			$('.submenu').removeClass('on').addClass('off');
+			small_menu_on = false;
+			}
+
+	});
 
 	
 })

@@ -82,7 +82,7 @@ and (max-width: 768px) {
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	/*background: url('../img/countdown_bg.png');
 	background-size: cover;*/
-	z-index: 9999;
+	z-index: 99;
 }
 
 #main_display_countdown ul li{

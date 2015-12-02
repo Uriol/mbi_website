@@ -4,15 +4,12 @@
 	background-color: white;
 	position: absolute;
 	position:fixed;
-	z-index: 999999;
+	z-index: 9999;
 	overflow-y: hidden;
 }
 
 
-/* MENU */
-ul.main_menu li.menu_item#green_item{
-	color: rgb(119,188,31);
-}
+
 
 #player_sm_cd{
 	border-style: solid;
@@ -131,7 +128,7 @@ iframe {
 	background-color: rgb(255,255,255);
 	border-radius: 10px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	z-index: 9999;
+	z-index: 999;
 }
 
 #main_display_countdown ul li{
@@ -241,7 +238,7 @@ article.banner {
 	height: inherit;
 	position: relative;
 	margin: 0 auto;
-	z-index: 99999;
+	z-index: 999;
 	background-color: white;
 }
 
@@ -249,7 +246,7 @@ article.banner {
 /* Company motto */
 .company_motto_container {
 	width: 100%;
-	max-width: 900px;
+	max-width: 950px;
 	background-color: white;
 	position: relative;
 	text-align: center;

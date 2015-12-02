@@ -38,7 +38,7 @@ $(function(){
 			var star = document.createElement( 'img' );
 			star.style.opacity = 0;
 			var r = Math.random();
-			var src = 'img/star_5.png';
+			var src = 'img/star.png';
 			( function( img ) { img.addEventListener( 'load', function() {
 				img.style.opacity = 0.8;
 			} ) } )( star );
