@@ -1,5 +1,6 @@
 <?php
-require('ES/index.php');
+//require('ES/index.php');
+header('Location: ES/index.php')
 // include("geoip.inc"); 
 // $gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
 
