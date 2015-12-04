@@ -1,3 +1,25 @@
+<?php
+
+	//$country = 'UK';
+	$country = 'INT';
+	
+	//header('Location: ../UK/index.php');
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	// echo $actual_link;
+	if ( $actual_link != 'http://localhost:8888/mbi_2/ES/contacto/index.php') {
+		//echo 'different';
+		header('Location: http://localhost:8888/mbi_2/ES/contacto/index.php');
+	}
+
+	// Redirect Based on country
+	if ($country == 'UK'){
+		header('Location: http://localhost:8888/mbi_2/UK/contact/index.php');
+	} else if ($country == 'INT') {
+		header('Location: http://localhost:8888/mbi_2/INT/contact/index.php');
+	}
+
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -28,16 +50,16 @@
 			<!-- Menu desktop  -->
 			<article class='menu'>
 				<div id='main_menu'>
-					<a href='../index.html'>
+					<a href='../index.php'>
 						<div id='menu_logo'></div>
 					</a>
 					<div id='menu_ul_container'>
 						<ul class='main_menu'>
 							<li class='menu_item' id='red_item'>PRODUCTOS<span> ▼</span></li>
-							<a href='../compañia/index.html'>
+							<a href='../company/index.php'>
 								<li class='menu_item' id='green_item'>COMPAÑIA</li>
 							</a>
-							<a href='index.html'>
+							<a href='index.php'>
 								<li class='menu_item' id='yellow_item'>CONTACTO</li>
 							</a>
 						</ul>
@@ -46,10 +68,10 @@
 			</article>
 			<article id='submenu' class='off'>
 				<div id='submenu_products_container'>
-					<a href="../productos/star_monsters/index.html">	
+					<a href="../star_monsters/index.php">	
 						<div id='submenu_product_one' class='submenu_product_start'></div>
 					</a>
-					<a href="../productos/zomlings/index.html">	
+					<a href="../zomlings/index.php">	
 						<div id='submenu_product_two' class='submenu_product_start'></div>
 					</a> 
 				</div>
@@ -57,7 +79,7 @@
 			<!-- Menu mobile -->
 			<div class='menu_mobile'>
 				<div class='menu_top_bar_mobile'>
-					<a href='../index.html'>
+					<a href='../index.php'>
 						<div class='menu_mobile_logo'></div>
 					</a>
 					<div class='menu_mobile_submenu_icon off'></div>
@@ -65,17 +87,17 @@
 				<div class='submenu off'>
 					<ul class='main_submenu'>
 						<li class='products_li'>PRODUCTOS<span> ▼</span></li>
-						<a href="../productos/star_monsters/index.html">	
+						<a href="../star_monsters/index.php">	
 							<div id='SM_submenu_mobile_logo' class='product_submenu'></div>
 						</a>
-						<a href="../productos/zomlings/index.html">	
+						<a href="../zomlings/index.php">	
 							<div id='Z_submenu_mobile_logo' class='product_submenu'></div>
 						</a>
 							
-						<a href='../compañia/index.html'>	
+						<a href='../company/index.php'>	
 							<li id='green_item_mobile'>COMPAÑIA</li>
 						</a>
-						<a href='index.html'>
+						<a href='index.php'>
 							<li id='yellow_item_mobile'>CONTACTO</li>
 						</a>
 					</ul>
