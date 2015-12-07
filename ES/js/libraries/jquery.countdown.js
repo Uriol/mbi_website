@@ -65,7 +65,8 @@ var Countdown = function(el, options) {
    */
   this.getDiffDate = function() {
     var diff = (this.options.date.getTime() - Date.now() + this.options.offset) / 1000;
-    //console.log('date in library: ' + this.options.date);
+    // console.log('current date from lib: ' + Date.now());
+    // console.log('date from lib: ' + this.options.date);
     var dateData = {
       years:    0,
       days:     0,

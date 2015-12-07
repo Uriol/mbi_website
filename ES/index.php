@@ -1,7 +1,7 @@
 <?php
 
 //$country = 'UK';
-$country = 'INT';
+$country = 'ES';
 
 // Make sure we are not in a fake sub folder
 // If we are redirect to the correct one
@@ -50,67 +50,9 @@ if ($country == 'UK'){
 		<div class='loading'>
 		</div>
 
-		<header>
-
-			<article class='menu'>
-				<div id='main_menu'>
-					
-					<a href='index.php'>
-						<div id='menu_logo'></div>
-					</a>
-					<div id='menu_ul_container'>
-						<ul class='main_menu'>
-							<li class='menu_item' id='red_item'>PRODUCTOS<span> ▼</span></li>
-							<a href="company/index.php">	
-								<li class='menu_item' id='green_item'>COMPAÑIA</li>
-							</a>
-							<a href="contacto/index.php">	
-								<li class='menu_item' id='yellow_item'>CONTACTO</li>
-							</a>
-						</ul>
-					</div>
-				</div>
-			</article>
-
-			<article id='submenu' class='off'>
-				<div id='submenu_products_container'>
-					<a href="star_monsters/index.php">		
-						<div id='submenu_product_one' class='submenu_product_start'></div>
-					</a>
-					<a href="zomlings/index.php">	
-						<div id='submenu_product_two' class='submenu_product_start'></div>
-					</a> 
-				</div>
-			</article>
-
-			<div class='menu_mobile'>
-				<div class='menu_top_bar_mobile'>
-					<a href='index.php'>
-						<div class='menu_mobile_logo'></div>
-					</a>
-					<div class='menu_mobile_submenu_icon off'></div>
-				</div>
-				<div class='submenu off'>
-					<ul class='main_submenu'>
-						<li class='products_li'>PRODUCTOS<span> ▼</span></li>
-						<a href="star_monsters/index.php">	
-							<div id='SM_submenu_mobile_logo' class='product_submenu'></div>
-						</a>
-						<a href="zomlings/index.php">	
-							<div id='Z_submenu_mobile_logo' class='product_submenu'></div>
-						</a>
-						<a href="company/index.php">	
-							<li id='green_item_mobile'>COMPAÑIA</li>
-						</a>
-						<a href="contacto/index.php">	
-							<li id='yellow_item_mobile'>CONTACTO</li>
-						</a>
-					</ul>
-				</div>
-			</div>
-
-		</header>
-
+		<?php
+			include('header.php');
+		?>
 
 		<section class='content'>
 
@@ -167,30 +109,9 @@ if ($country == 'UK'){
 			</div>
 
 			<!-- Footer -->
-			<section class='footer'>
-				<div class='social_media'>
-					<div class='social_media_container'>
-						<a href="https://www.facebook.com/magicboxint" target="_blank">
-							<div class='social_media_icon' id='facebook_icon'></div>
-						</a>
-
-						<a href="https://twitter.com/@MagicBox_int" target="_blank">
-							<div class='social_media_icon' id='twitter_icon'></div>
-						</a>
-
-						<a href="https://www.instagram.com/magicboxint.toys" target="_blank">
-							<div class='social_media_icon' id='instagram_icon'></div>
-						</a>
-
-						<a href="https://www.youtube.com/channel/UC3C6tUlYvhHCapwAxyedyMg" target="_blank">
-							<div class='social_media_icon' id='yt_icon'></div>
-						</a>
-
-					</div>
-					<p>© MAGIC BOX TOYS</p>
-				</div>
-				
-			</section>
+			<?php
+				include('footer.php');
+			?>
 
 		</section>
 

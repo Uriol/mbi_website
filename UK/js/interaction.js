@@ -70,8 +70,8 @@ $(function() {
 		//console.log($players[index])
 	})
 
-	//var endDate = new Date(2016, 0, 25, 18, 40,0);
-	var endDate = new Date(Date.UTC(2016, 0, 25, 08, 00, 00));
+	// enter time in UTC
+	var endDate = new Date(Date.UTC(2016, 1, 4, 08, 00, 00));
 	//console.log('data in script: ' + endDate);
 	//console.log('date from script: ' + endDate)
 

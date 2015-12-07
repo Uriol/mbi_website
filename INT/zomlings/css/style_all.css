@@ -159,7 +159,7 @@
 	}
 
 	.description_container a.s1_blog {
-		color: rgb(226, 35, 26);
+		color: rgb(190,22,33);
 	}
 	.description_container a.s2_blog {
 		color: rgb(255,163,0);
@@ -177,10 +177,10 @@
 	/* Galleries ------------------------------------------------- */
 		/* Gallery series one */
 	#series_one_gallery_index_container .gallery_index_item_on {
-		background-color: rgb(226,35,26);
+		background-color: rgb(190,22,33);
 	}
 	#series_one_gallery_index_container .gallery_index_item_off:hover {
-		background-color: rgb(226,35,26);
+		background-color: rgb(190,22,33);
 	}
 	#series_one_pic {
 		background: url('../img/s1/gallery/img_one.png');

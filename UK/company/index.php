@@ -1,7 +1,7 @@
 <?php
 
 	//$country = 'UK';
-	$country = 'INT';
+	$country = 'UK';
 	
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -48,64 +48,9 @@
 		<div class='loading'>
 		</div>
 
-		<header>
-			<!-- Menu desktop  -->
-			<article class='menu'>
-				<div id='main_menu'>
-					<a href='../index.php'>
-						<div id='menu_logo'></div>
-					</a>
-					<div id='menu_ul_container'>
-						<ul class='main_menu'>
-							<li class='menu_item' id='red_item'>PRODUCTS<span> ▼</span></li>
-							<a href='index.html'>
-								<li class='menu_item' id='green_item'>COMPANY</li>
-							</a>
-							<a href='../contact/index.php'>
-								<li class='menu_item' id='yellow_item'>CONTACT</li>
-							</a>
-						</ul>
-					</div>
-				</div>
-			</article>
-			<article id='submenu' class='off'>
-				<div id='submenu_products_container'>
-					<a href="../star_monsters/index.php">	
-						<div id='submenu_product_one' class='submenu_product_start'></div>
-					</a>
-					<a href="../zomlings/index.php">	
-						<div id='submenu_product_two' class='submenu_product_start'></div>
-					</a> 
-				</div>
-			</article>
-			<!-- Menu mobile -->
-			<div class='menu_mobile'>
-				<div class='menu_top_bar_mobile'>
-					<a href='../index.php'>
-						<div class='menu_mobile_logo'></div>
-					</a>
-					<div class='menu_mobile_submenu_icon off'></div>
-				</div>
-				<div class='submenu off'>
-					<ul class='main_submenu'>
-						<li class='products_li'>PRODUCTS<span> ▼</span></li>
-						<a href="../star_monsters/index.php">	
-							<div id='SM_submenu_mobile_logo' class='product_submenu'></div>
-						</a>
-						<a href="../zomlings/index.php">	
-							<div id='Z_submenu_mobile_logo' class='product_submenu'></div>
-						</a>
-							
-						<a href='index.php'>	
-							<li id='green_item_mobile'>COMPANY</li>
-						</a>
-						<a href='../contact/index.php'>
-							<li id='yellow_item_mobile'>CONTACT</li>
-						</a>
-					</ul>
-				</div>
-			</div>
-		</header>
+		<?php
+			include('../header.php');
+		?>
 
 		<section class='content'>
 			<div class='company_pics'>
@@ -706,30 +651,10 @@
 				<div class='pre_footer_img' id='home_pre_footer'></div>
 			</div>
 			<!-- Footer -->
-			<section class='footer'>
-				<div class='social_media'>
-					<div class='social_media_container'>
-						<a href="https://www.facebook.com/magicboxint" target="_blank">
-							<div class='social_media_icon' id='facebook_icon'></div>
-						</a>
+			<?php 
+				include('../footer.php');
+			?>
 
-						<a href="https://twitter.com/@MagicBox_int" target="_blank">
-							<div class='social_media_icon' id='twitter_icon'></div>
-						</a>
-
-						<a href="https://www.instagram.com/magicboxint.toys" target="_blank">
-							<div class='social_media_icon' id='instagram_icon'></div>
-						</a>
-
-						<a href="https://www.youtube.com/channel/UC3C6tUlYvhHCapwAxyedyMg" target="_blank">
-							<div class='social_media_icon' id='yt_icon'></div>
-						</a>
-
-					</div>
-					<p>© MAGIC BOX TOYS</p>
-				</div>
-				
-			</section>
 
 		</section>
 

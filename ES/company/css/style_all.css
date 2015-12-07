@@ -165,34 +165,6 @@ ul.main_submenu #green_item_mobile {
 }
 
 
-/* IMAGES */
-.timeline_item_image.sm {
-	background: url('../img/history/sm.png');
-	background-size: cover;
-}
-
-.timeline_item_image.new_logo {
-	background: url('../img/history/new_logo.png');
-	background-size: cover;
-}
-
-
-
-.timeline_item_image.zomlings {
-	/*background: url('../img/history/zomlings.png');
-	background-size: cover;*/
-}
-
-.timeline_item_image.bungees {
-	/*background: url('../img/history/bungees_2.png');
-	background-size: cover;*/
-}
-
-.timeline_item_image.gogos3 {
-	/*background: url('../img/history/gogos3.png');
-	background-size: cover;*/
-}
-
 /* TIME LINE -------------------------------------------- */
 .company_history {
 	width: 100%;
@@ -437,13 +409,28 @@ ul.main_submenu #green_item_mobile {
 	}
 
 	/* TIME LINE PHOTOS */
+	#container_1 .timeline_item .timeline_item_image{
+		background: url('../img/history/sm.png');
+		background-size: cover;
+	}
+
+	#container_4 .timeline_item .timeline_item_image{
+		background: url('../img/history/new_logo.png');
+		background-size: cover;
+	}
+
 	#container_5 .timeline_item .timeline_item_image{
-		background: url('../img/history/zomlings_2.png');
+		background: url('../img/history/zomlings_3.png');
 		background-size: cover;
 	}
 
 	#container_6 .timeline_item .timeline_item_image{
 		background: url('../img/history/bungees_3.png');
+		background-size: cover;
+	}
+
+	#container_9 .timeline_item .timeline_item_image{
+		background: url('../img/history/gogos3.png');
 		background-size: cover;
 	}
 
