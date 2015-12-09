@@ -1,7 +1,6 @@
 <?php
 
 	//$country = 'UK';
-	$country = 'UK';
 	
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -11,10 +10,19 @@
 		header('Location: http://localhost:8888/mbi_2/UK/contact/index.php');
 	}
 
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	$origin = 'GB';
 	// Redirect Based on country
-	if ($country == 'ES'){
+	if ($origin == 'ES'){
 		header('Location: http://localhost:8888/mbi_2/ES/contacto/index.php');
-	} else if ($country == 'INT') {
+	} else if ($origin == 'GB') {
+		//header('Location: http://localhost:8888/mbi_2/UK/contact/index.php');
+	} else {
 		header('Location: http://localhost:8888/mbi_2/INT/contact/index.php');
 	}
 
@@ -23,7 +31,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ABOUT US</title>
+		<title>CONTACT</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
 		<link href='../css/reset.css' rel='stylesheet'>
@@ -323,7 +331,7 @@
 				            </label>
 						    <!-- Your message:<br>  -->
 						    <textarea name="message" placeholder="MESSAGE" rows="7" cols="30"></textarea><br> 
-						    <input type="submit" value="SEND"/> 
+						    <input type="submit" value="SEND MESSAGE"/> 
 						    </form> 
 						    <?php 
 						    }  

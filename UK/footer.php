@@ -13,7 +13,7 @@
 				<div class='social_media_icon' id='twitter_icon'></div>
 			</a>
 
-			<a href="https://www.instagram.com/magicboxint.toys" target="_blank">
+			<a href="https://www.instagram.com/zomlingsuk/" target="_blank">
 				<div class='social_media_icon' id='instagram_icon'></div>
 			</a>
 

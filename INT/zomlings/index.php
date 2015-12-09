@@ -1,8 +1,5 @@
 <?php
 
-	//$country = 'UK';
-	$country = 'INT';
-	
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	// echo $actual_link;
@@ -11,17 +8,23 @@
 		header('Location: http://localhost:8888/mbi_2/INT/zomlings/index.php');
 	}
 
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
 	// Redirect Based on country
-	if ($country == 'ES'){
+	if ($origin == 'ES'){
 		header('Location: http://localhost:8888/mbi_2/ES/zomlings/index.php');
-	} else if ($country == 'UK') {
-		header('Location: http://localhost:8888/mbi_2/UK/zomlings/index.php');;
+	} else if ($origin == 'GB') {
+		header('Location: http://localhost:8888/mbi_2/UK/zomlings/index.php');
+	} else {
+		//header('Location: http://localhost:8888/mbi_2/INT/zomlings/index.php');
 	}
 
 
 ?>
-
-
 
 
 
@@ -125,7 +128,7 @@
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
 							<h1>ZOMLINGS</h1>
-							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Octozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tuscasas, apila las torres y ¡crea tu propia Zomlings Town!</p>
+							<p>Zomlings are invading playgrounds everywhere! There are more than 100 cheeky, miniature monsters to collect and build into your own Zomlings Town. Explore the 7 different Zomlings neighbourhoods and discover characters like Ocotozom in Wacky Waters and Zomhog in Zomlings Zoo. There are even rare silver and gold Zomlings to discover and collect. Use your houses and towers to build your own Zomlings Town!</p>
 						</div>
 						<!-- Gallery series one -->
 						<div class='gallery_container'>
@@ -201,7 +204,7 @@
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
 							<h1>ZOMLINGS</h1>
-							<p>Hay zomlings de ediciones especiales que no se dejan ver tan fácilmente por Zomlings Town. Los Zomlings Adventure son intrépidos exploradores de nuevos lugares, por lo que siempre están de viaje. También tienes los exclusivos zomlings del Magic Trick Hotel, a quienes podrás sacar de su escondite con un divertido truco de magia. ¡Descúbrelos todos!</p>
+							<p>Zomlings Town has really grown since nervous visitors arrived to explore the streets for the first time. Look at Zomlings Town now and you will quickly discover brand new Towers and Houses and of course, a lot of exciting new Zomlings! The Crystal Towers and Houses add a splash of colour and a little sparkle to the surroundings. Spooky Street, Creepy Circus, Haunted Hotel....every neighbourhood has grown and improved.</p>
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>

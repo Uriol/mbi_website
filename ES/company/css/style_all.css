@@ -413,8 +413,16 @@ ul.main_submenu #green_item_mobile {
 		background: url('../img/history/sm.png');
 		background-size: cover;
 	}
+	#container_full_1 .timeline_item .timeline_item_image{
+		background: url('../img/history/sm.png');
+		background-size: cover;
+	}
 
 	#container_4 .timeline_item .timeline_item_image{
+		background: url('../img/history/new_logo.png');
+		background-size: cover;
+	}
+	#container_full_4 .timeline_item .timeline_item_image{
 		background: url('../img/history/new_logo.png');
 		background-size: cover;
 	}
@@ -423,13 +431,25 @@ ul.main_submenu #green_item_mobile {
 		background: url('../img/history/zomlings_3.png');
 		background-size: cover;
 	}
+	#container_full_5 .timeline_item .timeline_item_image{
+		background: url('../img/history/zomlings_3.png');
+		background-size: cover;
+	}
 
 	#container_6 .timeline_item .timeline_item_image{
 		background: url('../img/history/bungees_3.png');
 		background-size: cover;
 	}
+	#container_full_6 .timeline_item .timeline_item_image{
+		background: url('../img/history/bungees_3.png');
+		background-size: cover;
+	}
 
 	#container_9 .timeline_item .timeline_item_image{
+		background: url('../img/history/gogos3.png');
+		background-size: cover;
+	}
+	#container_full_9 .timeline_item .timeline_item_image{
 		background: url('../img/history/gogos3.png');
 		background-size: cover;
 	}

@@ -1,23 +1,30 @@
 <?php
 
-//$country = 'UK';
-$country = 'UK';
+	// $country = 'UK';
 
-// Make sure we are not in a fake sub folder
-// If we are redirect to the correct one
-$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-// echo $actual_link;
-if ( $actual_link != 'http://localhost:8888/mbi_2/UK/index.php') {
-	//echo 'different';
-	header('Location: http://localhost:8888/mbi_2/UK/index.php');
-}
+	// Make sure we are not in a fake sub folder
+	// If we are redirect to the correct one
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	// echo $actual_link;
+	if ( $actual_link != 'http://localhost:8888/mbi_2/UK/index.php') {
+		header('Location: http://localhost:8888/mbi_2/UK/index.php');
+	}
 
-// Redirect Based on country
-if ($country == 'ES'){
-	header('Location: http://localhost:8888/mbi_2/ES/index.php');
-} else if ($country == 'INT') {
-	header('Location: http://localhost:8888/mbi_2/INT/index.php');
-}
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	$origin = 'GB';
+	// Redirect Based on country
+	if ($origin == 'ES'){
+		header('Location: http://localhost:8888/mbi_2/ES/index.php');
+	} else if ($origin == 'GB') {
+		//header('Location: http://localhost:8888/mbi_2/UK/index.php');
+	} else {
+		header('Location: http://localhost:8888/mbi_2/INT/index.php');
+	}
 
 ?>
 
@@ -102,7 +109,7 @@ if ($country == 'ES'){
 			</article>
 			<article class='banner'>
 				<div class='company_motto_container'>
-					<h2>En Magic Box somos creadores, construimos marcas y generamos tendencias en el sector de los juguetes coleccionables.</h2>
+					<h2>At Magic Box Int we are creators, we build our own brands and create new trends in the collectable toy market.</h2>
 				</div>
 			</article>
 

@@ -11,11 +11,19 @@
 		header('Location: http://localhost:8888/mbi_2/INT/star_monsters/index.php');
 	}
 
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
 	// Redirect Based on country
-	if ($country == 'ES'){
+	if ($origin == 'ES'){
 		header('Location: http://localhost:8888/mbi_2/ES/star_monsters/index.php');
-	} else if ($country == 'UK') {
+	} else if ($origin == 'GB') {
 		header('Location: http://localhost:8888/mbi_2/UK/star_monsters/index.php');
+	} else {
+		//header('Location: http://localhost:8888/mbi_2/INT/star_monsters/index.php');
 	}
 
 
@@ -136,7 +144,7 @@
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
 							<h1>STAR MONSTERS</h1>
-							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Ocotozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tus casas, apila las torres y crea tu propia Zomlings Town!</p>
+							<p>Triangular stars fall from the sky, this is the origin of Star Monsters. Quirky and funny characters, unlike anything that you have ever seen. There are so many different Star Monsters to meet - Essential, Evolved, Rare, Ultra Rare... Each and every one is here to play! Discover them all. Star Monsters guarantee fun!</p>
 						</div>
 						<!-- Gallery series one -->
 						<div class='gallery_container'>

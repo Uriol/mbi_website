@@ -82,10 +82,10 @@ $(function() {
 		render: function(data) {
 			// days
 			days = this.leadingZeros(data.days, 2);
-			$('#days').text(days).append( "</br><span>DAYS</span>" );
+			$('#days').text(days).append( "</br><span>DÍAS</span>" );
 			// hours
 			hours = this.leadingZeros(data.hours, 2);
-			$('#hours').text(hours).append( "</br><span>HOURS</span>" );
+			$('#hours').text(hours).append( "</br><span>HORAS</span>" );
 			// min
 			minutes = this.leadingZeros(data.min, 2);
 			$('#min').text(minutes).append( "</br><span>" + MINUTES + "</span>" );;
@@ -100,8 +100,8 @@ $(function() {
 	function adjustText() {
 
 		if (w >= 541) {
-			MINUTES = 'MINUTES';
-			SECONDS = 'SECONDS';
+			MINUTES = 'MINUTOS';
+			SECONDS = 'SEGUNDOS';
 		} else {
 			MINUTES = 'MIN';
 			SECONDS = 'SEC';

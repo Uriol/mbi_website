@@ -1,7 +1,6 @@
 <?php
 
 	//$country = 'UK';
-	$country = 'UK';
 	
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -11,13 +10,21 @@
 		header('Location: http://localhost:8888/mbi_2/UK/zomlings/index.php');
 	}
 
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	$origin = 'GB';
 	// Redirect Based on country
-	if ($country == 'ES'){
+	if ($origin == 'ES'){
 		header('Location: http://localhost:8888/mbi_2/ES/zomlings/index.php');
-	} else if ($country == 'INT') {
+	} else if ($origin == 'GB') {
+		//header('Location: http://localhost:8888/mbi_2/UK/zomlings/index.php');
+	} else {
 		header('Location: http://localhost:8888/mbi_2/INT/zomlings/index.php');
 	}
-
 
 ?>
 
@@ -469,7 +476,7 @@
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
 							<h1>ZOMLINGS</h1>
-							<p>Hay zomlings de ediciones especiales que no se dejan ver tan fácilmente por Zomlings Town. Los Zomlings Adventure son intrépidos exploradores de nuevos lugares, por lo que siempre están de viaje. También tienes los exclusivos zomlings del Magic Trick Hotel, a quienes podrás sacar de su escondite con un divertido truco de magia. ¡Descúbrelos todos!</p>
+							<p>There are some special Zomlings that are not always found around Zomlings Town. Adventure Zomlings are intrepid explorers who are always off discovering new places. Two exclusive Zomlings can also be found hiding in our Magic Trick Hotels! Discover them all!</p>
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>

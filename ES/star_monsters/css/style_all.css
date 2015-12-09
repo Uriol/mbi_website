@@ -134,3 +134,27 @@
 		background-size: cover;
 		background-position: center;
 	}
+
+
+	/* Products */
+	/* Series One */
+	#packet_image_series_one {
+		background: url('../img/s1/products/packet.png');
+		background-size: cover;
+	}
+	#mini_capsules_image_series_one {
+		background: url('../img/s1/products/mini_capsules.png');
+		background-size: cover;
+	}
+	#capsule_image_series_one {
+		background: url('../img/s1/products/capsule.png');
+		background-size: cover;
+	}
+	#bag_image_series_one {
+		background: url('../img/s1/products/bag.png');
+		background-size: cover;
+	}
+	#blister_image_series_one {
+		background: url('../img/s1/products/blister.png');
+		background-size: cover;
+	}

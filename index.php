@@ -1,15 +1,20 @@
 <?php
-//require('ES/index.php');
-header('Location: UK/index.php');
-// include("geoip.inc"); 
-// $gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
 
-// $ip='2601:8:be00:cf20:ca60:ff:fe09:35b5';
+include("geoip.inc"); 
+$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
 
-// $origen = geoip_country_code_by_addr($gi, );
-// geoip_close($gi);
+$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+geoip_close($gi);
 
-// echo $_SERVER["REMOTE_ADDR"];
+// Redirect Based on country
+if ($origin == 'ES'){
+	header('Location: http://localhost:8888/mbi_2/ES/index.php');
+} else if ($origin == 'GB') {
+	header('Location: http://localhost:8888/mbi_2/UK/index.php');
+} else {
+	header('Location: http://localhost:8888/mbi_2/INT/index.php');
+}
 
-// echo 'hello';
+//header('Location: UK/index.php');
+
 ?>

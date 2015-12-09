@@ -157,20 +157,22 @@
 		font-weight: 700;
 		line-height: 30px;	
 	}
-
-	.description_container a.s1_blog {
+	.description_container a{
+		color: rgba(40,40,40);
+	}
+	.description_container a.s1_blog:hover {
 		color: rgb(190,22,33);
 	}
-	.description_container a.s2_blog {
+	.description_container a.s2_blog:hover {
 		color: rgb(255,163,0);
 	}
-	.description_container a.s3_blog {
+	.description_container a.s3_blog:hover {
 		color: rgb(119,188,31);
 	}
-	.description_container a.s4_blog {
+	.description_container a.s4_blog:hover {
 		color: rgb(150,51,158);
 	}
-	.description_container a.special_blog {
+	.description_container a.special_blog:hover {
 		color: rgb(0,114,175);
 	}
 

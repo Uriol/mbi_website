@@ -1,7 +1,4 @@
 <?php
-
-	//$country = 'UK';
-	$country = 'ES';
 	
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -12,12 +9,20 @@
 	}
 
 	// Redirect Based on country
-	if ($country == 'UK'){
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	$origin = 'ES';
+	// Redirect Based on country
+	if ($origin == 'ES'){
+		//header('Location: http://localhost:8888/mbi_2/ES/star_monsters/index.php');
+	} else if ($origin == 'GB') {
 		header('Location: http://localhost:8888/mbi_2/UK/star_monsters/index.php');
-	} else if ($country == 'INT') {
+	} else {
 		header('Location: http://localhost:8888/mbi_2/INT/star_monsters/index.php');
 	}
-
 
 ?>
 
@@ -136,7 +141,7 @@
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
 							<h1>STAR MONSTERS</h1>
-							<p>Caen del cielo estrellas con forma de triángulo... Es el origen de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir en los juegos que aparecen en esta guía. ¡La diversión está asegurada!</p>
+							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
 						</div>
 						<!-- Gallery series one -->
 						<div class='gallery_container'>
@@ -164,39 +169,39 @@
 							<div class='products_box'>
 								<h1>PRODUCTS</h1>
 								<div class='product_container'>
-									<div class='product_image_container' id='one_pack_image_series_one'></div>
+									<div class='product_image_container' id='packet_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>One Pack</h3>
-										<p>1 Zomling + Checklist</p>
+										<h3>Two Pack</h3>
+										<p>2 Stickers + 2 Stickers</p>
 									</div>
 								</div>
 								<div class='product_container'>
-									<div class='product_image_container' id='tower_pack_image_series_one'></div>
+									<div class='product_image_container' id='mini_capsules_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>Tower Pack</h3>
-										<p>1 House + 2 Zomlings + Checklist</p>
+										<h3>Minicapsule</h3>
+										<p>2 Minicapsules + 2 Star Monsters + 2 Stickers</p>
 									</div>
 								</div>
 								<div class='product_container'>
-									<div class='product_image_container' id='house_pack_image_series_one'></div>
+									<div class='product_image_container' id='capsule_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>One Pack</h3>
-										<p>1 Zomling + Checklist</p>
+										<h3>Capsule</h3>
+										<p>1 Capsule + 2 Star Monsters</p>
 									</div>
 								</div>
 								<div class='product_container'>
-									<div class='product_image_container' id='house_pack_image_series_one_2'></div>
+									<div class='product_image_container' id='bag_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>One Pack</h3>
-										<p>1 Zomling + Checklist</p>
+										<h3>Bag Pack</h3>
+										<p>1 Bag + 3 Star Monsters</p>
 									</div>
 								</div>
 								<div class='product_container'>
-									<div class='product_image_container' id='house_pack_image_series_one_3'>
+									<div class='product_image_container' id='blister_image_series_one'>
 									</div>
 									<div class='product_info_container'>
-										<h3>One Pack</h3>
-										<p>1 Zomling + Checklist</p>
+										<h3>Blister</h3>
+										<p>2 Star Monsters + 1 Essential + 1 Evolution + 1 Silver/Gold + 1 Silver/Gold minicapsule</p>
 									</div>
 								</div>
 							</div>

@@ -1,23 +1,30 @@
 <?php
 
-//$country = 'UK';
-$country = 'ES';
+	//$country = 'UK';
 
-// Make sure we are not in a fake sub folder
-// If we are redirect to the correct one
-$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-// echo $actual_link;
-if ( $actual_link != 'http://localhost:8888/mbi_2/ES/index.php') {
-	//echo 'different';
-	header('Location: http://localhost:8888/mbi_2/ES/index.php');
-}
+	// Make sure we are not in a fake sub folder
+	// If we are redirect to the correct one
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	// echo $actual_link;
+	if ( $actual_link != 'http://localhost:8888/mbi_2/ES/index.php') {
+		header('Location: http://localhost:8888/mbi_2/ES/index.php');
+	}
 
-// Redirect Based on country
-if ($country == 'UK'){
-	header('Location: http://localhost:8888/mbi_2/UK/index.php');
-} else if ($country == 'INT') {
-	header('Location: http://localhost:8888/mbi_2/INT/index.php');
-}
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	$origin = 'ES';
+	// Redirect Based on country
+	if ($origin == 'ES'){
+		//header('Location: http://localhost:8888/mbi_2/ES/index.php');
+	} else if ($origin == 'GB') {
+		header('Location: http://localhost:8888/mbi_2/UK/index.php');
+	} else {
+		header('Location: http://localhost:8888/mbi_2/INT/index.php');
+	}
 
 ?>
 

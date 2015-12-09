@@ -33,10 +33,13 @@ and (max-width: 999px) {
 	}
 
 	#container_9 {
-		margin-top: 150px;
+		margin-top: 130px;
+	}
+	#container_16 {
+		margin-top: 40px;
 	}
 	#container_19 {
-		margin-top: 100px;
+		margin-top: 150px;
 	}
 
 
@@ -67,19 +70,19 @@ and (max-width: 999px) {
 		height: 180px;
 	}
 	#container_12 .v_line_right{
-		height: 170px;
-	}
-	#container_13 .v_line_left{
-		height: 150px;
-	}
-	#container_14 .v_line_right{
 		height: 190px;
 	}
+	#container_13 .v_line_left{
+		height: 115px;
+	}
+	#container_14 .v_line_right{
+		height: 210px;
+	}
 	#container_15 .v_line_left{
-		height: 140px;
+		height: 100px;
 	}
 	#container_16 .v_line_right{
-		height: 290px;
+		height: 320px;
 	}
 	#container_18 .v_line_left{
 		height: 110px;

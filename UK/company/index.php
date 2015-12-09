@@ -1,7 +1,6 @@
 <?php
 
 	//$country = 'UK';
-	$country = 'UK';
 	
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
@@ -11,10 +10,19 @@
 		header('Location: http://localhost:8888/mbi_2/UK/company/index.php');
 	}
 
+	// Get location by ip
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	$origin = 'GB';
 	// Redirect Based on country
-	if ($country == 'ES'){
+	if ($origin == 'ES'){
 		header('Location: http://localhost:8888/mbi_2/ES/company/index.php');
-	} else if ($country == 'INT') {
+	} else if ($origin == 'GB') {
+		//header('Location: http://localhost:8888/mbi_2/UK/company/index.php');
+	} else {
 		header('Location: http://localhost:8888/mbi_2/INT/company/index.php');
 	}
 
@@ -58,8 +66,8 @@
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>LA HISTORIA DE MAGIC BOX</h1>
-					<p>Magic Box es una empresa líder mundial en la creación y distribución de juguetes coleccionables que logra despertar la imaginación, sorpresa e ilusión de los niños a través de conceptos sólidos, bien diseñados y altamente gratificantes. Nos apasiona el reto de seguir creando para continuar divirtiendo a niños y niñas en todo el mundo.</p>
+					<h1>MAGIC BOX HISTORY</h1>
+					<p>Magic Box Int is a global leader in the creation and distribution of collectable toys. Our products are filled with imagination and surprise. We are proud of the excitement we bring to children through our well-designed and highly gratifying concepts. We love the challenge to create new products in order to continue to entertain children worldwide.</p>
 				</div>
 			</div>
 
@@ -99,7 +107,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>LANZAMIENTO STAR MONSTERS</h1>
+									<h1>Launch of Star Monsters</h1>
 								</div>
 							</div>
 						</div>
@@ -109,7 +117,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image new_logo'></div>
 								<div class='timeline_item_text'>
-									<h1>NUEVO LOGOTIPO</h1>
+									<h1>New Logo</h1>
 								</div>
 							</div>
 						</div>
@@ -124,7 +132,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image bungees'></div>
 								<div class='timeline_item_text'>
-									<h1>LANZAMIENTO BUNGEES</h1>
+									<h1>Launch of Bungees</h1>
 								</div>
 							</div>
 						</div>
@@ -142,7 +150,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image gogos3'></div>
 								<div class='timeline_item_text'>
-									<h1>LANZAMIENTO DE LA TERCERA GENERACIÓN DE GOGO'S / CRAZY BONES</h1>
+									<h1>Launch of the third generation of Gogo’s / Crazy Bones</h1>
 								</div>
 							</div>
 						</div>
@@ -157,8 +165,8 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1 class='subtitle'>LANZAMIENTO DEL PRODUCTO SHOOT OUT</h1>
-									<p>Creadores del concepto de juego de cartas coleccionables de fútbol.</p>
+									<h1 class='subtitle'>Launch of Shoot Out</h1>
+									<p>Official F.A. Premier League Trading Card Game. Magic Box create a brand new football trading card game concept.</p>
 								</div>
 							</div>
 						</div>
@@ -173,7 +181,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>LANZAMIENTO DE LA SEGUNDA GENERACIÓN DE GOGO'S / CRAZY BONES</h1>
+									<h1>Launch of the second generation of Gogo’s / Crazy Bones</h1>
 								</div>
 							</div>
 						</div>
@@ -187,7 +195,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>CREADORES DEL CONCEPTO FOTO COLECCIONABLE CON LA LICENCIA DE SPICE GIRLS</h1>
+									<h1>Magic Box create the first Collectable Photo Collection with the Spice Girls</h1>
 								</div>
 							</div>
 						</div>
@@ -196,7 +204,7 @@
 							<div class='h_line_left'></div>
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_text'>
-									<h1>CREACIÓN DE LA COMPAÑIA MARTOMAGIC SL</h1>
+									<h1>Martomagic SL founded</h1>
 								</div>
 							</div>
 						</div>
@@ -211,7 +219,7 @@
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>PRIMERA COMPAÑIA EN LANZAR EL PRODUCTO CAPS EN EUROPA</h1>
+									<h1>The first European company to launch “Caps”</h1>
 								</div>
 							</div>
 						</div>
@@ -221,7 +229,7 @@
 							<div class='h_line_left'></div>
 							<div class='timeline_item left_item'>
 								<div class='timeline_item_text'>
-									<h1>CREACIÓN DE LA MARCA MAGIC BOX INTERNATIONAL</h1>
+									<h1>Creation of the Magic Box Int brand name</h1>
 									
 								</div>
 							</div>
@@ -238,7 +246,7 @@
 							<div class='h_line_right'></div>
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_text'>
-									<h1>20 ANIVERSARIO DE MAGIC BOX</h1>
+									<h1>20th anniversary of Magic Box Int</h1>
 								</div>
 							</div>
 						</div>
@@ -252,7 +260,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>INAUGURACIÓN NUEVAS OFICINAS</h1>
+									<h1>New Offices opened</h1>
 								</div>
 							</div>
 						</div>
@@ -266,7 +274,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image zomlings'></div>
 								<div class='timeline_item_text'>
-									<h1>LANZAMIENTO ZOMLINGS</h1>
+									<h1>Launch of Zomlings</h1>
 								</div>
 							</div>
 						</div>
@@ -275,7 +283,7 @@
 							<div class='h_line_right'></div>
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_text'>
-									<h1>LA SOCIEDAD MARTOMAGIC SL SE CONVIERTE EN MAGIC BOX INT. TOYS, SLU</h1>
+									<h1>Martomagic SL becomes Magic Box Int. Toys, SLU</h1>
 								</div>
 							</div>
 						</div>
@@ -290,7 +298,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>CREACIÓN DEL PRODUCTO STOPPERS DE DRAGON BALL</h1>
+									<h1>Dragon Ball Stoppers created</h1>
 								</div>
 							</div>
 						</div>
@@ -304,7 +312,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>CREACIÓN DE PRODUCTO ROLLERS DE POKEMON</h1>
+									<h1>Pokemon Rollers created</h1>
 								</div>
 							</div>
 						</div>
@@ -319,7 +327,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>CREACIÓN DEL PRODUCTO RAPPERS DE DIGIMON Y DRAGON BALL</h1>
+									<h1>Digimon and Dragon Ball Rappers created</h1>
 								</div>
 							</div>
 						</div>
@@ -333,7 +341,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>CREACIÓN DEL PRODUCTO PICKERS DE POKEMON Y DRAGON BALL</h1>
+									<h1>Pokemon and Dragon Ball Pickers created</h1>
 								</div>
 							</div>
 						</div>
@@ -347,7 +355,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>LANZAMIENTO DE LA PRIMERA GENERACIÓN DE GOGO'S / CRAZY BONES</h1>
+									<h1>Launch of the first generation of Gogo’s / Crazy Bones</h1>
 								</div>
 							</div>
 						</div>
@@ -361,7 +369,7 @@
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_image'></div>
 								<div class='timeline_item_text'>
-									<h1>CREADORES DE COLECCIONABLES DE CROMOS Y CARTAS BASADOS EN CLUBS DE FÚTBOL Y SELECCIONES NACIONALES</h1>
+									<h1>The creators of collectable trading cards based on football clubs and national teams</h1>
 								</div>
 							</div>
 						</div>
@@ -385,7 +393,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>LANZAMIENTO STAR MONSTERS</h1>
+								<h1>Launch of Star Monsters</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -397,7 +405,7 @@
 						
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>20 ANIVERSARIO DE MAGIC BOX</h1>
+								<h1>20th anniversary of Magic Box Int</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -411,7 +419,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>INAUGURACIÓN NUEVAS OFICINAS</h1>
+								<h1>New Offices opened</h1>
 							</div>
 						</div>
 						<div class='v_line green end'></div>
@@ -421,7 +429,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image new_logo'></div>
 							<div class='timeline_item_text'>
-								<h1>NUEVO LOGOTIPO</h1>
+								<h1>New Logo</h1>
 							</div>
 						</div>
 						<div class='v_line green end'></div>
@@ -435,7 +443,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image zomlings'></div>
 							<div class='timeline_item_text'>
-								<h1>LANZAMIENTO ZOMLINGS</h1>
+								<h1>Launch of Zomlings</h1>
 							</div>
 						</div>
 						<div class='v_line yellow end'></div>
@@ -449,7 +457,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image bungees'></div>
 							<div class='timeline_item_text'>
-								<h1>LANZAMIENTO BUNGEES</h1>
+								<h1>Launch of Bungees</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -459,7 +467,7 @@
 					<div class='timeline_item_container red' id='container_full_7'>
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>LA SOCIEDAD MARTOMAGIC SL SE CONVIERTE EN MAGIC BOX INT. TOYS, SLU</h1>
+								<h1>Martomagic SL becomes Magic Box Int. Toys, SLU</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -473,7 +481,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>CREACIÓN DEL PRODUCTO STOPPERS DE DRAGON BALL</h1>
+								<h1>Dragon Ball Stoppers created</h1>
 							</div>
 						</div>
 						<div class='v_line green end'></div>
@@ -487,7 +495,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image gogos3'></div>
 							<div class='timeline_item_text'>
-								<h1>LANZAMIENTO DE LA TERCERA GENERACIÓN DE GOGO'S / CRAZY BONES</h1>
+								<h1>Launch of the third generation of Gogo’s / Crazy Bones</h1>
 							</div>
 						</div>
 						<div class='v_line yellow end'></div>
@@ -501,7 +509,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>CREACIÓN DE PRODUCTO ROLLERS DE POKEMON</h1>
+								<h1>Pokemon Rollers created</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -515,8 +523,8 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1 class='subtitle'>LANZAMIENTO DEL PRODUCTO SHOOT OUT</h1>
-								<p>Creadores del concepto de juego de cartas coleccionables de fútbol.</p>
+								<h1 class='subtitle'>Launch of Shoot Out</h1>
+								<p>Official F.A. Premier League Trading Card Game. Magic Box Int create a brand new football trading card game concept.</p>
 							</div>
 						</div>
 						<div class='v_line green end'></div>
@@ -530,7 +538,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>CREACIÓN DEL PRODUCTO RAPPERS DE DIGIMON Y DRAGON BALL</h1>
+								<h1>Digimon and Dragon Ball Rappers created</h1>
 							</div>
 						</div>
 						<div class='v_line yellow end'></div>
@@ -545,7 +553,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>LANZAMIENTO DE LA SEGUNDA GENERACIÓN DE GOGO'S / CRAZY BONES</h1>
+								<h1>Launch of the second generation of Gogo’s / Crazy Bones</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -559,7 +567,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>CREACIÓN DEL PRODUCTO PICKERS DE POKEMON Y DRAGON BALL</h1>
+								<h1>Pokemon and Dragon Ball Pickers created</h1>
 							</div>
 						</div>
 						<div class='v_line green end'></div>
@@ -573,7 +581,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>CREADORES DEL CONCEPTO FOTO COLECCIONABLE CON LA LICENCIA DE SPICE GIRLS</h1>
+								<h1>Magic Box Int create the first Collectable Photo Collection with the Spice Girls</h1>
 							</div>
 						</div>
 						<div class='v_line yellow end'></div>
@@ -587,7 +595,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>LANZAMIENTO DE LA PRIMERA GENERACIÓN DE GOGO'S / CRAZY BONES</h1>
+								<h1>Launch of the first generation of Gogo’s / Crazy Bones</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -596,7 +604,7 @@
 					<div class='timeline_item_container red' id='container_full_17'>
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>CREACIÓN DE LA COMPAÑIA MARTOMAGIC SL</h1>
+								<h1>Martomagic SL founded</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -612,7 +620,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>PRIMERA COMPAÑIA EN LANZAR EL PRODUCTO CAPS EN EUROPA</h1>
+								<h1>The first European company to launch “Caps”</h1>
 							</div>
 						</div>
 						<div class='v_line green end'></div>
@@ -626,7 +634,7 @@
 						<div class='timeline_item'>
 							<div class='timeline_item_image'></div>
 							<div class='timeline_item_text'>
-								<h1>CREADORES DE COLECCIONABLES DE CROMOS Y CARTAS BASADOS EN CLUBS DE FÚTBOL Y SELECCIONES NACIONALES</h1>
+								<h1>The creators of collectable trading cards based on football clubs and national teams</h1>
 							</div>
 						</div>
 						<div class='v_line yellow end'></div>
@@ -636,7 +644,7 @@
 						<div class='h_line_right'></div>
 						<div class='timeline_item '>
 							<div class='timeline_item_text'>
-								<h1>CREACIÓN DE LA MARCA MAGIC BOX INTERNATIONAL</h1>
+								<h1>Creation of the Magic Box Int brand name</h1>
 							</div>
 						</div>
 					</div>

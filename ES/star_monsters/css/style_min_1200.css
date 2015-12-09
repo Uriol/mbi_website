@@ -365,7 +365,7 @@ and (min-width: 1201px) {
 	}
 
 	.products_box {
-		width: 1080px;
+		width: 940px;
 		margin: 0 auto;
 		position: relative;
 		margin-bottom: 50px;
@@ -380,15 +380,15 @@ and (min-width: 1201px) {
 	.product_container {
 		overflow: hidden;
 		float: left;
-		margin-left: 5px;
-		margin-right: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
 		margin-top: 25px;
-		width: 350px;
+		width: 450px;
 	}
 
 	.product_image_container {
-		width: 350px;
-		height: 263px;
+		width: 450px;
+		height: 338px;
 		position: relative;
 		cursor: pointer;
 		

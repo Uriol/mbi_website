@@ -12,9 +12,17 @@
 	}
 
 	// Redirect Based on country
-	if ($country == 'UK'){
+	include("geoip.inc"); 
+	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
+	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
+	geoip_close($gi);
+
+	// Redirect Based on country
+	if ($origin == 'ES'){
+		//header('Location: http://localhost:8888/mbi_2/ES/contacto/index.php');
+	} else if ($origin == 'GB') {
 		header('Location: http://localhost:8888/mbi_2/UK/contact/index.php');
-	} else if ($country == 'INT') {
+	} else {
 		header('Location: http://localhost:8888/mbi_2/INT/contact/index.php');
 	}
 
