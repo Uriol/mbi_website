@@ -1,0 +1,421 @@
+
+.loading {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	position:fixed;
+	z-index: 9999;
+	overflow-y: hidden;
+}
+
+/* Main display ------------------------------------------------ */
+/* Series One */
+#series_one_bg {
+	background: url('../img/s1/bg.png');
+	background-size: cover;
+	background-position: center;
+}
+#series_one_video_thumbnail {
+	background: url('../img/s1/s1_thumbnail.png');
+	background-size: cover;
+}
+#player_series_one{
+	border-style: solid;
+    border-width: 5px;
+    border-color: rgb(108,28,31);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+/* Serie Two */
+#series_two_bg {
+	background: url('../img/s2/bg.png');
+	background-size: cover;
+	background-position: center;
+}
+#series_two_video_thumbnail {
+	background: url('../img/s2/s2_thumbnail.png');
+	background-size: cover;
+}
+#player_series_two{
+	border-style: solid;
+    border-width: 5px;
+    border-color: rgb(185,118,1);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+/* Serie Three */
+#series_three_bg {
+	background: url('../img/s3/bg.png');
+	background-size: cover;
+	background-position: center;
+}
+#series_three_video_thumbnail {
+	background: url('../img/s3/s3_thumbnail.png');
+	background-size: cover;
+}
+#player_series_three{
+	border-style: solid;
+    border-width: 5px;
+    border-color: rgb(0,62,28);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+/* Serie Four */
+#series_four_bg {
+	background: url('../img/s4/bg.png');
+	background-size: cover;
+	background-position: center;
+}
+#series_four_video_thumbnail {
+	background: url('../img/s4/s4_thumbnail.png');
+	background-size: cover;
+}
+#player_series_four{
+	border-style: solid;
+    border-width: 5px;
+    border-color: rgb(71,28,68);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+/* Special */
+#special_bg {
+	background: url('../img/special/bg_4.png');
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+/* Series menu ------------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 540px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: middle;
+		
+	}
+
+	#series_one_menu_item.on {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_one_menu_item.off #series_one_selector {
+		display: none;
+	}
+	#series_one_menu_item.on #series_one_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(190,22,33);
+	}
+
+
+	#series_two_menu_item.on {
+		background-color: rgb(255,163,0);
+	}
+	#series_two_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_two_menu_item.off #series_two_selector {
+		display: none;
+	}
+	#series_two_menu_item.on #series_two_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(255,163,0);
+	}
+
+	#series_three_menu_item.on {
+		background-color: rgb(119,188,31);
+	}
+	#series_three_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_three_menu_item.off #series_three_selector {
+		display: none;
+	}
+	#series_three_menu_item.on #series_three_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(119,188,31);
+	}
+
+	#series_four_menu_item.on {
+		background-color: rgb(150,51,158);
+	}
+	#series_four_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_four_menu_item.off #series_four_selector {
+		display: none;
+	}
+	#series_four_menu_item.on #series_four_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(150,51,158);
+	}
+
+	#special_menu_item.on {
+		background-color: rgb(0,114,175);
+	}
+	#special_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#special_menu_item.off #special_selector {
+		display: none;
+	}
+	#special_menu_item.on #special_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(0,114,175);
+	}
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
+	}
+
+	/* ----------------------------------------------------------- */
+
+	/* Series info */
+		.description_container a{
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;	
+	}
+	.description_container a{
+		color: rgba(40,40,40);
+	}
+	.description_container a.s1_blog:hover {
+		color: rgb(190,22,33);
+	}
+	.description_container a.s2_blog:hover {
+		color: rgb(255,163,0);
+	}
+	.description_container a.s3_blog:hover {
+		color: rgb(119,188,31);
+	}
+	.description_container a.s4_blog:hover {
+		color: rgb(150,51,158);
+	}
+	.description_container a.special_blog:hover {
+		color: rgb(0,114,175);
+	}
+
+	/* Galleries ------------------------------------------------- */
+		/* Gallery series one */
+	#series_one_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_pic {
+		background: url('../img/s1/gallery/img_one.png');
+		background-size: cover;
+	}
+
+	/* Galleries series two*/
+	#series_two_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(255,163,0);
+	}
+	#series_two_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(255,163,0);
+	}
+	#series_two_pic {
+		background: url('../img/s2/gallery/img_one.png');
+		background-size: cover;
+	}
+
+
+
+
+	/* Gallery series three */
+	#series_three_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(119,188,31);
+	}
+	#series_three_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(119,188,31);
+	}
+	#series_three_pic {
+		background: url('../img/s3/gallery/img_one.png');
+		background-size: cover;
+	}
+
+	/* Gallery series four */
+	#series_four_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(150,51,158);
+	}
+	#series_four_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(150,51,158)
+	}
+	#series_four_pic {
+		background: url('../img/s4/gallery/img_one.png');
+		background-size: cover;
+	}
+
+
+	/* Products --------------------------------------- */
+	/* Serie One */
+	#one_pack_image_series_one {
+		background: url('../img/s1/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_one {
+		background: url('../img/s1/products/final/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one {
+		background: url('../img/s1/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_house_image_series_one {
+		background: url('../img/s1/products/final/blister_house.png');
+		background-size: cover;
+	}
+
+	#blister_mansion_image_series_one {
+		background: url('../img/s1/products/final/blister_mansion.png');
+		background-size: cover;
+	}
+
+	/* series two */
+	#one_pack_image_series_two {
+		background: url('../img/s2/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_two {
+		background: url('../img/s2/products/final/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_two {
+		background: url('../img/s2/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_house_image_series_two {
+		background: url('../img/s2/products/final/blister_house.png');
+		background-size: cover;
+	}
+	
+	/* series three */
+	#one_pack_image_series_three {
+		background: url('../img/s3/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#train_pack_image_series_three {
+		background: url('../img/s3/products/final/train_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_three {
+		background: url('../img/s3/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_image_series_three {
+		background: url('../img/s3/products/final/blister.png');
+		background-size: cover;
+	}
+
+
+	/* series four */
+	#one_pack_image_series_four {
+		background: url('../img/s4/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#vehicle_pack_image_series_four {
+		background: url('../img/s4/products/final/vehicle.png');
+		background-size: cover;
+	}
+
+	#bus_pack_image_series_four {
+		background: url('../img/s4/products/final/bus.png');
+		background-size: cover;
+	}
+
+	#blister_image_series_four {
+		background: url('../img/s4/products/final/blister.png');
+		background-size: cover;
+	}
+
+	/* Special */
+	#hotel_1_image {
+		background: url('../img/special/products/final/hotel1.png');
+		background-size: cover;
+	}
+	#hotel_2_image {
+		background: url('../img/special/products/final/hotel2.png');
+		background-size: cover;
+	}
+	#tin_image_z {
+		background: url('../img/special/products/final/tin.png');
+		background-size: cover;
+	}
+
+
+
+

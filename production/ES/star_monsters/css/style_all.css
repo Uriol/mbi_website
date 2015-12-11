@@ -1,0 +1,160 @@
+	
+	.loading {
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		position: absolute;
+		position:fixed;
+		z-index: 9999;
+		overflow-y: hidden;
+	}
+
+	html {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		/*overflow-x: hidden;*/
+		/*overflow-x: hidden;  
+		overflow-y: auto;*/
+		
+	}
+
+	body {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		/*overflow-x: hidden;  
+		overflow-y: auto;*/
+	}
+
+
+	/* Series menu ------------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 540px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: middle;
+		
+	}
+
+	/* Series one menu */
+	#series_one_menu_item.on {
+		background-color: rgb(161,27,34);
+	}
+	#series_one_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_one_menu_item.off #series_one_selector {
+		display: none;
+	}
+	#series_one_menu_item.on #series_one_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(161,27,34);
+	}
+
+
+	#special_menu_item.on {
+		background-color: rgb(0,114,175);
+	}
+	#special_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#special_menu_item.off #special_selector {
+		display: none;
+	}
+	#special_menu_item.on #special_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(0,114,175);
+	}
+
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
+	}
+
+
+	/* Series one */
+	#series_one_bg {
+		background: url('../img/s1/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+	#series_one_video_thumbnail {
+		background: url('../img/s1/s1_thumbnail.png');
+		background-size: cover;
+	}
+	#player_series_one{
+		border-style: solid;
+	    border-width: 5px;
+	    border-color: rgb(161,27,34);
+	    margin-left: -5px;
+	    margin-top: -5px;
+	}
+
+	/* Special */
+	#special_bg {
+		background: url('../img/special/bg.png');
+		background-size: cover;
+		background-position: center;
+	}
+
+
+	/* Products */
+	/* Series One */
+	#packet_image_series_one {
+		background: url('../img/s1/products/packet.png');
+		background-size: cover;
+	}
+	#mini_capsules_image_series_one {
+		background: url('../img/s1/products/mini_capsules.png');
+		background-size: cover;
+	}
+	#capsule_image_series_one {
+		background: url('../img/s1/products/capsule.png');
+		background-size: cover;
+	}
+	#bag_image_series_one {
+		background: url('../img/s1/products/bag.png');
+		background-size: cover;
+	}
+	#blister_image_series_one {
+		background: url('../img/s1/products/blister.png');
+		background-size: cover;
+	}

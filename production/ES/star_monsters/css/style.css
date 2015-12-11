@@ -1,0 +1,450 @@
+
+@media only screen 
+and (min-width: 850px)
+and (max-width: 1200px) {
+
+
+	section.main_display {
+		width: 100%;
+		height: 615px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+		overflow-x: hidden;  
+		overflow-y: auto;
+		/*overflow-x: hidden;*/  
+		/*overflow-y: auto;*/
+	}
+
+
+	/* Logo Zomlings ----------------------------------------- */
+	.main_display_logo {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+		margin-top: 10px;
+	}
+
+	#main_display_logo_star_monsters {
+		width: 340px;
+		height: 179px;
+		background: url('../img/logo_sm.png');
+		background-size: cover;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	/* Main display */
+	article.series_main_display {
+		width: 100%;
+		height: 0px;
+		position: relative;
+		margin: 0 auto;
+
+	}
+
+	.serie_main_display.on {
+		position: absolute;
+		width: 100%;
+		height: 0px;
+		margin: 0 auto;
+		background-color: green;
+	}
+
+	.serie_main_display.off {
+		display: none;
+	}
+
+	.main_display_bg {
+		width: 100%;
+		height: 600px;
+		position: absolute;
+	}
+
+	.main_display_full {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	}
+
+
+
+
+	.iframe_container {
+		top: 120px;
+		position: relative;
+		margin: 0 auto;
+		width: 640px;
+		height: 360px;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 640px;
+		height: 360px;
+		position: relative;
+		margin: 0 auto;
+		top: 120px;
+	}
+
+	.player_icon_container {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: 270px;
+		margin-top: 130px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.player_icon {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 25px solid rgb(255,255,255);
+		margin-left: 37.5px;
+		margin-top: 35px;
+	}
+
+		/* Series One*/
+	#left_img_main_display_s_one {
+		position: relative;
+		margin: 0 auto;
+		width: 703px;
+		height: 353px;
+		background: url('../img/s1/left.png');
+		background-size: cover;
+		top: 247px;
+		
+	}
+	#right_img_main_display_s_one {
+		position: relative;
+		margin: 0 auto;
+		width: 703px;
+		height: 353px;
+		background: url('../img/s1/right.png');
+		background-size: cover;
+		top: 247px;
+		
+	}
+
+		/* Series controls --------------------------------------- */
+	.main_display_series_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	
+	}
+
+	.control_left_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: left;
+		margin-top: 255px;
+		margin-left: 20px;
+		cursor:pointer;
+	}
+
+	.control_left_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: right;
+		margin-top: 255px;
+		margin-right: 20px;
+		cursor:pointer;
+	}
+
+	.control_arrow {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		margin-left: 17.5px;
+		margin-top: 17.5px;
+	}
+	#left_arrow {
+		background: url('../img/left_arrow.png');
+		background-size: cover;
+	}
+	#right_arrow {
+		background: url('../img/right_arrow.png');
+		background-size: cover;
+	}
+
+
+	/* Series info -------------------------------------------- */
+	section.series_info{
+		width: 100%;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	.serie_info_container.on {
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	.serie_info_container.off {
+		display: none;
+	}
+
+	.description_container {
+		width: 800px;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+
+	.description_container h1 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		color: rgb(40,40,40);
+	}
+
+	.description_container p {
+		margin-top: 30px;
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 16px;
+		line-height: 25px;
+		color: rgb(40,40,40);
+	}
+
+	/* Gallery -------------------------------------- */
+	.gallery_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	.gallery_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		
+		z-index: 999;
+	}
+
+	.gallery_left_control_container {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: left;
+		margin-top: 165px;
+		margin-left: 20px;
+		cursor:pointer;
+	}
+	.gallery_left_control_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.gallery_control_arrow {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		margin-left: 17.5px;
+		margin-top: 17.5px;
+	}
+	#gallery_left_arrow {
+		background: url('../img/left_arrow.png');
+		background-size: cover;
+	}
+	.gallery_right_control_container {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: right;
+		margin-top: 165px;
+		margin-right: 20px;
+		cursor:pointer;
+		cursor:pointer;
+	}
+	.gallery_right_control_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+	#gallery_right_arrow {
+		background: url('../img/right_arrow.png');
+		background-size: cover;
+	}
+
+
+	.gallery_pictures {
+		width: 680px;
+		height: 400px;
+		margin: 0 auto;
+		-moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		-webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+	}
+
+	.gallery_image {
+		width: 640px;
+		height: 360px;
+		position: relative;
+		margin: 0 auto;
+		top: 20px;
+	}
+
+	.gallery_index_container {
+		width: 105px;
+		height: 0px;
+		top: 20px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.gallery_index_item_on {
+		width: 15px;
+		height: 15px;
+		float: left;
+		margin-left: 15px;
+		border-radius: 50%;
+	}
+	.gallery_index_item_off {
+		background-color: rgb(150,150,150);
+		cursor: pointer;
+		width: 15px;
+		height: 15px;
+		float: left;
+		margin-left: 15px;
+		border-radius: 50%;
+	}
+
+
+	/* Products -------------------------------------- */
+		.products_container {
+		width: 100%;
+	/*	height: 200px;*/
+		overflow: hidden;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	.products_box {
+		width: 700px;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 50px;
+		
+	}
+	.products_box h1 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		color: rgb(60,60,60);
+		margin-bottom: 25px;
+	}
+	.product_container {
+		overflow: hidden;
+		float: left;
+		/*margin-left: 10px;
+		margin-right: 10px;*/
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 700px;
+		/*margin-bottom: 20px;*/
+	}
+
+	.product_image_container {
+		width: 350px;
+		height: 350px;
+		/*position: relative;*/
+		float: left;
+		
+	}
+
+	.product_info_container {
+		width: 350px;
+		/*height: 60px;*/
+		float: left;
+		text-align: left;
+		/*position: relative;*/
+		margin: 0 auto;
+		margin-top: 150px;
+		/*margin-left: 150px;*/
+		
+	}
+
+	.product_info_container h3 {
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 20px;
+		color: rgb(40,40,40);
+		padding: 0 40px 0 40px;
+	}
+
+
+	.product_info_container p {
+		margin-top: 5px;
+		/*margin-top: 20px;*/
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 16px;
+		line-height: 20px;
+		color: rgb(40,40,40);
+		padding: 0 40px 0 40px;
+	}
+
+	.product_filet {
+		width: 100%;
+		height: 2px;
+		margin-left: 0%;
+		float: left;
+		background-color: rgb(220,220,220);
+		
+	}
+
+
+
+	/* Footer ----------------------------------------- */
+	div.pre_footer {
+		width: 100%;
+		position: relative;
+		margin-top: 100px;
+	/*	background-color: red;*/
+	}
+
+	.pre_footer_img {
+		width: 760px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#series_one_pre_footer {
+		background-image: url('../img/s1/footer/footer_2.png');
+		background-size: cover;
+	}
+
+
+
+}
