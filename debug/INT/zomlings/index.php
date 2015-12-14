@@ -10,12 +10,20 @@
 		<title>ZOMLINGS</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
+
+		<!--  General products -->
+		<link href='../../css/products/style_1200.css' rel='stylesheet'>
+		<link href='../../css/products/style.css' rel='stylesheet'>
+		<link href='../../css/products/tablets.css' rel='stylesheet'>
+		<link href='../../css/products/phone_landscape.css' rel='stylesheet'>
+		<link href='../../css/products/phone_portrait.css' rel='stylesheet'>
+
 
 		<link href='css/style_all.css' rel='stylesheet'>
 		<!-- <link href='css/style_max_319.css' rel='stylesheet'> -->
@@ -233,15 +241,6 @@
 		<script>
 			series_one_bg = new Image(2500,611)
 			series_one_bg.src = "img/s1/bg.png";
-
-			series_two_bg = new Image(2500,611)
-			series_two_bg.src = "img/s2/bg.png";
-
-			series_three_bg = new Image(2500,611)
-			series_three_bg.src = "img/s3/bg.png";
-
-			series_four_bg = new Image(2500,611)
-			series_four_bg.src = "img/s4/bg.png";
 
 			special_bg = new Image(2000,611)
 			special_bg.src = "img/special/bg_4.png";

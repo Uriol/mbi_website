@@ -5,7 +5,7 @@ and (min-width: 541px)
 and (max-width: 768px) {
 
 
-	section.main_display {
+	/*section.main_display {
 		width: 100%;
 		height: 529px;
 		max-width: 2500px;
@@ -13,7 +13,7 @@ and (max-width: 768px) {
 		margin: 0 auto;
 		overflow-x: hidden;  
 		overflow-y: auto;
-	}
+	}*/
 
 
 	/* Logo starmonsters ----------------------------------------- */
@@ -34,8 +34,8 @@ and (max-width: 768px) {
 		margin: 0 auto;
 	}
 
-		/* Series ----------------------------------------------- */
-	article.series_main_display {
+	/* Series ----------------------------------------------- */
+/*	article.series_main_display {
 		width: 100%;
 		height: 0px;
 		position: relative;
@@ -66,11 +66,11 @@ and (max-width: 768px) {
 	}
 
 	.iframe_container {
-		top: 105px;
+		top: 108px;
 		position: relative;
 		margin: 0 auto;
-		width: 540px;
-		height: 304px;
+		width: 530px;
+		height: 298px;
 	}
 
 	iframe {
@@ -80,11 +80,11 @@ and (max-width: 768px) {
 
 	.video_thumbnail{
 		cursor: pointer;
-		width: 540px;
-		height: 304px;
+		width: 530px;
+		height: 298px;
 		position: relative;
 		margin: 0 auto;
-		top: 105px;
+		top: 108px;
 	}
 
 	.player_icon_container {
@@ -106,7 +106,7 @@ and (max-width: 768px) {
 		border-left: 25px solid rgb(255,255,255);
 		margin-left: 37.5px;
 		margin-top: 35px;
-	}
+	}*/
 
 
 	/* Series One*/
@@ -134,7 +134,7 @@ and (max-width: 768px) {
 
 
 	/* Series controls --------------------------------------- */
-	.main_display_series_controls {
+/*	.main_display_series_controls {
 		width: 100%;
 		height: 0px;
 		position: absolute;
@@ -185,16 +185,15 @@ and (max-width: 768px) {
 	#right_arrow {
 		background: url('../img/right_arrow.png');
 		background-size: cover;
-	}
+	}*/
 
 
 			/* Series menu ----------------------------------------------------------- */
-	.main_display_series_menu {
+/*	.main_display_series_menu {
 		width: 100%;
 		height: 60px;
 		position: relative;
 		margin: 0 auto;
-		/*background-color: rgba(0,0,0,0.2);*/
 		margin-top: 454px;
 		text-align: center;
 	}
@@ -203,9 +202,6 @@ and (max-width: 768px) {
 		text-align: center;
 		background-color: rgba(0,0,0,0.2);
 		display:inline-block;
-		/*display: inline;*/
-		/*padding-top: 10px;*/
-		/*vertical-align: middle;*/
 	}
 
 	.main_display_series_menu ul li{
@@ -214,20 +210,18 @@ and (max-width: 768px) {
 		font-size: 16px;
 		color: white;
 		letter-spacing: 0.7px;
-		/*margin-top: 10px;*/
 		padding-top: 22px;
 		padding-bottom: 22px;
 		padding-left: 15px;
 		padding-right: 15px;
 		vertical-align: middle;
 		
-	}
+	}*/
 
 	#series_one_menu_item.on {
 		background-color: rgb(161,27,34);
 	}
 	#series_one_menu_item.off:hover {
-		/*background-color: rgb(190,22,33);*/
 		background-color: rgb(161,27,34);
 	}
 	#series_one_menu_item.off #series_one_selector {
@@ -245,14 +239,13 @@ and (max-width: 768px) {
 	}
 
 
-	.main_display_series_menu ul li.off {
+/*	.main_display_series_menu ul li.off {
 		cursor: pointer;
-	}
+	}*/
 
 	/* Series info -------------------------------------------- */
-	section.series_info{
+/*	section.series_info{
 		width: 100%;
-		
 		position: relative;
 		margin: 0 auto;
 	}
@@ -276,7 +269,7 @@ and (max-width: 768px) {
 		margin-top: 50px;
 	}
 
-		.description_container h1 {
+	.description_container h1 {
 		font-family: 'avenir_bold', sans-serif;
 		font-size: 40px;
 		font-weight: 700;
@@ -289,11 +282,11 @@ and (max-width: 768px) {
 		font-size: 16px;
 		line-height: 25px;
 		color: rgb(40,40,40);
-	}
+	}*/
 
 
 	/* Gallery ----------------------------- */
-	.gallery_container {
+	/*.gallery_container {
 		width: 100%;
 		position: relative;
 		margin: 0 auto;
@@ -314,9 +307,6 @@ and (max-width: 768px) {
 		height: 70px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.4);
-		/*float: left;
-		margin-left: 40px;
-		margin-top: 225px;*/
 		float: left;
 		margin-top: 115px;
 		margin-left: 20px;
@@ -396,12 +386,12 @@ and (max-width: 768px) {
 		float: left;
 		margin-left: 15px;
 		border-radius: 50%;
-	}
+	}*/
 
 
 		/* Products */
 
-	.products_container {
+/*	.products_container {
 		width: 100%;
 		overflow: hidden;
 		position: relative;
@@ -444,7 +434,6 @@ and (max-width: 768px) {
 
 	.product_info_container {
 		width: 90%;
-		/*height: 60px;*/
 		position: relative;
 		margin: 0 auto;
 		margin-top: 16px;
@@ -474,7 +463,8 @@ and (max-width: 768px) {
 		float: left;
 		background-color: rgb(220,220,220);
 		
-	}
+	}*/
+
 
 
 

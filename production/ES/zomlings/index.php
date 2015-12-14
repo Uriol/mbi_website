@@ -1,28 +1,6 @@
 <?php
-	
-	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/ES/zomlings/index.php') {
-		header('Location: http://test.martomagic.com/ES/zomlings/index.php');
-	}
-
-	include("geoip.inc"); 
-	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
-	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
-	geoip_close($gi);
-
-	// Redirect Based on country
-	if ($origin == 'ES'){
-		//header('Location: http://localhost:8888/mbi_2/ES/zomlings/index.php');
-	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/UK/zomlings/index.php');
-	} else {
-		header('Location: http://test.martomagic.com/INT/zomlings/index.php');
-	}
-
-
+	include('location.php');
 ?>
-
-
 
 
 
@@ -32,15 +10,22 @@
 		<title>ZOMLINGS</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
+
+		<!--  General products -->
+		<link href='../../css/products/style_1200.css' rel='stylesheet'>
+		<link href='../../css/products/style.css' rel='stylesheet'>
+		<link href='../../css/products/tablets.css' rel='stylesheet'>
+		<link href='../../css/products/phone_landscape.css' rel='stylesheet'>
+		<link href='../../css/products/phone_portrait.css' rel='stylesheet'>
+
 
 		<link href='css/style_all.css' rel='stylesheet'>
-		<!-- <link href='css/style_max_319.css' rel='stylesheet'> -->
 		<link href='css/phone_portrait.css' rel='stylesheet'>
 		<link href='css/phone_landscape.css' rel='stylesheet'>
 		<link href='css/tablets.css' rel='stylesheet'>

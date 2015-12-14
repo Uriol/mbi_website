@@ -1,28 +1,5 @@
 <?php
-
-	// Make sure we are not in a fake sub folder
-	// If we are redirect to the correct one
-	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	// echo $actual_link;
-	if ( $actual_link != 'http://test.martomagic.com/ES/index.php') {
-		header('Location: http://test.martomagic.com/ES/index.php');
-	}
-
-	// Get location by ip
-	include("geoip.inc"); 
-	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
-	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
-	geoip_close($gi);
-
-	// Redirect Based on country
-	if ($origin == 'ES'){
-		
-	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/UK/index.php');
-	} else {
-		header('Location: http://test.martomagic.com/INT/index.php');
-	}
-
+	include('location.php');
 ?>
 
 
@@ -32,20 +9,18 @@
 		<title>Magic Box Toys</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='css/reset.css' rel='stylesheet'>
-		<link href='css/header.css' rel='stylesheet'>
-		<link href='css/header_tablet.css' rel='stylesheet'>
-		<link href='css/header_mobile.css' rel='stylesheet'>
+		<link href='../css/reset.css' rel='stylesheet'>
+		<link href='../css/header/header.css' rel='stylesheet'>
+		<link href='../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='css/footer.css' rel='stylesheet'>
-		<link href='css/style_all.css' rel='stylesheet'>
-		<link href='css/animations.css' rel='stylesheet'>
+		<link href='../css/footer/footer.css' rel='stylesheet'>
 
-		<link href='css/phone_portrait.css' rel='stylesheet'>
-		<link href='css/phone_landscape.css' rel='stylesheet'>
-		<link href='css/tablets.css' rel='stylesheet'>
-		<link href='css/style.css' rel='stylesheet'>
-		<link href='css/style_min_2000.css' rel='stylesheet'>
+		<!--  General style -->
+		<link href='../css/home/animations.css' rel='stylesheet'>
+		<link href='../css/home/style_all.css' rel='stylesheet'>
+		<link href='../css/home/phone_landscape.css' rel='stylesheet'>
+		<link href='../css/home/phone_portrait.css' rel='stylesheet'>
 
 	</head>
 
@@ -104,7 +79,7 @@
 			</article>
 			<article class='banner'>
 				<div class='company_motto_container'>
-					<h2>En Magic Box somos creadores, construimos marcas y generamos tendencias en el sector de los juguetes coleccionables.</h2>
+					<h2>En Magic Box Toys somos creadores, construimos marcas y generamos tendencias en el sector de los juguetes coleccionables.</h2>
 				</div>
 			</article>
 
@@ -122,10 +97,17 @@
 		<!-- LOAD IMAGES -->
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "img/logo_sm_submenu.png";
+			logo_sm.src = "../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "img/logo_z_submenu.png";
+			logo_z.src = "../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../img/all/logo_z_submenu_small.png";
+
 		</script>
 
 		<script>
@@ -155,6 +137,7 @@
 				};
 			}())
 		</script>
+
 
 		<script src='https://www.youtube.com/iframe_api'></script>
 		<script src='js/libraries/jquery_min.js'></script>

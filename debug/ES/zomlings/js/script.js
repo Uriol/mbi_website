@@ -71,9 +71,6 @@ $(function(){
 		gallery_4_2.src = 'img/s4/gallery/img_two.png';
 		gallery_4_3 = new Image();
 		gallery_4_3.src = 'img/s4/gallery/img_three.png';
-
-		console.log('images loaded')
-
 		
 	}
 

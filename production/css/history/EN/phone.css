@@ -1,0 +1,224 @@
+/* Landscape */
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+	/* Pre footer */
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+	}
+
+	.pre_footer_img {
+		width: 540px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+}
+
+/* Portrait */
+@media only screen 
+and (max-width: 540px) { 
+
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+	}
+
+	.pre_footer_img {
+		width: 100%;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+}
+
+/* All */
+@media only screen 
+and (max-width: 768px) {
+	
+	/* Company pics */
+	.company_pics {
+		width: 100%;
+		height: 400px;
+		position: relative;
+		background-color: rgb(150,150,150);
+	}
+
+	.company_description {
+		width: 100%;
+		height: inherit;
+		position: relative;
+		
+	}
+
+	.history_column_container {
+		display: none;
+	}
+
+
+	.company_description_container {
+		width: 100%;
+		max-width: 770px;
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 50px;
+		padding-bottom: 25px;
+
+	}
+
+	.company_description_container h1{
+		font-family: avenir_bold;
+		font-size: 30px;
+		color: rgb(40,40,40);
+		line-height: 38px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.company_description_container p {
+		font-family: avenir_medium;
+		font-size: 14px;
+		line-height: 22px;
+		margin-top: 22px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+
+	/* Company history */
+	.timeline_container_single_column {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 40px;
+		margin-bottom: 80px;
+		left: 0%;
+	}
+
+
+	.company_history_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.timeline_item_container {
+		width: 90%;
+		position: relative;
+		height: inherit;
+		margin-left: 5%;
+		margin-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.v_line {
+		width: 3px;
+		position: absolute;
+		margin-left: 50%;
+		left: -1.5px;
+		
+	}
+
+	.v_line.year {
+		margin-top: -20px;
+		height: 100px;
+	}
+
+	.v_line.end {
+		height: 50px;
+	}
+	
+
+	.timeline_item {
+		background-color: rgb(230,230,230);
+		width: 100%;
+		position: relative;
+	}
+
+	.timeline_item.left_item {
+		position: relative;
+	}
+
+	.timeline_item.right_item {
+		position: relative;
+	}
+
+	.timeline_item_image {
+		width: 100%;
+		position: relative;
+		padding-bottom: 56.25%;
+		background-color: rgb(230,230,230);	}
+
+	.timeline_item_text{
+		width: 100%;
+		position: relative;
+		text-align: center;
+	}
+
+	/* Text */
+	.year_container h2 {
+		font-size: 15px;
+		font-family: 'avenir_bold', sans-serif;
+	}
+
+
+
+	.timeline_item_text h1{
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 15px;
+		padding-bottom: 10px;
+		font-size: 16px;
+		font-family: 'avenir_bold', sans-serif;
+		text-transform: uppercase;
+		line-height: 22px;
+		letter-spacing: 1px;
+	}
+
+	.timeline_item_text h1.subtitle {
+		padding-bottom: 0px;
+	}
+
+	.timeline_item_text p {
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 14px;
+		line-height: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 10px;
+		padding-bottom: 16px;
+	}
+
+
+
+	/* Year */
+	.timeline_item_container .year_container {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		position: relative;
+		margin: 0 auto;
+		top: -20px;
+		text-align: center;
+		vertical-align: text-bottom;
+
+	}
+
+
+	.timeline_item_container .year_container h2{
+		position: relative;
+		top: 25px;
+		color: white;
+		
+	}
+
+	#home_pre_footer {
+		background-image: url('../../../img/zomlings/footer_4.png');
+		background-size: cover;
+		background-position: top;
+	}
+}

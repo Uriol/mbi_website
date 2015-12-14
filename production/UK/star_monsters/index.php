@@ -1,29 +1,6 @@
 <?php
-
-	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/UK/star_monsters/index.php') {
-		header('Location: http://test.martomagic.com/UK/star_monsters/index.php');
-	}
-
-	// Get location by ip
-	include("geoip.inc"); 
-	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
-	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
-	geoip_close($gi);
-
-	
-	// Redirect Based on country
-	if ($origin == 'ES'){
-		header('Location: http://test.martomagic.com/ES/star_monsters/index.php');
-	} else if ($origin == 'GB') {
-		
-	} else {
-		header('Location: http://test.martomagic.com/INT/star_monsters/index.php');
-	}
-
+	include('location.php');
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -32,12 +9,19 @@
 		<title>STAR MONSTERS</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
+
+		<!--  General products  -->
+		<link href='../../css/products/style_1200.css' rel='stylesheet'>
+		<link href='../../css/products/style.css' rel='stylesheet'>
+		<link href='../../css/products/tablets.css' rel='stylesheet'>
+		<link href='../../css/products/phone_landscape.css' rel='stylesheet'>
+		<link href='../../css/products/phone_portrait.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
 		<link href='css/animations.css' rel='stylesheet'>
@@ -176,7 +160,7 @@
 								<div class='product_container'>
 									<div class='product_image_container' id='mini_capsules_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>Minicapsule</h3>
+										<h3>Mini Capsule</h3>
 										<p>2 Mini Capsules + 2 Star Monsters + 2 Stickers</p>
 									</div>
 								</div>

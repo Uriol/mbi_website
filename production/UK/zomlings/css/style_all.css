@@ -9,8 +9,8 @@
 	overflow-y: hidden;
 }
 
-/* Main display ----------------------------------------------- */
-/* Serie One */
+/* Main display ------------------------------------------------ */
+/* Series One */
 #series_one_bg {
 	background: url('../img/s1/bg.png');
 	background-size: cover;
@@ -27,7 +27,6 @@
     margin-left: -5px;
     margin-top: -5px;
 }
-
 /* Serie Two */
 #series_two_bg {
 	background: url('../img/s2/bg.png');
@@ -88,38 +87,8 @@
 }
 
 
+
 /* Series menu ------------------------------------------------- */
-	.main_display_series_menu {
-		width: 100%;
-		height: 60px;
-		position: relative;
-		margin: 0 auto;
-		margin-top: 540px;
-		text-align: center;
-	}
-
-	.main_display_series_menu ul{
-		text-align: center;
-		background-color: rgba(0,0,0,0.2);
-		display:inline-block;
-		position: relative;
-		margin: 0 auto;
-	}
-
-	.main_display_series_menu ul li{
-		display: inline-block;
-
-		font-family: 'avenir_bold', sans-serif;
-		font-size: 16px;
-		color: white;
-		letter-spacing: 0.7px;
-		padding-top: 22px;
-		padding-bottom: 22px;
-		padding-left: 15px;
-		padding-right: 15px;
-		vertical-align: middle;
-		
-	}
 
 	#series_one_menu_item.on {
 		background-color: rgb(190,22,33);
@@ -235,20 +204,22 @@
 		font-weight: 700;
 		line-height: 30px;	
 	}
-
-	.description_container a.s1_blog {
+	.description_container a{
+		color: rgba(40,40,40);
+	}
+	.description_container a.s1_blog:hover {
 		color: rgb(190,22,33);
 	}
-	.description_container a.s2_blog {
+	.description_container a.s2_blog:hover {
 		color: rgb(255,163,0);
 	}
-	.description_container a.s3_blog {
+	.description_container a.s3_blog:hover {
 		color: rgb(119,188,31);
 	}
-	.description_container a.s4_blog {
+	.description_container a.s4_blog:hover {
 		color: rgb(150,51,158);
 	}
-	.description_container a.special_blog {
+	.description_container a.special_blog:hover {
 		color: rgb(0,114,175);
 	}
 

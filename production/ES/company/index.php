@@ -1,47 +1,29 @@
 <?php
-
-	
-	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/ES/company/index.php') {
-		header('Location: http://test.martomagic.com/ES/company/index.php');
-	}
-
-	// Redirect Based on country
-	include("geoip.inc"); 
-	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
-	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
-	geoip_close($gi);
-
-	// Redirect Based on co	untry
-	if ($origin == 'ES'){
-		//header('Location: http://localhost:8888/mbi_2/ES/company/index.php');
-	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/UK/company/index.php');
-	} else {
-		header('Location: http://test.martomagic.com/INT/company/index.php');
-	}
-
+	include('location.php');
 ?>
-
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ABOUT US</title>
+		<title>COMPAÑIA</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
-		<link href='css/style_phone.css' rel='stylesheet'>
-		<link href='css/style_tablets_desktop.css' rel='stylesheet'>
-		<link href='css/style_min_1000.css' rel='stylesheet'>
-		<link href='css/style_min_1200.css' rel='stylesheet'>
+		
+		<!--  General style -->
+		<link href='../../css/history/style_all.css' rel='stylesheet'>
+		
+		<link href='../../css/history/ES/phone.css' rel='stylesheet'>
+		<link href='../../css/history/ES/style_1200.css' rel='stylesheet'>
+		<link href='../../css/history/ES/style_1000.css' rel='stylesheet'>
+		<link href='../../css/history/ES/tablets.css' rel='stylesheet'>
 
 	</head>
 
@@ -61,32 +43,13 @@
 			<div class='company_description'>
 				<div class='company_description_container'>
 					<h1>LA HISTORIA DE MAGIC BOX</h1>
-					<p>Magic Box es una empresa líder mundial en la creación y distribución de juguetes coleccionables que logra despertar la imaginación, sorpresa e ilusión de los niños a través de conceptos sólidos, bien diseñados y altamente gratificantes. Nos apasiona el reto de seguir creando para continuar divirtiendo a niños y niñas en todo el mundo.</p>
+					<p>Magic Box Toys es una empresa líder mundial en la creación y distribución de juguetes coleccionables que logra despertar la imaginación, sorpresa e ilusión de los niños a través de conceptos sólidos, bien diseñados y altamente gratificantes. Nos apasiona el reto de seguir creando para continuar divirtiendo a niños y niñas en todo el mundo.</p>
 				</div>
 			</div>
 
 			<div class='company_history'>
 
 				<div class='company_history_container'>
-
-
-					
-					<!-- CENTER -->
-					<!-- <div class='history_column_container full'>
-						<div class='timeline_item_container_center_container red' id='container_1'>
-							
-							<div class='v_line red'></div>
-							<div class='year_container'>
-								<h2>2016</h2>
-							</div>
-							<div class='timeline_item left_item'>
-								<div class='timeline_item_text'>
-									<h1>20 ANIVERSARIO DE MAGIC BOX.</h1>
-								</div>
-							</div>
-						</div>
-					</div> -->
-
 
 					<div class='columns_container'>
 					<!--  LEFT -->

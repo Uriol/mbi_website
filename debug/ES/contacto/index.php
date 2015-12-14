@@ -6,21 +6,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ABOUT US</title>
+		<title>CONTACTO</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
-		<link href='css/style_all.css' rel='stylesheet'>
-
-		<link href='css/phone_portrait.css' rel='stylesheet'>
-		<link href='css/phone_landscape.css' rel='stylesheet'>
-		<link href='css/style_min_1200.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
 		
+
+		<!--  General style -->
+		<link href='../../css/contact/style_all.css' rel='stylesheet'>
+		<link href='../../css/contact/phone_landscape.css' rel='stylesheet'>
+		<link href='../../css/contact/phone_portrait.css' rel='stylesheet'>
 
 	</head>
 
@@ -59,7 +59,7 @@
 						    <!-- Country -->
 						   	<label>
 						     <select name="pais" size="1" class='select_country'>
-				                <option value='' selected="selected" class='selected'>Dónde vives?</option>
+				                <option class='selected' disabled selected hidden style="color:red;" value='' selected="selected" >Dónde vives?</option>
 				                <option value="Spain">Spain</option>
 				                <option value="United Kingdom">United Kingdom</option>
 				                <option value="United States">United States</option>
@@ -306,7 +306,7 @@
 				            </label>
 						    <!-- Your message:<br>  -->
 						    <textarea name="message" placeholder="Mensaje" rows="7" cols="30"></textarea><br> 
-						    <input type="submit" value="ENVIAR"/> 
+						    <input type="submit" value="ENVIAR MENSAJE"/> 
 						    </form> 
 						    <?php 
 						    }  

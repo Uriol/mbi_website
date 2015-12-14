@@ -1,5 +1,5 @@
 <?php
-	header('Location: http://localhost:8888/mbi_2/ES/index.php');
+	header('Location: http://test.martomagic.com/ES/index.php');
 ?>
 
 

@@ -3,7 +3,7 @@
 and (min-width: 769px)
 and (max-width: 849px) {
 
-	section.main_display {
+	/*section.main_display {
 		width: 100%;
 		height: 615px;
 		max-width: 2500px;
@@ -12,7 +12,7 @@ and (max-width: 849px) {
 		overflow-x: hidden;  
 		overflow-y: auto;
 		
-	}
+	}*/
 
 
 	/* Logo Zomlings ----------------------------------------- */
@@ -33,14 +33,12 @@ and (max-width: 849px) {
 		margin: 0 auto;
 	}
 
-		/* Series ----------------------------------------------- */
-	article.series_main_display {
+	/* Series ----------------------------------------------- */
+/*	article.series_main_display {
 		width: 100%;
 		height: 0px;
 		position: relative;
 		margin: 0 auto;
-
-
 	}
 
 	.serie_main_display.on {
@@ -107,7 +105,7 @@ and (max-width: 849px) {
 		border-left: 25px solid rgb(255,255,255);
 		margin-left: 37.5px;
 		margin-top: 35px;
-	}
+	}*/
 
 	/* Series One*/
 	#left_img_main_display_s_one {
@@ -132,7 +130,7 @@ and (max-width: 849px) {
 	}
 
 	/* Series controls --------------------------------------- */
-	.main_display_series_controls {
+/*	.main_display_series_controls {
 		width: 100%;
 		height: 0px;
 		position: absolute;
@@ -183,11 +181,11 @@ and (max-width: 849px) {
 	#right_arrow {
 		background: url('../img/right_arrow.png');
 		background-size: cover;
-	}
+	}*/
 
 
-		/* Series info -------------------------------------------- */
-	section.series_info{
+	/* Series info -------------------------------------------- */
+/*	section.series_info{
 		width: 100%;
 		max-width: 2500px;
 		position: relative;
@@ -214,7 +212,6 @@ and (max-width: 849px) {
 
 	}
 
-
 	.description_container h1 {
 		font-family: 'avenir_bold', sans-serif;
 		font-size: 40px;
@@ -228,9 +225,11 @@ and (max-width: 849px) {
 		font-size: 16px;
 		line-height: 25px;
 		color: rgb(40,40,40);
-	}
+	}*/
 
-	.gallery_container {
+
+	/* Gallery */
+/*	.gallery_container {
 		width: 100%;
 		position: relative;
 		margin: 0 auto;
@@ -251,9 +250,6 @@ and (max-width: 849px) {
 		height: 70px;
 		border-radius: 50%;
 		background-color: rgba(0,0,0,0.4);
-		/*float: left;
-		margin-left: 40px;
-		margin-top: 225px;*/
 		float: left;
 		margin-top: 165px;
 		margin-left: 20px;
@@ -335,12 +331,12 @@ and (max-width: 849px) {
 		margin-left: 15px;
 		border-radius: 50%;
 	}
+*/
+	
+	/* Products */
 
-		/* Products */
-
-	.products_container {
+/*	.products_container {
 		width: 100%;
-	/*	height: 200px;*/
 		overflow: hidden;
 		position: relative;
 		margin: 0 auto;
@@ -365,12 +361,9 @@ and (max-width: 849px) {
 	.product_container {
 		overflow: hidden;
 		float: left;
-		/*margin-left: 10px;
-		margin-right: 10px;*/
 		margin-top: 10px;
 		margin-bottom: 10px;
 		width: 700px;
-		/*margin-bottom: 20px;*/
 	}
 
 	.product_image_container {
@@ -381,7 +374,6 @@ and (max-width: 849px) {
 
 	.product_info_container {
 		width: 350px;
-		/*height: 60px;*/
 		float: left;
 		text-align: left;
 		margin: 0 auto;
@@ -398,7 +390,6 @@ and (max-width: 849px) {
 
 	.product_info_container p {
 		margin-top: 5px;
-		/*margin-top: 20px;*/
 		font-family: 'avenir_medium', sans-serif;
 		font-size: 16px;
 		line-height: 20px;
@@ -412,8 +403,8 @@ and (max-width: 849px) {
 		margin-left: 0%;
 		float: left;
 		background-color: rgb(220,220,220);
-		
-	}
+	}*/
+
 
 		/* Footer ----------------------------------------- */
 	div.pre_footer {

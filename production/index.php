@@ -15,6 +15,4 @@ if ($origin == 'ES'){
 	header('Location: http://test.martomagic.com/INT/index.php');
 }
 
-//header('Location: UK/index.php');
-
 ?>

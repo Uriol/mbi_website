@@ -27,7 +27,6 @@
 }
 
 
-
 @media only screen 
 and (min-width: 769px) {
 
@@ -144,6 +143,66 @@ and (max-width: 768px) {
 		animation-name: right_in_series_one;
 		animation-duration: 0.4s;
 		left: 400px;
+	}
+
+}
+
+
+/* Portrait */
+@media only screen 
+and (max-width: 540px) {
+
+
+	@keyframes left_out_series_one {
+		from { left: -240px; }
+		to { left: -550px; }
+	}
+
+	@keyframes left_in_series_one {
+		from { left: -550px;}
+		to { left: -240px ;}
+	}
+
+	@keyframes right_out_series_one {
+		from { left: 230px; }
+		to { left: 550px; }
+	}
+
+	@keyframes right_in_series_one {
+		from { left: 550px;}
+		to { left: 230px ;}
+	}
+
+	#left_img_main_display_s_one.start {
+		left: -240px;
+	}
+
+	#left_img_main_display_s_one.out {
+		animation-name: left_out_series_one;
+		animation-duration: 0.4s;
+		left: -550px;
+	}
+
+	#left_img_main_display_s_one.in {
+		animation-name: left_in_series_one;
+		animation-duration: 0.4s;
+		left: -240px;
+	}
+
+	#right_img_main_display_s_one.start {
+		left: 230px;
+	}
+
+	#right_img_main_display_s_one.out {
+		animation-name: right_out_series_one;
+		animation-duration: 0.4s;
+		left: 550px;
+	}
+
+	#right_img_main_display_s_one.in {
+		animation-name: right_in_series_one;
+		animation-duration: 0.4s;
+		left: 230px;
 	}
 
 }

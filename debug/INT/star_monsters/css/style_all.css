@@ -29,7 +29,7 @@
 
 
 	/* Series menu ------------------------------------------------- */
-	.main_display_series_menu {
+/*	.main_display_series_menu {
 		width: 100%;
 		height: 60px;
 		position: relative;
@@ -59,7 +59,7 @@
 		padding-right: 15px;
 		vertical-align: middle;
 		
-	}
+	}*/
 
 	/* Series one menu */
 	#series_one_menu_item.on {
@@ -134,6 +134,7 @@
 		background-size: cover;
 		background-position: center;
 	}
+
 
 	/* Products */
 	/* Series One */

@@ -16,6 +16,4 @@ if ($origin == 'ES'){
 	header('Location: http://localhost:8888/mbi_2/debug/INT/index.php');
 }
 
-//header('Location: UK/index.php');
-
 ?>

@@ -1,29 +1,5 @@
 <?php
-
-	
-	//header('Location: ../UK/index.php');
-	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	// echo $actual_link;
-	if ( $actual_link != 'http://test.martomagic.com/INT/company/index.php') {
-		//echo 'different';
-		header('Location: http://test.martomagic.com/INT/company/index.php');
-	}
-
-	// Get location by ip
-	include("geoip.inc"); 
-	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
-	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
-	geoip_close($gi);
-
-
-	// Redirect Based on country
-	if ($origin == 'ES'){
-		header('Location: http://test.martomagic.com/ES/company/index.php');
-	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/UK/company/index.php');
-	}
-
-
+	include('location.php');
 ?>
 
 
@@ -33,18 +9,22 @@
 		<title>COMPANY</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
-		<link href='css/style_phone.css' rel='stylesheet'>
-		<link href='css/style_tablets_desktop.css' rel='stylesheet'>
-		<link href='css/style_min_1000.css' rel='stylesheet'>
-		<link href='css/style_min_1200.css' rel='stylesheet'>
+		
+		<!--  General style -->
+		<link href='../../css/history/style_all.css' rel='stylesheet'>
+
+		<link href='../../css/history/EN/style_1200.css' rel='stylesheet'>
+		<link href='../../css/history/EN/style_1000.css' rel='stylesheet'>
+		<link href='../../css/history/EN/tablets.css' rel='stylesheet'>
+		<link href='../../css/history/EN/phone.css' rel='stylesheet'>
 
 	</head>
 
@@ -64,7 +44,7 @@
 			<div class='company_description'>
 				<div class='company_description_container'>
 					<h1>MAGIC BOX HISTORY</h1>
-					<p>Magic Box Int is a global leader in the creation and distribution of collectable toys. Our products are filled with imagination and surprise. We are proud of the excitement we bring to children through our well-designed and highly gratifying concepts. We love the challenge to create new products in order to continue to entertain children worldwide.</p>
+					<p>Magic Box Toys is a global leader in the creation and distribution of collectable toys. Our products are filled with imagination and surprise. We are proud of the excitement we bring to children through our well-designed and highly gratifying concepts. We love the challenge to create new products in order to continue to entertain children worldwide.</p>
 				</div>
 			</div>
 

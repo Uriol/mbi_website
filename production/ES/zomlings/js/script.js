@@ -72,33 +72,8 @@ $(function(){
 		gallery_4_3 = new Image();
 		gallery_4_3.src = 'img/s4/gallery/img_three.png';
 
-		// Footer
-		footer_1_1 = new Image();
-		footer_1_1.src = 'img/s1/footer/footer_3.png';
-		footer_1_2 = new Image();
-		footer_1_2.src = 'img/s1/footer/footer_4.png';
+		console.log('images loaded')
 
-		footer_2_1 = new Image();
-		footer_2_1.src = 'img/s2/footer/footer_3.png';
-		footer_2_2 = new Image();
-		footer_2_2.src = 'img/s2/footer/footer_4.png';
-
-		footer_3_1 = new Image();
-		footer_3_1.src = 'img/s3/footer/footer_3.png';
-		footer_3_2 = new Image();
-		footer_3_2.src = 'img/s3/footer/footer_4.png';
-
-		footer_4_1 = new Image();
-		footer_4_1.src = 'img/s4/footer/footer.png';
-		footer_4_2 = new Image();
-		footer_4_2.src = 'img/s4/footer/footer_3.png';
-		footer_4_3 = new Image();
-		footer_4_3.src = 'img/s4/footer/footer_4.png';
-
-		special_1 = new Image();
-		special_1.src = 'img/special/footer/footer_3.png';
-		special_2 = new Image();
-		special_2.src = 'img/special/footer/footer_4.png';
 		
 	}
 
@@ -176,23 +151,6 @@ $(function(){
 		$('#' + $series[index] + '_menu_item').removeClass('off').addClass('on');
 		//$('.control_left_container').css('background-color', $series_colors[index]);
 	});
-	// // Handle series switch on the index
-	// $(document).on('click', '.series_index_item.off', function(){
-	// 	// Turn off actual index item
-	// 	$('#' + $series[index] + '_index_item').removeClass('on').addClass('off');
-	// 	// Hide actual serie
-	// 	hideSerie();
-	// 	index = $(this).data('index');
-	// 	// Update selector
-	// 	$('#series_selector').removeClass().addClass($series[index] + '_selector');
-	// 	// Show actual serie main display
-	// 	$('#' + $series[index] + '').show();
-	// 	// Show actual serie info
-	// 	$('#' + $series[index] + '_info').show();
-	// 	// Turn on actual index item
-	// 	$('#' + $series[index] + '_index_item').removeClass('off').addClass('on');
-	// 	//$('.control_left_container').css('background-color', $series_colors[index]);
-	// });
 
 	function hideSerie(){
 		// Hide actual serie MAIN DISPLAY

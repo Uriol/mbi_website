@@ -10,18 +10,22 @@
 		<title>COMPANY</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
 
 		<link href='css/style_all.css' rel='stylesheet'>
-		<link href='css/style_phone.css' rel='stylesheet'>
-		<link href='css/style_tablets_desktop.css' rel='stylesheet'>
-		<link href='css/style_min_1000.css' rel='stylesheet'>
-		<link href='css/style_min_1200.css' rel='stylesheet'>
+		
+		<!--  General style -->
+		<link href='../../css/history/style_all.css' rel='stylesheet'>
+
+		<link href='../../css/history/EN/style_1200.css' rel='stylesheet'>
+		<link href='../../css/history/EN/style_1000.css' rel='stylesheet'>
+		<link href='../../css/history/EN/tablets.css' rel='stylesheet'>
+		<link href='../../css/history/EN/phone.css' rel='stylesheet'>
 
 	</head>
 

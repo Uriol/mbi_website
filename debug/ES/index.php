@@ -9,20 +9,19 @@
 		<title>Magic Box Toys</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='css/reset.css' rel='stylesheet'>
-		<link href='css/header.css' rel='stylesheet'>
-		<link href='css/header_tablet.css' rel='stylesheet'>
-		<link href='css/header_mobile.css' rel='stylesheet'>
+		<link href='../css/reset.css' rel='stylesheet'>
+		<link href='../css/header/header.css' rel='stylesheet'>
+		<link href='../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='css/footer.css' rel='stylesheet'>
-		<link href='css/style_all.css' rel='stylesheet'>
-		<link href='css/animations.css' rel='stylesheet'>
+		<link href='../css/footer/footer.css' rel='stylesheet'>
 
-		<link href='css/phone_portrait.css' rel='stylesheet'>
-		<link href='css/phone_landscape.css' rel='stylesheet'>
-		<link href='css/tablets.css' rel='stylesheet'>
-		<link href='css/style.css' rel='stylesheet'>
-		<link href='css/style_min_2000.css' rel='stylesheet'>
+		<!--  General style -->
+		<link href='../css/home/animations.css' rel='stylesheet'>
+		<link href='../css/home/style_all.css' rel='stylesheet'>
+		<link href='../css/home/phone_landscape.css' rel='stylesheet'>
+		<link href='../css/home/phone_portrait.css' rel='stylesheet'>
+
 	</head>
 
 	<body>
@@ -98,10 +97,17 @@
 		<!-- LOAD IMAGES -->
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "img/logo_sm_submenu.png";
+			logo_sm.src = "../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "img/logo_z_submenu.png";
+			logo_z.src = "../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../img/all/logo_z_submenu_small.png";
+
 		</script>
 
 		<script>

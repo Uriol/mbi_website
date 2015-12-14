@@ -4,7 +4,7 @@ and (min-width: 850px)
 and (max-width: 1200px) {
 
 
-	section.main_display {
+/*	section.main_display {
 		width: 100%;
 		height: 615px;
 		max-width: 2500px;
@@ -12,10 +12,8 @@ and (max-width: 1200px) {
 		margin: 0 auto;
 		overflow-x: hidden;  
 		overflow-y: auto;
-		/*overflow-x: hidden;*/  
-		/*overflow-y: auto;*/
 	}
-
+*/
 
 	/* Logo Zomlings ----------------------------------------- */
 	.main_display_logo {
@@ -37,7 +35,7 @@ and (max-width: 1200px) {
 
 
 	/* Main display */
-	article.series_main_display {
+/*	article.series_main_display {
 		width: 100%;
 		height: 0px;
 		position: relative;
@@ -50,7 +48,6 @@ and (max-width: 1200px) {
 		width: 100%;
 		height: 0px;
 		margin: 0 auto;
-		background-color: green;
 	}
 
 	.serie_main_display.off {
@@ -113,9 +110,9 @@ and (max-width: 1200px) {
 		border-left: 25px solid rgb(255,255,255);
 		margin-left: 37.5px;
 		margin-top: 35px;
-	}
+	}*/
 
-		/* Series One*/
+	/* Series One*/
 	#left_img_main_display_s_one {
 		position: relative;
 		margin: 0 auto;
@@ -137,8 +134,8 @@ and (max-width: 1200px) {
 		
 	}
 
-		/* Series controls --------------------------------------- */
-	.main_display_series_controls {
+	/* Series controls --------------------------------------- */
+/*	.main_display_series_controls {
 		width: 100%;
 		height: 0px;
 		position: absolute;
@@ -189,11 +186,11 @@ and (max-width: 1200px) {
 	#right_arrow {
 		background: url('../img/right_arrow.png');
 		background-size: cover;
-	}
+	}*/
 
 
 	/* Series info -------------------------------------------- */
-	section.series_info{
+/*	section.series_info{
 		width: 100%;
 		max-width: 2500px;
 		position: relative;
@@ -233,10 +230,10 @@ and (max-width: 1200px) {
 		font-size: 16px;
 		line-height: 25px;
 		color: rgb(40,40,40);
-	}
+	}*/
 
 	/* Gallery -------------------------------------- */
-	.gallery_container {
+	/*.gallery_container {
 		width: 100%;
 		position: relative;
 		margin: 0 auto;
@@ -337,13 +334,12 @@ and (max-width: 1200px) {
 		float: left;
 		margin-left: 15px;
 		border-radius: 50%;
-	}
+	}*/
 
 
 	/* Products -------------------------------------- */
-		.products_container {
+/*		.products_container {
 		width: 100%;
-	/*	height: 200px;*/
 		overflow: hidden;
 		position: relative;
 		margin: 0 auto;
@@ -368,32 +364,23 @@ and (max-width: 1200px) {
 	.product_container {
 		overflow: hidden;
 		float: left;
-		/*margin-left: 10px;
-		margin-right: 10px;*/
 		margin-top: 10px;
 		margin-bottom: 10px;
 		width: 700px;
-		/*margin-bottom: 20px;*/
 	}
 
 	.product_image_container {
 		width: 350px;
 		height: 350px;
-		/*position: relative;*/
 		float: left;
-		
 	}
 
 	.product_info_container {
 		width: 350px;
-		/*height: 60px;*/
 		float: left;
 		text-align: left;
-		/*position: relative;*/
 		margin: 0 auto;
-		margin-top: 150px;
-		/*margin-left: 150px;*/
-		
+		margin-top: 150px;	
 	}
 
 	.product_info_container h3 {
@@ -406,7 +393,6 @@ and (max-width: 1200px) {
 
 	.product_info_container p {
 		margin-top: 5px;
-		/*margin-top: 20px;*/
 		font-family: 'avenir_medium', sans-serif;
 		font-size: 16px;
 		line-height: 20px;
@@ -421,7 +407,7 @@ and (max-width: 1200px) {
 		float: left;
 		background-color: rgb(220,220,220);
 		
-	}
+	}*/
 
 
 

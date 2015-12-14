@@ -1,26 +1,6 @@
 <?php
-
-	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/INT/zomlings/index.php') {
-		header('Location: http://test.martomagic.com/INT/zomlings/index.php');
-	}
-
-	// Get location by ip
-	include("geoip.inc"); 
-	$gi = geoip_open("GeoIP.dat",GEOIP_STANDARD);
-	$origin = geoip_country_code_by_addr($gi, $_SERVER["REMOTE_ADDR"]);
-	geoip_close($gi);
-
-	// Redirect Based on country
-	if ($origin == 'ES'){
-		header('Location: http://test.martomagic.com/ES/zomlings/index.php');
-	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/UK/zomlings/index.php');
-	}
-
-
+	include('location.php')
 ?>
-
 
 
 <!DOCTYPE html>
@@ -29,12 +9,20 @@
 		<title>ZOMLINGS</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
-		<link href='../css/reset.css' rel='stylesheet'>
-		<link href='../css/header.css' rel='stylesheet'>
-		<link href='../css/header_tablet.css' rel='stylesheet'>
-		<link href='../css/header_mobile.css' rel='stylesheet'>
+		<link href='../../css/reset.css' rel='stylesheet'>
+		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
+		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
-		<link href='../css/footer.css' rel='stylesheet'>
+		<link href='../../css/footer/footer.css' rel='stylesheet'>
+
+		<!--  General products -->
+		<link href='../../css/products/style_1200.css' rel='stylesheet'>
+		<link href='../../css/products/style.css' rel='stylesheet'>
+		<link href='../../css/products/tablets.css' rel='stylesheet'>
+		<link href='../../css/products/phone_landscape.css' rel='stylesheet'>
+		<link href='../../css/products/phone_portrait.css' rel='stylesheet'>
+
 
 		<link href='css/style_all.css' rel='stylesheet'>
 		<!-- <link href='css/style_max_319.css' rel='stylesheet'> -->
@@ -162,7 +150,7 @@
 									<div class='product_image_container' id='tower_pack_image_series_one'></div>
 									<div class='product_info_container'>
 										<h3>Tower Pack</h3>
-										<p>1 Torre + 1 Zomling + Checklist</p>
+										<p>1 Tower + 1 Zomling + Checklist</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
@@ -170,7 +158,7 @@
 									<div class='product_image_container' id='house_pack_image_series_one'></div>
 									<div class='product_info_container'>
 										<h3>House Pack</h3>
-										<p>1 casa + 2 Zomlings + Checklist</p>
+										<p>1 House + 2 Zomlings + Checklist</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
@@ -178,7 +166,7 @@
 									<div class='product_image_container' id='blister_house_image_series_one'></div>
 									<div class='product_info_container'>
 										<h3>Blister 4</h3>
-										<p>4 Zomlings + 3 Torres + 1 Casa</p>
+										<p>4 Zomlings + 3 Towers + 1 House</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
@@ -187,7 +175,7 @@
 									</div>
 									<div class='product_info_container'>
 										<h3>Blister 7</h3>
-										<p>7 Zomlings + 4 Torres + 1 Mansión</p>
+										<p>7 Zomlings + 4 Towers + 1 Mansion</p>
 									</div>
 								</div>
 							</div>
@@ -252,15 +240,6 @@
 		<script>
 			series_one_bg = new Image(2500,611)
 			series_one_bg.src = "img/s1/bg.png";
-
-			series_two_bg = new Image(2500,611)
-			series_two_bg.src = "img/s2/bg.png";
-
-			series_three_bg = new Image(2500,611)
-			series_three_bg.src = "img/s3/bg.png";
-
-			series_four_bg = new Image(2500,611)
-			series_four_bg.src = "img/s4/bg.png";
 
 			special_bg = new Image(2000,611)
 			special_bg.src = "img/special/bg_4.png";
