@@ -1,0 +1,107 @@
+
+/* Horizontal*/
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+
+
+
+	/* Logo starmonsters ----------------------------------------- */
+	.main_display_logo {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+		margin-top: 10px;
+	}
+
+	#main_display_logo_star_monsters {
+		width: 300px;
+		height: 158px;
+		background: url('../img/logo_sm.png');
+		background-size: cover;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+
+
+	/* Series One*/
+	#left_img_main_display_s_one {
+		position: relative;
+		margin: 0 auto;
+		width: 593px;
+		height: 298px;
+		background: url('../img/s1/left.png');
+		background-size: cover;
+		top: 216px;
+		
+	}
+	#right_img_main_display_s_one {
+		position: relative;
+		margin: 0 auto;
+		width: 593px;
+		height: 298px;
+		background: url('../img/s1/right.png');
+		background-size: cover;
+		top: 216px;
+	}
+
+
+
+
+	/* Series menu ----------------------------------------------------------- */
+	.main_display_series_menu {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 454px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: middle;
+		
+	}
+
+
+	/* Footer ----------------------------------------- */
+	div.pre_footer {
+		width: 100%;
+		position: relative;
+		margin-top: 100px;
+	/*	background-color: red;*/
+	}
+
+	.pre_footer_img {
+		width: 540px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+		#series_one_pre_footer {
+		background-image: url('../img/s1/footer/footer_3.png');
+		background-size: cover;
+	}
+
+}
+
