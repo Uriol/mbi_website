@@ -99,6 +99,33 @@ and (max-width: 768px) {
 	letter-spacing: 0.5px;
 }
 
+.sm_link_container {
+	position: relative;
+	cursor: pointer;
+}
+
+.sm_link_top{
+	position: relative;
+	margin: 0 auto;
+	top: 432px;
+	width: 230px;
+	height: 60px;
+	background-color: white;
+	text-align: center;
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+}
+
+.sm_link_top:hover {
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.6);
+}
+
+.sm_link_top h1{
+	font-family: avenir_bold;
+	font-size: 22px;
+	padding-top: 22px;
+	color: rgb(205,30,40);
+}
+
 
 	/* Clouds ------------------------------------------ */
 	#viewport {
