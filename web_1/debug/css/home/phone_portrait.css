@@ -92,6 +92,17 @@ and (max-width: 540px) {
 	z-index: 99;
 }
 
+#main_display_countdown h1{
+	font-family: avenir_bold;
+	color: rgb(0,113,171);
+	/*color: rgb(227,5,19);*/
+	padding: 22px 20px 20px 20px;
+	font-size: 15px;
+	line-height:30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 #main_display_countdown ul li{
 	width: 57px;
 	padding: 22px 0px 0px 0px;

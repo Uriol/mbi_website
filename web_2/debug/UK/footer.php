@@ -1,5 +1,5 @@
 <?php
-	header('Location: http://localhost:8888/mbi_2/debug/UK/index.php');
+	header('Location: http://localhost:8888/mbi_2/web_2/debug/UK/index.php');
 ?>
 
 <section class='footer'>

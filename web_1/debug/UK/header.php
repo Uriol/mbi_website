@@ -30,8 +30,9 @@
 				
 			<div id='submenu_product_one' class='submenu_product_start'></div>
 			
-			
-			<div id='submenu_product_two' class='submenu_product_start'></div>
+			<a href="http://localhost:8888/mbi_2/web_1/debug/UK/zomlings/index.php">	
+				<div id='submenu_product_two' class='submenu_product_start'></div>
+			</a>
 			
 		</div>
 	</article>

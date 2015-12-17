@@ -64,16 +64,30 @@
 				</div>
 
 				<!-- Countdown -->
+				<!-- Countdown -->
 				<div class='main_display_full'>
 					<div id='main_display_countdown' class='start'>
 						<ul>
-							<li id='days'></li>
-							<li id='hours'></li>
-							<li id='min'></li>
-							<li id='seconds'></li>
+							<div class='countdown_text_container'>
+								<div class='countdown_text'>
+									<h1>Something is coming...</h1>
+								</div>
+							</div>
+							<div class='countdown_text_container_2'>
+								<div class='countdown_text'>
+									<h1>...the clock is ticking!</h1>
+								</div>
+							</div>
+							<div class='countdown_numbers_container'>
+								<div class='countdown_numbers'>
+									<li id='days'></li>
+									<li id='hours'></li>
+									<li id='min'></li>
+									<li id='seconds'></li>
+								</div>
+							</div>
 						</ul>
 					</div>
-				</div>
 				
 
 

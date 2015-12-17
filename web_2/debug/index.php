@@ -9,11 +9,11 @@ geoip_close($gi);
 $origin == 'ES';
 // Redirect Based on country
 if ($origin == 'ES'){
-	header('Location: http://localhost:8888/mbi_2/debug/ES/index.php');
+	header('Location: http://localhost:8888/mbi_2/web_2/debug/ES/index.php');
 } else if ($origin == 'GB') {
-	header('Location: http://localhost:8888/mbi_2/debug/UK/index.php');
+	header('Location: http://localhost:8888/mbi_2/web_2/debug/UK/index.php');
 } else {
-	header('Location: http://localhost:8888/mbi_2/debug/INT/index.php');
+	header('Location: http://localhost:8888/mbi_2/web_2/debug/INT/index.php');
 }
 
 ?>

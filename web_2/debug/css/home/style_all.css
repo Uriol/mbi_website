@@ -129,35 +129,38 @@ iframe {
 	position: relative;
 }
 
-#main_display_countdown ul {
-	text-align: center;
+.sm_link_container {
+	position: relative;
+
+	/*width: 250px;
+	height: 80px;
+	background-color: white;*/
+	cursor: pointer;
+}
+
+.sm_link_top{
 	position: relative;
 	margin: 0 auto;
-	width: 440px;
-	height: 100px;
-	background-color: rgb(255,255,255);
-	border-radius: 10px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-	z-index: 999;
+	top: 510px;
+	width: 230px;
+	height: 60px;
+	background-color: white;
+	text-align: center;
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
 }
 
-#main_display_countdown ul li{
-	width: 95px;
-	padding: 37px 0px 0px 0px;
-	display: inline-block;
-	font-family: burbank;
-	font-size: 60px;
-	line-height:20px;
-	color: rgb(227,5,19);
-	letter-spacing: 2px;
+.sm_link_top:hover {
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.6);
 }
 
-#main_display_countdown ul li span {
-	font-size: 14px;
+.sm_link_top h1{
 	font-family: avenir_bold;
-	color: rgb(0,113,171);
-	letter-spacing: 0.5px;
+	font-size: 22px;
+	padding-top: 22px;
+	color: rgb(205,30,40);
+
 }
+
 
 
 /* Clouds ------------------------------------------ */

@@ -3,9 +3,9 @@
 	//header('Location: ../UK/index.php');
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	// echo $actual_link;
-	if ( $actual_link != 'http://localhost:8888/mbi_2/debug/ES/index.php') {
+	if ( $actual_link != 'http://localhost:8888/mbi_2/web_2/debug/ES/index.php') {
 		//echo 'different';
-		header('Location: http://localhost:8888/mbi_2/debug/ES/index.php');
+		header('Location: http://localhost:8888/mbi_2/web_2/debug/ES/index.php');
 	}
 
 	// Redirect Based on country
@@ -17,11 +17,11 @@
 	$origin = 'ES';
 	// Redirect Based on co	untry
 	if ($origin == 'ES'){
-		//header('Location: http://localhost:8888/mbi_2/debug/ES/company/index.php');
+		//header('Location: http://localhost:8888/mbi_2/web_2/debug/ES/company/index.php');
 	} else if ($origin == 'GB') {
-		header('Location: http://localhost:8888/mbi_2/debug/UK/index.php');
+		header('Location: http://localhost:8888/mbi_2/web_2/debug/UK/index.php');
 	} else {
-		header('Location: http://localhost:8888/mbi_2/debug/INT/index.php');
+		header('Location: http://localhost:8888/mbi_2/web_2/debug/INT/index.php');
 	}
 
 ?>

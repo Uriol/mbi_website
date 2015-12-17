@@ -64,14 +64,9 @@
 
 				<!-- Countdown -->
 				<div class='main_display_full'>
-					<div id='main_display_countdown' class='start'>
-						<ul>
-							<li id='days'></li>
-							<li id='hours'></li>
-							<li id='min'></li>
-							<li id='seconds'></li>
-						</ul>
-					</div>
+					<?php
+						include('sm_link.php');
+					?>
 				</div>
 				
 
