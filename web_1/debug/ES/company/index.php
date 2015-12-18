@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>COMPAÑIA</title>
+		<title>Compañia</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
 		<link href='../../css/reset.css' rel='stylesheet'>
@@ -18,6 +18,9 @@
 		<link href='css/style_all.css' rel='stylesheet'>
 		
 		<!--  General style -->
+		<link href='../../css/company/style_all.css' rel='stylesheet'>
+		<link href='../../css/company/phone.css' rel='stylesheet'>
+
 		<link href='../../css/history/style_all.css' rel='stylesheet'>
 		
 		<link href='../../css/history/ES/phone.css' rel='stylesheet'>
@@ -38,6 +41,27 @@
 
 		<section class='content'>
 			<div class='company_pics'>
+
+				<div class='company_image' id='company_image'></div>
+
+				<div class='gallery_controls'>
+					<div class='gallery_left_control_container'>
+						<div class='gallery_control_arrow' id='gallery_left_arrow'></div>
+					</div>
+				</div>
+							
+				<div class='gallery_controls'>
+					<div class='gallery_right_control_container'>
+						<div class='gallery_control_arrow' id='gallery_right_arrow'></div>
+					</div>
+				</div>
+
+				<div class='company_pictures_index_container'>
+					<div class='company_index_item_on' data-index='0'></div>
+					<div class='company_index_item_off' data-index='1'></div>
+					<div class='company_index_item_off' data-index='2'></div>
+					<div class='company_index_item_off' data-index='3'></div>
+				</div>
 			</div>
 
 			<div class='company_description'>
@@ -624,17 +648,23 @@
 
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
 		</script>
 
 
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
-		<script src='js/script.js'></script>
+		<script src='../../js/company/script.js'></script>
 
 	</body>
 

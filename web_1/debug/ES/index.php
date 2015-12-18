@@ -71,11 +71,6 @@
 									<h1>Algo esta viniendo...</h1>
 								</div>
 							</div>
-							<div class='countdown_text_container_2'>
-								<div class='countdown_text'>
-									<h1>...Y el reloj está corriendo!</h1>
-								</div>
-							</div>
 							<div class='countdown_numbers_container'>
 								<div class='countdown_numbers'>
 									<li id='days'></li>

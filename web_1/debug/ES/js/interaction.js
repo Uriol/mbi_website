@@ -2,9 +2,6 @@
 function onLoad(){
 	// Remove loading div
 	$('.loading').fadeOut(800);
-	
-	// start scrolling when everything is loaded
-	// $('body').css('overflow-y', 'scroll');
 }
 
 var w;
@@ -12,9 +9,6 @@ var w;
 // Players
 var player_0,
 	$players = [player_0];
-
-
-
 
 
 var playing_zero = false,
@@ -106,33 +100,18 @@ $(function() {
 		$('#main_display_countdown .countdown_text_container').fadeIn(700);
 		setTimeout(function(){ 
 			
-			showText_2();
-		}, 3000);
-	}
-
-	function showText_2() {
-		$('#main_display_countdown .countdown_text_container').fadeOut(700);
-		$('#main_display_countdown .countdown_text_container_2').fadeIn(700);
-		setTimeout(function(){ 
-			
 			showCountdown();
 		}, 3000);
 	}
-
 	
 	function showCountdown(){
-		$('#main_display_countdown .countdown_text_container_2').fadeOut(700);
+		$('#main_display_countdown .countdown_text_container').fadeOut(700);
 		$('#main_display_countdown .countdown_numbers_container').fadeIn(700);
 		setTimeout(function(){
 			
 			showText()
-		}, 10000);
+		}, 25000);
 	}
-
-	// setTimeout(function(){ alert("Hello"); }, 3000);
-
-
-
 
 
 	function adjustText() {

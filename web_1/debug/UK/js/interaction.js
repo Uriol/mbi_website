@@ -126,7 +126,7 @@ $(function() {
 		setTimeout(function(){
 			
 			showText()
-		}, 10000);
+		}, 25000);
 	}
 
 	// setTimeout(function(){ alert("Hello"); }, 3000);
