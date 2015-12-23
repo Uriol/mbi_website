@@ -143,6 +143,7 @@
 		<script src='js/script_clouds.js'></script> 
 		<script src='js/script_stars.js'></script> 
 		<script src='js/interaction.js'></script> 
+		<script src='js/media.js'></script> 
 
 	</body>
 
