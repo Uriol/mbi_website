@@ -42,7 +42,9 @@ ul.main_submenu #yellow_item_mobile {
 	width: 100%;
 	height: 600px;
 	position: relative;
-	background-color: rgb(20,20,20);
+	background: url('../../img/company/company_1.jpg');
+	background-size: cover;
+	background-position: center;
 }
 
 .contact_form_container {
@@ -58,7 +60,7 @@ ul.main_submenu #yellow_item_mobile {
 .contact_form_container h1{
 	font-family: avenir_bold;
 	font-size: 40px;
-	color: rgb(40,40,40);
+	/*color: rgb(40,40,40);*/
 	line-height: 40px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -78,6 +80,7 @@ ul.main_submenu #yellow_item_mobile {
 	text-align: center;
 	position: relative;
 	margin: 0 auto;
+	color: rgb(50,50,50);
 }
 
 .form_container form input[type="text"]{
@@ -121,6 +124,10 @@ ul.main_submenu #yellow_item_mobile {
 	border-radius: 3px;
 }
 
+
+
+
+
 .form_container select.select_country{
 	width: 540px;
 	padding: 20px;
@@ -132,36 +139,20 @@ ul.main_submenu #yellow_item_mobile {
     -moz-appearance: none;
     appearance: none;
 
-   /*color: rgb(40,40,40);*/
-   /*color: rgb(150,150,150);*/
    font-family: avenir_medium;
    font-size: 14px;
+   color: rgb(50,50,50);
 }
 
-select:required:invalid {
-  color: gray;
-}
-
-/*.form_container select.select_country option{
-	color: rgb(40,40,40);
-}
-
-option:nth-child(2) {
- color: red;
-}*/
-/*select option[val="1"]{
-    background: rgb(150,150,150);
-}*/
+.start {
+	color: red;
+ }
 
 
 option {
-	/*color: rgb(150,150,150);*/
-   	font-family: avenir_medium;
+	color:white;
+	background-color: blue;
 }
-
-
-
-
 
 :focus {
   outline-color: transparent;
@@ -169,18 +160,18 @@ option {
 }
 
 ::-webkit-input-placeholder {
-   color: rgb(150,150,150);
+   color: rgb(50,50,50);
    font-family: avenir_medium;
    
 }
 
 :-moz-placeholder { 
-    color: rgb(150,150,150);
+    color: rgb(50,50,50);
    font-family: avenir_medium; 
 }
 
 :-ms-input-placeholder {  
-    color: rgb(150,150,150);
+    color: rgb(50,50,50);
    font-family: avenir_medium; 
 }
 
@@ -201,7 +192,7 @@ p.thanks {
 	font-family: avenir_medium;
 }
 
-a {
+a.form {
 	font-family: avenir_bold;
 	text-decoration: underline;
 }

@@ -10,6 +10,7 @@
 		<title>Company</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -68,7 +69,7 @@
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>MAGIC BOX HISTORY</h1>
+					<h1>MAGIC BOX TOYS HISTORY</h1>
 					<p>Magic Box Toys is a global leader in the creation and distribution of collectable toys. Our products are filled with imagination and surprise. We are proud of the excitement we bring to children through our well-designed and highly gratifying concepts. We love the challenge to create new products in order to continue to entertain children worldwide.</p>
 				</div>
 			</div>
@@ -229,7 +230,7 @@
 							<div class='h_line_right'></div>
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_text'>
-									<h1>20th anniversary of Magic Box Int</h1>
+									<h1>20th anniversary of Magic Box Toys</h1>
 								</div>
 							</div>
 						</div>
@@ -388,7 +389,7 @@
 						
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>20th anniversary of Magic Box Int</h1>
+								<h1>20th anniversary of Magic Box Toys</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>

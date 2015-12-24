@@ -2,15 +2,15 @@ function onLoad(){
 	$('.loading').fadeOut(800);
 }
 
-var $company_images = ['url("../../img/company/img_1.jpg")', 
-						'url("../../img/company/img_2.jpg")', 
-						'url("../../img/company/img_3.jpg")',
-						'url("../../img/company/img_4.jpg")']
+var $company_images = ['url("../../img/company/company_7.jpg")', 
+						'url("../../img/company/company_3.jpg")', 
+						'url("../../img/company/company_6.jpg")',
+						'url("../../img/company/company_4.jpg")']
 
-var $company_images_src = ['../../img/company/img_1.jpg', 
-						'../../img/company/img_2.jpg', 
-						'../../img/company/img_3.jpg',
-						'../../img/company/img_4.jpg']
+var $company_images_src = ['../../img/company/company_7.jpg', 
+						'../../img/company/company_3.jpg', 
+						'../../img/company/company_6.jpg',
+						'../../img/company/company_4.jpg']
 
 var index = 0;
 

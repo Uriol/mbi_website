@@ -8,6 +8,7 @@
 		<title>Compañia</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -66,7 +67,7 @@
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>LA HISTORIA DE MAGIC BOX</h1>
+					<h1>LA HISTORIA DE MAGIC BOX TOYS</h1>
 					<p>Magic Box Toys es una empresa líder mundial en la creación y distribución de juguetes coleccionables que logra despertar la imaginación, sorpresa e ilusión de los niños a través de conceptos sólidos, bien diseñados y altamente gratificantes. Nos apasiona el reto de seguir creando para continuar divirtiendo a niños y niñas en todo el mundo.</p>
 				</div>
 			</div>
@@ -227,7 +228,7 @@
 							<div class='h_line_right'></div>
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_text'>
-									<h1>20 ANIVERSARIO DE MAGIC BOX</h1>
+									<h1>20 ANIVERSARIO DE MAGIC BOX TOYS</h1>
 								</div>
 							</div>
 						</div>
@@ -386,7 +387,7 @@
 						
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>20 ANIVERSARIO DE MAGIC BOX</h1>
+								<h1>20 ANIVERSARIO DE MAGIC BOX TOYS</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -658,6 +659,19 @@
 
 			logo_z_2 = new Image(540,235);
 			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
+
+			// Load company pics
+			company_1 = new Image(2000,1333)
+			company_1.src = "../../img/company/compny_1.jpg";
+
+			company_2 = new Image(2000,1333)
+			company_2.src = "../../img/company/company_3.jpg";
+
+			company_3 = new Image(2000,1333)
+			company_3.src = "../../img/company/company_6.jpg";
+
+			company_4 = new Image(2000,1333)
+			company_4.src = "../../img/company/company_4.jpg";
 		</script>
 
 

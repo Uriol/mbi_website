@@ -13,7 +13,7 @@
 }
 
 #company_image{
-	background: url('../../img/company/img_1.jpg');
+	background: url('../../img/company/company_2/company_1.jpg');
 	background-size: cover;
 	background-position: center;
 	transition: background 0.5s linear;

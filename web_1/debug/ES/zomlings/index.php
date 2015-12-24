@@ -11,6 +11,7 @@
 		<title>Zomlings</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>

@@ -12,6 +12,7 @@
 		<title>Zomlings</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -403,7 +404,7 @@
 					<div class='serie_info_container off' id='series_four_info'>
 						<div class='description_container'>
 							<h1>ZOMLINGS</h1>
-							<p>Zomlings Town is evolving once again! Series 4 arrives with more than 100 new Zomlings to meet. Best of all, the new Zomlings come in awesome Crystal colours! It’s not just new colours that these Zomlings have brought to Zomlings Town... check out the new Zom-Mobiles! A car, a scooter, a truck and even a plane!'</p>
+							<p>Zomlings Town is evolving once again! Series 4 arrives with more than 100 new Zomlings to meet. Best of all, the new Zomlings come in awesome Crystal colours! It’s not just new colours that these Zomlings have brought to Zomlings Town... check out the new Zom-Mobiles! A car, a scooter, a truck and even a plane!</p>
 						</div>
 						<div class='gallery_container'>
 							<div class='gallery_controls'>

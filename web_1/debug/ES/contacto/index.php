@@ -9,6 +9,7 @@
 		<title>Contacto</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -49,17 +50,20 @@
 						$action=$_REQUEST['action']; 
 						if ($action=="")   
 						    { 
-						    ?> 
+					?> 
 						    <form  action="" method="POST" enctype="multipart/form-data"> 
 						    <input type="hidden" name="action" value="submit"> 
 						    <!-- Your name:<br>  -->
-						    <input name="name" type="text" placeholder="Nombre" value="" size="30"/><br> 
+						    <input name="name" type="text" placeholder="Nombre" value="" size="30"><br> 
 						    <!-- Your email:<br>  -->
-						    <input name="email" type="text" placeholder="Email" value="" size="30"/><br>
+						    <input name="email" type="text" placeholder="Email" value="" size="30"><br>
 						    <!-- Country -->
-						   	<label>
+						   	<!-- <label> -->
+						   	<!-- <table> -->
+						   	<tr>
+						   	<td>
 						     <select name="pais" size="1" class='select_country'>
-				                <option class='selected' disabled selected hidden style="color:red;" value='' selected="selected" >Dónde vives?</option>
+				                <option id='selected' class='start' disabled selected hidden value='' selected="selected">Dónde vives?</option>
 				                <option value="Spain">Spain</option>
 				                <option value="United Kingdom">United Kingdom</option>
 				                <option value="United States">United States</option>
@@ -303,7 +307,10 @@
 				                <option value="Zambia">Zambia</option>
 				                <option value="Zimbabwe">Zimbabwe</option>
 				            </select>
-				            </label>
+				            </td>
+				            </tr>
+				            <!-- <table> -->
+				            <!-- </label> -->
 						    <!-- Your message:<br>  -->
 						    <textarea name="message" placeholder="Mensaje" rows="7" cols="30"></textarea><br> 
 						    <input type="submit" value="ENVIAR MENSAJE"/> 
@@ -319,12 +326,12 @@
 
 						    if (!filter_var($email, FILTER_VALIDATE_EMAIL) && $email!="") {
 								$emailErr = "Invalid email format";
-								echo "<p class='try_again'>La dirección de correo electrónico no está en el formato correcto. Por favor, vuelve a rellenar <a href=\"\">el formulario.</a></p>";
+								echo "<p class='try_again'>La dirección de correo electrónico no está en el formato correcto. Por favor, vuelve a rellenar <a class='form' href=\"\">el formulario.</a></p>";
 							}
 
 						    else if (($name=="")||($email=="")||($message=="") ||($country=="")) 
 						        { 
-						        echo "<p class='try_again'>Todos los campos estan requeridos, por favor vuelve a rellenar <a href=\"\">el formulario.</a></p>"; 
+						        echo "<p class='try_again'>Todos los campos estan requeridos, por favor vuelve a rellenar <a class='form' href=\"\">el formulario.</a></p>"; 
 						        } 
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
@@ -349,6 +356,7 @@
 			<?php
 				include('../footer.php');
 			?>
+
 
 		</section>
 

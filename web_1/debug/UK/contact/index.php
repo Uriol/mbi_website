@@ -10,6 +10,7 @@
 		<title>Contact</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -320,12 +321,12 @@
 
 						    if (!filter_var($email, FILTER_VALIDATE_EMAIL) && $email!="") {
 								$emailErr = "Invalid email format";
-								echo "<p class='try_again'>The email address is not in the correct format. Please, fill out <a href=\"\">the form</a> again.</p>";
+								echo "<p class='try_again'>The email address is not in the correct format. Please, fill out <a class='form' href=\"\">the form</a> again.</p>";
 							}
 
 						    else if (($name=="")||($email=="")||($message=="") ||($country=="")) 
 						        { 
-						        echo "<p class='try_again'>All fields are required, please fill <a href=\"\">the form</a> again.</p>"; 
+						        echo "<p class='try_again'>All fields are required, please fill <a class='form' href=\"\">the form</a> again.</p>"; 
 						        } 
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
