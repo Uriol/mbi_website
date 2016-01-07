@@ -144,15 +144,7 @@ ul.main_submenu #yellow_item_mobile {
    color: rgb(50,50,50);
 }
 
-.start {
-	color: red;
- }
 
-
-option {
-	color:white;
-	background-color: blue;
-}
 
 :focus {
   outline-color: transparent;
@@ -160,7 +152,7 @@ option {
 }
 
 ::-webkit-input-placeholder {
-   color: rgb(50,50,50);
+   color: rgb(150,150,150);
    font-family: avenir_medium;
    
 }

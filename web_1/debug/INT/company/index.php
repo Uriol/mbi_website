@@ -1,7 +1,6 @@
-
-	<?php
-		include('location.php');
-	?>
+<?php
+	include('location.php');
+?>
 
 
 <!DOCTYPE html>
@@ -661,6 +660,19 @@
 
 			logo_z_2 = new Image(540,235);
 			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
+
+			// Load company pics
+			company_1 = new Image(2000,1333)
+			company_1.src = "../../img/company/company_2.jpg";
+
+			company_2 = new Image(2000,1333)
+			company_2.src = "../../img/company/company_3.jpg";
+
+			company_3 = new Image(2000,1333)
+			company_3.src = "../../img/company/company_4.jpg";
+
+			company_4 = new Image(2000,1333)
+			company_4.src = "../../img/company/company_5.jpg";
 		</script>
 
 

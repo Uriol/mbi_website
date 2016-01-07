@@ -97,7 +97,8 @@ iframe {
 	position: relative;
 	margin: 0 auto;
 	top: 120px;
-	background-color: rgba(0,0,0,1); 
+	background: url('../../img/thumbnails/s1_thumbnail.png');
+	background-size: cover;
 
 }
 

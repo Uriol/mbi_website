@@ -62,8 +62,8 @@ and (max-width: 768px) {
 		background-color: rgba(0,0,0,0.5);
 	}
 
-	/* Countdown */
-	#main_display_countdown {
+/* Countdown */
+#main_display_countdown {
 	width: 100%;
 	height: 120px;
 	position: relative;
@@ -79,6 +79,17 @@ and (max-width: 768px) {
 	border-radius: 10px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	z-index: 99;
+}
+
+#main_display_countdown h1{
+	font-family: avenir_bold;
+	color: rgb(0,113,171);
+	/*color: rgb(227,5,19);*/
+	padding: 27px 20px 20px 20px;
+	font-size: 20px;
+	line-height:30px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #main_display_countdown ul li{

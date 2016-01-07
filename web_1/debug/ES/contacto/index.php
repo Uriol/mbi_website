@@ -63,7 +63,7 @@
 						   	<tr>
 						   	<td>
 						     <select name="pais" size="1" class='select_country'>
-				                <option id='selected' class='start' disabled selected hidden value='' selected="selected">Dónde vives?</option>
+				                <option value='' disabled selected>Dónde vives?</option>
 				                <option value="Spain">Spain</option>
 				                <option value="United Kingdom">United Kingdom</option>
 				                <option value="United States">United States</option>
@@ -336,11 +336,8 @@
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
 						        $subject="Message sent using your contact form [ $country ]"; 
-						        mail("oriol@magicboxint.com", $subject, $message, $from); 
-						        echo "<h2>Gracias!</h2></br><p class='thanks'>Tu mensaje ha sido enviado y recibirás un e-mail de confirmación próximamente.</p>"; 
-						        // THANKS!
-								//	Your message has been sent and you will receive an email confirmation shortly.
-
+						        mail("info@magicboxint.com", $subject, $message, $from); 
+						        echo "<h2>Gracias!</h2></br><p class='thanks'>Tu mensaje ha sido enviado y nos pondremos en contacto próximamente.</p>"; 
 						        } 
 						    }   
 					?> 	

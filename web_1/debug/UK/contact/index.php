@@ -1,4 +1,3 @@
-
 <?php
 	include('location.php');
 ?>
@@ -62,8 +61,8 @@
 						   	<label>
 						     <select name="pais" size="1" class='select_country' placeholder="Email">
 				                <option value='' disabled selected>Where do you live?</option>
-				                <option value="Spain">Spain</option>
 				                <option value="United Kingdom">United Kingdom</option>
+				                <option value="Spain">Spain</option>
 				                <option value="United States">United States</option>
 				                <option value="Afghanistan">Afghanistan</option>
 				                <option value="Albania">Albania</option>
@@ -331,11 +330,8 @@
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
 						        $subject="Message sent using your contact form [ $country ]"; 
-						        mail("oriol@magicboxint.com", $subject, $message, $from); 
-						        echo "<h2>Thanks!</h2></br><p class='thanks'>Your message has been sent and you will receive a confirmation email soon.</p>"; 
-						        // THANKS!
-								//	Your message has been sent and you will receive an email confirmation shortly.
-
+						        mail("info@magicboxint.com", $subject, $message, $from); 
+						        echo "<h2>Thanks!</h2></br><p class='thanks'>Your message has been sent and we will get back to you as soon as possible.</p>";  
 						        } 
 						    }   
 					?> 	
@@ -357,10 +353,16 @@
 
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
 		</script>
 
 		<script src='../js/libraries/jquery_min.js'></script>
