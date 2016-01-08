@@ -132,7 +132,7 @@ and (max-width: 768px) {
 		float: left;
 		width: 270px;
 		height: 152px;
-		cursor: pointer;
+		opacity: 0.4;
 		
 	}
 

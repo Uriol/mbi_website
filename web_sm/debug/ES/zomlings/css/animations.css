@@ -1,0 +1,25 @@
+/* Series One ------------------------------------------- */
+@keyframes logo_out_series_one {
+	from { top: 10px;}
+	to {top: -200px;}
+}
+
+@keyframes logo_in_series_one {
+	from {top: -200px;}
+	to {top: 10px;}
+}
+
+
+#main_display_logo_zomlings.start {
+	top: 10px;
+}
+#main_display_logo_zomlings.out {
+	animation-name: logo_out_series_one;
+	animation-duration: 0.4s;
+	top: -200px;
+}
+#main_display_logo_zomlings.in {
+	animation-name: logo_in_series_one;
+	animation-duration: 0.4s;
+	top: 10px;
+}

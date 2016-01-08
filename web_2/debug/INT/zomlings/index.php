@@ -1,4 +1,3 @@
-
 <?php
 	include('header.php')
 ?>
@@ -7,9 +6,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ZOMLINGS</title>
+		<title>Zomlings</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -192,11 +192,19 @@
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
 							<h1>ZOMLINGS</h1>
-							<p>Zomlings Town has really grown since nervous visitors arrived to explore the streets for the first time. Look at Zomlings Town now and you will quickly discover brand new Towers and Houses and of course, a lot of exciting new Zomlings! The Crystal Towers and Houses add a splash of colour and a little sparkle to the surroundings. Spooky Street, Creepy Circus, Haunted Hotel....every neighbourhood has grown and improved.</p>
+							<p>There are some special Zomlings that are not always found around Zomlings Town. Adventure Zomlings are intrepid explorers who are always off discovering new places. Two exclusive Zomlings can also be found hiding in our Magic Trick Hotels! Discover them all!</p>
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>
 								<h1>PRODUCTS</h1>
+								<div class='product_container'>
+									<div class='product_image_container' id='tin_image_z'></div>
+									<div class='product_info_container'>
+										<h3>Collector Tin</h3>
+										<p>5 Adventure Zomlings</p>
+									</div>
+								</div>
+								<div class='product_filet'></div>
 								<div class='product_container'>
 									<div class='product_image_container' id='hotel_1_image'></div>
 									<div class='product_info_container'>
@@ -210,14 +218,6 @@
 									<div class='product_info_container'>
 										<h3>Hotel Pack 2</h3>
 										<p>1 Hotel + 2 Zomlings</p>
-									</div>
-								</div>
-								<div class='product_filet'></div>
-								<div class='product_container'>
-									<div class='product_image_container' id='tin_image_z'></div>
-									<div class='product_info_container'>
-										<h3>Collector Tin</h3>
-										<p>5 Adventure Zomlings</p>
 									</div>
 								</div>
 							</div>

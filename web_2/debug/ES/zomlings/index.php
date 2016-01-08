@@ -1,4 +1,3 @@
-
 <?php
 	include('location.php');
 ?>
@@ -8,9 +7,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ZOMLINGS</title>
+		<title>Zomlings</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -483,18 +483,18 @@
 							<div class='products_box'>
 								<h1>PRODUCTOS</h1>
 								<div class='product_container'>
-									<div class='product_image_container' id='hotel_1_image'></div>
-									<div class='product_info_container'>
-										<h3>Hotel Pack 1</h3>
-										<p>1 Hotel + 2 Zomlings</p>
-									</div>
-								</div>
-								<div class='product_filet'></div>
-								<div class='product_container'>
 									<div class='product_image_container' id='tin_image_z'></div>
 									<div class='product_info_container'>
 										<h3>Collector Tin</h3>
 										<p>5 Adventure Zomlings</p>
+									</div>
+								</div>
+								<div class='product_filet'></div>
+								<div class='product_container'>
+									<div class='product_image_container' id='hotel_1_image'></div>
+									<div class='product_info_container'>
+										<h3>Hotel Pack 1</h3>
+										<p>1 Hotel + 2 Zomlings</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>

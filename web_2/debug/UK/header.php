@@ -27,12 +27,13 @@
 
 	<article id='submenu' class='off'>
 		<div id='submenu_products_container'>
-			<a href="http://localhost:8888/mbi_2/web_2/debug/UK/star_monsters/index.php">		
-				<div id='submenu_product_one' class='submenu_product_start'></div>
-			</a>
+				
+			<div id='submenu_product_one' class='submenu_product_start'></div>
+			
 			<a href="http://localhost:8888/mbi_2/web_2/debug/UK/zomlings/index.php">	
 				<div id='submenu_product_two' class='submenu_product_start'></div>
-			</a> 
+			</a>
+			
 		</div>
 	</article>
 
@@ -46,9 +47,9 @@
 		<div class='submenu off'>
 			<ul class='main_submenu'>
 				<li class='products_li'>PRODUCTS<span> ▼</span></li>
-				<a href="http://localhost:8888/mbi_2/web_2/debug/UK/star_monsters/index.php">	
-					<div id='SM_submenu_mobile_logo' class='product_submenu'></div>
-				</a>
+				
+				<div id='SM_submenu_mobile_logo' class='product_submenu'></div>
+				
 				<a href="http://localhost:8888/mbi_2/web_2/debug/UK/zomlings/index.php">	
 					<div id='Z_submenu_mobile_logo' class='product_submenu'></div>
 				</a>

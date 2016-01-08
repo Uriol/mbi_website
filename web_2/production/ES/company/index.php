@@ -5,9 +5,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>COMPAÑIA</title>
+		<title>Compañia</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -18,6 +19,9 @@
 		<link href='css/style_all.css' rel='stylesheet'>
 		
 		<!--  General style -->
+		<link href='../../css/company/style_all.css' rel='stylesheet'>
+		<link href='../../css/company/phone.css' rel='stylesheet'>
+
 		<link href='../../css/history/style_all.css' rel='stylesheet'>
 		
 		<link href='../../css/history/ES/phone.css' rel='stylesheet'>
@@ -38,11 +42,32 @@
 
 		<section class='content'>
 			<div class='company_pics'>
+
+				<div class='company_image' id='company_image'></div>
+
+				<div class='gallery_controls'>
+					<div class='gallery_left_control_container'>
+						<div class='gallery_control_arrow' id='gallery_left_arrow'></div>
+					</div>
+				</div>
+							
+				<div class='gallery_controls'>
+					<div class='gallery_right_control_container'>
+						<div class='gallery_control_arrow' id='gallery_right_arrow'></div>
+					</div>
+				</div>
+
+				<div class='company_pictures_index_container'>
+					<div class='company_index_item_on' data-index='0'></div>
+					<div class='company_index_item_off' data-index='1'></div>
+					<div class='company_index_item_off' data-index='2'></div>
+					<div class='company_index_item_off' data-index='3'></div>
+				</div>
 			</div>
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>LA HISTORIA DE MAGIC BOX</h1>
+					<h1>LA HISTORIA DE MAGIC BOX TOYS</h1>
 					<p>Magic Box Toys es una empresa líder mundial en la creación y distribución de juguetes coleccionables que logra despertar la imaginación, sorpresa e ilusión de los niños a través de conceptos sólidos, bien diseñados y altamente gratificantes. Nos apasiona el reto de seguir creando para continuar divirtiendo a niños y niñas en todo el mundo.</p>
 				</div>
 			</div>
@@ -203,7 +228,7 @@
 							<div class='h_line_right'></div>
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_text'>
-									<h1>20 ANIVERSARIO DE MAGIC BOX</h1>
+									<h1>20 ANIVERSARIO DE MAGIC BOX TOYS</h1>
 								</div>
 							</div>
 						</div>
@@ -362,7 +387,7 @@
 						
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>20 ANIVERSARIO DE MAGIC BOX</h1>
+								<h1>20 ANIVERSARIO DE MAGIC BOX TOYS</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -624,17 +649,36 @@
 
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
+
+			// Load company pics
+			company_1 = new Image(2000,1333)
+			company_1.src = "../../img/company/company_2.jpg";
+
+			company_2 = new Image(2000,1333)
+			company_2.src = "../../img/company/company_3.jpg";
+
+			company_3 = new Image(2000,1333)
+			company_3.src = "../../img/company/company_4.jpg";
+
+			company_4 = new Image(2000,1333)
+			company_4.src = "../../img/company/company_5.jpg";
 		</script>
 
 
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
-		<script src='js/script.js'></script>
+		<script src='../../js/company/script.js'></script>
 
 	</body>
 

@@ -1,4 +1,15 @@
 
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../../fonts/avenirnextw1gmedium.woff');
+}
+
+
 .loading {
 	width: 100%;
 	height: 100%;

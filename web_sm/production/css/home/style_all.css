@@ -1,0 +1,294 @@
+@font-face {
+    font-family: burbank;
+    src: url('../../fonts/BurbankBigRegular-Bold.woff');
+}
+
+
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../fonts/avenirnextw1gmedium.woff');
+}
+
+
+.loading {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	position:fixed;
+	z-index: 9999;
+	overflow-y: hidden;
+}
+
+#player_sm_cd{
+	border-style: solid;
+    border-width: 5px;
+    border-color: rgb(161,27,34);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+
+article.home_main_display {
+		width: 100%;
+		height: 600px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+		background: rgba(0,114,171,1);
+		background: -moz-linear-gradient(top, rgba(0,114,171,1) 0%, rgba(0,88,123,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,114,171,1)), color-stop(100%, rgba(0,88,123,1)));
+		background: -webkit-linear-gradient(top, rgba(0,114,171,1) 0%, rgba(0,88,123,1) 100%);
+		background: -o-linear-gradient(top, rgba(0,114,171,1) 0%, rgba(0,88,123,1) 100%);
+		background: -ms-linear-gradient(top, rgba(0,114,171,1) 0%, rgba(0,88,123,1) 100%);
+		background: linear-gradient(to bottom, rgba(0,114,171,1) 0%, rgba(0,88,123,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0072ab', endColorstr='#00587b', GradientType=0 );
+
+	}
+
+/* Main display ------------------------------------ */
+.main_display_logo {
+	width: 100%;
+	height: 0px;
+	position: absolute;
+	z-index: 99;
+	margin-top: 10px;
+}
+
+#main_display_logo_star_monsters {
+	width: 340px;
+	height: 179px;
+	background: url('../../img/all/logo_sm.png');
+	background-size: cover;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+.main_display_full {
+	width: 100%;
+	height: 0px;
+	position: absolute;
+}
+
+.iframe_container {
+	top: 120px;
+	position: relative;
+	margin: 0 auto;
+	width: 640px;
+	height: 360px;
+	cursor: pointer;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.video_thumbnail {
+	cursor: pointer;
+	width: 640px;
+	height: 360px;
+	position: relative;
+	margin: 0 auto;
+	top: 120px;
+	background-color: rgba(0,0,0,1); 
+
+}
+
+.player_icon_container {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: 270px;
+	margin-top: 130px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.player_icon {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 25px solid rgb(255,255,255);
+	margin-left: 37.5px;
+	margin-top: 35px;
+}
+
+/* Countdown --------------------------------------- */
+#main_display_countdown {
+	width: 100%;
+	height: 120px;
+	position: relative;
+}
+
+#main_display_countdown ul {
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	width: 440px;
+	height: 100px;
+	background-color: rgb(255,255,255);
+	border-radius: 10px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	z-index: 999;
+}
+
+#main_display_countdown ul li{
+	width: 95px;
+	padding: 37px 0px 0px 0px;
+	display: inline-block;
+	font-family: burbank;
+	font-size: 60px;
+	line-height:20px;
+	color: rgb(227,5,19);
+	letter-spacing: 2px;
+}
+
+#main_display_countdown ul li span {
+	font-size: 14px;
+	font-family: avenir_bold;
+	color: rgb(0,113,171);
+	letter-spacing: 0.5px;
+}
+
+
+/* Clouds ------------------------------------------ */
+
+#viewport {
+	-webkit-perspective: 1000; 
+	-moz-perspective: 1000; 
+	-o-perspective: 1000;
+	width: 100%;
+	height: 600px; 
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+#world {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -256px;
+	margin-top: -256px;
+	height: 512px;
+	width: 512px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+}
+
+#world div {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;	
+	-o-transform-style: preserve-3d;	
+}
+
+.cloudBase {
+	position: absolute;
+	left: 256px;
+	top: 256px;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+.starBase {
+	position: absolute;
+	left: 256px;
+	top: 256px;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+.cloudLayer {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 256px;
+	height: 256px;
+	margin-left: -128px;
+	margin-top: -128px;
+	-webkit-transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+}
+
+.starLayer {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin-left: -75px;
+	margin-top: -75px;
+	-webkit-transition: opacity .5s ease-out;
+	-moz-transition: opacity .5s ease-out;
+	-o-transition: opacity .5s ease-out;
+}
+
+
+/* Banners ------------------- */
+article.banner {
+	width: 100%;
+	height: inherit;
+	position: relative;
+	margin: 0 auto;
+	z-index: 999;
+	background-color: white;
+}
+
+
+/* Company motto */
+.company_motto_container {
+	width: 100%;
+	max-width: 950px;
+	background-color: white;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.company_motto_container h2 {
+	font-family: avenir_medium;
+	font-size: 28px;
+	line-height: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+/* Pre footer */
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+	}
+
+	.pre_footer_img {
+		width: 760px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#home_pre_footer {
+		background-image: url('../../img/zomlings/footer_3.png');
+		background-size: cover;
+	}
+

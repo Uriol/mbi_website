@@ -168,10 +168,8 @@ article#submenu.out {
 	float: left;
 	width: 320px;
 	height: 180px;
-	
-	cursor: pointer;
 	margin-top: 10px;
-	
+	opacity: 0.4;
 }
 
 

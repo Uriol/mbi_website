@@ -9,6 +9,7 @@
 		<title>Magic Box Toys</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../css/reset.css' rel='stylesheet'>
 		<link href='../css/header/header.css' rel='stylesheet'>
 		<link href='../css/header/header_tablet.css' rel='stylesheet'>
@@ -64,9 +65,23 @@
 
 				<!-- Countdown -->
 				<div class='main_display_full'>
-					<?php
-						include('sm_link.php');
-					?>
+					<div id='main_display_countdown' class='start'>
+						<ul>
+							<div class='countdown_text_container'>
+								<div class='countdown_text'>
+									<h1>Algo esta viniendo...</h1>
+								</div>
+							</div>
+							<div class='countdown_numbers_container'>
+								<div class='countdown_numbers'>
+									<li id='days'></li>
+									<li id='hours'></li>
+									<li id='min'></li>
+									<li id='seconds'></li>
+								</div>
+							</div>
+						</ul>
+					</div>
 				</div>
 				
 
@@ -143,7 +158,6 @@
 		<script src='js/script_clouds.js'></script> 
 		<script src='js/script_stars.js'></script> 
 		<script src='js/interaction.js'></script> 
-		<script src='js/media.js'></script> 
 
 	</body>
 

@@ -97,7 +97,8 @@ iframe {
 	position: relative;
 	margin: 0 auto;
 	top: 120px;
-	background-color: rgba(0,0,0,1); 
+	background: url('../../img/thumbnails/s1_thumbnail.png');
+	background-size: cover;
 
 }
 
@@ -136,9 +137,20 @@ iframe {
 	width: 440px;
 	height: 100px;
 	background-color: rgb(255,255,255);
-	border-radius: 10px;
+	border-radius: 5px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	z-index: 999;
+}
+
+#main_display_countdown h1{
+	font-family: avenir_bold;
+	color: rgb(0,113,171);
+	/*color: rgb(227,5,19);*/
+	padding: 35px 20px 20px 20px;
+	font-size: 25px;
+	line-height:30px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #main_display_countdown ul li{
@@ -156,7 +168,29 @@ iframe {
 	font-size: 14px;
 	font-family: avenir_bold;
 	color: rgb(0,113,171);
-	letter-spacing: 0.5px;
+	letter-spacing: 0.7px;
+}
+
+#main_display_countdown .countdown_numbers_container{
+	display: none;
+}
+
+#main_display_countdown .countdown_text_container{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+#main_display_countdown .countdown_text_container_2{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+#main_display_countdown .countdown_text_container .countdown_text{
+	
+	text-align: center;
 }
 
 

@@ -1,16 +1,3 @@
-@font-face {
-    font-family: avenir_bold;
-    src: url('../../fonts/avenirnextw1gbold.woff');
-}
-
-@font-face {
-    font-family: avenir_medium;
-    src: url('../../fonts/avenirnextw1gmedium.woff');
-}
-
-
-
-
 @media only screen 
 and (min-width: 850px)
 and (max-width: 1200px) {

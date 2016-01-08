@@ -70,10 +70,8 @@ $(function() {
 		//console.log($players[index])
 	})
 
-	// enter time in UTC
-	var endDate = new Date(Date.UTC(2016, 1, 4, 08, 00, 00));
-	//console.log('data in script: ' + endDate);
-	//console.log('date from script: ' + endDate)
+	
+	var endDate = new Date(Date.UTC(2016, 01, 04, 07, 00, 00));
 
 	var days, hours, minutes, seconds;
 	var MINUTES = 'MIN', SECONDS = 'SEC';
@@ -98,6 +96,44 @@ $(function() {
 
 
 	});
+
+
+
+	// Handle timeOuts of countdown
+	showText();
+	function showText() {
+		$('#main_display_countdown .countdown_numbers_container').fadeOut(700);
+		$('#main_display_countdown .countdown_text_container').fadeIn(700);
+		setTimeout(function(){ 
+			
+			showText_2();
+		}, 3000);
+	}
+
+	function showText_2() {
+		$('#main_display_countdown .countdown_text_container').fadeOut(700);
+		$('#main_display_countdown .countdown_text_container_2').fadeIn(700);
+		setTimeout(function(){ 
+			
+			showCountdown();
+		}, 3000);
+	}
+
+	
+	function showCountdown(){
+		$('#main_display_countdown .countdown_text_container_2').fadeOut(700);
+		$('#main_display_countdown .countdown_numbers_container').fadeIn(700);
+		setTimeout(function(){
+			
+			showText()
+		}, 25000);
+	}
+
+	// setTimeout(function(){ alert("Hello"); }, 3000);
+
+
+
+
 
 	function adjustText() {
 

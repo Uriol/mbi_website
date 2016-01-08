@@ -395,6 +395,15 @@ ul.main_submenu #green_item_mobile {
 	}
 
 	/* Time line photos */
+	#container_3 .timeline_item .timeline_item_image{
+		background: url('../../img/history/office.jpg');
+		background-size: cover;
+	}
+	#container_full_3 .timeline_item .timeline_item_image{
+		background: url('../../img/history/office.jpg');
+		background-size: cover;
+	}
+
 	#container_4 .timeline_item .timeline_item_image{
 		background: url('../../img/history/new_logo.png');
 		background-size: cover;
@@ -422,6 +431,15 @@ ul.main_submenu #green_item_mobile {
 		background-size: cover;
 	}
 
+	#container_8 .timeline_item .timeline_item_image{
+		background: url('../../img/history/Stoppers.jpg');
+		background-size: cover;
+	}
+	#container_full_8 .timeline_item .timeline_item_image{
+		background: url('../../img/history/Stoppers.jpg');
+		background-size: cover;
+	}
+
 	#container_9 .timeline_item .timeline_item_image{
 		background: url('../../img/history/gogos3.png');
 		background-size: cover;
@@ -431,6 +449,87 @@ ul.main_submenu #green_item_mobile {
 		background-size: cover;
 	}
 
+	#container_10 .timeline_item .timeline_item_image{
+		background: url('../../img/history/Rollers_Pokemon.jpg');
+		background-size: cover;
+	}
+	#container_full_10 .timeline_item .timeline_item_image{
+		background: url('../../img/history/Rollers_Pokemon.jpg');
+		background-size: cover;
+	}
+
+	#container_11 .timeline_item .timeline_item_image{
+		background: url('../../img/history/shootout.jpg');
+		background-size: cover;
+	}
+	#container_full_11 .timeline_item .timeline_item_image{
+		background: url('../../img/history/shootout.jpg');
+		background-size: cover;
+	}
+
+	#container_12 .timeline_item .timeline_item_image{
+		background: url('../../img/history/Rappers.jpg');
+		background-size: cover;
+	}
+	#container_full_12 .timeline_item .timeline_item_image{
+		background: url('../../img/history/Rappers.jpg');
+		background-size: cover;
+	}
+
+	#container_13 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos2_3.jpg');
+		background-size: cover;
+	}
+	#container_full_13 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos2_3.jpg');
+		background-size: cover;
+	}
+
+
+	#container_14 .timeline_item .timeline_item_image{
+		background: url('../../img/history/pickers.jpg');
+		background-size: cover;
+	}
+	#container_full_14 .timeline_item .timeline_item_image{
+		background: url('../../img/history/pickers.jpg');
+		background-size: cover;
+	}
+
+	#container_15 .timeline_item .timeline_item_image{
+		background: url('../../img/history/spice.jpg');
+		background-size: cover;
+	}
+	#container_full_15 .timeline_item .timeline_item_image{
+		background: url('../../img/history/spice.jpg');
+		background-size: cover;
+	}
+
+	#container_16 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos1_2.jpg');
+		background-size: cover;
+	}
+	#container_full_16 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos1_2.jpg');
+		background-size: cover;
+	}
+
+	#container_18 .timeline_item .timeline_item_image{
+		background: url('../../img/history/MadCaps.jpg');
+		background-size: cover;
+	}
+	#container_full_18 .timeline_item .timeline_item_image{
+		background: url('../../img/history/MadCaps.jpg');
+		background-size: cover;
+	}
+
+	#container_19 .timeline_item .timeline_item_image{
+		background: url('../../img/history/futbol.jpg');
+		background-size: cover;
+	}
+	#container_full_19 .timeline_item .timeline_item_image{
+		background: url('../../img/history/futbol.jpg');
+		background-size: cover;
+	}
 
 /* Pre footer */
 	div.pre_footer {

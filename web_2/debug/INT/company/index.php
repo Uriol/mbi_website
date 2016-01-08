@@ -1,15 +1,15 @@
-
-	<?php
-		include('location.php');
-	?>
+<?php
+	include('location.php');
+?>
 
 
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>COMPANY</title>
+		<title>Company</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -20,6 +20,9 @@
 		<link href='css/style_all.css' rel='stylesheet'>
 		
 		<!--  General style -->
+		<link href='../../css/company/style_all.css' rel='stylesheet'>
+		<link href='../../css/company/phone.css' rel='stylesheet'>
+
 		<link href='../../css/history/style_all.css' rel='stylesheet'>
 
 		<link href='../../css/history/EN/style_1200.css' rel='stylesheet'>
@@ -40,11 +43,31 @@
 
 		<section class='content'>
 			<div class='company_pics'>
+				<div class='company_image' id='company_image'></div>
+
+				<div class='gallery_controls'>
+					<div class='gallery_left_control_container'>
+						<div class='gallery_control_arrow' id='gallery_left_arrow'></div>
+					</div>
+				</div>
+							
+				<div class='gallery_controls'>
+					<div class='gallery_right_control_container'>
+						<div class='gallery_control_arrow' id='gallery_right_arrow'></div>
+					</div>
+				</div>
+
+				<div class='company_pictures_index_container'>
+					<div class='company_index_item_on' data-index='0'></div>
+					<div class='company_index_item_off' data-index='1'></div>
+					<div class='company_index_item_off' data-index='2'></div>
+					<div class='company_index_item_off' data-index='3'></div>
+				</div>
 			</div>
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>MAGIC BOX HISTORY</h1>
+					<h1>MAGIC BOX TOYS HISTORY</h1>
 					<p>Magic Box Toys is a global leader in the creation and distribution of collectable toys. Our products are filled with imagination and surprise. We are proud of the excitement we bring to children through our well-designed and highly gratifying concepts. We love the challenge to create new products in order to continue to entertain children worldwide.</p>
 				</div>
 			</div>
@@ -52,25 +75,6 @@
 			<div class='company_history'>
 
 				<div class='company_history_container'>
-
-
-					
-					<!-- CENTER -->
-					<!-- <div class='history_column_container full'>
-						<div class='timeline_item_container_center_container red' id='container_1'>
-							
-							<div class='v_line red'></div>
-							<div class='year_container'>
-								<h2>2016</h2>
-							</div>
-							<div class='timeline_item left_item'>
-								<div class='timeline_item_text'>
-									<h1>20 ANIVERSARIO DE MAGIC BOX.</h1>
-								</div>
-							</div>
-						</div>
-					</div> -->
-
 
 					<div class='columns_container'>
 					<!--  LEFT -->
@@ -224,7 +228,7 @@
 							<div class='h_line_right'></div>
 							<div class='timeline_item right_item'>
 								<div class='timeline_item_text'>
-									<h1>20th anniversary of Magic Box Int</h1>
+									<h1>20th anniversary of Magic Box Toys</h1>
 								</div>
 							</div>
 						</div>
@@ -383,7 +387,7 @@
 						
 						<div class='timeline_item'>
 							<div class='timeline_item_text'>
-								<h1>20th anniversary of Magic Box Int</h1>
+								<h1>20th anniversary of Magic Box Toys</h1>
 							</div>
 						</div>
 						<div class='v_line red end'></div>
@@ -646,17 +650,37 @@
 
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
+
+			// Load company pics
+			company_1 = new Image(2000,1333)
+			company_1.src = "../../img/company/company_2.jpg";
+
+			company_2 = new Image(2000,1333)
+			company_2.src = "../../img/company/company_3.jpg";
+
+			company_3 = new Image(2000,1333)
+			company_3.src = "../../img/company/company_4.jpg";
+
+			company_4 = new Image(2000,1333)
+			company_4.src = "../../img/company/company_5.jpg";
 		</script>
 
 
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
-		<script src='js/script.js'></script>
+		<script src='../../js/company/script.js'></script>
+		
 
 	</body>
 

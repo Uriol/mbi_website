@@ -50,7 +50,7 @@
 
 				<div class='main_display_full'>
 					<div class='iframe_container' id='iframe_container_sm_cd'>
-						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/4V2cnj59-gk?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 

@@ -6,9 +6,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CONTACTO</title>
+		<title>Contacto</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -49,17 +50,20 @@
 						$action=$_REQUEST['action']; 
 						if ($action=="")   
 						    { 
-						    ?> 
+					?> 
 						    <form  action="" method="POST" enctype="multipart/form-data"> 
 						    <input type="hidden" name="action" value="submit"> 
 						    <!-- Your name:<br>  -->
-						    <input name="name" type="text" placeholder="Nombre" value="" size="30"/><br> 
+						    <input name="name" type="text" placeholder="Nombre" value="" size="30"><br> 
 						    <!-- Your email:<br>  -->
-						    <input name="email" type="text" placeholder="Email" value="" size="30"/><br>
+						    <input name="email" type="text" placeholder="Email" value="" size="30"><br>
 						    <!-- Country -->
-						   	<label>
+						   	<!-- <label> -->
+						   	<!-- <table> -->
+						   	<tr>
+						   	<td>
 						     <select name="pais" size="1" class='select_country'>
-				                <option value='' selected="selected" class='selected'>Dónde vives?</option>
+				                <option value='' disabled selected>Dónde vives?</option>
 				                <option value="Spain">Spain</option>
 				                <option value="United Kingdom">United Kingdom</option>
 				                <option value="United States">United States</option>
@@ -303,10 +307,13 @@
 				                <option value="Zambia">Zambia</option>
 				                <option value="Zimbabwe">Zimbabwe</option>
 				            </select>
-				            </label>
+				            </td>
+				            </tr>
+				            <!-- <table> -->
+				            <!-- </label> -->
 						    <!-- Your message:<br>  -->
 						    <textarea name="message" placeholder="Mensaje" rows="7" cols="30"></textarea><br> 
-						    <input type="submit" value="ENVIAR"/> 
+						    <input type="submit" value="ENVIAR MENSAJE"/> 
 						    </form> 
 						    <?php 
 						    }  
@@ -319,21 +326,18 @@
 
 						    if (!filter_var($email, FILTER_VALIDATE_EMAIL) && $email!="") {
 								$emailErr = "Invalid email format";
-								echo "<p class='try_again'>La dirección de correo electrónico no está en el formato correcto. Por favor, vuelve a rellenar <a href=\"\">el formulario.</a></p>";
+								echo "<p class='try_again'>La dirección de correo electrónico no está en el formato correcto. Por favor, vuelve a rellenar <a class='form' href=\"\">el formulario.</a></p>";
 							}
 
 						    else if (($name=="")||($email=="")||($message=="") ||($country=="")) 
 						        { 
-						        echo "<p class='try_again'>Todos los campos estan requeridos, por favor vuelve a rellenar <a href=\"\">el formulario.</a></p>"; 
+						        echo "<p class='try_again'>Todos los campos estan requeridos, por favor vuelve a rellenar <a class='form' href=\"\">el formulario.</a></p>"; 
 						        } 
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
 						        $subject="Message sent using your contact form [ $country ]"; 
-						        mail("oriol@magicboxint.com", $subject, $message, $from); 
-						        echo "<h2>Gracias!</h2></br><p class='thanks'>Tu mensaje ha sido enviado y recibirás un e-mail de confirmación próximamente.</p>"; 
-						        // THANKS!
-								//	Your message has been sent and you will receive an email confirmation shortly.
-
+						        mail("info@magicboxint.com", $subject, $message, $from); 
+						        echo "<h2>Gracias!</h2></br><p class='thanks'>Tu mensaje ha sido enviado y nos pondremos en contacto próximamente.</p>"; 
 						        } 
 						    }   
 					?> 	
@@ -350,14 +354,21 @@
 				include('../footer.php');
 			?>
 
+
 		</section>
 
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
 		</script>
 
 		<script src='../js/libraries/jquery_min.js'></script>

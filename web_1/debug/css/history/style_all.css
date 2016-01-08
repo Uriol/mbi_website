@@ -522,6 +522,15 @@ ul.main_submenu #green_item_mobile {
 		background-size: cover;
 	}
 
+	#container_19 .timeline_item .timeline_item_image{
+		background: url('../../img/history/futbol.jpg');
+		background-size: cover;
+	}
+	#container_full_19 .timeline_item .timeline_item_image{
+		background: url('../../img/history/futbol.jpg');
+		background-size: cover;
+	}
+
 
 /* Pre footer */
 	div.pre_footer {

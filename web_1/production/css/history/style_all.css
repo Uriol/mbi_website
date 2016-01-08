@@ -459,11 +459,11 @@ ul.main_submenu #green_item_mobile {
 	}
 
 	#container_11 .timeline_item .timeline_item_image{
-		background: url('../../img/history/ShootOut.jpg');
+		background: url('../../img/history/shootout.jpg');
 		background-size: cover;
 	}
 	#container_full_11 .timeline_item .timeline_item_image{
-		background: url('../../img/history/ShootOut.jpg');
+		background: url('../../img/history/shootout.jpg');
 		background-size: cover;
 	}
 
@@ -476,12 +476,40 @@ ul.main_submenu #green_item_mobile {
 		background-size: cover;
 	}
 
+	#container_13 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos2_3.jpg');
+		background-size: cover;
+	}
+	#container_full_13 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos2_3.jpg');
+		background-size: cover;
+	}
+
+
+	#container_14 .timeline_item .timeline_item_image{
+		background: url('../../img/history/pickers.jpg');
+		background-size: cover;
+	}
+	#container_full_14 .timeline_item .timeline_item_image{
+		background: url('../../img/history/pickers.jpg');
+		background-size: cover;
+	}
+
 	#container_15 .timeline_item .timeline_item_image{
-		background: url('../../img/history/SpiceGirls.jpg');
+		background: url('../../img/history/spice.jpg');
 		background-size: cover;
 	}
 	#container_full_15 .timeline_item .timeline_item_image{
-		background: url('../../img/history/SpiceGirls.jpg');
+		background: url('../../img/history/spice.jpg');
+		background-size: cover;
+	}
+
+	#container_16 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos1_2.jpg');
+		background-size: cover;
+	}
+	#container_full_16 .timeline_item .timeline_item_image{
+		background: url('../../img/history/gogos1_2.jpg');
 		background-size: cover;
 	}
 
@@ -494,6 +522,14 @@ ul.main_submenu #green_item_mobile {
 		background-size: cover;
 	}
 
+	#container_19 .timeline_item .timeline_item_image{
+		background: url('../../img/history/futbol.jpg');
+		background-size: cover;
+	}
+	#container_full_19 .timeline_item .timeline_item_image{
+		background: url('../../img/history/futbol.jpg');
+		background-size: cover;
+	}
 
 /* Pre footer */
 	div.pre_footer {

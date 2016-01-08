@@ -1,4 +1,3 @@
-
 <?php
 	include('location.php')
 ?>
@@ -6,9 +5,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CONTACT</title>
+		<title>Contact</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -59,7 +59,7 @@
 						    <!-- Country -->
 						   	<label>
 						     <select name="pais" size="1" class='select_country'>
-				                <option value='' selected="selected" class='selected'>Where are you from?</option>
+				                <option value='' disabled selected>Where do you live?</option>
 				                <option value="Spain">Spain</option>
 				                <option value="United Kingdom">United Kingdom</option>
 				                <option value="United States">United States</option>
@@ -319,18 +319,18 @@
 
 						    if (!filter_var($email, FILTER_VALIDATE_EMAIL) && $email!="") {
 								$emailErr = "Invalid email format";
-								echo "<p class='try_again'>The email address is not in the correct format. Please, fill out <a href=\"\">the form</a> again.</p>";
+								echo "<p class='try_again'>The email address is not in the correct format. Please, fill out <a class='form' href=\"\">the form</a> again.</p>";
 							}
 
 						    else if (($name=="")||($email=="")||($message=="") ||($country=="")) 
 						        { 
-						        echo "<p class='try_again'>All fields are required, please fill <a href=\"\">the form</a> again.</p>"; 
+						        echo "<p class='try_again'>All fields are required, please fill <a class='form' href=\"\">the form</a> again.</p>"; 
 						        } 
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
 						        $subject="Message sent using your contact form [ $country ]"; 
-						        mail("oriol@magicboxint.com", $subject, $message, $from); 
-						         echo "<h2>Thanks!</h2></br><p class='thanks'>Your message has been sent and you will receive a confirmation email soon.</p>"; 
+						        mail("info@magicboxint.com", $subject, $message, $from); 
+						        echo "<h2>Thanks!</h2></br><p class='thanks'>Your message has been sent and we will get back to you as soon as possible.</p>"; 
 						        // THANKS!
 								//	Your message has been sent and you will receive an email confirmation shortly.
 
@@ -354,10 +354,16 @@
 
 		<script>
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
 		</script>
 
 		<script src='../js/libraries/jquery_min.js'></script>

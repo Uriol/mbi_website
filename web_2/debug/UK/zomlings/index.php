@@ -1,4 +1,3 @@
-
 <?php
 	include('location.php');
 ?>
@@ -9,9 +8,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ZOMLINGS</title>
+		<title>Zomlings</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
@@ -100,7 +100,7 @@
 						<!-- Video -->
 						<div class='main_display_full' id='series_three_video'>
 							<div class='iframe_container' id='iframe_container_series_three'>
-								<iframe id='player_series_three' src="https://www.youtube.com/embed/V0if4l8r7Uo?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+								<iframe id='player_series_three' src="https://www.youtube.com/embed/rpbA005ySM0?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 						<!--  Video thumbnail -->
@@ -403,7 +403,7 @@
 					<div class='serie_info_container off' id='series_four_info'>
 						<div class='description_container'>
 							<h1>ZOMLINGS</h1>
-							<p>Zomlings Town is evolving once again! Series 4 arrives with more than 100 new Zomlings to meet. Best of all, the new Zomlings come in awesome Crystal colours! It’s not just new colours that these Zomlings have brought to Zomlings Town... check out the new Zom-Mobiles! A car, a scooter, a truck and even a plane!'</p>
+							<p>Zomlings Town is evolving once again! Series 4 arrives with more than 100 new Zomlings to meet. Best of all, the new Zomlings come in awesome Crystal colours! It’s not just new colours that these Zomlings have brought to Zomlings Town... check out the new Zom-Mobiles! A car, a scooter, a truck and even a plane!</p>
 						</div>
 						<div class='gallery_container'>
 							<div class='gallery_controls'>
@@ -476,6 +476,14 @@
 							<div class='products_box'>
 								<h1>PRODUCTS</h1>
 								<div class='product_container'>
+									<div class='product_image_container' id='tin_image_z'></div>
+									<div class='product_info_container'>
+										<h3>Collector Tin</h3>
+										<p>5 Adventure Zomlings</p>
+									</div>
+								</div>
+								<div class='product_filet'></div>
+								<div class='product_container'>
 									<div class='product_image_container' id='hotel_1_image'></div>
 									<div class='product_info_container'>
 										<h3>Hotel Pack 1</h3>
@@ -488,14 +496,6 @@
 									<div class='product_info_container'>
 										<h3>Hotel Pack 2</h3>
 										<p>1 Hotel + 2 Zomlings</p>
-									</div>
-								</div>
-								<div class='product_filet'></div>
-								<div class='product_container'>
-									<div class='product_image_container' id='tin_image_z'></div>
-									<div class='product_info_container'>
-										<h3>Collector Tin</h3>
-										<p>5 Adventure Zomlings</p>
 									</div>
 								</div>
 							</div>
@@ -533,10 +533,16 @@
 			special_bg.src = "img/special/bg_4.png";
 
 			logo_sm = new Image(540,304)
-			logo_sm.src = "../img/logo_sm_submenu.png";
+			logo_sm.src = "../../img/all/logo_sm_submenu.png";
+
+			logo_sm_2 = new Image(540,235)
+			logo_sm_2.src = "../../img/all/logo_sm_submenu_small.png"
 
 			logo_z = new Image(540,304);
-			logo_z.src = "../img/logo_z_submenu.png";
+			logo_z.src = "../../img/all/logo_z_submenu.png";
+
+			logo_z_2 = new Image(540,235);
+			logo_z_2.src = "../../img/all/logo_z_submenu_small.png";
 
 			
 		</script>

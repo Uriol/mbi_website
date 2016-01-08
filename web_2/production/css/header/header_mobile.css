@@ -108,19 +108,21 @@ and (max-width: 540px) {
 		height: 109px;
 		position: relative;
 		margin: 0 auto;
-		cursor: pointer;
+		
 		margin-top: 10px;
 	}
 
 	#SM_submenu_mobile_logo {
 		background: url('../../img/all/logo_sm_submenu_small.png');
 		background-size: cover;
+		opacity: 0.4;
 	}
 
 	#Z_submenu_mobile_logo {
 		background: url('../../img/all/logo_z_submenu_small.png');
 		background-size: cover;
 		margin-bottom: 30px;
+		cursor: pointer;
 	}
 
 

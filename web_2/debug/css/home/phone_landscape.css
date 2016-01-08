@@ -62,8 +62,8 @@ and (max-width: 768px) {
 		background-color: rgba(0,0,0,0.5);
 	}
 
-	/* Countdown */
-	#main_display_countdown {
+/* Countdown */
+#main_display_countdown {
 	width: 100%;
 	height: 120px;
 	position: relative;
@@ -79,6 +79,17 @@ and (max-width: 768px) {
 	border-radius: 10px;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
 	z-index: 99;
+}
+
+#main_display_countdown h1{
+	font-family: avenir_bold;
+	color: rgb(0,113,171);
+	/*color: rgb(227,5,19);*/
+	padding: 27px 20px 20px 20px;
+	font-size: 20px;
+	line-height:30px;
+	text-transform: uppercase;
+	text-align: center;
 }
 
 #main_display_countdown ul li{
@@ -97,33 +108,6 @@ and (max-width: 768px) {
 	font-family: avenir_bold;
 	color: rgb(0,113,171);
 	letter-spacing: 0.5px;
-}
-
-.sm_link_container {
-	position: relative;
-	cursor: pointer;
-}
-
-.sm_link_top{
-	position: relative;
-	margin: 0 auto;
-	top: 432px;
-	width: 230px;
-	height: 60px;
-	background-color: white;
-	text-align: center;
-	box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
-}
-
-.sm_link_top:hover {
-	box-shadow: 5px 5px 0 rgba(0,0,0,0.6);
-}
-
-.sm_link_top h1{
-	font-family: avenir_bold;
-	font-size: 22px;
-	padding-top: 22px;
-	color: rgb(205,30,40);
 }
 
 
