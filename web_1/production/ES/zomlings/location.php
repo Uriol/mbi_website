@@ -1,8 +1,8 @@
 <?php
 	
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/ES/zomlings/index.php') {
-		header('Location: http://test.martomagic.com/ES/zomlings/index.php');
+	if ( $actual_link != 'http://www.magicboxint.com/ES/zomlings/index.php') {
+		header('Location: http://www.magicboxint.com/ES/zomlings/index.php');
 	}
 
 	include("geoip.inc"); 
@@ -14,9 +14,9 @@
 	if ($origin == 'ES'){
 
 	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/UK/zomlings/index.php');
+		header('Location: http://www.magicboxint.com/UK/zomlings/index.php');
 	} else {
-		header('Location: http://test.martomagic.com/INT/zomlings/index.php');
+		header('Location: http://www.magicboxint.com/INT/zomlings/index.php');
 	}
 
 ?>

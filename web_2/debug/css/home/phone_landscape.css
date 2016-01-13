@@ -42,7 +42,7 @@ and (max-width: 768px) {
 		height: 298px;
 	}
 
-	.video_thumbnail{
+/*	.video_thumbnail{
 		cursor: pointer;
 		width: 530px;
 		height: 298px;
@@ -50,7 +50,7 @@ and (max-width: 768px) {
 		margin: 0 auto;
 		top: 108px;
 		background-color: rgba(0,0,0,1); 
-	}
+	}*/
 
 	.player_icon_container {
 		width: 100px;

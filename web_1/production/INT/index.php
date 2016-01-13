@@ -29,7 +29,7 @@
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-18320013-2', 'magicboxint.com');
+			ga('create', 'UA-18320013-2', 'www.magicboxint.com');
 			ga('send', 'pageview');
 
 		</script>
@@ -136,7 +136,6 @@
 		</script>
 
 
-		<script src='https://www.youtube.com/iframe_api'></script>
 		<script src='js/libraries/jquery_min.js'></script>
 		<script src='js/libraries/mobile_detect_min.js'></script>
 		<script src='js/libraries/jquery.countdown.js'></script>
@@ -145,6 +144,8 @@
 		<script src='js/script_clouds.js'></script> 
 		<script src='js/script_stars.js'></script> 
 		<script src='js/interaction.js'></script> 
+
+		<script src='https://www.youtube.com/iframe_api'></script>
 
 	</body>
 

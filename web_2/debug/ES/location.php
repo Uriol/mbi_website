@@ -17,7 +17,7 @@
 	$origin = 'ES';
 	// Redirect Based on co	untry
 	if ($origin == 'ES'){
-		//header('Location: http://localhost:8888/mbi_2/web_2/debug/ES/company/index.php');
+		
 	} else if ($origin == 'GB') {
 		header('Location: http://localhost:8888/mbi_2/web_2/debug/UK/index.php');
 	} else {

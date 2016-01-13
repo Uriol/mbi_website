@@ -53,7 +53,7 @@
 					<div id='Z_submenu_mobile_logo' class='product_submenu'></div>
 				</a>
 				<a href="http://localhost:8888/mbi_2/web_1/debug/ES/company/index.php">	
-					<li id='green_item_mobile'>COMPANIA</li>
+					<li id='green_item_mobile'>COMPAÑIA</li>
 				</a>
 				<a href="http://localhost:8888/mbi_2/web_1/debug/ES/contacto/index.php">	
 					<li id='yellow_item_mobile'>CONTACTO</li>

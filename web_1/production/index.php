@@ -8,11 +8,11 @@ geoip_close($gi);
 
 // Redirect Based on country
 if ($origin == 'ES'){
-	header('Location: http://test.martomagic.com/ES/index.php');
+	header('Location: http://www.magicboxint.com/ES/index.php');
 } else if ($origin == 'GB') {
-	header('Location: http://test.martomagic.com/UK/index.php');
+	header('Location: http://www.magicboxint.com/UK/index.php');
 } else {
-	header('Location: http://test.martomagic.com/INT/index.php');
+	header('Location: http://www.magicboxint.com/INT/index.php');
 }
 
 ?>

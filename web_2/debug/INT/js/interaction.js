@@ -22,9 +22,7 @@ var playing_zero = false,
 
 var index = 0;
 
-$(function() {
 
-	onLoad();
 
 
 	// Hover over the player
@@ -37,6 +35,7 @@ $(function() {
 
 	// YT video
 	window.onYouTubeIframeAPIReady = function() {
+		console.log('ready')
 		$players[0] = new YT.Player('player_sm_cd', {
 			events: {
 				'onStateChange': onPlayerStateChange
@@ -98,75 +97,15 @@ $(function() {
 	});
 
 
-
-	// Handle timeOuts of countdown
-	showText();
-	function showText() {
-		$('#main_display_countdown .countdown_numbers_container').fadeOut(700);
-		$('#main_display_countdown .countdown_text_container').fadeIn(700);
-		setTimeout(function(){ 
-			
-			showText_2();
-		}, 3000);
-	}
-
-	function showText_2() {
-		$('#main_display_countdown .countdown_text_container').fadeOut(700);
-		$('#main_display_countdown .countdown_text_container_2').fadeIn(700);
-		setTimeout(function(){ 
-			
-			showCountdown();
-		}, 3000);
-	}
-
-	
-	function showCountdown(){
-		$('#main_display_countdown .countdown_text_container_2').fadeOut(700);
-		$('#main_display_countdown .countdown_numbers_container').fadeIn(700);
-		setTimeout(function(){
-			
-			showText()
-		}, 25000);
-	}
-
-	// setTimeout(function(){ alert("Hello"); }, 3000);
-
-
-
-
-
-	function adjustText() {
-
-		if (w >= 541) {
-			MINUTES = 'MINUTES';
-			SECONDS = 'SECONDS';
-		} else {
-			MINUTES = 'MIN';
-			SECONDS = 'SEC';
-		}
-	}
-
-	getWidth();
-	function getWidth() {
-		w = window.innerWidth;
-		adjustText();
-	}
-	// Add resize event
-	window.addEventListener( 'resize', function( e ) {
-
-			getWidth();
-
-	});
-
 	function animate_elements_out() {
 		$('#main_display_logo_star_monsters').removeClass().addClass('out');
-		$('#main_display_countdown').removeClass().addClass('out');
+		$('#main_display_title').removeClass().addClass('out');
 
 	}
 
 	function animate_elements_in() {
 		$('#main_display_logo_star_monsters').removeClass().addClass('in');
-		$('#main_display_countdown').removeClass().addClass('in');
+		$('#main_display_title').removeClass().addClass('in');
 
 	} 
 	
@@ -182,4 +121,9 @@ $(function() {
 
 	} 
 
+
+
+$(function() {
+
+	onLoad();
 });

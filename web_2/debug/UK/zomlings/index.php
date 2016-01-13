@@ -14,6 +14,7 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
+		<link href='../../css/header/header_UK.css' rel='stylesheet'>
 		<link href='../../css/header/header_tablet.css' rel='stylesheet'>
 		<link href='../../css/header/header_mobile.css' rel='stylesheet'>
 
@@ -319,7 +320,7 @@
 									<div class='product_image_container' id='blister_house_image_series_two'></div>
 									<div class='product_info_container'>
 										<h3>Blister 4</h3>
-										<p>4 Zomlings + 3 Towers + 1 Casa</p>
+										<p>4 Zomlings + 3 Towers + 1 House</p>
 									</div>
 								</div>
 							</div>
@@ -548,11 +549,12 @@
 		</script>
 
 
-		<script src='https://www.youtube.com/iframe_api'></script>
+		
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
 		<script src='js/script.js'></script>
+		<script src='https://www.youtube.com/iframe_api'></script>
 
 	</body>
 

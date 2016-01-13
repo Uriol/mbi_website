@@ -90,17 +90,17 @@ iframe {
 	height: 100%;
 }
 
-.video_thumbnail {
+/*.video_thumbnail {
 	cursor: pointer;
 	width: 640px;
 	height: 360px;
 	position: relative;
 	margin: 0 auto;
 	top: 120px;
-	background: url('../../img/thumbnails/s1_thumbnail.png');
+	background: url('../../img/thumbnails/sm_thumb_3.jpg');
 	background-size: cover;
 
-}
+}*/
 
 .player_icon_container {
 	width: 100px;

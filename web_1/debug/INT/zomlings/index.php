@@ -255,11 +255,12 @@
 		</script>
 
 
-		<script src='https://www.youtube.com/iframe_api'></script>
+		
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
 		<script src='js/script.js'></script>
+		<script src='https://www.youtube.com/iframe_api'></script>
 
 	</body>
 

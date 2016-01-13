@@ -16,9 +16,14 @@ var playing_zero = false,
 
 var index = 0;
 
+
+
+
 $(function() {
 
 	onLoad();
+
+});
 
 
 	// Hover over the player
@@ -31,6 +36,7 @@ $(function() {
 
 	// YT video
 	window.onYouTubeIframeAPIReady = function() {
+		console.log('ready')
 		$players[0] = new YT.Player('player_sm_cd', {
 			events: {
 				'onStateChange': onPlayerStateChange
@@ -161,4 +167,3 @@ $(function() {
 
 	} 
 
-});

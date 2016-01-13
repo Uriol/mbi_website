@@ -22,9 +22,7 @@ var playing_zero = false,
 
 var index = 0;
 
-$(function() {
 
-	onLoad();
 
 
 	// Hover over the player
@@ -181,5 +179,10 @@ $(function() {
 	} else {
 
 	} 
+
+
+$(function() {
+
+	onLoad();
 
 });

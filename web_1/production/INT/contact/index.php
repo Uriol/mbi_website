@@ -329,7 +329,7 @@
 						    else{         
 						        $from="From: $name<$email>\r\nReturn-path: $email"; 
 						        $subject="Message sent using your contact form [ $country ]"; 
-						        mail("info@magicboxint.com", $subject, $message, $from); 
+						        mail("info@www.magicboxint.com", $subject, $message, $from); 
 						        echo "<h2>Thanks!</h2></br><p class='thanks'>Your message has been sent and we will get back to you as soon as possible.</p>"; 
 						        // THANKS!
 								//	Your message has been sent and you will receive an email confirmation shortly.

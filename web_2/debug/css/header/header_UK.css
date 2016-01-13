@@ -1,0 +1,65 @@
+/* Desktop */
+@media only screen
+and (min-width: 769px) {
+
+	#submenu_product_one{
+		float: left;
+		width: 320px;
+		height: 180px;
+		margin-top: 10px;
+		opacity: 0.4;
+	}
+
+
+
+	#submenu_product_two{
+		float: left;
+		width: 320px;
+		height: 180px;
+		margin-left: 40px;
+		cursor: pointer;
+		margin-top: 10px;
+		
+	}
+}
+
+/* Mobile */
+@media only screen 
+and (max-width: 540px) {
+
+	#SM_submenu_mobile_logo {
+		background: url('../../img/all/logo_sm_submenu_small.png');
+		background-size: cover;
+		opacity: 0.4;
+	}
+
+	#Z_submenu_mobile_logo {
+		background: url('../../img/all/logo_z_submenu_small.png');
+		background-size: cover;
+		margin-bottom: 30px;
+		cursor: pointer;
+	}
+
+}
+
+/* Tablet */
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+	#submenu_product_one{
+		float: left;
+		width: 270px;
+		height: 152px;
+		opacity: 0.4;		
+	}
+
+	#submenu_product_two{
+		float: left;
+		width: 270px;
+		height: 152px;
+		cursor: pointer;
+		background-color: yellow;
+	}
+
+}

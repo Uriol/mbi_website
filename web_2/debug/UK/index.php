@@ -13,6 +13,7 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../css/reset.css' rel='stylesheet'>
 		<link href='../css/header/header.css' rel='stylesheet'>
+		<link href='../css/header/header_UK.css' rel='stylesheet'>
 		<link href='../css/header/header_tablet.css' rel='stylesheet'>
 		<link href='../css/header/header_mobile.css' rel='stylesheet'>
 
@@ -23,6 +24,8 @@
 		<link href='../css/home/style_all.css' rel='stylesheet'>
 		<link href='../css/home/phone_landscape.css' rel='stylesheet'>
 		<link href='../css/home/phone_portrait.css' rel='stylesheet'>
+
+		<link href='css/style_uk.css' rel='stylesheet'>
 
 	</head>
 
@@ -53,7 +56,7 @@
 
 				<div class='main_display_full'>
 					<div class='iframe_container' id='iframe_container_sm_cd'>
-						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/4V2cnj59-gk?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -127,7 +130,7 @@
 		</script>
 
 
-		<script src='https://www.youtube.com/iframe_api'></script>
+		
 		<script src='js/libraries/jquery_min.js'></script>
 		<script src='js/libraries/mobile_detect_min.js'></script>
 		<script src='js/libraries/jquery.countdown.js'></script>
@@ -135,7 +138,9 @@
 		
 		<script src='js/script_clouds.js'></script> 
 		<script src='js/script_stars.js'></script> 
-		<script src='js/interaction.js'></script> 
+		<script src='js/interaction.js'></script>
+
+		<script src='https://www.youtube.com/iframe_api'></script>
 
 	</body>
 
