@@ -1,0 +1,47 @@
+.video_thumbnail {
+	cursor: pointer;
+	width: 640px;
+	height: 360px;
+	position: relative;
+	margin: 0 auto;
+	top: 120px;
+	background: url('../../img/thumbnails/sm_thumb_3.jpg');
+	background-size: cover;
+
+}
+
+
+/* Phone Landscape */
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 530px;
+		height: 298px;
+		position: relative;
+		margin: 0 auto;
+		top: 108px;
+		background-color: rgba(0,0,0,1); 
+	}
+
+}
+
+
+
+@media only screen 
+and (max-width: 540px) { 
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 310px;
+		height: 174px;
+		position: relative;
+		margin: 0 auto;
+		top: 95px;
+		background-color: black;
+	}
+
+}

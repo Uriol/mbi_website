@@ -1,0 +1,23 @@
+@media only screen 
+and (min-width: 769px)
+and (max-width: 849px) {
+
+	/* Pre footer */
+	section.pre_footer {
+		width: 100%;
+		position: relative;
+	}
+
+	.pre_footer_img {
+		width: 540px;
+		height: 180px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	#home_pre_footer {
+		background-image: url('../../img/starmonsters/footer/footer_3.png');
+		background-size: cover;
+	}
+
+}

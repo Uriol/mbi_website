@@ -1,0 +1,173 @@
+
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../../fonts/avenirnextw1gmedium.woff');
+}
+
+
+.loading {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	position:fixed;
+	z-index: 9999;
+	overflow-y: hidden;
+}
+
+
+/* Main display */
+/* Series -------------------------------------------- */
+/* Serie One */
+#series_one_bg {
+	background: url('../img/s1/bg.png');
+	background-size: cover;
+	background-position: center;
+}
+#series_one_video_thumbnail {
+	background: url('../img/s1/s1_thumbnail.png');
+	background-size: cover;
+}
+#player_series_one{
+	border-style: solid;
+    border-width: 5px;
+    border-color: rgb(108,28,31);
+    margin-left: -5px;
+    margin-top: -5px;
+}
+
+/* Special */
+#special_bg {
+	background: url('../img/special/bg_4.png');
+	background-size: cover;
+	background-position: center;
+}
+
+
+/* Series menu ------------------------------------------------- */
+	#series_one_menu_item.on {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#series_one_menu_item.off #series_one_selector {
+		display: none;
+	}
+	#series_one_menu_item.on #series_one_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(190,22,33);
+	}
+
+	#special_menu_item.on {
+		background-color: rgb(0,114,175);
+	}
+	#special_menu_item.off:hover {
+		background-color: rgba(0,0,0,0.6);
+	}
+	#special_menu_item.off #special_selector {
+		display: none;
+	}
+	#special_menu_item.on #special_selector {
+		position: absolute;
+		margin-left: 17px;
+		margin-top: 17.5px;
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 15px solid rgb(0,114,175);
+	}
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
+	}
+
+	/* ----------------------------------------------------------- */
+
+	/* Series info */
+		.description_container a{
+		font-family: 'avenir_medium', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 30px;	
+	}
+
+	.description_container a.s1_blog {
+		color: rgb(190,22,33);
+	}
+	
+	.description_container a.special_blog {
+		color: rgb(0,114,175);
+	}
+
+	/* Galleries ------------------------------------------------- */
+	/* Gallery series one */
+	#series_one_gallery_index_container .gallery_index_item_on {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_gallery_index_container .gallery_index_item_off:hover {
+		background-color: rgb(190,22,33);
+	}
+	#series_one_pic {
+		background: url('../img/s1/gallery/img_one.png');
+		background-size: cover;
+	}
+
+	/* Products --------------------------------------- */
+	/* Serie One */
+	#one_pack_image_series_one {
+		background: url('../img/s1/products/final/one_pack.png');
+		background-size: cover;
+	}
+
+
+	#tower_pack_image_series_one {
+		background: url('../img/s1/products/final/tower_pack.png');
+		background-size: cover;
+	}
+
+	#house_pack_image_series_one {
+		background: url('../img/s1/products/final/house_pack.png');
+		background-size: cover;
+	}
+
+	#blister_house_image_series_one {
+		background: url('../img/s1/products/final/blister_house.png');
+		background-size: cover;
+	}
+
+	#blister_mansion_image_series_one {
+		background: url('../img/s1/products/final/blister_mansion.png');
+		background-size: cover;
+	}
+
+
+	/* Special */
+	#hotel_1_image {
+		background: url('../img/special/products/final/hotel1.png');
+		background-size: cover;
+	}
+	#hotel_2_image {
+		background: url('../img/special/products/final/hotel2.png');
+		background-size: cover;
+	}
+	#tin_image_z {
+		background: url('../img/special/products/final/tin.png');
+		background-size: cover;
+	}
+
+
+
+

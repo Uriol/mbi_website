@@ -1,0 +1,123 @@
+
+
+	@keyframes logo_out_sm {
+		from { top: 0px;}
+		to {top: -200px;}
+	}
+
+	@keyframes logo_in_sm {
+		from {top: -200px;}
+		to {top: 0px;}
+	}
+
+
+	#main_display_logo_star_monsters.start {
+		top: 0px;
+	}
+
+	#main_display_logo_star_monsters.out {
+		animation-name: logo_out_sm;
+		animation-duration: 0.4s;
+		top: -200px;
+	}
+	#main_display_logo_star_monsters.in {
+		animation-name: logo_in_sm;
+		animation-duration: 0.4s;
+		top: 0px;
+	}
+
+
+/* Animations */
+@keyframes title_out {
+	from { top: 425px; }
+	to { top: 620px; }
+}
+
+@keyframes title_in{
+	from { top: 620px; }
+	to { top: 425px;}
+}
+
+#main_display_title.start {
+	top: 430px;
+}
+
+#main_display_title.out {
+	animation-name: title_out;
+	animation-duration: 0.4s;
+	top: 620px;
+}
+
+#main_display_title.in {
+	animation-name: title_in;
+	animation-duration: 0.4s;
+	top: 425px;
+}
+
+/* Phone landscape*/
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+
+	/* Animations */
+	@keyframes title_out {
+		from { top: 355px; }
+		to { top: 520px; }
+	}
+
+	@keyframes title_in{
+		from { top: 520px; }
+		to { top: 355px;}
+	}
+
+	#main_display_title.start {
+		top: 355px;
+	}
+
+	#main_display_title.out {
+		animation-name: title_out;
+		animation-duration: 0.4s;
+		top: 520px;
+	}
+
+	#main_display_title.in {
+		animation-name: title_in;
+		animation-duration: 0.4s;
+		top: 355px;
+	}
+
+}
+
+
+@media only screen 
+and (max-width: 540px) { 
+
+
+	/* Animations */
+	@keyframes title_out {
+		from { top: 235px; }
+		to { top: 520px; }
+	}
+
+	@keyframes title_in{
+		from { top: 520px; }
+		to { top: 235px;}
+	}
+
+	#main_display_title.start {
+		top: 235px;
+	}
+
+	#main_display_title.out {
+		animation-name: title_out;
+		animation-duration: 0.4s;
+		top: 520px;
+	}
+
+	#main_display_title.in {
+		animation-name: title_in;
+		animation-duration: 0.4s;
+		top: 235px;
+	}
+}

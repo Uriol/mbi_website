@@ -1,0 +1,163 @@
+.video_thumbnail {
+	cursor: pointer;
+	width: 640px;
+	height: 360px;
+	position: relative;
+	margin: 0 auto;
+	top: 120px;
+	background: url('../img/thumbnail_2.jpg');
+	background-size: cover;
+}
+
+
+/* Title */
+#main_display_title{
+	width: 280px;
+	height: 107px;
+	position: relative;
+	margin: 0 auto;
+	background: url('../img/title_container_2.png');
+	background-size: cover;
+	text-align: center;
+}
+
+
+#main_display_title h1{
+	/*text-align: center;*/
+	font-family: burbank;
+	font-size: 35px;
+	color: rgb(227,5,19);
+	padding-top: 37px;
+
+}
+
+/* Animations */
+@keyframes title_out {
+	from { top: 425px; }
+	to { top: 620px; }
+}
+
+@keyframes title_in{
+	from { top: 620px; }
+	to { top: 425px;}
+}
+
+#main_display_title.start {
+	top: 430px;
+}
+
+#main_display_title.out {
+	animation-name: title_out;
+	animation-duration: 0.4s;
+	top: 620px;
+}
+
+#main_display_title.in {
+	animation-name: title_in;
+	animation-duration: 0.4s;
+	top: 425px;
+}
+
+/* Phone landscape*/
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 530px;
+		height: 298px;
+		position: relative;
+		margin: 0 auto;
+		top: 108px;
+		background-color: rgba(0,0,0,1); 
+	}
+
+	/* Animations */
+	@keyframes title_out {
+		from { top: 355px; }
+		to { top: 520px; }
+	}
+
+	@keyframes title_in{
+		from { top: 520px; }
+		to { top: 355px;}
+	}
+
+	#main_display_title.start {
+		top: 355px;
+	}
+
+	#main_display_title.out {
+		animation-name: title_out;
+		animation-duration: 0.4s;
+		top: 520px;
+	}
+
+	#main_display_title.in {
+		animation-name: title_in;
+		animation-duration: 0.4s;
+		top: 355px;
+	}
+
+}
+
+
+@media only screen 
+and (max-width: 540px) { 
+
+	#main_display_title{
+		width: 196px;
+		height: 75px;
+		position: relative;
+		margin: 0 auto;
+		background: url('../img/title_container_2.png');
+		background-size: cover;
+		text-align: center;
+	}
+
+	#main_display_title h1{
+		font-family: burbank;
+		font-size: 25px;
+		color: rgb(227,5,19);
+		padding-top: 25px;
+	}
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 310px;
+		height: 174px;
+		position: relative;
+		margin: 0 auto;
+		top: 95px;
+		background-color: black;
+	}
+
+	/* Animations */
+	@keyframes title_out {
+		from { top: 235px; }
+		to { top: 520px; }
+	}
+
+	@keyframes title_in{
+		from { top: 520px; }
+		to { top: 235px;}
+	}
+
+	#main_display_title.start {
+		top: 235px;
+	}
+
+	#main_display_title.out {
+		animation-name: title_out;
+		animation-duration: 0.4s;
+		top: 520px;
+	}
+
+	#main_display_title.in {
+		animation-name: title_in;
+		animation-duration: 0.4s;
+		top: 235px;
+	}
+}
