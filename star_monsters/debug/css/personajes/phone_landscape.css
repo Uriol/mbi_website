@@ -1,0 +1,35 @@
+@media only screen 
+and (min-width: 541px)
+and (max-width: 768px) {
+
+	.text_container h1{
+		padding-top: 50px;
+		padding-bottom: 25px;
+		font-family: avenir_bold;
+    	font-size: 40px;
+		color: rgb(0,113,171);
+	}
+
+	article.checklist_container {
+		width: 90%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 0px;
+		overflow-y: hidden;
+	}
+
+	.character {
+		width: 31%;
+		float: left;
+		overflow:hidden;
+		margin-left: 1.5%;
+		margin-top: 1.5%;
+	}
+
+	.character img{
+		width: 100%;
+		height: auto;
+		display: block; 
+	}
+
+}

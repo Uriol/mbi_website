@@ -1,0 +1,26 @@
+@font-face {
+    font-family: burbank;
+    src: url('../../fonts/BurbankBigRegular-Bold.woff');
+}
+
+
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../fonts/avenirnextw1gmedium.woff');
+}
+	
+
+section.content {
+	width: 100%;
+	position: relative;
+}
+
+.text_container {
+	width: 100%;
+	text-align: center;
+}

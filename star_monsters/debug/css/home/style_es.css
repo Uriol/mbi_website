@@ -1,0 +1,42 @@
+/* Title */
+#main_display_title{
+	width: 410px;
+	height: 107px;
+	position: relative;
+	margin: 0 auto;
+	background: url('../../img/home/pelicula_completa_container.png');
+	background-size: cover;
+	text-align: center;
+}
+
+
+#main_display_title h1{
+	font-family: burbank;
+	font-size: 35px;
+	color: rgb(227,5,19);
+	padding-top: 37px;
+
+}
+
+
+@media only screen 
+and (max-width: 540px) { 
+
+	#main_display_title{
+		width: 285px;
+		height: 75px;
+		position: relative;
+		margin: 0 auto;
+		background: url('../../img/home/pelicula_completa_container.png');
+		background-size: cover;
+		text-align: center;
+	}
+
+	#main_display_title h1{
+		font-family: burbank;
+		font-size: 25px;
+		color: rgb(227,5,19);
+		padding-top: 25px;
+	}
+
+}
