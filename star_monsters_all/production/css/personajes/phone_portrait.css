@@ -1,0 +1,70 @@
+@media only screen 
+and (max-width: 540px) {
+
+
+	.text_container h1{
+		padding-top: 50px;
+		padding-bottom: 10px;
+		font-family: avenir_bold;
+    	font-size: 30px;
+		color: rgb(0,113,171);
+		 padding-left: 20px;
+    	padding-right: 20px;
+	}
+
+	article.checklist_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 0px;
+		overflow-y: hidden;
+	}
+
+	.character {
+		width: 45.5%;
+		float: left;
+		overflow:hidden;
+		margin-left: 3%;
+		margin-top: 3%;
+	}
+
+	.character img{
+		width: 100%;
+		height: auto;
+		display: block; 
+	}
+
+		/* Checklist menu */
+	.checklist_menu{
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+
+	.checklist_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.checklist_menu ul li{
+		display: inline-block;
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 10px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 6px;
+		padding-right: 6px;
+		vertical-align: middle;
+		
+	}
+
+}

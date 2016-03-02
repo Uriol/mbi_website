@@ -1,11 +1,11 @@
 	/* Timeline Photos */
 	#container_1 .timeline_item .timeline_item_image{
-		background: url('../img/history/sm.png');
+		background: url('../img/history/sm.jpg');
 		background-size: cover;
 	}
 
 
 	#container_full_1 .timeline_item .timeline_item_image{
-		background: url('../img/history/sm.png');
+		background: url('../img/history/sm.jpg');
 		background-size: cover;
 	}

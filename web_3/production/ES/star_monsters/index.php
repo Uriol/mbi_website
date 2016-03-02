@@ -1,4 +1,3 @@
-
 <?php
 	include('location.php');
 ?>
@@ -10,6 +9,7 @@
 		<title>Star Monsters</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_ES.css' rel='stylesheet'>
@@ -62,7 +62,7 @@
 						<div class='main_display_bg' id='series_one_bg'></div>
 						<div class='main_display_full' id='series_one_video'>
 							<div class='iframe_container' id='iframe_container_series_one'>
-								<iframe id='player_series_one' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+								<iframe id='player_series_one' src="https://www.youtube.com/embed/eU3ffZXhgCA?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 						<!--  Video thumbnail -->
@@ -124,8 +124,9 @@
 				<!-- Series One Info -->
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
-							<h1>STAR MONSTERS</h1>
-							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
+							<h1>Star Monsters</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='s1_minisite'>www.starmonsters.net</a>
+							<p>Caen del cielo estrellas con forma de triángulo, es el origen de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
 						</div>
 						<!-- Gallery series one -->
 						<div class='gallery_container'>
@@ -151,36 +152,36 @@
 						<!-- Products series one -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Productos</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='packet_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>Two Pack</h3>
-										<p>2 Star Monsters + 2 Stickers</p>
+										<h3>Sobre</h3>
+										<p>2 Star Monsters + 2 Pegatinas</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
 								<div class='product_container'>
 									<div class='product_image_container' id='mini_capsules_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>Mini Capsule</h3>
-										<p>2 Mini Capsules + 2 Star Monsters + 2 Stickers</p>
+										<h3>Mini Cápsula</h3>
+										<p>2 Mini Cápsulas + 2 Star Monsters + 2 Pegatinas</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
 								<div class='product_container'>
 									<div class='product_image_container' id='capsule_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>Capsule</h3>
-										<p>1 Capsule + 1 Essential Star Monster + 1 Evolution Star Monster</p>
+										<h3>Cápsula</h3>
+										<p>1 Cápsula + 1 Star Monster Esencial + 1 Star Monster Evolucionado</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
 								<div class='product_container'>
 									<div class='product_image_container' id='bag_image_series_one'></div>
 									<div class='product_info_container'>
-										<h3>Bag Pack</h3>
-										<p>1 Bag + 3 Star Monsters</p>
+										<h3>Bolsa</h3>
+										<p>1 Bolsa + 3 Star Monsters</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
@@ -188,8 +189,8 @@
 									<div class='product_image_container' id='blister_image_series_one'>
 									</div>
 									<div class='product_info_container'>
-										<h3>Blister</h3>
-										<p>2 Regular Star Monsters + 1 Essential + 1 Evolution + 1 Silver/Gold + 1 Silver/Gold Mini Capsule</p>
+										<h3>Blíster</h3>
+										<p>2 Star Monsters + 1 Esencial + 1 Evolucionado + 1 Plateado/Dorado + 1 Mini Cápsula Plateada/Dorada</p>
 									</div>
 								</div>
 							</div>
@@ -204,19 +205,20 @@
 					<!-- Special Info -->
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
-							<h1>STAR MONSTERS</h1>
-							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
+							<h1>Star Monsters</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='special_minisite'>www.starmonsters.net</a>
+							<p>Algunas veces dos estrellas chocan en el aire antes de caer al suelo. Cuando eso pasa, dos energías diferentes se fusionan y el resultado final es un increíble Star Monster Fusión. Los reconocerás porque sus bases tienen un color distinto además de tener un alto valor estelar. ¡No te los pierdas!</p>
 						</div>
 
 						<!-- Products special -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Productos</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='tin_special'></div>
 									<div class='product_info_container'>
-										<h3>Collector Tin</h3>
-										<p>8 Fusion Star Monsters</p>
+										<h3>Lata Fusión</h3>
+										<p>8 Star Monsters Fusión</p>
 									</div>
 								</div>
 								<div class='product_filet'></div>
@@ -272,11 +274,12 @@
 		</script>
 
 
-		<script src='https://www.youtube.com/iframe_api'></script>
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
 		<script src='js/script.js'></script>
+
+		<script src='https://www.youtube.com/iframe_api'></script>
 
 	</body>
 </html>

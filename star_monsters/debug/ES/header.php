@@ -23,9 +23,9 @@
 					<a href="http://localhost:8888/mbi_2/star_monsters/debug/ES/productos/index.php">	
 						<li class='menu_item' id='products'>PRODUCTOS</li>
 					</a>
-					<a href="http://localhost:8888/mbi_2/star_monsters/debug/ES/productos/index.php">	
+					<!-- <a href="http://www.starmonstersfriends.com" target="_blank">	
 						<li class='menu_item' id='blog'>BLOG</li>
-					</a>
+					</a> -->
 				</ul>
 			</div>
 		</div>
@@ -56,9 +56,9 @@
 					<li class='menu_item' id='products'>PRODUCTOS</li>
 				</a>
 				<div class='submenu_mobile_filet'></div>
-				<a href="http://localhost:8888/mbi_2/star_monsters/debug/ES/productos/index.php">	
+				<!-- <a href="http://www.starmonstersfriends.com" target="_blank">	
 					<li class='menu_item' id='blog'>BLOG</li>
-				</a>
+				</a> -->
 			</ul>
 		</div>
 	</article>

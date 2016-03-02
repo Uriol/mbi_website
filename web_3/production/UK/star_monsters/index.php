@@ -1,4 +1,3 @@
-
 <?php
 	include('location.php');
 ?>
@@ -10,6 +9,7 @@
 		<title>Star Monsters</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1.0">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 		<link href='../../css/reset.css' rel='stylesheet'>
 		<link href='../../css/header/header.css' rel='stylesheet'>
 		<link href='../../css/header/header_ES.css' rel='stylesheet'>
@@ -62,7 +62,7 @@
 						<div class='main_display_bg' id='series_one_bg'></div>
 						<div class='main_display_full' id='series_one_video'>
 							<div class='iframe_container' id='iframe_container_series_one'>
-								<iframe id='player_series_one' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+								<iframe id='player_series_one' src="https://www.youtube.com/embed/p5kfSIFmyK0?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 						<!--  Video thumbnail -->
@@ -124,7 +124,8 @@
 				<!-- Series One Info -->
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
-							<h1>STAR MONSTERS</h1>
+							<h1>Star Monsters</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='s1_minisite'>www.starmonsters.net</a>
 							<p>Triangular stars fall from the sky, this is the origin of Star Monsters. Quirky and funny characters, unlike anything that you have ever seen. There are so many Star Monsters to meet: Essential, Evolved, Rare, Ultra Rare… Each and every one of them is here to play! Discover them all! Star Monsters guarantee fun!</p>
 						</div>
 						<!-- Gallery series one -->
@@ -151,7 +152,7 @@
 						<!-- Products series one -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='packet_image_series_one'></div>
 									<div class='product_info_container'>
@@ -204,14 +205,15 @@
 					<!-- Special Info -->
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
-							<h1>STAR MONSTERS</h1>
-							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
+							<h1>Star Monsters</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='special_minisite'>www.starmonsters.net</a>
+							<p>If two stars collide in mid-air before they land on earth, the two energies merge and the result is an incredible Fusion Star Monster! They are easy to spot as their bases are different colours to their bodies. They also have a high star value! Don’t miss them!</p>
 						</div>
 
 						<!-- Products special -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='tin_special'></div>
 									<div class='product_info_container'>
@@ -271,12 +273,12 @@
 
 		</script>
 
-
-		<script src='https://www.youtube.com/iframe_api'></script>
 		<script src='../js/libraries/jquery_min.js'></script>
 		<script src='../js/libraries/mobile_detect_min.js'></script>
 		<script src='../js/header.js'></script>
 		<script src='js/script.js'></script>
+
+		<script src='https://www.youtube.com/iframe_api'></script>
 
 	</body>
 </html>

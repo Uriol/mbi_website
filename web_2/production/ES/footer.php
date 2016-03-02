@@ -1,5 +1,5 @@
 <?php
-	header('Location: http://test.martomagic.com/TESTWEB/ES/index.php');
+	header('Location: http://localhost:8888/mbi_2/web_2/debug/ES/index.php');
 ?>
 
 <section class='footer'>
@@ -17,7 +17,7 @@
 				<div class='social_media_icon' id='instagram_icon'></div>
 			</a>
 
-			<a href="https://www.youtube.com/channel/UC3C6tUlYvhHCapwAxyedyMg" target="_blank">
+			<a href="http://www.youtube.com/channel/UC3C6tUlYvhHCapwAxyedyMg?sub_confirmation=1" target="_blank">
 				<div class='social_media_icon' id='yt_icon'></div>
 			</a>
 

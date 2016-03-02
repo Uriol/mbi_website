@@ -1,8 +1,8 @@
 <?php
 	
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/TESTWEB/INT/star_monsters/index.php') {
-		header('Location: http://test.martomagic.com/TESTWEB/INT/star_monsters/index.php');
+	if ( $actual_link != 'http://www.magicboxint.com/INT/star_monsters/index.php') {
+		header('Location: http://www.magicboxint.com/INT/star_monsters/index.php');
 	}
 
 	include("geoip.inc"); 
@@ -12,9 +12,9 @@
 
 	// Redirect Based on country
 	if ($origin == 'ES'){
-		header('Location: http://test.martomagic.com/TESTWEB/ES/star_monsters/index.php');
+		header('Location: http://www.magicboxint.com/ES/star_monsters/index.php');
 	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/TESTWEB');
+		header('Location: http://www.magicboxint.com/UK/star_monsters/index.php');
 	} else {
 		
 	}

@@ -10,8 +10,14 @@ var player_0, player_1;
 var $players = [player_0, player_1];
 
 
-$(function(){
+// Load
+function onLoad(){
+	// Remove loading div
+	$('.loading').fadeOut(800);
+}
 
+$(function(){
+	onLoad();
 });
 
 	// Handle series switch on the arrows controls

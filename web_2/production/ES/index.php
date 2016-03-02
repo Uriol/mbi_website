@@ -26,6 +26,17 @@
 
 		<link href='css/style.css' rel='stylesheet'>
 
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-18320013-2', 'www.magicboxint.com');
+			ga('send', 'pageview');
+
+		</script>
+
 	</head>
 
 	<body>
@@ -53,7 +64,7 @@
 
 				<div class='main_display_full'>
 					<div class='iframe_container' id='iframe_container_sm_cd'>
-						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/4V2cnj59-gk?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/59iZ9NwKG_w?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 

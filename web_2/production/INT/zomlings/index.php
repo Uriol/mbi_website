@@ -112,7 +112,7 @@
 					<!-- Series One Info -->
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>Zomlings are invading playgrounds everywhere! There are more than 100 cheeky, miniature monsters to collect and build into your own Zomlings Town. Explore the 7 different Zomlings neighbourhoods and discover characters like Ocotozom in Wacky Waters and Zomhog in Zomlings Zoo. There are even rare silver and gold Zomlings to discover and collect. Use your houses and towers to build your own Zomlings Town!</p>
 						</div>
 						<!-- Gallery series one -->
@@ -139,7 +139,7 @@
 						<!-- Products series one -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_one'></div>
 									<div class='product_info_container'>
@@ -192,12 +192,12 @@
 					<!--  Special -->
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>There are some special Zomlings that are not always found around Zomlings Town. Adventure Zomlings are intrepid explorers who are always off discovering new places. Two exclusive Zomlings can also be found hiding in our Magic Trick Hotels! Discover them all!</p>
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='tin_image_z'></div>
 									<div class='product_info_container'>

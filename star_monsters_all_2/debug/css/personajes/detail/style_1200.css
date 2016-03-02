@@ -1,0 +1,240 @@
+@media only screen 
+and (min-width: 1201px) {
+
+
+	.back_menu ul li {
+		text-align: center;
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-left: 15px;
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+
+	/*.character_detail_out_shadow{
+		width: 940px;
+		height: 20px;
+		position: relative;
+		margin: 0 auto;
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		overflow-y: hidden;
+	}*/
+
+	/* Character detail */
+	.character_detail {
+		width: 900px;
+		/*height: 20px;*/
+		position: relative;
+		margin: 0 auto;
+		background-color: rgb(180, 200, 40);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		overflow-y:hidden;
+	}
+
+	.character_image {
+		/*position: relative;*/
+		/*display: inline-block;*/
+		float: left;
+		width: 50%;
+		height: 600px;
+		background: url('../../../img/characters/detail/uma/profile.png');
+		background-size: cover;
+	}
+
+
+	.character_info {
+		/*position: relative;*/
+		float: right;
+		width: 50%;
+		/*height: 600px;*/
+		
+	}
+
+	/* Character Origin */
+	.character_origin {
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+		/*padding: 20px;*/
+		margin-top: 50px;
+		background-color: rgb(150,180,50);
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.character_origin p {
+		padding: 20px;
+		color: white;
+		font-family: avenir_medium;
+		font-size: 18px;
+	}
+
+	.character_origin p span{
+		font-family: burbank;
+		font-size: 22px;
+		letter-spacing: 1px;
+	}
+
+	/* Character colors */
+	.character_colors {
+		width: 200px;
+		position: relative;
+		margin: 0 auto;
+		height: 50px;
+		/*padding: 20px;*/
+		margin-top: 20px;
+		background: url('../../../img/characters/detail/uma/colors.png');
+		background-size: cover;
+	}
+
+
+	/* Character family */
+	/*.character_family {
+		width: 35%;
+		height: 50px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 40px;
+		text-align: center;
+		
+	}
+
+	.family_icon{
+		width: 50px;
+		height: 50px;
+		float: left;
+		background: url('../../../img/characters/family/tierra.png');
+		background-size: cover;
+	}
+
+	.family_text{
+		position: relative;
+		float: right;
+	}
+
+	.family_text p{
+		color: white;
+	}
+
+	.family_text p.title{
+		font-family: burbank;
+		font-size: 22px;
+		letter-spacing: 1px;
+	}
+
+	.family_text p.name {
+		font-family: avenir_medium;
+		font-size: 18px;
+		line-height: 28px;
+	}*/
+
+
+	/* Character family */
+	.character_family{
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.family_image{
+		width: 70px;
+		height: 70px;
+		position: relative;
+		margin: 0 auto;
+		background: url('../../../img/characters/family/tierra.png');
+		background-size: cover;
+		z-index: 999;
+	}
+
+	/* Character bio */
+	.character_bio {
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+		/*padding: 20px;*/
+		margin-top: -10px;
+		background-color: rgb(150,180,50);
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.character_bio p {
+		padding: 20px;
+		color: white;
+		font-family: avenir_medium;
+		font-size: 18px;
+	}
+
+	.character_bio p span{
+		font-family: burbank;
+		font-size: 22px;
+		letter-spacing: 1px;
+	}
+
+	/* Character game */
+	.character_game{
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+		
+		margin-top: 20px;
+		background-color: rgb(150,180,50);
+		border-radius: 10px;
+		text-align: center;
+	}
+
+	.character_game p{
+		color: white;
+	}
+
+	/*.character_game p.title {
+		font-family: burbank;
+		font-size: 22px;
+		letter-spacing: 1px;
+		padding-top: 20px;
+	}
+
+	.character_game p.name {
+		font-family: avenir_medium;
+		font-size: 18px;
+		line-height: 28px;
+		padding-bottom: 20px;
+	}*/
+	.character_game p {
+		padding: 20px;
+		color: white;
+		font-family: avenir_medium;
+		font-size: 18px;
+	}
+
+	.character_game p span{
+		font-family: burbank;
+		font-size: 22px;
+		letter-spacing: 1px;
+	}
+
+	/* Star Value */
+	.star_value{
+		width: 80%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: -10px;
+	}
+
+	.star_value_img{
+		width: 140px;
+		height: 140px;
+		position: relative;
+		margin: 0 auto;
+		background: url('../../../img/characters/detail/uma/star_value.png');
+		background-size: cover;
+	}
+
+}

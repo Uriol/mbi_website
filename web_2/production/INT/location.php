@@ -4,9 +4,8 @@
 	// If we are redirect to the correct one
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 	// echo $actual_link;
-	if ( $actual_link != 'http://test.martomagic.com/TESTWEB/INT/index.php') {
-		//echo 'different';
-		header('Location: http://test.martomagic.com/TESTWEB/INT/index.php');
+	if ( $actual_link != 'http://www.magicboxint.com/INT/index.php') {
+		header('Location: http://www.magicboxint.com/INT/index.php');
 	}
 
 	// Get location by ip
@@ -17,9 +16,9 @@
 
 	// Redirect Based on country
 	if ($origin == 'ES'){
-		header('Location: http://test.martomagic.com/TESTWEB/ES/index.php');
+		header('Location: http://www.magicboxint.com/ES/index.php');
 	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/TESTWEB/UK/index.php');
+		header('Location: http://www.magicboxint.com/UK/index.php');
 	}
 
 ?>

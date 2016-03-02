@@ -1,0 +1,117 @@
+
+@media only screen 
+and (min-width: 769px)
+and (max-width: 849px) {
+
+	/* Info ------------------------------------------ */
+	article.info_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.game{
+		position: relative;
+		width: 100%;
+		max-width: 2000px;
+		margin: 0 auto;
+		margin-bottom: 5px;
+	}
+
+	.story_image{
+		width: 100%;
+		position: relative;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+
+	.story_image img{
+		width: 100%;
+		height: auto;
+	}
+
+
+	/* story with video */
+	.game.game_with_video {
+		padding-bottom: 60px;
+	}
+	
+	.story_image_with_video{
+		width: 100%;
+		position: relative;
+		padding-top: 40px;
+		padding-bottom: 0px;
+		margin: 0 auto;
+	}
+
+	.story_image_with_video img{
+		width: 100%;
+		height: auto;
+	}
+
+
+	/* Video */
+	.game_video {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.iframe_container {
+		position: relative;
+		margin: 0 auto;
+		width: 640px;
+		height: 360px;
+		background-color: black;
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Video Controls */
+	.video_controls {
+		width: 100%;
+		position: absolute;
+		height: 0px;
+		margin-top: -360px;
+	}
+
+	.thumbnail_container{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.video_thumbnail {
+		cursor: pointer;
+		width: 640px;
+		height: 360px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	.player_icon_container {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: 270px;
+		margin-top: 130px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.player_icon {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-top: 15px solid transparent;
+		border-bottom: 15px solid transparent;
+		border-left: 25px solid rgb(255,255,255);
+		margin-left: 37.5px;
+		margin-top: 35px;
+	}
+
+}

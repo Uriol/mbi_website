@@ -125,6 +125,7 @@
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
 							<h1>STAR MONSTERS</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='s1_minisite'>www.starmonsters.net</a>
 							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
 						</div>
 						<!-- Gallery series one -->
@@ -205,6 +206,7 @@
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
 							<h1>STAR MONSTERS</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='special_minisite'>www.starmonsters.net</a>
 							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
 						</div>
 

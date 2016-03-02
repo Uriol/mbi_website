@@ -183,7 +183,7 @@
 					<!-- Series One Info -->
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>Zomlings are invading playgrounds everywhere! There are more than 100 cheeky, miniature monsters to collect and build into your own Zomlings Town. Explore the 7 different Zomlings neighbourhoods and discover characters like Ocotozom in Wacky Waters and Zomhog in Zomlings Zoo. There are even rare silver and gold Zomlings to discover and collect. Use your houses and towers to build your own Zomlings Town!</p>
 						</div>
 						<!-- Gallery series one -->
@@ -210,7 +210,7 @@
 						<!-- Products series one -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_one'></div>
 									<div class='product_info_container'>
@@ -264,7 +264,7 @@
 					<!-- Series two -->
 					<div class='serie_info_container off' id='series_two_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>Zomlings Town has really grown since nervous visitors arrived to explore the streets for the first time. Look at Zomlings Town now and you will quickly discover brand new Towers and Houses and of course, a lot of exciting new Zomlings! The Crystal Towers and Houses add a splash of colour and a little sparkle to the surroundings. Spooky Street, Creepy Circus, Haunted Hotel....every neighbourhood has grown and improved.</p>
 						</div>
 						<!-- Gallery series one -->
@@ -291,7 +291,7 @@
 						<!-- Products series two -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_two'></div>
 									<div class='product_info_container'>
@@ -334,7 +334,7 @@
 					<!--  Series three  -->
 					<div class='serie_info_container off' id='series_three_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>Welcome back to Zomlings Town! There are so many new things to tell you about! Things never stand still in this town and the new Ghost Trains mean that the Zomlings are busier and more active than ever. Board the train and take a tour of the Town. Discover more than 100 new characters and new Zomlings Houses that are bigger than ever before!</p>
 						</div>
 						<div class='gallery_container'>
@@ -360,7 +360,7 @@
 						<!-- Products series three -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_three'></div>
 									<div class='product_info_container'>
@@ -403,7 +403,7 @@
 					<!--  Series four -->
 					<div class='serie_info_container off' id='series_four_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>Zomlings Town is evolving once again! Series 4 arrives with more than 100 new Zomlings to meet. Best of all, the new Zomlings come in awesome Crystal colours! It’s not just new colours that these Zomlings have brought to Zomlings Town... check out the new Zom-Mobiles! A car, a scooter, a truck and even a plane!</p>
 						</div>
 						<div class='gallery_container'>
@@ -428,7 +428,7 @@
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_four'></div>
 									<div class='product_info_container'>
@@ -470,12 +470,12 @@
 					<!--  Special -->
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<p>There are some special Zomlings that are not always found around Zomlings Town. Adventure Zomlings are intrepid explorers who are always off discovering new places. Two exclusive Zomlings can also be found hiding in our Magic Trick Hotels! Discover them all!</p>
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTS</h1>
+								<h1>Products</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='tin_image_z'></div>
 									<div class='product_info_container'>

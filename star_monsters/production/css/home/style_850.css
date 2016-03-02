@@ -1,0 +1,140 @@
+@media only screen 
+and (min-width: 850px)
+and (max-width: 1200px) {
+
+	/* Series controls */
+	.main_display_series_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	
+	}
+
+	.control_left_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: left;
+		margin-top: 255px;
+		margin-left: 20px;
+		cursor:pointer;
+	}
+
+	.control_left_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: right;
+		margin-top: 255px;
+		margin-right: 20px;
+		cursor:pointer;
+	}
+
+	.control_arrow {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		margin-left: 17.5px;
+		margin-top: 17.5px;
+	}
+	#left_arrow {
+		background: url('../../img/all/left_arrow.png');
+		background-size: cover;
+	}
+	#right_arrow {
+		background: url('../../img/all/right_arrow.png');
+		background-size: cover;
+	}
+
+	/* Series menu */
+	.main_display_series_menu {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 540px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+		position: relative;
+		margin: 0 auto;
+		cursor: pointer;
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 16px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 22px;
+		padding-bottom: 22px;
+		padding-left: 15px;
+		padding-right: 15px;
+		vertical-align: middle;
+		
+	}
+
+
+	/* Info */
+	article.info_container {
+		width: 850px;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.text_container {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin-top: 70px;
+	}
+
+		.text_container h1{
+		font-family: avenir_bold;
+		font-size: 40px;
+		margin-top: 20px;
+		color: rgb(0,113,171);
+		padding-bottom: 20px;
+	}
+
+	.text_container p{
+		font-family: avenir_medium;
+		font-size: 16px;
+		line-height: 25px;
+		padding-left: 100px;
+		padding-right: 100px;
+		color: rgb(80,80,80);
+	}
+
+
+	.story_image{
+		width: 100%;
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+
+	.story_image img{
+		width: 100%;
+		height: auto;
+	}
+
+
+}

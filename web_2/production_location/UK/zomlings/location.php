@@ -1,8 +1,8 @@
 <?php
 
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/TESTWEB/UK/zomlings/index.php') {
-		header('Location: http://test.martomagic.com/TESTWEB/UK/zomlings/index.php');
+	if ( $actual_link != 'http://www.magicboxint.com/UK/zomlings/index.php') {
+		header('Location: http://www.magicboxint.com/UK/zomlings/index.php');
 	}
 
 	// Get location by ip
@@ -14,11 +14,11 @@
 	
 	// Redirect Based on country
 	if ($origin == 'ES'){
-		header('Location: http://test.martomagic.com/TESTWEB/ES/zomlings/index.php', true);
+		header('Location: http://www.magicboxint.com/ES/zomlings/index.php', true);
 	} else if ($origin == 'GB') {
 		
 	} else {
-		header('Location: http://test.martomagic.com/TESTWEB/INT/zomlings/index.php');
+		header('Location: http://www.magicboxint.com/INT/zomlings/index.php');
 	}
 
 ?>

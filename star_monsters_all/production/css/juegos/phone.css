@@ -1,0 +1,39 @@
+	@media only screen 
+and (max-width: 768px) {
+
+	/* Info ------------------------------------------ */
+	article.info_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.game{
+		margin-top: 80px;
+		margin-bottom: 80px;
+		position: relative;
+	}
+
+	.story_image{
+		width: 100%;
+		position: relative;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin: 0 auto;
+	}
+
+	.story_image img{
+		width: 100%;
+		height: auto;
+	}
+
+	.filet {
+		width: 80%;
+		height: 2px;
+		background-color: rgb(220,220,220);
+		position: relative;
+		margin: 0 auto;
+		top: 40px;
+	}
+
+}

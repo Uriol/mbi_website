@@ -1,0 +1,105 @@
+@font-face {
+    font-family: burbank;
+    src: url('../../fonts/BurbankBigRegular-Bold.woff');
+}
+
+
+@font-face {
+    font-family: avenir_bold;
+    src: url('../../fonts/avenirnextw1gbold.woff');
+}
+
+@font-face {
+    font-family: avenir_medium;
+    src: url('../../fonts/avenirnextw1gmedium.woff');
+}
+	
+
+section.content {
+	width: 100%;
+	position: relative;
+    margin: 0 auto;
+        overflow-x: hidden;  
+        overflow-y: auto;
+    /*top: 25px;*/
+    /*background-color: red;*/
+}
+
+/* BG */
+.bg_fixed {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: white;
+   /* background: url('../../img/all/stars_bg.png') white;
+    background-size: cover;*/
+    background-position: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.text_container {
+	width: 100%;
+	text-align: center;
+}
+
+.text_container_first {
+    width: 100%;
+    text-align: center;
+}
+
+.checklist_menu_container {
+    width: 100%;
+    position: relative;
+}
+
+/* Checklist --------------------------------------- */
+.checklist_container_full.on {
+    display: block;
+}
+
+.checklist_container_full.off {
+    display: none;
+}
+
+.checklist_menu ul li.off{
+    cursor: pointer;
+}
+
+/* Series One */
+#series_one_menu_item.on {
+    background-color: rgb(161,27,34);
+    box-shadow: 4px 4px 0 1px rgb(126,22,32);
+}
+#series_one_menu_item.off:hover {
+   /* background-color: rgba(0,0,0,0.6);*/
+}
+
+
+/* Special */
+#special_menu_item.on {
+    background-color: rgb(245,158,25);
+    box-shadow: 4px 4px 0 1px rgb(126,22,32);
+}
+
+.checklist_menu ul li.off{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.checklist_menu ul li.off:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#special_menu_item.off:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+
+.character {
+    cursor: pointer;
+}
+

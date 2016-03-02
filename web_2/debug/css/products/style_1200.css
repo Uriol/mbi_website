@@ -214,7 +214,7 @@ and (min-width: 1201px) {
 		font-family: 'avenir_medium', sans-serif;
 		font-size: 16px;
 		line-height: 25px;
-		color: rgb(40,40,40);
+		color: rgb(80,80,80);
 	}
 
 	/* Gallery -------------------------------------- */
@@ -349,7 +349,7 @@ and (min-width: 1201px) {
 		font-family: 'avenir_bold', sans-serif;
 		font-size: 40px;
 		font-weight: 700;
-		color: rgb(60,60,60);
+		color: rgb(40,40,40);
 		margin-bottom: 0px;
 	}
 	.product_container {
@@ -389,7 +389,7 @@ and (min-width: 1201px) {
 		font-family: 'avenir_medium', sans-serif;
 		font-size: 16px;
 		line-height: 20px;
-		color: rgb(40,40,40);
+		color: rgb(80,80,80);
 		padding: 0 40px 0 40px;
 	}
 

@@ -27,6 +27,17 @@
 		<link href='../css/home/phone_portrait.css' rel='stylesheet'>
 		<link href='../css/home/style_en.css' rel='stylesheet'>
 
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-18320013-2', 'www.magicboxint.com');
+			ga('send', 'pageview');
+
+		</script>
+
 	</head>
 
 	<body>
@@ -56,7 +67,7 @@
 
 				<div class='main_display_full'>
 					<div class='iframe_container' id='iframe_container_sm_cd'>
-						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/4V2cnj59-gk?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+						<iframe id='player_sm_cd' src="https://www.youtube.com/embed/59iZ9NwKG_w?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 
@@ -109,6 +120,34 @@
 
 			logo_z_2 = new Image(540,235);
 			logo_z_2.src = "../img/all/logo_z_submenu_small.png";
+		</script>
+
+		<script>
+			(function() {
+				var lastTime = 0;
+				var vendors = ['ms', 'moz', 'webkit', 'o'];
+				for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+					window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+					window.cancelRequestAnimationFrame = window[vendors[x]+
+					  'CancelRequestAnimationFrame'];
+				}
+
+				if (!window.requestAnimationFrame)
+					window.requestAnimationFrame = function(callback, element) {
+						var currTime = new Date().getTime();
+						var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+						var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
+						  timeToCall);
+						lastTime = currTime + timeToCall;
+						return id;
+					};
+
+				if (!window.cancelAnimationFrame)
+					window.cancelAnimationFrame = function(id) {
+						clearTimeout(id);
+
+				};
+			}())
 		</script>
 
 

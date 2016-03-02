@@ -62,7 +62,7 @@
 						<div class='main_display_bg' id='series_one_bg'></div>
 						<div class='main_display_full' id='series_one_video'>
 							<div class='iframe_container' id='iframe_container_series_one'>
-								<iframe id='player_series_one' src="https://www.youtube.com/embed/PvzEqbhyN_o?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+								<iframe id='player_series_one' src="https://www.youtube.com/embed/p5kfSIFmyK0?rel=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 							</div>
 						</div>
 						<!--  Video thumbnail -->
@@ -125,6 +125,7 @@
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
 							<h1>STAR MONSTERS</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='s1_minisite'>www.starmonsters.net</a>
 							<p>Triangular stars fall from the sky, this is the origin of Star Monsters. Quirky and funny characters, unlike anything that you have ever seen. There are so many Star Monsters to meet: Essential, Evolved, Rare, Ultra Rare… Each and every one of them is here to play! Discover them all! Star Monsters guarantee fun!</p>
 						</div>
 						<!-- Gallery series one -->
@@ -205,6 +206,7 @@
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
 							<h1>STAR MONSTERS</h1>
+							<a href='http://www.starmonsters.net' target="_blank" class='special_minisite'>www.starmonsters.net</a>
 							<p>Caen del cielo estrellas con forma de triángulo, es el origin de los Star Monsters, unos curiosos y divertidos personajes diferentes a todo. Hay Star Monsters de cuatro familias distintas, en blanco, de colores, Evolucionados, Raros, Ultra Raros... ¡y todos han venido a jugar! Descúbrelos, llévatelos contigo y entrénalos para competir. ¡La diversión está asegurada!</p>
 						</div>
 

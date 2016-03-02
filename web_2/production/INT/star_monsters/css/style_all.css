@@ -102,6 +102,25 @@
 		background-position: center;
 	}
 
+	/* Info */
+	.description_container a {
+	    font-family: 'avenir_medium', sans-serif;
+	    font-size: 20px;
+	    font-weight: 700;
+	    line-height: 30px;
+	    color: rgb(40,40,40);
+	}
+
+	.description_container a.s1_minisite:hover{
+		color: rgb(190,22,33);
+	}
+
+	.description_container a.special_minisite:hover{
+		color: rgb(245,158,25);
+	}
+
+	
+
 	/* Gallery */
 	/* Series One */
 	#series_one_gallery_index_container .gallery_index_item_on {

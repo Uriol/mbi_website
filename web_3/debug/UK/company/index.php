@@ -69,7 +69,7 @@
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>MAGIC BOX TOYS HISTORY</h1>
+					<h1>Magic Box Toys history</h1>
 					<p>Magic Box Toys is a global leader in the creation and distribution of collectable toys. Our products are filled with imagination and surprise. We are proud of the excitement we bring to children through our well-designed and highly gratifying concepts. We love the challenge to create new products in order to continue to entertain children worldwide.</p>
 				</div>
 			</div>

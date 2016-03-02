@@ -182,7 +182,7 @@
 					<!-- Series One Info -->
 					<div class='serie_info_container on' id='series_one_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<a href='http://www.zomlingstown.com' target="_blank" class='s1_blog'>www.zomlingstown.com</a>
 							<p>¡Los Zomlings han llegado y están por todas partes! Hay más de 100 figuras para coleccionar, incluyendo figuras especiales doradas y plateadas. Explora los 7 vecindarios Zomlings y descubre personajes como Octozom de Wacky Waters y Zomhog de Zomlings Zoo. Puedes encontrar casas, torres y mansiones de muchos colores. Juega con tuscasas, apila las torres y ¡crea tu propia Zomlings Town!</p>
 						</div>
@@ -210,7 +210,7 @@
 						<!-- Products series one -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTOS</h1>
+								<h1>Productos</h1>
 								<!-- <div class='product_filet'></div> -->
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_one'></div>
@@ -266,7 +266,7 @@
 					<!-- Series two -->
 					<div class='serie_info_container off' id='series_two_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<a href='http://www.zomlingstown.com' target="_blank" class='s2_blog'>www.zomlingstown.com</a>
 							<p>Zomlings Town ha crecido mucho desde que llegaron los primeros visitantes a explorar sus calles. Si echas un vistazo descubrirás las nuevas casas y torres transparentes, que dan un toque de color y brillo a los alrededores. Spooky Street, Creepy Circus, Haunted Hotel... todos los vecindarios han crecido y mejorado. Además, ¡hay un montón de Zomlings nuevos y divertidos!</p>
 						</div>
@@ -294,7 +294,7 @@
 						<!-- Products series two -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTOS</h1>
+								<h1>Productos</h1>
 								
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_two'></div>
@@ -338,7 +338,7 @@
 					<!--  Series three  -->
 					<div class='serie_info_container off' id='series_three_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<a href='http://www.zomlingstown.com' target="_blank" class='s3_blog'>www.zomlingstown.com</a>
 							<p>¡Bienvenidos una vez más a Zomlings Town! ¡Hay tantas cosas nuevas que contar! Nada se detiene en esta ciudad y hay un nuevo Tren de los Zomlings porque nuestros Zomlings están más ocupados y activos que nunca. Súbete al tren para dar una vuelta por la ciudad. Visita los 7 barrios, descubre más de 100 nuevos personajes y un nuevo tipo de casas, más grandes que nunca antes.</p>
 						</div>
@@ -365,7 +365,7 @@
 						<!-- Products series three -->
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTOS</h1>
+								<h1>Productos</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_three'></div>
 									<div class='product_info_container'>
@@ -408,7 +408,7 @@
 					<!--  Series four -->
 					<div class='serie_info_container off' id='series_four_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<a href='http://www.zomlingstown.com' target="_blank" class='s4_blog'>www.zomlingstown.com</a>
 							<p>¡En Zomlings Town hay una gran movida! Y es que la Serie 4 viene con más de 100 nuevos Zomlings en colores Crystal. Y llegan con más marcha que nunca porque van subidos en los divertidos Zom-Mobiles: en coche, en moto, en avión... ¡incluso en un espacioso autobús!</p>
 						</div>
@@ -434,7 +434,7 @@
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTOS</h1>
+								<h1>Productos</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='one_pack_image_series_four'></div>
 									<div class='product_info_container'>
@@ -476,13 +476,13 @@
 					<!--  Special -->
 					<div class='serie_info_container off' id='special_info'>
 						<div class='description_container'>
-							<h1>ZOMLINGS</h1>
+							<h1>Zomlings</h1>
 							<a href='http://www.zomlingstown.com' target="_blank" class='special_blog'>www.zomlingstown.com</a>
 							<p>Hay zomlings de ediciones especiales que no se dejan ver tan fácilmente por Zomlings Town. Los Zomlings Adventure son intrépidos exploradores de nuevos lugares, por lo que siempre están de viaje. También tienes los exclusivos zomlings del Magic Trick Hotel, a quienes podrás sacar de su escondite con un divertido truco de magia. ¡Descúbrelos todos!</p>
 						</div>
 						<div class='products_container'>
 							<div class='products_box'>
-								<h1>PRODUCTOS</h1>
+								<h1>Productos</h1>
 								<div class='product_container'>
 									<div class='product_image_container' id='tin_image_z'></div>
 									<div class='product_info_container'>

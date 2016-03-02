@@ -1,0 +1,230 @@
+@media only screen 
+and (max-width: 540px) {
+
+
+	section.main_display {
+		width: 100%;
+		height: 350px;
+		max-width: 2500px;
+		position: relative;
+		margin: 0 auto;
+		overflow-x: hidden;  
+		overflow-y: hidden;
+	}
+
+	/* Main display */
+	.iframe_container {
+		top: 95px;
+		position: relative;
+		margin: 0 auto;
+		width: 310px;
+		height: 174px;
+	}
+
+	.video_thumbnail{
+		cursor: pointer;
+		width: 310px;
+		height: 174px;
+		position: relative;
+		margin: 0 auto;
+		top: 95px;
+		background-color: black;
+	}
+
+	.player_icon_container {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		position: absolute;
+		margin-left: 125px;
+		margin-top: 52px;
+		background-color: rgba(0,0,0,0.5);
+	}
+
+	.player_icon {
+		width: 0px;
+		height: 0px;
+		position: absolute;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;
+		border-left: 22px solid rgb(255,255,255);
+		margin-left:  25px;
+		margin-top: 24px;
+	}
+
+	/* Series controls */
+	.main_display_series_controls {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+	
+	}
+
+	.control_left_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: left;
+		margin-top: 147px;
+		margin-left: 20px;
+		cursor:pointer;
+	}
+
+	.control_left_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container:hover {
+		background-color: rgba(0,0,0,0.8);
+	}
+
+	.control_right_container{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		background-color: rgba(0,0,0,0.4);
+		float: right;
+		margin-top: 147px;
+		margin-right: 20px;
+		cursor:pointer;
+	}
+
+	.control_arrow {
+		width: 35px;
+		height: 35px;
+		position: absolute;
+		margin-left: 17.5px;
+		margin-top: 17.5px;
+	}
+
+	#left_arrow {
+		background: url('../../img/all/left_arrow.png');
+		background-size: cover;
+	}
+
+	#right_arrow {
+		background: url('../../img/all/right_arrow.png');
+		background-size: cover;
+	}
+
+		/* Series menu */
+	.main_display_series_menu {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+		margin-top: 310px;
+		text-align: center;
+	}
+
+	.main_display_series_menu ul{
+		text-align: center;
+		background-color: rgba(0,0,0,0.2);
+		display:inline-block;
+	}
+
+	.main_display_series_menu ul li{
+		display: inline-block;
+		font-family: 'avenir_bold', sans-serif;
+		font-size: 10px;
+		color: white;
+		letter-spacing: 0.7px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 6px;
+		padding-right: 6px;
+		vertical-align: middle;
+	}
+
+	.main_display_series_menu ul li.off {
+		cursor: pointer;
+	}
+
+
+
+	/* Logo */
+	.main_display_logo {
+		width: 100%;
+		height: 0px;
+		position: absolute;
+		z-index: 99;
+		margin-top: 10px;
+	}
+
+	#main_display_logo_star_monsters {
+		width: 260px;
+		height: 137px;
+		background: url('../../img/all/logo_sm_border.png');
+		background-size: cover;
+		position: relative;
+		margin: 0 auto;
+	}
+
+
+	/* Series One */
+	#left_img_main_display_s_one {
+		position: relative;
+		margin: 0 auto;
+		width: 350px;
+		height: 176px;
+		background: url('../../img/s1/left.png');
+		background-size: cover;
+		top: 174px;
+		
+	}
+	#right_img_main_display_s_one {
+		position: relative;
+		margin: 0 auto;
+		width: 350px;
+		height: 176px;
+		background: url('../../img/s1/right.png');
+		background-size: cover;
+		top: 174px;
+	}
+
+	/* Info */
+	article.info_container {
+		width: 100%;
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.text_container {
+		position: relative;
+		text-align: center;
+		width: 100%;
+		margin-top: 70px;
+	}
+
+
+	.text_container h1{
+		font-family: avenir_bold;
+		font-size: 30px;
+		margin-top: 20px;
+		color: rgb(0,113,171);
+		padding-bottom: 12px;
+	}
+
+	.text_container p{
+		font-family: avenir_medium;
+		font-size: 14px;
+		line-height: 22px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: rgb(80,80,80);
+	}
+
+
+	.story_image{
+		width: 100%;
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+
+	.story_image img{
+		width: 100%;
+		height: auto;
+	}
+}

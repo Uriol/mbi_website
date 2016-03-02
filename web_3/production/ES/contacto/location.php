@@ -1,8 +1,8 @@
 <?php
 
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/TESTWEB/ES/contacto/index.php') {
-		header('Location: http://test.martomagic.com/TESTWEB/ES/contacto/index.php');
+	if ( $actual_link != 'http://www.magicboxint.com/ES/contacto/index.php') {
+		header('Location: http://www.magicboxint.com/ES/contacto/index.php');
 	}
 
 	// Redirect Based on country
@@ -15,9 +15,9 @@
 	if ($origin == 'ES'){
 		
 	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/TESTWEB/UK/contact/index.php');
+		header('Location: http://www.magicboxint.com/UK/contact/index.php');
 	} else {
-		header('Location: http://test.martomagic.com/TESTWEB/INT/contact/index.php');
+		header('Location: http://www.magicboxint.com/INT/contact/index.php');
 	}
 	
 ?>

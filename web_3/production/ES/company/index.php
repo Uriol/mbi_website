@@ -68,7 +68,7 @@
 
 			<div class='company_description'>
 				<div class='company_description_container'>
-					<h1>LA HISTORIA DE MAGIC BOX TOYS</h1>
+					<h1>La historia de Magic Box Toys</h1>
 					<p>Magic Box Toys es una empresa líder mundial en la creación y distribución de juguetes coleccionables que logra despertar la imaginación, sorpresa e ilusión de los niños a través de conceptos sólidos, bien diseñados y altamente gratificantes. Nos apasiona el reto de seguir creando para continuar divirtiendo a niños y niñas en todo el mundo.</p>
 				</div>
 			</div>

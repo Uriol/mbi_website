@@ -43,7 +43,7 @@
 
 			<div class='contact_form_container'>
 
-				<h1>CONTÁCTENOS</h1>
+				<h1>Contáctenos</h1>
 
 				<div class='form_container'>
 

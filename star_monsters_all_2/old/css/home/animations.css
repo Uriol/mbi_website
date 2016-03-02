@@ -1,0 +1,28 @@
+
+
+	@keyframes logo_out_sm {
+		from { top: 0px;}
+		to {top: -200px;}
+	}
+
+	@keyframes logo_in_sm {
+		from {top: -200px;}
+		to {top: 0px;}
+	}
+
+
+	#main_display_logo_sm.start {
+		top: 0px;
+	}
+
+	#main_display_logo_sm.out {
+		animation-name: logo_out_sm;
+		animation-duration: 0.4s;
+		top: -200px;
+	}
+	#main_display_logo_sm.in {
+		animation-name: logo_in_sm;
+		animation-duration: 0.4s;
+		top: 0px;
+	}
+

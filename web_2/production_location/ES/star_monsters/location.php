@@ -1,8 +1,8 @@
 <?php
 	
 	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-	if ( $actual_link != 'http://test.martomagic.com/TESTWEB/ES/star_monsters/index.php') {
-		header('Location: http://test.martomagic.com/TESTWEB/ES/star_monsters/index.php');
+	if ( $actual_link != 'http://www.magicboxint.com/ES/star_monsters/index.php') {
+		header('Location: http://www.magicboxint.com/ES/star_monsters/index.php');
 	}
 
 	include("geoip.inc"); 
@@ -14,9 +14,9 @@
 	if ($origin == 'ES'){
 
 	} else if ($origin == 'GB') {
-		header('Location: http://test.martomagic.com/TESTWEB/UK/zomlings/index.php');
+		header('Location: http://www.magicboxint.com');
 	} else {
-		header('Location: http://test.martomagic.com/TESTWEB/INT/zomlings/index.php');
+		header('Location: http://www.magicboxint.com/INT/star_monsters/index.php');
 	}
 
 ?>
